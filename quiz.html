@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Free Testosterone Quiz - Chad Bites</title>
+  <meta name="description" content="Take the free 60-second testosterone quiz. Find out your risk level and get personalized recommendations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Orbitron:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+  <div class="quiz-wrapper">
+    <!-- Header -->
+    <div class="quiz-header">
+      <a href="index.html" class="quiz-logo">chadbites</a>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="quiz-progress">
+      <div class="quiz-progress-bar">
+        <div class="quiz-progress-fill" id="progress-fill"></div>
+      </div>
+      <div class="quiz-progress-text">
+        <span id="progress-step">Step 1 of 9</span>
+        <span>Free Testosterone Quiz</span>
+      </div>
+    </div>
+
+    <!-- Questions -->
+    <div class="quiz-body" id="quiz-body">
+      <!-- Rendered by JS -->
+    </div>
+
+    <!-- Loading screen -->
+    <div class="quiz-loading" id="quiz-loading">
+      <h2>Analyzing Your Results...</h2>
+      <div class="quiz-loading-steps">
+        <div class="quiz-loading-step">
+          <div class="quiz-loading-step-icon">1</div>
+          <span>Calculating hormone profile...</span>
+        </div>
+        <div class="quiz-loading-step">
+          <div class="quiz-loading-step-icon">2</div>
+          <span>Analyzing lifestyle factors...</span>
+        </div>
+        <div class="quiz-loading-step">
+          <div class="quiz-loading-step-icon">3</div>
+          <span>Comparing to clinical benchmarks...</span>
+        </div>
+        <div class="quiz-loading-step">
+          <div class="quiz-loading-step-icon">4</div>
+          <span>Generating personalized protocol...</span>
+        </div>
+        <div class="quiz-loading-step">
+          <div class="quiz-loading-step-icon">5</div>
+          <span>Preparing your results...</span>
+        </div>
+      </div>
+      <div class="quiz-loading-progress">
+        <div class="quiz-loading-progress-fill" id="loading-progress-fill"></div>
+      </div>
+    </div>
+
+    <!-- Results -->
+    <div class="quiz-results" id="quiz-results">
+      <h2>Your Testosterone Score</h2>
+
+      <div class="quiz-score-ring">
+        <svg viewBox="0 0 160 160">
+          <defs>
+            <linearGradient id="scoreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#3b82f6"/>
+              <stop offset="50%" stop-color="#8b5cf6"/>
+              <stop offset="100%" stop-color="#22c55e"/>
+            </linearGradient>
+          </defs>
+          <circle cx="80" cy="80" r="65" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="8"/>
+          <circle id="result-ring-fill" class="quiz-score-ring-fill" cx="80" cy="80" r="65" fill="none"
+                  stroke="url(#scoreGrad)" stroke-width="8" stroke-linecap="round"
+                  stroke-dasharray="0 409"/>
+        </svg>
+        <div class="quiz-score-center">
+          <span class="quiz-score-value" id="result-score">--</span>
+          <span class="quiz-score-label">out of 100</span>
+        </div>
+      </div>
+
+      <div id="result-risk" class="quiz-risk-badge quiz-risk-moderate">CALCULATING...</div>
+
+      <div class="quiz-recommendations">
+        <h3>Your Personalized Recommendations</h3>
+        <ul>
+          <li>Prioritize 7-9 hours of quality sleep each night</li>
+          <li>Incorporate resistance training 3-4x per week</li>
+          <li>Reduce processed food and focus on whole nutrition</li>
+          <li>Manage stress through meditation or breathwork</li>
+          <li>Support testosterone production with clinically studied ingredients</li>
+        </ul>
+      </div>
+
+      <!-- Email capture -->
+      <div class="quiz-email-section">
+        <h3>Enter Your Email Below To Claim Your Prize</h3>
+        <p>Get your full personalized protocol + an exclusive discount on Chad Bites Test Boost Gummies.</p>
+        <form id="email-form">
+          <input type="email" class="quiz-email-input" id="email-input" placeholder="your@email.com" required>
+          <button type="submit" class="quiz-cta-btn" id="quiz-cta">
+            YES, BOOST MY TESTOSTERONE
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <p class="quiz-disclaimer">These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease. Individual results may vary. This quiz is for informational purposes only and is not a substitute for professional medical advice.</p>
+    </div>
+  </div>
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>
