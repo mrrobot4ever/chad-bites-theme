@@ -33,7 +33,7 @@
       document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
-    // Close mobile menu when a link is clicked
+    // Close menu when a link is clicked
     var links = mobileMenu.querySelectorAll('a');
     links.forEach(function(link) {
       link.addEventListener('click', function() {
@@ -45,18 +45,17 @@
       });
     });
 
-    // Header scroll effect
+    // Header background on scroll
     var header = document.getElementById('site-header');
     if (header) {
-      var lastScroll = 0;
       window.addEventListener('scroll', function() {
-        var currentScroll = window.pageYOffset;
-        if (currentScroll > 100) {
+        if (window.pageYOffset > 60) {
           header.style.background = 'rgba(10, 11, 20, 0.95)';
+          header.style.borderBottomColor = 'rgba(255, 255, 255, 0.06)';
         } else {
           header.style.background = 'rgba(10, 11, 20, 0.8)';
+          header.style.borderBottomColor = 'rgba(255, 255, 255, 0.04)';
         }
-        lastScroll = currentScroll;
       }, { passive: true });
     }
   }
