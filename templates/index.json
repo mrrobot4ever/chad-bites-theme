@@ -22,6 +22,10 @@
       "type": "decline",
       "settings": {}
     },
+    "solution": {
+      "type": "solution",
+      "settings": {}
+    },
     "stats-gauges": {
       "type": "stats-gauges",
       "settings": {
@@ -124,6 +128,7 @@
     "stats-gauges",
     "ingredients",
     "decline",
+    "solution",
     "problems",
     "before-after",
     "product-benefits",
