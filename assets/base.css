@@ -760,10 +760,7 @@ ul, ol { list-style: none; }
 .solution-bg {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(ellipse at 70% 60%, rgba(77, 124, 254, 0.06) 0%, transparent 50%),
-    radial-gradient(ellipse at 30% 40%, rgba(124, 58, 237, 0.04) 0%, transparent 50%),
-    linear-gradient(180deg, #0a0b14 0%, #0e0f1c 50%, #0a0b14 100%);
+  background: #000005;
   z-index: 0;
 }
 
