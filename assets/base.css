@@ -1801,6 +1801,11 @@ ul, ol { list-style: none; }
    STATS GAUGES
    ============================================ */
 .stats-section-wrapper { display: none !important; }
+.problems-section-wrapper { display: none !important; }
+.before-after-section-wrapper { display: none !important; }
+.benefits-section-wrapper { display: none !important; }
+.social-proof-section-wrapper { display: none !important; }
+.features-section-wrapper { display: none !important; }
 .stats-section {
   position: relative;
   border-top: 1px solid rgba(255, 255, 255, 0.04);
