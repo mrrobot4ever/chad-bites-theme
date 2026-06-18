@@ -1,19 +1,26 @@
 <section class="decline-section" data-section-id="{{ section.id }}">
   <div class="decline-bg">
+    {% if section.settings.background_image != blank %}
+      <img src="{{ section.settings.background_image | image_url: width: 1920 }}" alt="" loading="lazy" class="decline-bg-img">
+    {% endif %}
     <div class="decline-bg-gradient"></div>
   </div>
   <div class="decline-inner">
-    <h2 class="decline-heading">THE DECLINE OF T:<br><span class="decline-heading-accent">A MODERN EPIDEMIC</span></h2>
+    <h2 class="decline-heading">{{ section.settings.heading_line1 }}<br><span class="decline-heading-accent">{{ section.settings.heading_line2 }}</span></h2>
 
     <div class="decline-body">
       <div class="decline-chart-col">
-        <img src="{{ 'decline-chart.png' | asset_url }}" alt="Testosterone levels with Chad Bites" loading="lazy">
+        {% if section.settings.chart_image != blank %}
+          <img src="{{ section.settings.chart_image | image_url: width: 800 }}" alt="{{ section.settings.chart_alt }}" loading="lazy">
+        {% else %}
+          <img src="{{ 'decline-chart.png' | asset_url }}" alt="Testosterone levels with Chad Bites" loading="lazy">
+        {% endif %}
       </div>
 
       <div class="decline-text-col">
-        <p class="decline-para"><span class="decline-highlight">Testosterone levels</span> have been dropping by 1% every year since 1980. Stress, poor sleep, processed diets, and toxins are destroying natural hormone production.</p>
-        <p class="decline-para">The impact? Low testosterone drains energy, strength, and focus&mdash;making it harder to perform at your best in life and the gym.</p>
-        <p class="decline-para"><span class="decline-good-news">The good news:</span> Chad Bites helps you reclaim your edge with natural testosterone support for energy, focus, and strength.</p>
+        <p class="decline-para">{{ section.settings.paragraph_1 }}</p>
+        <p class="decline-para">{{ section.settings.paragraph_2 }}</p>
+        <p class="decline-para">{{ section.settings.paragraph_3 }}</p>
       </div>
     </div>
   </div>
@@ -25,14 +32,50 @@
   "class": "decline-section-wrapper",
   "settings": [
     {
+      "type": "text",
+      "id": "heading_line1",
+      "label": "Heading line 1",
+      "default": "THE DECLINE OF T:"
+    },
+    {
+      "type": "text",
+      "id": "heading_line2",
+      "label": "Heading line 2 (accent)",
+      "default": "A MODERN EPIDEMIC"
+    },
+    {
       "type": "image_picker",
       "id": "chart_image",
       "label": "Chart image"
     },
     {
+      "type": "text",
+      "id": "chart_alt",
+      "label": "Chart image alt text",
+      "default": "Testosterone levels with Chad Bites"
+    },
+    {
       "type": "image_picker",
       "id": "background_image",
       "label": "Background image"
+    },
+    {
+      "type": "textarea",
+      "id": "paragraph_1",
+      "label": "Paragraph 1",
+      "default": "Testosterone levels have been dropping by 1% every year since 1980. Stress, poor sleep, processed diets, and toxins are destroying natural hormone production."
+    },
+    {
+      "type": "textarea",
+      "id": "paragraph_2",
+      "label": "Paragraph 2",
+      "default": "The impact? Low testosterone drains energy, strength, and focus—making it harder to perform at your best in life and the gym."
+    },
+    {
+      "type": "textarea",
+      "id": "paragraph_3",
+      "label": "Paragraph 3",
+      "default": "The good news: Chad Bites helps you reclaim your edge with natural testosterone support for energy, focus, and strength."
     }
   ],
   "presets": [

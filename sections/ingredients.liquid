@@ -1,99 +1,26 @@
 <section class="ingredients-section" data-section-id="{{ section.id }}">
   <div class="ingredients-bg"></div>
   <div class="ingredients-inner">
-    <h2 class="ingredients-title">8 INGREDIENTS IN 1 POWERFUL FORMULA</h2>
-    <p class="ingredients-subtitle">GET YOUR EDGE BACK, NATURALLY.</p>
+    <h2 class="ingredients-title">{{ section.settings.heading }}</h2>
+    <p class="ingredients-subtitle">{{ section.settings.subtitle }}</p>
 
     <div class="ingredients-grid">
-
-      <div class="ingredient-card">
-        <img src="{{ 'ingredient-magnesium.jpg' | asset_url }}" alt="Magnesium" loading="lazy">
-        <div class="ingredient-overlay">
-          <span class="ingredient-dose">100 mg</span>
-          <div class="ingredient-overlay-text">
-            <h3 class="ingredient-name">Magnesium</h3>
-            <p class="ingredient-desc">Muscle, sleep & T support</p>
+      {% for block in section.blocks %}
+        <div class="ingredient-card" {{ block.shopify_attributes }}>
+          {% if block.settings.image != blank %}
+            <img src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.name }}" loading="lazy">
+          {% else %}
+            <img src="{{ block.settings.fallback_asset | asset_url }}" alt="{{ block.settings.name }}" loading="lazy">
+          {% endif %}
+          <div class="ingredient-overlay">
+            <span class="ingredient-dose">{{ block.settings.dose }}</span>
+            <div class="ingredient-overlay-text">
+              <h3 class="ingredient-name">{{ block.settings.name }}</h3>
+              <p class="ingredient-desc">{{ block.settings.description }}</p>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="ingredient-card">
-        <img src="{{ 'ingredient-fulvic-acid.jpg' | asset_url }}" alt="Fulvic Acid" loading="lazy">
-        <div class="ingredient-overlay">
-          <span class="ingredient-dose">20 mg</span>
-          <div class="ingredient-overlay-text">
-            <h3 class="ingredient-name">Fulvic Acid</h3>
-            <p class="ingredient-desc">Boosts nutrient absorption</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="ingredient-card">
-        <img src="{{ 'ingredient-fadogia.jpg' | asset_url }}" alt="Fadogia Agrestis" loading="lazy">
-        <div class="ingredient-overlay">
-          <span class="ingredient-dose">500 mg</span>
-          <div class="ingredient-overlay-text">
-            <h3 class="ingredient-name">Fadogia</h3>
-            <p class="ingredient-desc">Signals natural T output</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="ingredient-card">
-        <img src="{{ 'ingredient-tongkat-ali.jpg' | asset_url }}" alt="Tongkat Ali" loading="lazy">
-        <div class="ingredient-overlay">
-          <span class="ingredient-dose">500 mg</span>
-          <div class="ingredient-overlay-text">
-            <h3 class="ingredient-name">Tongkat Ali</h3>
-            <p class="ingredient-desc">Raises T, lowers cortisol</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="ingredient-card">
-        <img src="{{ 'ingredient-zinc.jpg' | asset_url }}" alt="Zinc" loading="lazy">
-        <div class="ingredient-overlay">
-          <span class="ingredient-dose">10 mg</span>
-          <div class="ingredient-overlay-text">
-            <h3 class="ingredient-name">Zinc</h3>
-            <p class="ingredient-desc">Key mineral for T synthesis</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="ingredient-card">
-        <img src="{{ 'ingredient-boron.jpg' | asset_url }}" alt="Boron" loading="lazy">
-        <div class="ingredient-overlay">
-          <span class="ingredient-dose">10 mg</span>
-          <div class="ingredient-overlay-text">
-            <h3 class="ingredient-name">Boron</h3>
-            <p class="ingredient-desc">Frees bound testosterone</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="ingredient-card">
-        <img src="{{ 'ingredient-vitamin-b6.jpg' | asset_url }}" alt="Vitamin B6" loading="lazy">
-        <div class="ingredient-overlay">
-          <span class="ingredient-dose">6 mg</span>
-          <div class="ingredient-overlay-text">
-            <h3 class="ingredient-name">Vitamin B6</h3>
-            <p class="ingredient-desc">Optimizes hormone balance</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="ingredient-card">
-        <img src="{{ 'ingredient-vitamin-d3.jpg' | asset_url }}" alt="Vitamin D3" loading="lazy">
-        <div class="ingredient-overlay">
-          <span class="ingredient-dose">100 mcg</span>
-          <div class="ingredient-overlay-text">
-            <h3 class="ingredient-name">Vitamin D3</h3>
-            <p class="ingredient-desc">Drives T production</p>
-          </div>
-        </div>
-      </div>
-
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -102,10 +29,70 @@
 {
   "name": "Ingredients",
   "class": "ingredients-section-wrapper",
-  "settings": [],
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "8 INGREDIENTS IN 1 POWERFUL FORMULA"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "GET YOUR EDGE BACK, NATURALLY."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "ingredient",
+      "name": "Ingredient",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Ingredient name",
+          "default": "Ingredient"
+        },
+        {
+          "type": "text",
+          "id": "dose",
+          "label": "Dose",
+          "default": "100 mg"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Short description",
+          "default": "Supports overall health"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Ingredient image"
+        },
+        {
+          "type": "text",
+          "id": "fallback_asset",
+          "label": "Fallback asset filename (e.g. ingredient-zinc.jpg)",
+          "default": "ingredient-magnesium.jpg"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
-      "name": "Ingredients"
+      "name": "Ingredients",
+      "blocks": [
+        { "type": "ingredient", "settings": { "name": "Magnesium", "dose": "100 mg", "description": "Muscle, sleep & T support", "fallback_asset": "ingredient-magnesium.jpg" } },
+        { "type": "ingredient", "settings": { "name": "Fulvic Acid", "dose": "20 mg", "description": "Boosts nutrient absorption", "fallback_asset": "ingredient-fulvic-acid.jpg" } },
+        { "type": "ingredient", "settings": { "name": "Fadogia", "dose": "500 mg", "description": "Signals natural T output", "fallback_asset": "ingredient-fadogia.jpg" } },
+        { "type": "ingredient", "settings": { "name": "Tongkat Ali", "dose": "500 mg", "description": "Raises T, lowers cortisol", "fallback_asset": "ingredient-tongkat-ali.jpg" } },
+        { "type": "ingredient", "settings": { "name": "Zinc", "dose": "10 mg", "description": "Key mineral for T synthesis", "fallback_asset": "ingredient-zinc.jpg" } },
+        { "type": "ingredient", "settings": { "name": "Boron", "dose": "10 mg", "description": "Frees bound testosterone", "fallback_asset": "ingredient-boron.jpg" } },
+        { "type": "ingredient", "settings": { "name": "Vitamin B6", "dose": "6 mg", "description": "Optimizes hormone balance", "fallback_asset": "ingredient-vitamin-b6.jpg" } },
+        { "type": "ingredient", "settings": { "name": "Vitamin D3", "dose": "100 mcg", "description": "Drives T production", "fallback_asset": "ingredient-vitamin-d3.jpg" } }
+      ]
     }
   ]
 }
