@@ -849,15 +849,15 @@ ul, ol { list-style: none; }
 
 .solution-benefit-icon {
   flex-shrink: 0;
-  width: 28px;
-  height: 28px;
+  width: 36px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 6px;
+  border-radius: 8px;
   background: rgba(77, 124, 254, 0.12);
   color: var(--color-accent);
-  font-size: 0.85rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
