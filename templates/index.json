@@ -21,6 +21,10 @@
       "type": "solution",
       "settings": {}
     },
+    "howitworks": {
+      "type": "howitworks",
+      "settings": {}
+    },
     "stats-gauges": {
       "type": "stats-gauges",
       "settings": {
@@ -124,6 +128,7 @@
     "ingredients",
     "decline",
     "solution",
+    "howitworks",
     "problems",
     "before-after",
     "product-benefits",
