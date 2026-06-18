@@ -3,15 +3,10 @@
     "hero": {
       "type": "hero",
       "settings": {
-        "label": "THE FUTURE OF MALE PERFORMANCE",
-        "heading_line1": "GET YOUR EDGE BACK,",
-        "heading_line2": "NATURALLY",
-        "subtext": "Support healthy testosterone, energy, drive, and performance with the premium daily gummy built for men who refuse to slow down.",
-        "cta_text": "GET STARTED",
-        "secondary_text": "SEE THE PROTOCOL",
-        "gauge_value": 92,
-        "gauge_label": "EDGE SCORE",
-        "gauge_status": "OPTIMAL"
+        "heading": "AMERICA'S #1 TESTOSTERONE BOOSTER GUMMY",
+        "subtext": "8 science-backed ingredients in one daily gummy. Try it for 90 days. Higher T or your money back.",
+        "cta_text": "GET 1 BOTTLE FREE",
+        "badges_url": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/badges-removebg.png?v=1771042099"
       }
     },
     "ingredients": {
