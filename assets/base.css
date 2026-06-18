@@ -2446,6 +2446,10 @@ ul, ol { list-style: none; }
   .footer-grid { grid-template-columns: 2fr 1fr 1fr 1fr; }
 }
 
+.footer-brand .header-logo {
+  justify-self: start;
+}
+
 .footer-brand p {
   font-size: 0.85rem;
   color: var(--color-text-muted);
