@@ -66,7 +66,7 @@
         {% if section.settings.product_image != blank %}
           <img src="{{ section.settings.product_image | image_url: width: 800 }}" alt="Chad Bites product" loading="lazy" class="solution-product-img">
         {% else %}
-          <img src="{{ 'solution-product.jpg' | asset_url }}" alt="Chad Bites product" loading="lazy" class="solution-product-img">
+          <img src="{{ 'solution-product.webp' | asset_url }}" alt="Chad Bites product" loading="lazy" class="solution-product-img">
         {% endif %}
         <a href="{{ section.settings.cta_url | default: '#' }}" class="btn btn-primary btn-lg solution-cta">
           {{ section.settings.cta_text | default: "GET 1 BOTTLE FREE" }}
