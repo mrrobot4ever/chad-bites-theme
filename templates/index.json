@@ -25,6 +25,10 @@
       "type": "howitworks",
       "settings": {}
     },
+    "riskfree": {
+      "type": "riskfree",
+      "settings": {}
+    },
     "stats-gauges": {
       "type": "stats-gauges",
       "settings": {
@@ -129,6 +133,7 @@
     "decline",
     "solution",
     "howitworks",
+    "riskfree",
     "problems",
     "before-after",
     "product-benefits",
