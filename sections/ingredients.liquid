@@ -1,26 +1,114 @@
+{% assign has_blocks = false %}
+{% if section.blocks.size > 0 %}
+  {% assign has_blocks = true %}
+{% endif %}
+
 <section class="ingredients-section" data-section-id="{{ section.id }}">
   <div class="ingredients-bg"></div>
   <div class="ingredients-inner">
-    <h2 class="ingredients-title">{{ section.settings.heading }}</h2>
-    <p class="ingredients-subtitle">{{ section.settings.subtitle }}</p>
+    <h2 class="ingredients-title">{{ section.settings.heading | default: "8 INGREDIENTS IN 1 POWERFUL FORMULA" }}</h2>
+    <p class="ingredients-subtitle">{{ section.settings.subtitle | default: "GET YOUR EDGE BACK, NATURALLY." }}</p>
 
     <div class="ingredients-grid">
-      {% for block in section.blocks %}
-        <div class="ingredient-card" {{ block.shopify_attributes }}>
-          {% if block.settings.image != blank %}
-            <img src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.name }}" loading="lazy">
-          {% else %}
-            <img src="{{ block.settings.fallback_asset | asset_url }}" alt="{{ block.settings.name }}" loading="lazy">
-          {% endif %}
+      {% if has_blocks %}
+        {% for block in section.blocks %}
+          <div class="ingredient-card" {{ block.shopify_attributes }}>
+            {% if block.settings.image != blank %}
+              <img src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.name }}" loading="lazy">
+            {% elsif block.settings.fallback_asset != blank %}
+              <img src="{{ block.settings.fallback_asset | asset_url }}" alt="{{ block.settings.name }}" loading="lazy">
+            {% endif %}
+            <div class="ingredient-overlay">
+              <span class="ingredient-dose">{{ block.settings.dose }}</span>
+              <div class="ingredient-overlay-text">
+                <h3 class="ingredient-name">{{ block.settings.name }}</h3>
+                <p class="ingredient-desc">{{ block.settings.description }}</p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      {% else %}
+        <div class="ingredient-card">
+          <img src="{{ 'ingredient-magnesium.jpg' | asset_url }}" alt="Magnesium" loading="lazy">
           <div class="ingredient-overlay">
-            <span class="ingredient-dose">{{ block.settings.dose }}</span>
+            <span class="ingredient-dose">100 mg</span>
             <div class="ingredient-overlay-text">
-              <h3 class="ingredient-name">{{ block.settings.name }}</h3>
-              <p class="ingredient-desc">{{ block.settings.description }}</p>
+              <h3 class="ingredient-name">Magnesium</h3>
+              <p class="ingredient-desc">Muscle, sleep & T support</p>
             </div>
           </div>
         </div>
-      {% endfor %}
+        <div class="ingredient-card">
+          <img src="{{ 'ingredient-fulvic-acid.jpg' | asset_url }}" alt="Fulvic Acid" loading="lazy">
+          <div class="ingredient-overlay">
+            <span class="ingredient-dose">20 mg</span>
+            <div class="ingredient-overlay-text">
+              <h3 class="ingredient-name">Fulvic Acid</h3>
+              <p class="ingredient-desc">Boosts nutrient absorption</p>
+            </div>
+          </div>
+        </div>
+        <div class="ingredient-card">
+          <img src="{{ 'ingredient-fadogia.jpg' | asset_url }}" alt="Fadogia" loading="lazy">
+          <div class="ingredient-overlay">
+            <span class="ingredient-dose">500 mg</span>
+            <div class="ingredient-overlay-text">
+              <h3 class="ingredient-name">Fadogia</h3>
+              <p class="ingredient-desc">Signals natural T output</p>
+            </div>
+          </div>
+        </div>
+        <div class="ingredient-card">
+          <img src="{{ 'ingredient-tongkat-ali.jpg' | asset_url }}" alt="Tongkat Ali" loading="lazy">
+          <div class="ingredient-overlay">
+            <span class="ingredient-dose">500 mg</span>
+            <div class="ingredient-overlay-text">
+              <h3 class="ingredient-name">Tongkat Ali</h3>
+              <p class="ingredient-desc">Raises T, lowers cortisol</p>
+            </div>
+          </div>
+        </div>
+        <div class="ingredient-card">
+          <img src="{{ 'ingredient-zinc.jpg' | asset_url }}" alt="Zinc" loading="lazy">
+          <div class="ingredient-overlay">
+            <span class="ingredient-dose">10 mg</span>
+            <div class="ingredient-overlay-text">
+              <h3 class="ingredient-name">Zinc</h3>
+              <p class="ingredient-desc">Key mineral for T synthesis</p>
+            </div>
+          </div>
+        </div>
+        <div class="ingredient-card">
+          <img src="{{ 'ingredient-boron.jpg' | asset_url }}" alt="Boron" loading="lazy">
+          <div class="ingredient-overlay">
+            <span class="ingredient-dose">10 mg</span>
+            <div class="ingredient-overlay-text">
+              <h3 class="ingredient-name">Boron</h3>
+              <p class="ingredient-desc">Frees bound testosterone</p>
+            </div>
+          </div>
+        </div>
+        <div class="ingredient-card">
+          <img src="{{ 'ingredient-vitamin-b6.jpg' | asset_url }}" alt="Vitamin B6" loading="lazy">
+          <div class="ingredient-overlay">
+            <span class="ingredient-dose">6 mg</span>
+            <div class="ingredient-overlay-text">
+              <h3 class="ingredient-name">Vitamin B6</h3>
+              <p class="ingredient-desc">Optimizes hormone balance</p>
+            </div>
+          </div>
+        </div>
+        <div class="ingredient-card">
+          <img src="{{ 'ingredient-vitamin-d3.jpg' | asset_url }}" alt="Vitamin D3" loading="lazy">
+          <div class="ingredient-overlay">
+            <span class="ingredient-dose">100 mcg</span>
+            <div class="ingredient-overlay-text">
+              <h3 class="ingredient-name">Vitamin D3</h3>
+              <p class="ingredient-desc">Drives T production</p>
+            </div>
+          </div>
+        </div>
+      {% endif %}
     </div>
   </div>
 </section>
@@ -74,7 +162,7 @@
         {
           "type": "text",
           "id": "fallback_asset",
-          "label": "Fallback asset filename (e.g. ingredient-zinc.jpg)",
+          "label": "Fallback asset filename",
           "default": "ingredient-magnesium.jpg"
         }
       ]
