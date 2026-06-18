@@ -1,0 +1,138 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Chad Bites",
+    "theme_version": "1.0.0",
+    "theme_author": "Chad Bites",
+    "theme_documentation_url": "https://chadbites.com",
+    "theme_support_url": "https://chadbites.com/support"
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "color",
+        "id": "color_background",
+        "label": "Background",
+        "default": "#0a0b14"
+      },
+      {
+        "type": "color",
+        "id": "color_card_background",
+        "label": "Card background",
+        "default": "#12131f"
+      },
+      {
+        "type": "color",
+        "id": "color_text",
+        "label": "Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_text_muted",
+        "label": "Muted text",
+        "default": "#8a8fa8"
+      },
+      {
+        "type": "color",
+        "id": "color_accent",
+        "label": "Primary accent",
+        "default": "#4d7cfe"
+      },
+      {
+        "type": "color",
+        "id": "color_accent_secondary",
+        "label": "Secondary accent",
+        "default": "#7c3aed"
+      },
+      {
+        "type": "color",
+        "id": "color_success",
+        "label": "Success / green",
+        "default": "#22c55e"
+      },
+      {
+        "type": "color",
+        "id": "color_danger",
+        "label": "Danger / red",
+        "default": "#ef4444"
+      }
+    ]
+  },
+  {
+    "name": "Logo",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo image"
+      },
+      {
+        "type": "range",
+        "id": "logo_width",
+        "label": "Logo width (px)",
+        "min": 50,
+        "max": 300,
+        "step": 10,
+        "default": 160,
+        "unit": "px"
+      }
+    ]
+  },
+  {
+    "name": "Favicon",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Favicon image"
+      }
+    ]
+  },
+  {
+    "name": "Social media",
+    "settings": [
+      {
+        "type": "text",
+        "id": "social_twitter",
+        "label": "X / Twitter URL"
+      },
+      {
+        "type": "text",
+        "id": "social_instagram",
+        "label": "Instagram URL"
+      },
+      {
+        "type": "text",
+        "id": "social_facebook",
+        "label": "Facebook URL"
+      },
+      {
+        "type": "text",
+        "id": "social_tiktok",
+        "label": "TikTok URL"
+      },
+      {
+        "type": "text",
+        "id": "social_youtube",
+        "label": "YouTube URL"
+      }
+    ]
+  },
+  {
+    "name": "Cart",
+    "settings": [
+      {
+        "type": "select",
+        "id": "cart_type",
+        "label": "Cart type",
+        "options": [
+          { "value": "page", "label": "Page" },
+          { "value": "drawer", "label": "Drawer" }
+        ],
+        "default": "drawer"
+      }
+    ]
+  }
+]

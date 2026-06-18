@@ -1,0 +1,133 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {
+        "label": "THE FUTURE OF MALE PERFORMANCE",
+        "heading_line1": "GET YOUR EDGE BACK,",
+        "heading_line2": "NATURALLY",
+        "subtext": "Support healthy testosterone, energy, drive, and performance with the premium daily gummy built for men who refuse to slow down.",
+        "cta_text": "GET STARTED",
+        "secondary_text": "SEE THE PROTOCOL",
+        "gauge_value": 92,
+        "gauge_label": "EDGE SCORE",
+        "gauge_status": "OPTIMAL"
+      }
+    },
+    "ingredients": {
+      "type": "ingredients",
+      "settings": {}
+    },
+    "decline": {
+      "type": "decline",
+      "settings": {}
+    },
+    "stats-gauges": {
+      "type": "stats-gauges",
+      "settings": {
+        "heading": "GET YOUR EDGE BACK",
+        "subtext": "Your body. Your data. Your edge."
+      },
+      "blocks": {
+        "gauge-1": { "type": "gauge", "settings": { "title": "Energy", "value": 92, "status": "OPTIMAL" } },
+        "gauge-2": { "type": "gauge", "settings": { "title": "Drive", "value": 94, "status": "OPTIMAL" } },
+        "gauge-3": { "type": "gauge", "settings": { "title": "Recovery", "value": 91, "status": "OPTIMAL" } },
+        "gauge-4": { "type": "gauge", "settings": { "title": "Focus", "value": 90, "status": "OPTIMAL" } },
+        "gauge-5": { "type": "gauge", "settings": { "title": "Strength", "value": 93, "status": "OPTIMAL" } },
+        "gauge-6": { "type": "gauge", "settings": { "title": "Confidence", "value": 92, "status": "OPTIMAL" } }
+      },
+      "block_order": ["gauge-1", "gauge-2", "gauge-3", "gauge-4", "gauge-5", "gauge-6"]
+    },
+    "problems": {
+      "type": "problems",
+      "settings": {
+        "heading": "MODERN LIFE IS WORKING AGAINST MEN",
+        "subtext": "Everyday stressors, poor habits, and environmental toxins are silently lowering your testosterone and holding you back.",
+        "cta_text": "TAKE BACK CONTROL"
+      },
+      "blocks": {
+        "problem-1": { "type": "problem", "settings": { "title": "Chronic Stress", "description": "Elevated cortisol destroys testosterone and drains your drive.", "icon": "stress" } },
+        "problem-2": { "type": "problem", "settings": { "title": "Poor Sleep", "description": "Interrupted sleep reduces testosterone and slows recovery.", "icon": "sleep" } },
+        "problem-3": { "type": "problem", "settings": { "title": "Processed Foods", "description": "Poor nutrition spikes inflammation and kills vitality.", "icon": "food" } },
+        "problem-4": { "type": "problem", "settings": { "title": "Endless Screens", "description": "Blue light and constant stimulation wrecks focus and hormone health.", "icon": "screens" } }
+      },
+      "block_order": ["problem-1", "problem-2", "problem-3", "problem-4"]
+    },
+    "before-after": {
+      "type": "before-after",
+      "settings": {
+        "before_heading": "BEFORE",
+        "after_heading": "AFTER"
+      },
+      "blocks": {
+        "b1": { "type": "before_item", "settings": { "text": "Low energy" } },
+        "b2": { "type": "before_item", "settings": { "text": "No motivation" } },
+        "b3": { "type": "before_item", "settings": { "text": "Slower recovery" } },
+        "b4": { "type": "before_item", "settings": { "text": "Brain fog" } },
+        "b5": { "type": "before_item", "settings": { "text": "Low drive" } },
+        "b6": { "type": "before_item", "settings": { "text": "Just getting by" } },
+        "a1": { "type": "after_item", "settings": { "text": "Sustained energy" } },
+        "a2": { "type": "after_item", "settings": { "text": "Clear focus" } },
+        "a3": { "type": "after_item", "settings": { "text": "Stronger performance" } },
+        "a4": { "type": "after_item", "settings": { "text": "Better recovery" } },
+        "a5": { "type": "after_item", "settings": { "text": "High drive" } },
+        "a6": { "type": "after_item", "settings": { "text": "Living with purpose" } }
+      },
+      "block_order": ["b1", "b2", "b3", "b4", "b5", "b6", "a1", "a2", "a3", "a4", "a5", "a6"]
+    },
+    "product-benefits": {
+      "type": "product-benefits",
+      "settings": {
+        "heading": "THE FUTURE OF MALE PERFORMANCE",
+        "subtext": "Test Boost Gummies are expertly formulated with premium ingredients to support healthy testosterone levels, energy, muscle strength, drive, and overall vitality—naturally."
+      },
+      "blocks": {
+        "badge-1": { "type": "badge", "settings": { "text": "Clinically Studied Ingredients" } },
+        "badge-2": { "type": "badge", "settings": { "text": "Third-Party Tested" } },
+        "badge-3": { "type": "badge", "settings": { "text": "Premium Formula" } },
+        "badge-4": { "type": "badge", "settings": { "text": "Delicious Mixed Berry" } },
+        "benefit-1": { "type": "benefit", "settings": { "title": "Supports Testosterone", "description": "Key ingredients like Tongkat Ali and KSM-66 Ashwagandha shown to support healthy testosterone levels in clinical studies.", "icon": "testosterone" } },
+        "benefit-2": { "type": "benefit", "settings": { "title": "Supports Energy & Drive", "description": "B-vitamins, Zinc, and adaptogenic herbs work together to fuel sustained energy without the crash.", "icon": "energy" } },
+        "benefit-3": { "type": "benefit", "settings": { "title": "Supports Strength", "description": "Vitamin D3 and Boron support muscle function, bone density, and overall physical performance.", "icon": "strength" } },
+        "benefit-4": { "type": "benefit", "settings": { "title": "Supports Vitality", "description": "A comprehensive formula designed to support the pillars of male health and daily vitality.", "icon": "vitality" } }
+      },
+      "block_order": ["badge-1", "badge-2", "badge-3", "badge-4", "benefit-1", "benefit-2", "benefit-3", "benefit-4"]
+    },
+    "social-proof": {
+      "type": "social-proof",
+      "settings": {
+        "heading": "JOIN 50,000+ MEN TAKING BACK THEIR EDGE"
+      },
+      "blocks": {
+        "stat-1": { "type": "stat", "settings": { "value": "50,000+", "label": "Happy Customers", "icon": "users" } },
+        "stat-2": { "type": "stat", "settings": { "value": "4.8/5", "label": "Average Rating", "icon": "star" } },
+        "stat-3": { "type": "stat", "settings": { "value": "98%", "label": "Would Recommend", "icon": "thumb" } },
+        "stat-4": { "type": "stat", "settings": { "value": "USA", "label": "Made in the USA", "icon": "flag" } },
+        "stat-5": { "type": "stat", "settings": { "value": "0", "label": "Proprietary Blends", "icon": "shield" } },
+        "stat-6": { "type": "stat", "settings": { "value": "60 DAY", "label": "Guarantee", "icon": "calendar" } }
+      },
+      "block_order": ["stat-1", "stat-2", "stat-3", "stat-4", "stat-5", "stat-6"]
+    },
+    "features": {
+      "type": "features",
+      "blocks": {
+        "feat-1": { "type": "feature", "settings": { "title": "Daily Ritual", "description": "Just 2 gummies a day to support your best performance.", "icon": "ritual" } },
+        "feat-2": { "type": "feature", "settings": { "title": "Delicious Taste", "description": "Amazing mixed berry flavor that makes you look forward to it.", "icon": "taste" } },
+        "feat-3": { "type": "feature", "settings": { "title": "No Crash", "description": "Clean, sustained support without stimulants or crashes.", "icon": "nocrash" } },
+        "feat-4": { "type": "feature", "settings": { "title": "Backed by Science", "description": "Formulated with research and real results in mind.", "icon": "science" } }
+      },
+      "block_order": ["feat-1", "feat-2", "feat-3", "feat-4"]
+    }
+  },
+  "order": [
+    "hero",
+    "stats-gauges",
+    "ingredients",
+    "decline",
+    "problems",
+    "before-after",
+    "product-benefits",
+    "social-proof",
+    "features"
+  ]
+}

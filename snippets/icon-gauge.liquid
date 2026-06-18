@@ -1,0 +1,30 @@
+{% comment %}
+  Renders a circular SVG gauge with value display.
+  Usage: {% render 'icon-gauge', value: 92, size: 100, label: 'Energy', id: 'energy' %}
+{% endcomment %}
+
+{% assign gauge_size = size | default: 100 %}
+{% assign gauge_value = value | default: 0 %}
+{% assign radius = 38 %}
+{% assign circumference = 239 %}
+{% assign dash = gauge_value | times: circumference | divided_by: 100 %}
+
+<div class="stat-gauge" style="width: {{ gauge_size }}px; height: {{ gauge_size }}px;" data-gauge-value="{{ gauge_value }}">
+  <svg viewBox="0 0 100 100">
+    <defs>
+      <linearGradient id="gaugeGrad-{{ id }}" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#4d7cfe"/>
+        <stop offset="50%" stop-color="#7c3aed"/>
+        <stop offset="100%" stop-color="#22c55e"/>
+      </linearGradient>
+    </defs>
+    <circle cx="50" cy="50" r="{{ radius }}" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="4"/>
+    <circle class="stat-gauge-fill" cx="50" cy="50" r="{{ radius }}" fill="none"
+            stroke="url(#gaugeGrad-{{ id }})" stroke-width="4" stroke-linecap="round"
+            data-target="{{ dash }}"/>
+  </svg>
+  <div class="stat-gauge-inner">
+    <span class="stat-gauge-value">{{ gauge_value }}</span>
+    <span class="stat-gauge-sub">OPTIMAL</span>
+  </div>
+</div>

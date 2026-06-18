@@ -1,0 +1,16 @@
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "col-1": { "type": "link_column", "settings": { "heading": "Shop" } },
+        "col-2": { "type": "link_column", "settings": { "heading": "Company" } },
+        "col-3": { "type": "link_column", "settings": { "heading": "Support" } }
+      },
+      "block_order": ["col-1", "col-2", "col-3"]
+    }
+  },
+  "order": ["footer"]
+}

@@ -1,0 +1,36 @@
+<section class="collection-section section-padding" data-section-id="{{ section.id }}">
+  <div class="container">
+    <div class="collection-header">
+      <h1 class="section-heading">{{ collection.title }}</h1>
+      {% if collection.description != blank %}
+        <p class="section-subtext">{{ collection.description }}</p>
+      {% endif %}
+    </div>
+
+    {% if collection.products.size > 0 %}
+      <div class="collection-grid">
+        {% for product in collection.products %}
+          {% render 'product-card', product: product %}
+        {% endfor %}
+      </div>
+
+      {% if paginate.pages > 1 %}
+        <div class="text-center" style="margin-top: 48px;">
+          {{ paginate | default_pagination }}
+        </div>
+      {% endif %}
+    {% else %}
+      <div class="cart-empty">
+        <p>{{ 'collections.general.no_matches' | t }}</p>
+        <a href="/collections" class="btn btn-primary">{{ 'collections.general.browse' | t }}</a>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Collection page",
+  "settings": []
+}
+{% endschema %}

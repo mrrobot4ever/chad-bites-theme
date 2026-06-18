@@ -1,0 +1,38 @@
+{% comment %}
+  Renders a product card.
+
+  Usage:
+    {% render 'product-card', product: product %}
+{% endcomment %}
+
+<div class="product-card">
+  <a href="{{ product.url }}" class="product-card-image">
+    {% if product.featured_image != blank %}
+      <img src="{{ product.featured_image | image_url: width: 600 }}"
+           alt="{{ product.featured_image.alt | escape }}"
+           width="600"
+           height="600"
+           loading="lazy">
+    {% else %}
+      {{ 'product-1' | placeholder_svg_tag }}
+    {% endif %}
+
+    {% if product.compare_at_price > product.price %}
+      <span class="product-card-badge">Sale</span>
+    {% elsif product.available == false %}
+      <span class="product-card-badge" style="background: var(--color-danger);">Sold Out</span>
+    {% endif %}
+  </a>
+
+  <div class="product-card-body">
+    <h3 class="product-card-title">
+      <a href="{{ product.url }}">{{ product.title }}</a>
+    </h3>
+    <div class="product-card-price">
+      {{ product.price | money }}
+      {% if product.compare_at_price > product.price %}
+        <span class="compare">{{ product.compare_at_price | money }}</span>
+      {% endif %}
+    </div>
+  </div>
+</div>

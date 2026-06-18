@@ -1,0 +1,19 @@
+{
+  "current": {
+    "color_background": "#0a0b14",
+    "color_card_background": "#12131f",
+    "color_text": "#ffffff",
+    "color_text_muted": "#8a8fa8",
+    "color_accent": "#4d7cfe",
+    "color_accent_secondary": "#7c3aed",
+    "color_success": "#22c55e",
+    "color_danger": "#ef4444",
+    "logo_width": 160,
+    "cart_type": "drawer",
+    "social_twitter": "https://x.com/chadbites",
+    "social_instagram": "https://instagram.com/chadbites",
+    "social_facebook": "",
+    "social_tiktok": "https://tiktok.com/@chadbites",
+    "social_youtube": ""
+  }
+}

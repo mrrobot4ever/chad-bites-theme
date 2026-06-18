@@ -1,0 +1,154 @@
+<section class="stats-section section-padding" data-section-id="{{ section.id }}">
+  <div class="container">
+    <div class="stats-header">
+      <h2 class="section-heading text-center">{{ section.settings.heading }}</h2>
+    </div>
+
+    <div class="stats-scroll">
+      {% for block in section.blocks %}
+        {% if block.type == 'gauge' %}
+          <div class="stat-card glass-card" {{ block.shopify_attributes }}>
+            <div class="stat-card-top">
+              <span class="stat-card-icon stat-card-icon--{{ block.settings.title | downcase }}">
+                {% case block.settings.title %}
+                  {% when 'Energy' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                  {% when 'Drive' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 23c-1.1 0-1.99-.89-1.99-1.99h3.98c0 1.1-.89 1.99-1.99 1.99zm8-3H4V18l2-1v-5.5c0-3.07 2.13-5.64 5-6.32V4.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v.68c2.87.68 5 3.25 5 6.32V17l2 1v2z"/></svg>
+                  {% when 'Recovery' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+                  {% when 'Focus' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/></svg>
+                  {% when 'Strength' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/></svg>
+                  {% when 'Confidence' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                  {% else %}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                {% endcase %}
+              </span>
+              <span class="stat-card-title">{{ block.settings.title }}</span>
+            </div>
+
+            <div class="stat-card-gauge-row">
+              {% render 'icon-gauge',
+                value: block.settings.value,
+                size: 90,
+                label: block.settings.title,
+                id: block.id
+              %}
+              <span class="stat-card-max">/100</span>
+            </div>
+
+            <div class="stat-card-bottom">
+              <span class="stat-card-status">{{ block.settings.status }}</span>
+              <div class="stat-trend">
+                <svg viewBox="0 0 50 16">
+                  <polyline points="0,14 8,10 16,12 24,6 32,8 40,3 50,1"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    {% if section.settings.subtext != blank %}
+      <p class="stats-tagline">{{ section.settings.subtext }}</p>
+    {% endif %}
+  </div>
+
+  <svg width="0" height="0" style="position: absolute;">
+    <defs>
+      <linearGradient id="gaugeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="var(--color-accent)"/>
+        <stop offset="100%" stop-color="var(--color-accent-secondary)"/>
+      </linearGradient>
+    </defs>
+  </svg>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var fills = entry.target.querySelectorAll('.stat-gauge-fill[data-target]');
+          fills.forEach(function(fill, i) {
+            setTimeout(function() {
+              var target = fill.getAttribute('data-target');
+              fill.style.strokeDasharray = target + ', 239';
+            }, i * 120);
+          });
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    document.querySelectorAll('.stats-scroll').forEach(function(el) {
+      observer.observe(el);
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Stats Gauges",
+  "class": "stats-section-wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "TRACK WHAT MATTERS"
+    },
+    {
+      "type": "textarea",
+      "id": "subtext",
+      "label": "Tagline",
+      "default": "Your body. Your data. Your edge."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "gauge",
+      "name": "Gauge",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Energy"
+        },
+        {
+          "type": "range",
+          "id": "value",
+          "label": "Value (0-100)",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "default": 90
+        },
+        {
+          "type": "text",
+          "id": "status",
+          "label": "Status label",
+          "default": "OPTIMAL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Stats Gauges",
+      "blocks": [
+        { "type": "gauge", "settings": { "title": "Energy", "value": 92, "status": "OPTIMAL" } },
+        { "type": "gauge", "settings": { "title": "Drive", "value": 94, "status": "OPTIMAL" } },
+        { "type": "gauge", "settings": { "title": "Recovery", "value": 91, "status": "OPTIMAL" } },
+        { "type": "gauge", "settings": { "title": "Focus", "value": 90, "status": "OPTIMAL" } },
+        { "type": "gauge", "settings": { "title": "Strength", "value": 93, "status": "OPTIMAL" } },
+        { "type": "gauge", "settings": { "title": "Confidence", "value": 92, "status": "OPTIMAL" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

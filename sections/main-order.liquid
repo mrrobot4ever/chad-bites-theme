@@ -1,0 +1,51 @@
+<section class="customer-section section-padding">
+  <div class="container">
+    <div class="page-content" style="max-width: 800px;">
+      <p style="margin-bottom: 8px;"><a href="/account" style="font-size: 0.85rem; color: var(--color-text-muted);">&larr; {{ 'customer.account.return' | t }}</a></p>
+      <h1>{{ 'customer.order.title' | t: name: order.name }}</h1>
+
+      <p style="color: var(--color-text-muted); margin-bottom: 32px;">
+        {{ 'customer.order.date_html' | t: date: order.created_at | date: '%B %d, %Y' }}
+      </p>
+
+      {% for line_item in order.line_items %}
+        <div class="cart-item" style="border-bottom: 1px solid rgba(255,255,255,0.05); padding: 16px 0;">
+          <div class="cart-item-image" style="width: 70px; height: 70px;">
+            {% if line_item.image %}
+              <img src="{{ line_item.image | image_url: width: 140 }}" alt="{{ line_item.title | escape }}" loading="lazy">
+            {% endif %}
+          </div>
+          <div>
+            <div class="cart-item-title">{{ line_item.title }}</div>
+            <div class="cart-item-variant" style="font-size: 0.82rem; color: var(--color-text-muted);">Qty: {{ line_item.quantity }}</div>
+          </div>
+          <div class="cart-item-price">{{ line_item.final_line_price | money }}</div>
+        </div>
+      {% endfor %}
+
+      <div style="margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.06); text-align: right;">
+        <div style="display: flex; justify-content: flex-end; gap: 24px; margin-bottom: 8px;">
+          <span style="color: var(--color-text-muted);">Subtotal</span>
+          <span style="font-weight: 600;">{{ order.line_items_subtotal_price | money }}</span>
+        </div>
+        {% for shipping_method in order.shipping_methods %}
+          <div style="display: flex; justify-content: flex-end; gap: 24px; margin-bottom: 8px;">
+            <span style="color: var(--color-text-muted);">{{ shipping_method.title }}</span>
+            <span style="font-weight: 600;">{{ shipping_method.price | money }}</span>
+          </div>
+        {% endfor %}
+        <div style="display: flex; justify-content: flex-end; gap: 24px; margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.06);">
+          <span style="font-family: var(--font-heading); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;">Total</span>
+          <span style="font-family: var(--font-heading); font-size: 1.3rem; font-weight: 800;">{{ order.total_price | money }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Customer order",
+  "settings": []
+}
+{% endschema %}

@@ -1,0 +1,54 @@
+<section class="customer-section section-padding">
+  <div class="container">
+    <div class="page-content" style="max-width: 800px;">
+      <h1>{{ 'customer.account.title' | t }}</h1>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px;">
+        <p style="color: var(--color-text-muted);">{{ customer.email }}</p>
+        <a href="/account/logout" class="btn btn-secondary" style="font-size: 0.75rem;">{{ 'customer.account.logout' | t }}</a>
+      </div>
+
+      <h2 style="font-family: var(--font-heading); font-size: 0.9rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 20px;">{{ 'customer.orders.title' | t }}</h2>
+
+      {% if customer.orders.size > 0 %}
+        {% for order in customer.orders %}
+          <div class="glass-card" style="padding: 20px; margin-bottom: 16px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+              <div>
+                <a href="{{ order.customer_url }}" style="font-family: var(--font-heading); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.06em;">{{ order.name }}</a>
+                <p style="font-size: 0.82rem; color: var(--color-text-muted); margin-top: 4px;">{{ order.created_at | date: '%B %d, %Y' }}</p>
+              </div>
+              <div style="text-align: right;">
+                <span style="font-family: var(--font-heading); font-weight: 700;">{{ order.total_price | money }}</span>
+                <p style="font-size: 0.78rem; color: var(--color-text-muted); margin-top: 4px;">{{ order.financial_status_label }}</p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      {% else %}
+        <div class="cart-empty" style="padding: 40px;">
+          <p>{{ 'customer.orders.none' | t }}</p>
+          <a href="/collections" class="btn btn-primary">Start Shopping</a>
+        </div>
+      {% endif %}
+
+      <h2 style="font-family: var(--font-heading); font-size: 0.9rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-top: 48px; margin-bottom: 20px;">{{ 'customer.account.details' | t }}</h2>
+
+      {% if customer.default_address %}
+        <div class="glass-card" style="padding: 20px;">
+          <p style="color: var(--color-text-muted); line-height: 1.8;">
+            {{ customer.default_address | format_address }}
+          </p>
+          <a href="/account/addresses" style="display: inline-block; margin-top: 12px; font-size: 0.85rem; font-weight: 600;">Manage Addresses</a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Customer account",
+  "settings": []
+}
+{% endschema %}

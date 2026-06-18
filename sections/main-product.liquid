@@ -1,0 +1,168 @@
+<section class="product-section section-padding" data-section-id="{{ section.id }}">
+  <div class="container">
+    {% assign current_variant = product.selected_or_first_available_variant %}
+
+    <div class="product-layout">
+      <div class="product-gallery">
+        {% if product.featured_image != blank %}
+          <img id="ProductImage-{{ section.id }}"
+               src="{{ product.featured_image | image_url: width: 1000 }}"
+               alt="{{ product.featured_image.alt | escape }}"
+               loading="eager">
+        {% else %}
+          {{ 'product-1' | placeholder_svg_tag }}
+        {% endif %}
+      </div>
+
+      <div class="product-info">
+        <h1 class="product-title">{{ product.title }}</h1>
+
+        <div class="product-price" id="ProductPrice-{{ section.id }}">
+          <span id="ProductPriceValue-{{ section.id }}">{{ current_variant.price | money }}</span>
+          {% if current_variant.compare_at_price > current_variant.price %}
+            <span class="compare-price" id="ProductComparePrice-{{ section.id }}">{{ current_variant.compare_at_price | money }}</span>
+          {% endif %}
+        </div>
+
+        {% if product.description != blank %}
+          <div class="product-description">{{ product.description }}</div>
+        {% endif %}
+
+        {% form 'product', product %}
+          {% if product.has_only_default_variant == false %}
+            {% for option in product.options_with_values %}
+              <div class="product-form-group">
+                <label>{{ option.name }}</label>
+                <div class="variant-selector">
+                  {% for value in option.values %}
+                    <button type="button"
+                            class="variant-option{% if option.selected_value == value %} selected{% endif %}"
+                            data-option-index="{{ forloop.parentloop.index0 }}"
+                            data-value="{{ value | escape }}">
+                      {{ value }}
+                    </button>
+                  {% endfor %}
+                </div>
+              </div>
+            {% endfor %}
+          {% endif %}
+
+          <div class="product-form-group">
+            <label>{{ 'products.product.quantity' | t }}</label>
+            <div class="quantity-selector">
+              <button type="button" class="quantity-btn" onclick="var i=this.parentNode.querySelector('input');i.value=Math.max(1,parseInt(i.value)-1);">−</button>
+              <input type="number" name="quantity" value="1" min="1" class="quantity-input" aria-label="Quantity">
+              <button type="button" class="quantity-btn" onclick="var i=this.parentNode.querySelector('input');i.value=parseInt(i.value)+1;">+</button>
+            </div>
+          </div>
+
+          <select name="id" id="ProductSelect-{{ section.id }}" style="display: none;">
+            {% for variant in product.variants %}
+              <option value="{{ variant.id }}"
+                      {% if variant == current_variant %}selected{% endif %}
+                      {% unless variant.available %}disabled{% endunless %}
+                      data-price="{{ variant.price | money }}"
+                      data-compare-price="{{ variant.compare_at_price | money }}">
+                {{ variant.title }} — {{ variant.price | money }}
+              </option>
+            {% endfor %}
+          </select>
+
+          <button type="submit" name="add"
+                  class="btn btn-primary btn-lg add-to-cart-btn"
+                  {% unless current_variant.available %}disabled{% endunless %}>
+            {% if current_variant.available %}
+              {{ 'products.product.add_to_cart' | t }}
+            {% else %}
+              {{ 'products.product.sold_out' | t }}
+            {% endif %}
+          </button>
+        {% endform %}
+
+        <div class="product-meta">
+          <div class="product-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
+            {{ section.settings.meta_shipping }}
+          </div>
+          <div class="product-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            {{ section.settings.meta_guarantee }}
+          </div>
+          <div class="product-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            {{ section.settings.meta_tested }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function() {
+    var section = document.querySelector('[data-section-id="{{ section.id }}"]');
+    if (!section) return;
+
+    var variantButtons = section.querySelectorAll('.variant-option');
+    var select = section.querySelector('#ProductSelect-{{ section.id }}');
+    var product = {{ product | json }};
+
+    variantButtons.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var group = btn.parentNode;
+        group.querySelectorAll('.variant-option').forEach(function(b) { b.classList.remove('selected'); });
+        btn.classList.add('selected');
+
+        var selectedOptions = [];
+        section.querySelectorAll('.variant-selector').forEach(function(selector) {
+          var selected = selector.querySelector('.variant-option.selected');
+          if (selected) selectedOptions.push(selected.getAttribute('data-value'));
+        });
+
+        var variantTitle = selectedOptions.join(' / ');
+        for (var i = 0; i < product.variants.length; i++) {
+          if (product.variants[i].title === variantTitle) {
+            select.value = product.variants[i].id;
+            var priceEl = section.querySelector('#ProductPriceValue-{{ section.id }}');
+            if (priceEl) priceEl.textContent = Shopify.formatMoney ? Shopify.formatMoney(product.variants[i].price) : '$' + (product.variants[i].price / 100).toFixed(2);
+            var addBtn = section.querySelector('.add-to-cart-btn');
+            if (product.variants[i].available) {
+              addBtn.disabled = false;
+              addBtn.textContent = '{{ "products.product.add_to_cart" | t }}';
+            } else {
+              addBtn.disabled = true;
+              addBtn.textContent = '{{ "products.product.sold_out" | t }}';
+            }
+            break;
+          }
+        }
+      });
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Product page",
+  "settings": [
+    {
+      "type": "text",
+      "id": "meta_shipping",
+      "label": "Shipping meta text",
+      "default": "Free shipping on orders $50+"
+    },
+    {
+      "type": "text",
+      "id": "meta_guarantee",
+      "label": "Guarantee meta text",
+      "default": "60-day money back guarantee"
+    },
+    {
+      "type": "text",
+      "id": "meta_tested",
+      "label": "Testing meta text",
+      "default": "Third-party tested"
+    }
+  ]
+}
+{% endschema %}

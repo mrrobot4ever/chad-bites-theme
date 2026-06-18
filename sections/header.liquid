@@ -1,0 +1,107 @@
+<header class="site-header" data-section-id="{{ section.id }}">
+  <div class="header-inner">
+    <button class="hamburger" aria-label="Menu" aria-expanded="false" onclick="document.querySelector('.mobile-menu').classList.toggle('is-open'); this.classList.toggle('is-open'); this.closest('.site-header').classList.toggle('menu-open'); this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <a href="/" class="header-logo">
+      {% if settings.logo != blank %}
+        <img src="{{ settings.logo | image_url: width: settings.logo_width }}"
+             alt="{{ shop.name }}"
+             width="{{ settings.logo_width }}"
+             height="{{ settings.logo_width | divided_by: 2 }}"
+             loading="eager">
+      {% else %}
+        <span class="header-logo-text">chad<span>bites</span></span>
+      {% endif %}
+    </a>
+
+    <a href="/cart" class="header-cart-btn" aria-label="Cart" {% if settings.cart_type == 'drawer' %}onclick="event.preventDefault(); document.getElementById('cart-drawer-overlay').classList.add('is-open'); document.getElementById('cart-drawer').classList.add('is-open'); document.body.style.overflow='hidden';"{% endif %}>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+      </svg>
+      <span class="header-cart-count">{{ cart.item_count }}</span>
+    </a>
+  </div>
+
+  <nav class="mobile-menu" aria-label="Mobile navigation">
+    <div class="mobile-menu-inner">
+
+      <p class="menu-tagline"><span class="menu-tagline-accent">Get Your Edge Back,</span> Naturally</p>
+
+      <div class="menu-body">
+        <div class="menu-products">
+          <a href="#" class="menu-product-card">
+            <div class="menu-product-img">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+            </div>
+            <div class="menu-product-text">
+              <span class="menu-product-name">Test Max Gummies</span>
+              <span class="menu-product-sub">Testosterone Support</span>
+            </div>
+          </a>
+          <a href="#" class="menu-product-card">
+            <div class="menu-product-img">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+            </div>
+            <div class="menu-product-text">
+              <span class="menu-product-name">Pump Max Gummies</span>
+              <span class="menu-product-sub">Blood Flow & Performance</span>
+            </div>
+          </a>
+          <a href="#" class="menu-product-card">
+            <div class="menu-product-img">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+            </div>
+            <div class="menu-product-text">
+              <span class="menu-product-name">Prosti Max Gummies</span>
+              <span class="menu-product-sub">Prostate Health</span>
+            </div>
+          </a>
+          <a href="#" class="menu-product-card">
+            <div class="menu-product-img">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+            </div>
+            <div class="menu-product-text">
+              <span class="menu-product-name">Brain Max Gummies</span>
+              <span class="menu-product-sub">Focus & Cognitive Support</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="menu-links">
+          <a href="#" class="menu-link">Our Story</a>
+          <a href="#" class="menu-link">Reviews</a>
+          <a href="#" class="menu-link">FAQ</a>
+          <a href="#" class="menu-link">Contact</a>
+          <a href="#" class="menu-link">Manage Subscription</a>
+          <a href="#" class="menu-link">Affiliates</a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+{% schema %}
+{
+  "name": "Header",
+  "class": "header-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "logo_text_1",
+      "label": "Logo text (part 1)",
+      "default": "chad"
+    },
+    {
+      "type": "text",
+      "id": "logo_text_2",
+      "label": "Logo text (part 2 - accent)",
+      "default": "bites"
+    }
+  ]
+}
+{% endschema %}
