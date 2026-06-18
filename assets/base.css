@@ -1139,9 +1139,13 @@ ul, ol { list-style: none; }
 .riskfree-text-col {
   flex: 1;
   max-width: 600px;
+  order: 2;
 }
 @media (max-width: 767px) {
-  .riskfree-text-col { text-align: center; }
+  .riskfree-text-col { text-align: center; order: 2; }
+}
+@media (min-width: 768px) {
+  .riskfree-text-col { order: 1; }
 }
 
 .riskfree-heading {
@@ -1153,6 +1157,18 @@ ul, ol { list-style: none; }
   line-height: 1.08;
   color: #ffffff;
   margin-bottom: 20px;
+}
+.riskfree-heading-accent {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--color-accent);
+  margin-top: 12px;
+}
+@media (min-width: 768px) {
+  .riskfree-heading-accent { font-size: 1.3rem; }
 }
 
 .riskfree-body {
@@ -1177,25 +1193,27 @@ ul, ol { list-style: none; }
   flex-shrink: 0;
   display: flex;
   justify-content: center;
+  order: 1;
 }
 @media (min-width: 768px) {
-  .riskfree-badge-col { justify-content: flex-end; }
+  .riskfree-badge-col { justify-content: flex-end; order: 2; }
 }
 
 .riskfree-badge {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2px;
+  gap: 4px;
   text-align: center;
+  padding: 12px;
 }
 @media (min-width: 768px) {
-  .riskfree-badge { width: 140px; height: 140px; }
+  .riskfree-badge { width: 175px; height: 175px; }
 }
 
 .riskfree-badge-icon {
@@ -1205,27 +1223,33 @@ ul, ol { list-style: none; }
 
 .riskfree-badge-top {
   font-family: var(--font-heading);
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 900;
   letter-spacing: 0.08em;
   color: #ffffff;
 }
+@media (min-width: 768px) {
+  .riskfree-badge-top { font-size: 1.1rem; }
+}
 
 .riskfree-badge-bottom {
   font-family: var(--font-heading);
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   color: rgba(255, 255, 255, 0.8);
+}
+@media (min-width: 768px) {
+  .riskfree-badge-bottom { font-size: 0.8rem; }
 }
 
 .riskfree-badge-img {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   object-fit: contain;
 }
 @media (min-width: 768px) {
-  .riskfree-badge-img { width: 140px; height: 140px; }
+  .riskfree-badge-img { width: 175px; height: 175px; }
 }
 
 /* ============================================

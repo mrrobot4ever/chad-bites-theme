@@ -11,7 +11,7 @@
   <div class="riskfree-inner">
     <div class="riskfree-content">
       <div class="riskfree-text-col">
-        <h2 class="riskfree-heading">{{ section.settings.heading | default: "ZERO RISK. ALL REWARD." }}</h2>
+        <h2 class="riskfree-heading">{{ section.settings.heading_line1 | default: "ZERO RISK." }}<br><span class="riskfree-heading-accent">{{ section.settings.heading_line2 | default: "ALL REWARD." }}</span></h2>
         <p class="riskfree-body">{{ section.settings.body_text | default: "Try Chad Bites for 365 days. If you don't feel your edge return—if you don't see real, measurable changes in your energy, drive, physique, and confidence—we refund your last order. No questions asked. No hoops to jump through." }}</p>
         <a href="{{ section.settings.cta_url | default: '#' }}" class="btn btn-primary btn-lg riskfree-cta">
           {{ section.settings.cta_text | default: "GET 1 BOTTLE FREE" }}
@@ -41,9 +41,15 @@
   "settings": [
     {
       "type": "text",
-      "id": "heading",
-      "label": "Heading",
-      "default": "ZERO RISK. ALL REWARD."
+      "id": "heading_line1",
+      "label": "Heading line 1",
+      "default": "ZERO RISK."
+    },
+    {
+      "type": "text",
+      "id": "heading_line2",
+      "label": "Heading line 2 (accent)",
+      "default": "ALL REWARD."
     },
     {
       "type": "textarea",
