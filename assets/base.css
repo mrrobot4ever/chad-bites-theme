@@ -668,6 +668,7 @@ ul, ol { list-style: none; }
   letter-spacing: 0.12em;
   color: var(--color-accent);
   margin-top: 12px;
+  padding-bottom: 15px;
 }
 @media (min-width: 768px) {
   .decline-heading-accent { font-size: 1.3rem; }
