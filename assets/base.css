@@ -736,12 +736,7 @@ ul, ol { list-style: none; }
 }
 .decline-para:last-child { margin-bottom: 0; }
 
-.decline-highlight {
-  color: var(--color-accent);
-  font-weight: 700;
-}
-
-.decline-good-news {
+.decline-para strong {
   color: var(--color-accent);
   font-weight: 700;
 }
