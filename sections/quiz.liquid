@@ -1,0 +1,1011 @@
+<section class="quiz-section" id="quiz-section">
+  <div class="quiz-progress-bar">
+    <div class="quiz-progress-fill" id="quizProgressFill"></div>
+  </div>
+  <div class="quiz-progress-text" id="quizProgressText">1 / 16</div>
+
+  <div class="quiz-container">
+
+    <!-- STEP 1: Intro/Warning -->
+    <div class="quiz-step quiz-step--active" data-step="1">
+      <h2 class="quiz-heading">{{ section.settings.heading_step1 | default: "WARNING: THIS IS NOT ANOTHER SCAM TEST BOOSTER" }}</h2>
+      <div class="quiz-circle-image">
+        {% if section.settings.step1_image != blank %}
+          <img src="{{ section.settings.step1_image | image_url: width: 400 }}" alt="">
+        {% endif %}
+      </div>
+      <p class="quiz-body">{{ section.settings.body_step1 | default: "Before we give you access to the most potent testosterone stack on earth - used by A list actors and professional athletes. We need to ask you some questions. You must be over 18 to continue." }}</p>
+      <button class="quiz-btn quiz-btn--cta" onclick="quizNext(2)">Agree and Continue</button>
+    </div>
+
+    <!-- STEP 2: Age -->
+    <div class="quiz-step" data-step="2">
+      <h2 class="quiz-heading">How old are you?</h2>
+      <p class="quiz-subtext">This 2-minute assessment analyzes your exact symptoms, lifestyle, and risk factor in order to see if Chad Bites will work for you.</p>
+      <div class="quiz-options">
+        <button class="quiz-option" onclick="quizAnswer(2,'age','50+',4)">50+ Years Old</button>
+        <button class="quiz-option" onclick="quizAnswer(2,'age','40-49',3)">40-49 Years Old</button>
+        <button class="quiz-option" onclick="quizAnswer(2,'age','30-39',2)">30-39 Years Old</button>
+        <button class="quiz-option" onclick="quizAnswer(2,'age','20-29',1)">20-29 Years Old</button>
+      </div>
+    </div>
+
+    <!-- STEP 3: Biggest concern -->
+    <div class="quiz-step" data-step="3">
+      <h2 class="quiz-heading">What's your biggest concern about your masculine health right now?</h2>
+      <div class="quiz-options">
+        <button class="quiz-option" onclick="quizAnswer(3,'concern','energy',0)">Energy levels</button>
+        <button class="quiz-option" onclick="quizAnswer(3,'concern','muscle',0)">Muscle mass and strength</button>
+        <button class="quiz-option" onclick="quizAnswer(3,'concern','sex',0)">Sex drive and performance</button>
+        <button class="quiz-option" onclick="quizAnswer(3,'concern','focus',0)">Mental focus and clarity</button>
+        <button class="quiz-option" onclick="quizAnswer(3,'concern','weight',0)">Weight loss</button>
+      </div>
+    </div>
+
+    <!-- STEP 4: Stress -->
+    <div class="quiz-step" data-step="4">
+      <h2 class="quiz-heading">Do you have stress symptoms during the day? Like feeling tired, cranky, foggy, or moody.</h2>
+      <div class="quiz-options">
+        <button class="quiz-option" onclick="quizAnswer(4,'stress','yes',2)">Yes</button>
+        <button class="quiz-option" onclick="quizAnswer(4,'stress','no',0)">No</button>
+      </div>
+    </div>
+
+    <!-- STEP 5: Energy at 3PM -->
+    <div class="quiz-step" data-step="5">
+      <h2 class="quiz-heading">HOW'S YOUR ENERGY AT 3PM COMPARED TO WHEN YOU WAKE UP?</h2>
+      <div class="quiz-options">
+        <button class="quiz-option" onclick="quizAnswer(5,'energy','drained',3)">Completely drained. I need caffeine or a nap</button>
+        <button class="quiz-option" onclick="quizAnswer(5,'energy','lower',2)">Noticeably lower - afternoon slump hits hard</button>
+        <button class="quiz-option" onclick="quizAnswer(5,'energy','slightly',1)">Slightly tired - still functional but slower</button>
+        <button class="quiz-option" onclick="quizAnswer(5,'energy','same',0)">Same energy - no afternoon crash</button>
+      </div>
+    </div>
+
+    <!-- STEP 6: When changes noticed -->
+    <div class="quiz-step" data-step="6">
+      <h2 class="quiz-heading">WHEN DID YOU START NOTICING CHANGES TO YOUR ENERGY AND DRIVE?</h2>
+      <div class="quiz-options">
+        <button class="quiz-option" onclick="quizAnswer(6,'when','over_year',3)">Over a year ago</button>
+        <button class="quiz-option" onclick="quizAnswer(6,'when','past_year',2)">In the past year</button>
+        <button class="quiz-option" onclick="quizAnswer(6,'when','few_months',1)">In the past few months</button>
+        <button class="quiz-option" onclick="quizAnswer(6,'when','not_sure',1)">Not sure</button>
+      </div>
+    </div>
+
+    <!-- STEP 7: Expected results -->
+    <div class="quiz-step" data-step="7">
+      <h2 class="quiz-heading">WHAT RESULTS ARE YOU EXPECTING FROM INCREASED TESTOSTERONE?</h2>
+      <div class="quiz-options">
+        <button class="quiz-option" onclick="quizAnswer(7,'expected','energy',0)">Higher energy that lasts all day</button>
+        <button class="quiz-option" onclick="quizAnswer(7,'expected','muscle',0)">Increased muscle mass and strength</button>
+        <button class="quiz-option" onclick="quizAnswer(7,'expected','sex',0)">Better sex drive and performance</button>
+        <button class="quiz-option" onclick="quizAnswer(7,'expected','focus',0)">Improved mental clarity and focus</button>
+        <button class="quiz-option" onclick="quizAnswer(7,'expected','all',0)">All of the above</button>
+      </div>
+    </div>
+
+    <!-- STEP 8: Congratulations -->
+    <div class="quiz-step" data-step="8">
+      <h2 class="quiz-heading">{{ section.settings.heading_step8 | default: "CONGRATULATIONS. YOU ARE IN THE RIGHT PLACE." }}</h2>
+      <p class="quiz-body">{{ section.settings.body_step8 | default: "Over 29,576 men have reclaimed their T, drive, and physique thanks to our new scientific, natural T-revival system used by pro athletes and now made available to you." }}</p>
+      <div class="quiz-square-image">
+        {% if section.settings.step8_image != blank %}
+          <img src="{{ section.settings.step8_image | image_url: width: 600 }}" alt="">
+        {% endif %}
+      </div>
+      <button class="quiz-btn quiz-btn--cta" onclick="quizNext(9)">Continue</button>
+    </div>
+
+    <!-- STEP 9: Body composition -->
+    <div class="quiz-step" data-step="9">
+      <h2 class="quiz-heading">HOW WOULD YOU DESCRIBE YOUR CURRENT BODY COMPOSITION?</h2>
+      <div class="quiz-options">
+        <button class="quiz-option" onclick="quizAnswer(9,'body','lean',0)">Lean and muscular</button>
+        <button class="quiz-option" onclick="quizAnswer(9,'body','average',1)">Average build</button>
+        <button class="quiz-option" onclick="quizAnswer(9,'body','soft',2)">Soft with some muscle</button>
+        <button class="quiz-option" onclick="quizAnswer(9,'body','overweight',3)">Overweight / out of shape</button>
+      </div>
+    </div>
+
+    <!-- STEP 10: Sleep -->
+    <div class="quiz-step" data-step="10">
+      <h2 class="quiz-heading">HOW MANY HOURS OF QUALITY SLEEP DO YOU GET PER NIGHT?</h2>
+      <div class="quiz-options">
+        <button class="quiz-option" onclick="quizAnswer(10,'sleep','less5',3)">Less than 5 hours</button>
+        <button class="quiz-option" onclick="quizAnswer(10,'sleep','5to6',2)">5–6 hours</button>
+        <button class="quiz-option" onclick="quizAnswer(10,'sleep','7to8',1)">7–8 hours</button>
+        <button class="quiz-option" onclick="quizAnswer(10,'sleep','more8',0)">More than 8 hours</button>
+      </div>
+    </div>
+
+    <!-- STEP 11: Analyzing animation -->
+    <div class="quiz-step" data-step="11">
+      <h2 class="quiz-heading">ANALYZING YOUR HEALTH PROFILE&hellip;</h2>
+      <p class="quiz-subtext">Based on your responses, we're building a comprehensive assessment of your hormonal health and identifying the key factors affecting your energy and vitality.</p>
+      <div class="quiz-analysis-bar-wrap">
+        <div class="quiz-analysis-bar">
+          <div class="quiz-analysis-bar-fill" id="analysisBarFill"></div>
+        </div>
+        <span class="quiz-analysis-label">ANALYZING</span>
+      </div>
+    </div>
+
+    <!-- STEP 12: Family history -->
+    <div class="quiz-step" data-step="12">
+      <h2 class="quiz-heading">DO YOU HAVE A FAMILY HISTORY OF DIABETES, HEART DISEASE, OR METABOLIC ISSUES?</h2>
+      <div class="quiz-info-box">
+        <h4 class="quiz-info-heading">WHY WE ASK</h4>
+        <p class="quiz-info-text">These conditions share similar root causes with low testosterone — insulin resistance, inflammation, and metabolic dysfunction. Family patterns help us identify your risk factors.</p>
+      </div>
+      <div class="quiz-options">
+        <button class="quiz-option" onclick="quizAnswer(12,'family','yes',2)">Yes</button>
+        <button class="quiz-option" onclick="quizAnswer(12,'family','no',0)">No</button>
+        <button class="quiz-option" onclick="quizAnswer(12,'family','not_sure',1)">Not sure</button>
+      </div>
+    </div>
+
+    <!-- STEP 13: Processed foods -->
+    <div class="quiz-step" data-step="13">
+      <h2 class="quiz-heading">HOW OFTEN DO YOU EAT PROCESSED FOODS?</h2>
+      <div class="quiz-info-box">
+        <h4 class="quiz-info-heading">WHY WE ASK</h4>
+        <p class="quiz-info-text">Processed foods contain chemicals and additives that disrupt hormone production. Ultra-processed foods are linked to lower testosterone levels in multiple studies.</p>
+      </div>
+      <div class="quiz-options">
+        <button class="quiz-option" onclick="quizAnswer(13,'diet','daily',3)">Daily - most meals include processed foods</button>
+        <button class="quiz-option" onclick="quizAnswer(13,'diet','several',2)">Several times a week</button>
+        <button class="quiz-option" onclick="quizAnswer(13,'diet','occasionally',1)">Occasionally - mostly whole foods</button>
+        <button class="quiz-option" onclick="quizAnswer(13,'diet','rarely',0)">Rarely - I avoid processed foods</button>
+      </div>
+    </div>
+
+    <!-- STEP 14: Building profile animation -->
+    <div class="quiz-step" data-step="14">
+      <h2 class="quiz-heading">BUILDING YOUR PROFILE&hellip;</h2>
+      <p class="quiz-subtext">Hold tight while we map your answers against the Chad Bites Alpha-Male-revival framework.</p>
+      <div class="quiz-checklist" id="quizChecklist">
+        <div class="quiz-check-item" id="checkItem1">
+          <span class="quiz-check-icon">&#10003;</span>
+          <span>Analyzing your symptoms</span>
+        </div>
+        <div class="quiz-check-item" id="checkItem2">
+          <span class="quiz-check-icon">&#10003;</span>
+          <span>Cross-referencing your lifestyle</span>
+        </div>
+        <div class="quiz-check-item" id="checkItem3">
+          <span class="quiz-check-icon">&#10003;</span>
+          <span>Calibrating your protocol</span>
+        </div>
+        <div class="quiz-check-item" id="checkItem4">
+          <span class="quiz-check-icon">&#10003;</span>
+          <span>Personalizing your result</span>
+        </div>
+      </div>
+      <p class="quiz-ready-text" id="quizReadyText">YOUR PROTOCOL SUMMARY IS ALMOST READY</p>
+    </div>
+
+    <!-- STEP 15: Results -->
+    <div class="quiz-step" data-step="15">
+      <h2 class="quiz-heading">{{ section.settings.heading_step15 | default: "Your Testosterone Assessment:" }}</h2>
+      <div class="quiz-result-label" id="resultDeclineLabel"></div>
+      <p class="quiz-result-desc" id="resultDescription"></p>
+      <div class="quiz-suppression-wrap">
+        <span class="quiz-suppression-label">Level of T Suppression</span>
+        <div class="quiz-suppression-bar">
+          <div class="quiz-suppression-fill" id="resultSuppressionFill"></div>
+        </div>
+      </div>
+      <div class="quiz-stat-grid">
+        <div class="quiz-stat-card">
+          <span class="quiz-stat-title">DECLINE PATTERN</span>
+          <span class="quiz-stat-value" id="statDecline"></span>
+        </div>
+        <div class="quiz-stat-card">
+          <span class="quiz-stat-title">PRIMARY ROOT CAUSE</span>
+          <span class="quiz-stat-value" id="statPrimary"></span>
+        </div>
+        <div class="quiz-stat-card">
+          <span class="quiz-stat-title">SECONDARY ROOT CAUSE</span>
+          <span class="quiz-stat-value" id="statSecondary"></span>
+        </div>
+        <div class="quiz-stat-card">
+          <span class="quiz-stat-title">QUALITY OF LIFE IMPACT</span>
+          <span class="quiz-stat-value" id="statQuality"></span>
+        </div>
+      </div>
+      <button class="quiz-btn quiz-btn--cta" onclick="quizNext(16)">SHOW ME WHAT'S POSSIBLE &rarr;</button>
+    </div>
+
+    <!-- STEP 16: Final projection -->
+    <div class="quiz-step" data-step="16">
+      <h2 class="quiz-heading">{{ section.settings.heading_step16 | default: "THE LAST SOLUTION YOU'LL EVER NEED TO FEEL LIKE A MAN AGAIN." }}</h2>
+      <p class="quiz-subtext" id="step16Subtext">{{ section.settings.subtext_step16 | default: "Based on your answers, we expect you to visibly increase energy, strength and masculine drive by {date}" }}</p>
+      <div class="quiz-chart-card">
+        <div class="quiz-chart-stats">
+          <div class="quiz-chart-stat">
+            <span class="quiz-chart-stat-label">STATUS</span>
+            <span class="quiz-chart-stat-value" id="chartStatus"></span>
+          </div>
+          <div class="quiz-chart-stat">
+            <span class="quiz-chart-stat-label">PROJECTED LIFT</span>
+            <span class="quiz-chart-stat-value" id="chartLift"></span>
+          </div>
+          <div class="quiz-chart-stat">
+            <span class="quiz-chart-stat-label">ETA</span>
+            <span class="quiz-chart-stat-value" id="chartEta"></span>
+          </div>
+        </div>
+        <div class="quiz-chart-svg-wrap" id="quizChartWrap"></div>
+      </div>
+      <a class="quiz-btn quiz-btn--cta" id="quizCtaLink" href="{{ section.settings.cta_url | default: '#' }}">GET MY PROTOCOL &rarr;</a>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .quiz-section {
+    background: #0a0b14;
+    min-height: 100vh;
+    padding: 0 0 60px;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    position: relative;
+  }
+  .quiz-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgba(255,255,255,0.08);
+    z-index: 1000;
+  }
+  .quiz-progress-fill {
+    height: 100%;
+    width: 6.25%;
+    background: linear-gradient(90deg, #4d7cfe, #7c3aed);
+    transition: width 0.4s ease;
+  }
+  .quiz-progress-text {
+    text-align: center;
+    padding: 24px 0 8px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.4);
+    letter-spacing: 1px;
+    font-family: 'Inter', sans-serif;
+  }
+  .quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+  }
+  .quiz-step {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    text-align: center;
+  }
+  .quiz-step--active {
+    display: block;
+    opacity: 1;
+  }
+  .quiz-heading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 20px 0 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .quiz-subtext {
+    font-size: 15px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.6;
+    margin-bottom: 28px;
+  }
+  .quiz-body {
+    font-size: 16px;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.7;
+    margin-bottom: 28px;
+  }
+
+  /* Circle image - Step 1 */
+  .quiz-circle-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4d7cfe, #7c3aed);
+    margin: 24px auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .quiz-circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Square image - Step 8 */
+  .quiz-square-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #4d7cfe, #7c3aed);
+    margin: 24px auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .quiz-square-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Options (frosted glass) */
+  .quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 8px;
+  }
+  .quiz-option {
+    width: 100%;
+    padding: 16px 20px;
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    text-align: left;
+    transition: border-color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+  }
+  .quiz-option:hover {
+    border-color: rgba(77,124,254,0.3);
+    background: rgba(255,255,255,0.09);
+    box-shadow: 0 0 20px rgba(77,124,254,0.1);
+  }
+  .quiz-option:active {
+    background: rgba(77,124,254,0.15);
+    border-color: rgba(77,124,254,0.5);
+  }
+
+  /* CTA Buttons */
+  .quiz-btn--cta {
+    display: inline-block;
+    width: 100%;
+    padding: 16px 32px;
+    background: linear-gradient(135deg, #4d7cfe, #7c3aed);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    margin-top: 12px;
+  }
+  .quiz-btn--cta:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+
+  /* Info box (steps 12, 13) */
+  .quiz-info-box {
+    background: rgba(77,124,254,0.08);
+    border: 1px solid rgba(77,124,254,0.2);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  .quiz-info-heading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+    color: #4d7cfe;
+    letter-spacing: 2px;
+    margin: 0 0 8px;
+  }
+  .quiz-info-text {
+    font-size: 14px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* Step 11: Analysis bar */
+  .quiz-analysis-bar-wrap {
+    margin: 40px 0 20px;
+  }
+  .quiz-analysis-bar {
+    width: 100%;
+    height: 6px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .quiz-analysis-bar-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #4d7cfe, #7c3aed);
+    border-radius: 3px;
+    transition: width 0.1s linear;
+  }
+  .quiz-analysis-label {
+    display: block;
+    margin-top: 12px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,0.4);
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  /* Step 14: Checklist */
+  .quiz-checklist {
+    text-align: left;
+    margin: 32px 0 20px;
+  }
+  .quiz-check-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    font-size: 15px;
+    color: rgba(255,255,255,0.7);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  .quiz-check-item--visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .quiz-check-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4d7cfe, #7c3aed);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #fff;
+    flex-shrink: 0;
+  }
+  .quiz-ready-text {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    color: #4d7cfe;
+    letter-spacing: 1px;
+    margin-top: 24px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .quiz-ready-text--visible {
+    opacity: 1;
+  }
+
+  /* Step 15: Results */
+  .quiz-result-label {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #4d7cfe;
+    margin: 8px 0 16px;
+    letter-spacing: 2px;
+  }
+  .quiz-result-desc {
+    font-size: 15px;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.7;
+    margin-bottom: 28px;
+  }
+  .quiz-suppression-wrap {
+    margin-bottom: 28px;
+    text-align: left;
+  }
+  .quiz-suppression-label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,0.4);
+    font-family: 'Orbitron', sans-serif;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .quiz-suppression-bar {
+    width: 100%;
+    height: 10px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .quiz-suppression-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #4d7cfe, #e74c3c);
+    border-radius: 5px;
+    transition: width 1s ease;
+  }
+  .quiz-stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+  .quiz-stat-card {
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 16px;
+    text-align: left;
+  }
+  .quiz-stat-title {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: rgba(255,255,255,0.4);
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 8px;
+  }
+  .quiz-stat-value {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4d7cfe;
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  /* Step 16: Chart */
+  .quiz-chart-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 24px 20px;
+    margin-bottom: 28px;
+  }
+  .quiz-chart-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 8px;
+  }
+  .quiz-chart-stat {
+    text-align: center;
+    flex: 1;
+  }
+  .quiz-chart-stat-label {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: rgba(255,255,255,0.4);
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 6px;
+  }
+  .quiz-chart-stat-value {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #4d7cfe;
+    font-family: 'Orbitron', sans-serif;
+  }
+  .quiz-chart-svg-wrap svg {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Mobile */
+  @media (max-width: 480px) {
+    .quiz-heading {
+      font-size: 18px;
+    }
+    .quiz-circle-image {
+      width: 160px;
+      height: 160px;
+    }
+    .quiz-square-image {
+      width: 240px;
+      height: 240px;
+    }
+    .quiz-stat-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .quiz-stat-card {
+      padding: 12px;
+    }
+    .quiz-stat-title {
+      font-size: 9px;
+    }
+    .quiz-stat-value {
+      font-size: 12px;
+    }
+    .quiz-chart-stats {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .quiz-result-label {
+      font-size: 22px;
+    }
+  }
+</style>
+
+<script>
+  (function() {
+    var quizAnswers = {};
+    var quizScores = {};
+    var currentStep = 1;
+    var totalSteps = 16;
+
+    window.quizAnswer = function(step, key, value, score) {
+      quizAnswers[key] = value;
+      quizScores[key] = score;
+      quizNext(step + 1);
+    };
+
+    window.quizNext = function(nextStep) {
+      var current = document.querySelector('.quiz-step--active');
+      if (current) {
+        current.style.opacity = '0';
+        setTimeout(function() {
+          current.classList.remove('quiz-step--active');
+          current.style.display = 'none';
+          showStep(nextStep);
+        }, 300);
+      } else {
+        showStep(nextStep);
+      }
+    };
+
+    function showStep(step) {
+      currentStep = step;
+      var el = document.querySelector('[data-step="' + step + '"]');
+      if (!el) return;
+      el.style.display = 'block';
+      el.style.opacity = '0';
+      el.classList.add('quiz-step--active');
+      setTimeout(function() { el.style.opacity = '1'; }, 30);
+
+      // Update progress
+      var pct = (step / totalSteps) * 100;
+      document.getElementById('quizProgressFill').style.width = pct + '%';
+      document.getElementById('quizProgressText').textContent = step + ' / ' + totalSteps;
+
+      // Step 11: animated analysis
+      if (step === 11) { runAnalysisAnimation(); }
+      // Step 14: checklist animation
+      if (step === 14) { runChecklistAnimation(); }
+      // Step 15: compute results
+      if (step === 15) { computeResults(); }
+      // Step 16: render chart
+      if (step === 16) { renderChart(); }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function runAnalysisAnimation() {
+      var bar = document.getElementById('analysisBarFill');
+      bar.style.width = '0%';
+      var pct = 0;
+      var interval = setInterval(function() {
+        pct += 2.5;
+        if (pct > 100) pct = 100;
+        bar.style.width = pct + '%';
+        if (pct >= 100) {
+          clearInterval(interval);
+          setTimeout(function() { quizNext(12); }, 400);
+        }
+      }, 100);
+    }
+
+    function runChecklistAnimation() {
+      var items = ['checkItem1','checkItem2','checkItem3','checkItem4'];
+      items.forEach(function(id, i) {
+        document.getElementById(id).classList.remove('quiz-check-item--visible');
+      });
+      document.getElementById('quizReadyText').classList.remove('quiz-ready-text--visible');
+
+      items.forEach(function(id, i) {
+        setTimeout(function() {
+          document.getElementById(id).classList.add('quiz-check-item--visible');
+        }, (i + 1) * 1000);
+      });
+      setTimeout(function() {
+        document.getElementById('quizReadyText').classList.add('quiz-ready-text--visible');
+      }, 5000);
+      setTimeout(function() {
+        quizNext(15);
+      }, 6000);
+    }
+
+    function getResultData() {
+      var total = 0;
+      var keys = ['age','stress','energy','when','body','sleep','family','diet'];
+      for (var i = 0; i < keys.length; i++) {
+        total += (quizScores[keys[i]] || 0);
+      }
+
+      var data = {};
+      if (total >= 15) {
+        data.level = 'ADVANCED DECLINE';
+        data.suppression = 85;
+        data.projected = 40;
+        data.quality = 'SEVERE';
+        data.desc = 'Hormonal function has significantly declined. Adipose tissue, chronic stress, and lifestyle factors are actively suppressing your testosterone production.';
+      } else if (total >= 10) {
+        data.level = 'MODERATE DECLINE';
+        data.suppression = 65;
+        data.projected = 35;
+        data.quality = 'HIGH';
+        data.desc = 'Multiple lifestyle factors are compounding to reduce your natural testosterone output. Your body\'s hormonal recovery system is under significant strain.';
+      } else if (total >= 5) {
+        data.level = 'EARLY DECLINE';
+        data.suppression = 45;
+        data.projected = 30;
+        data.quality = 'MEDIUM';
+        data.desc = 'Adipose tissue is starting to convert testosterone into estrogen, slowing your hormonal recovery.';
+      } else {
+        data.level = 'INITIAL SIGNS';
+        data.suppression = 25;
+        data.projected = 25;
+        data.quality = 'LOW';
+        data.desc = 'Early hormonal shifts detected. Catching this now gives you a significant advantage in maintaining peak testosterone levels.';
+      }
+
+      // Root causes
+      var primary = 'AROMATASE LOAD';
+      var secondary = 'CHRONIC STRESS';
+      var stressScore = quizScores.stress || 0;
+      var sleepScore = quizScores.sleep || 0;
+      var dietScore = quizScores.diet || 0;
+      var bodyScore = quizScores.body || 0;
+
+      var maxCat = Math.max(stressScore, sleepScore, dietScore, bodyScore);
+      if (maxCat === stressScore && stressScore > 0) { primary = 'CHRONIC STRESS'; }
+      else if (maxCat === sleepScore && sleepScore > 0) { primary = 'SLEEP DEBT'; }
+      else if (maxCat === dietScore && dietScore > 0) { primary = 'AROMATASE LOAD'; }
+      else if (maxCat === bodyScore && bodyScore > 0) { primary = 'EXCESS ADIPOSE'; }
+
+      // Secondary: pick second highest
+      var cats = [
+        { name: 'CHRONIC STRESS', score: stressScore },
+        { name: 'SLEEP DEBT', score: sleepScore },
+        { name: 'AROMATASE LOAD', score: dietScore },
+        { name: 'EXCESS ADIPOSE', score: bodyScore }
+      ];
+      cats.sort(function(a, b) { return b.score - a.score; });
+      secondary = cats[0].name === primary ? cats[1].name : cats[0].name;
+      if (secondary === primary) secondary = cats[1].name;
+
+      data.primary = primary;
+      data.secondary = secondary;
+      data.total = total;
+      return data;
+    }
+
+    function computeResults() {
+      var d = getResultData();
+      document.getElementById('resultDeclineLabel').textContent = d.level;
+      document.getElementById('resultDescription').textContent = d.desc;
+      setTimeout(function() {
+        document.getElementById('resultSuppressionFill').style.width = d.suppression + '%';
+      }, 100);
+      document.getElementById('statDecline').textContent = d.level;
+      document.getElementById('statPrimary').textContent = d.primary;
+      document.getElementById('statSecondary').textContent = d.secondary;
+      document.getElementById('statQuality').textContent = d.quality;
+    }
+
+    function renderChart() {
+      var d = getResultData();
+      var etaDate = new Date(Date.now() + 90 * 24 * 60 * 60 * 1000);
+      var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+      var etaStr = months[etaDate.getMonth()] + ' ' + etaDate.getDate() + ', ' + etaDate.getFullYear();
+
+      // Update step 16 subtext with date
+      var subtextEl = document.getElementById('step16Subtext');
+      subtextEl.textContent = subtextEl.textContent.replace('{date}', etaStr);
+
+      document.getElementById('chartStatus').textContent = d.level;
+      document.getElementById('chartLift').textContent = '+' + d.projected + '%';
+      document.getElementById('chartEta').textContent = etaStr;
+
+      // Generate month labels
+      var now = new Date();
+      var m0 = months[now.getMonth()].substring(0, 3).toUpperCase();
+      var m1 = months[(now.getMonth() + 1) % 12].substring(0, 3).toUpperCase();
+      var m2 = months[(now.getMonth() + 2) % 12].substring(0, 3).toUpperCase();
+      var m3 = months[(now.getMonth() + 3) % 12].substring(0, 3).toUpperCase();
+
+      // Starting Y position based on score
+      var startY = d.total >= 10 ? 160 : (d.total >= 5 ? 130 : 100);
+      var endY = 40;
+
+      var svgNs = 'http://www.w3.org/2000/svg';
+      var svg = document.createElementNS(svgNs, 'svg');
+      svg.setAttribute('viewBox', '0 0 520 220');
+      svg.setAttribute('width', '100%');
+      svg.setAttribute('height', '220');
+
+      // Defs for gradient
+      var defs = document.createElementNS(svgNs, 'defs');
+      var lg = document.createElementNS(svgNs, 'linearGradient');
+      lg.setAttribute('id', 'chartGrad');
+      lg.setAttribute('x1', '0'); lg.setAttribute('y1', '0');
+      lg.setAttribute('x2', '0'); lg.setAttribute('y2', '1');
+      var s1 = document.createElementNS(svgNs, 'stop');
+      s1.setAttribute('offset', '0%'); s1.setAttribute('stop-color', '#4d7cfe'); s1.setAttribute('stop-opacity', '0.3');
+      var s2 = document.createElementNS(svgNs, 'stop');
+      s2.setAttribute('offset', '100%'); s2.setAttribute('stop-color', '#4d7cfe'); s2.setAttribute('stop-opacity', '0');
+      lg.appendChild(s1); lg.appendChild(s2); defs.appendChild(lg);
+      svg.appendChild(defs);
+
+      // Y-axis labels
+      var yLabels = [
+        { text: 'HIGH T-LEVEL', y: 40 },
+        { text: 'NORMAL T-LEVEL', y: 100 },
+        { text: 'LOW T-LEVEL', y: 160 }
+      ];
+      for (var i = 0; i < yLabels.length; i++) {
+        var line = document.createElementNS(svgNs, 'line');
+        line.setAttribute('x1', '110'); line.setAttribute('y1', yLabels[i].y);
+        line.setAttribute('x2', '500'); line.setAttribute('y2', yLabels[i].y);
+        line.setAttribute('stroke', 'rgba(255,255,255,0.06)'); line.setAttribute('stroke-width', '1');
+        svg.appendChild(line);
+        var txt = document.createElementNS(svgNs, 'text');
+        txt.setAttribute('x', '5'); txt.setAttribute('y', yLabels[i].y + 4);
+        txt.setAttribute('fill', 'rgba(255,255,255,0.3)');
+        txt.setAttribute('font-size', '9'); txt.setAttribute('font-family', 'Orbitron, sans-serif');
+        txt.textContent = yLabels[i].text;
+        svg.appendChild(txt);
+      }
+
+      // X-axis labels
+      var xPositions = [140, 260, 380, 490];
+      var xLabels = ['TODAY', m1, m2, m3];
+      for (var j = 0; j < xLabels.length; j++) {
+        var xt = document.createElementNS(svgNs, 'text');
+        xt.setAttribute('x', xPositions[j]); xt.setAttribute('y', 195);
+        xt.setAttribute('fill', 'rgba(255,255,255,0.3)'); xt.setAttribute('text-anchor', 'middle');
+        xt.setAttribute('font-size', '10'); xt.setAttribute('font-family', 'Orbitron, sans-serif');
+        xt.textContent = xLabels[j];
+        svg.appendChild(xt);
+      }
+
+      // Curve path
+      var cp1x = 220, cp1y = startY - 10;
+      var cp2x = 360, cp2y = endY + 20;
+      var pathD = 'M 140 ' + startY + ' C ' + cp1x + ' ' + cp1y + ' ' + cp2x + ' ' + cp2y + ' 490 ' + endY;
+
+      // Fill area
+      var areaD = pathD + ' L 490 180 L 140 180 Z';
+      var area = document.createElementNS(svgNs, 'path');
+      area.setAttribute('d', areaD);
+      area.setAttribute('fill', 'url(#chartGrad)');
+      svg.appendChild(area);
+
+      // Curve line
+      var curveLine = document.createElementNS(svgNs, 'path');
+      curveLine.setAttribute('d', pathD);
+      curveLine.setAttribute('stroke', '#4d7cfe'); curveLine.setAttribute('stroke-width', '3');
+      curveLine.setAttribute('fill', 'none'); curveLine.setAttribute('stroke-linecap', 'round');
+      svg.appendChild(curveLine);
+
+      // Start dot
+      var dot1 = document.createElementNS(svgNs, 'circle');
+      dot1.setAttribute('cx', '140'); dot1.setAttribute('cy', startY);
+      dot1.setAttribute('r', '5'); dot1.setAttribute('fill', '#4d7cfe');
+      svg.appendChild(dot1);
+
+      // "YOU ARE HERE" label
+      var youLabel = document.createElementNS(svgNs, 'text');
+      youLabel.setAttribute('x', '140'); youLabel.setAttribute('y', startY + 20);
+      youLabel.setAttribute('fill', 'rgba(255,255,255,0.5)'); youLabel.setAttribute('text-anchor', 'middle');
+      youLabel.setAttribute('font-size', '8'); youLabel.setAttribute('font-family', 'Orbitron, sans-serif');
+      youLabel.textContent = 'YOU ARE HERE';
+      svg.appendChild(youLabel);
+
+      // End dot
+      var dot2 = document.createElementNS(svgNs, 'circle');
+      dot2.setAttribute('cx', '490'); dot2.setAttribute('cy', endY);
+      dot2.setAttribute('r', '5'); dot2.setAttribute('fill', '#4d7cfe');
+      svg.appendChild(dot2);
+
+      // "GOAL" label
+      var goalLabel = document.createElementNS(svgNs, 'text');
+      goalLabel.setAttribute('x', '490'); goalLabel.setAttribute('y', endY - 12);
+      goalLabel.setAttribute('fill', '#4d7cfe'); goalLabel.setAttribute('text-anchor', 'middle');
+      goalLabel.setAttribute('font-size', '9'); goalLabel.setAttribute('font-family', 'Orbitron, sans-serif');
+      goalLabel.setAttribute('font-weight', '700');
+      goalLabel.textContent = 'GOAL \u2022 +' + d.projected + '% T';
+      svg.appendChild(goalLabel);
+
+      document.getElementById('quizChartWrap').innerHTML = '';
+      document.getElementById('quizChartWrap').appendChild(svg);
+    }
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Quiz",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "Results CTA link"
+    },
+    {
+      "type": "image_picker",
+      "id": "step1_image",
+      "label": "Step 1 circle image"
+    },
+    {
+      "type": "image_picker",
+      "id": "step8_image",
+      "label": "Step 8 square image"
+    },
+    {
+      "type": "text",
+      "id": "heading_step1",
+      "label": "Step 1 heading",
+      "default": "WARNING: THIS IS NOT ANOTHER SCAM TEST BOOSTER"
+    },
+    {
+      "type": "textarea",
+      "id": "body_step1",
+      "label": "Step 1 body text",
+      "default": "Before we give you access to the most potent testosterone stack on earth - used by A list actors and professional athletes. We need to ask you some questions. You must be over 18 to continue."
+    },
+    {
+      "type": "text",
+      "id": "heading_step8",
+      "label": "Step 8 heading",
+      "default": "CONGRATULATIONS. YOU ARE IN THE RIGHT PLACE."
+    },
+    {
+      "type": "textarea",
+      "id": "body_step8",
+      "label": "Step 8 body text",
+      "default": "Over 29,576 men have reclaimed their T, drive, and physique thanks to our new scientific, natural T-revival system used by pro athletes and now made available to you."
+    },
+    {
+      "type": "text",
+      "id": "heading_step15",
+      "label": "Step 15 heading",
+      "default": "Your Testosterone Assessment:"
+    },
+    {
+      "type": "text",
+      "id": "heading_step16",
+      "label": "Step 16 heading",
+      "default": "THE LAST SOLUTION YOU'LL EVER NEED TO FEEL LIKE A MAN AGAIN."
+    },
+    {
+      "type": "textarea",
+      "id": "subtext_step16",
+      "label": "Step 16 subtext (use {date} for dynamic 90-day date)",
+      "default": "Based on your answers, we expect you to visibly increase energy, strength and masculine drive by {date}"
+    }
+  ]
+}
+{% endschema %}
