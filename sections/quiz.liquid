@@ -220,7 +220,7 @@
     <!-- STEP 16: Final projection -->
     <div class="quiz-step" data-step="16">
       <h2 class="quiz-heading">{{ section.settings.heading_step16 | default: "THE LAST SOLUTION YOU'LL EVER NEED TO FEEL LIKE A MAN AGAIN." }}</h2>
-      <p class="quiz-subtext" id="step16Subtext">{{ section.settings.subtext_step16 | default: "Based on your answers, we expect you to visibly increase energy, strength and masculine drive by {date}" }}</p>
+      <p class="quiz-subtext" id="step16Subtext"><span id="step16SubtextContent">Based on your answers, we expect you to visibly increase energy, strength and masculine drive by <span id="step16Date"></span></span></p>
       <div class="quiz-chart-card">
         <div class="quiz-chart-stats">
           <div class="quiz-chart-stat">
@@ -999,12 +999,6 @@
       "id": "heading_step16",
       "label": "Step 16 heading",
       "default": "THE LAST SOLUTION YOU'LL EVER NEED TO FEEL LIKE A MAN AGAIN."
-    },
-    {
-      "type": "textarea",
-      "id": "subtext_step16",
-      "label": "Step 16 subtext (use {date} for dynamic 90-day date)",
-      "default": "Based on your answers, we expect you to visibly increase energy, strength and masculine drive by {date}"
     }
   ]
 }
