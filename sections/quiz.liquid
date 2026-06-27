@@ -1,4 +1,4 @@
-<section class="quiz-section" id="quiz-section">
+<section class="quiz-section" id="quiz-section" data-redirect-url="{{ section.settings.final_redirect_url | default: "#" }}">
   <div class="quiz-progress-bar">
     <div class="quiz-progress-fill" id="quizProgressFill"></div>
   </div>
@@ -250,6 +250,19 @@
         {% endif %}
       </div>
       <button class="quiz-btn quiz-btn--cta" onclick="quizGoTo(18)">{{ section.settings.step17_button | default: "GET 1 MONTH FREE" }} &rarr;</button>
+    </div>
+
+    <!-- STEP 18: Animated discount sequence -->
+    <div class="quiz-step" data-step="18">
+      <h2 class="quiz-heading">{{ section.settings.step18_heading | default: "APPLYING YOUR DISCOUNT…" }}</h2>
+      <p class="quiz-subtext">{{ section.settings.step18_subtext | default: "Securing your 90-day protocol and loading your personalized offer." }}</p>
+      <div class="quiz-checklist" id="step18Checklist">
+        {%- assign step18_items = section.settings.step18_checklist | default: "Verifying your eligibility|Locking in your 90-day protocol|Activating your money-back guarantee|Loading your personalized offer" | split: "|" -%}
+        {%- for item in step18_items -%}
+          <div class="quiz-check-item"><span class="quiz-check-icon">&#x2713;</span> {{ item }}</div>
+        {%- endfor -%}
+      </div>
+      <p class="quiz-final-text" id="step18Final" style="display:none;">{{ section.settings.step18_final | default: "PLEASE DON'T REFRESH — YOUR DISCOUNT IS BEING APPLIED" }}</p>
     </div>
 
   </div>
@@ -725,6 +738,21 @@
       if (step === 11) { runAnalysisAnimation(); }
       // Step 14: checklist animation
       if (step === 14) { runChecklistAnimation(); }
+
+      if (step === 18) {
+        var items18 = document.querySelectorAll('#step18Checklist .quiz-check-item');
+        items18.forEach(function(el) { el.style.opacity = '0'; el.style.transform = 'translateX(-10px)'; el.style.transition = 'opacity 0.4s ease, transform 0.4s ease'; });
+        items18.forEach(function(el, idx) {
+          setTimeout(function() { el.style.opacity = '1'; el.style.transform = 'translateX(0)'; }, (idx + 1) * 1000);
+        });
+        setTimeout(function() {
+          document.getElementById('step18Final').style.display = 'block';
+        }, (items18.length + 1) * 1000);
+        setTimeout(function() {
+          var url = document.getElementById('quiz-section').getAttribute('data-redirect-url');
+          if (url && url !== '#' && url !== '') { window.location.href = url; }
+        }, (items18.length + 2) * 1000);
+      }
       // Step 15: compute results
       if (step === 15) { computeResults(); }
       // Step 16: render chart
