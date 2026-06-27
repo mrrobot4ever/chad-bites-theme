@@ -262,7 +262,7 @@
           <div class="quiz-check-item"><span class="quiz-check-icon">&#x2713;</span> {{ item }}</div>
         {%- endfor -%}
       </div>
-      <p class="quiz-final-text" id="step18Final" style="display:none;">{{ section.settings.step18_final | default: "PLEASE DON'T REFRESH — YOUR DISCOUNT IS BEING APPLIED" }}</p>
+      <p class="quiz-final-text quiz-pulse" id="step18Final">{{ section.settings.step18_final | default: "PLEASE DON'T REFRESH — YOUR DISCOUNT IS BEING APPLIED" }}</p>
     </div>
 
   </div>
@@ -745,9 +745,7 @@
         items18.forEach(function(el, idx) {
           setTimeout(function() { el.style.opacity = '1'; el.style.transform = 'translateX(0)'; }, (idx + 1) * 1000);
         });
-        setTimeout(function() {
-          document.getElementById('step18Final').style.display = 'block';
-        }, (items18.length + 1) * 1000);
+        
         setTimeout(function() {
           var url = document.getElementById('quiz-section').getAttribute('data-redirect-url');
           if (url && url !== '#' && url !== '') { window.location.href = url; }
