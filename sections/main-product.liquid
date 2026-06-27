@@ -28,7 +28,7 @@
           <div class="product-description">{{ product.description }}</div>
         {% endif %}
 
-        {% form 'product', product %}
+        {% form 'product', product, id: 'product-form' %}
           {% if product.has_only_default_variant == false %}
             {% for option in product.options_with_values %}
               <div class="product-form-group">
@@ -150,6 +150,50 @@
   })();
 </script>
 
+
+<script>
+  (function() {
+    var form = document.getElementById('product-form');
+    if (!form) return;
+    form.addEventListener('submit', function(e) {
+      if ('{{ settings.cart_type }}' !== 'drawer') return;
+      e.preventDefault();
+      var btn = form.querySelector('.add-to-cart-btn');
+      var origText = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'Adding...';
+      var formData = new FormData(form);
+      fetch('/cart/add.js', {
+        method: 'POST',
+        body: formData
+      })
+      .then(function(r) { return r.json(); })
+      .then(function(item) {
+        btn.textContent = 'Added!';
+        setTimeout(function() {
+          btn.disabled = false;
+          btn.textContent = origText;
+        }, 1500);
+        fetch('/cart.js').then(function(r) { return r.json(); }).then(function(cart) {
+          var countEl = document.getElementById('cart-count');
+          if (countEl) countEl.textContent = cart.item_count;
+          var overlay = document.getElementById('cart-drawer-overlay');
+          var drawer = document.getElementById('cart-drawer');
+          if (overlay && drawer) {
+            updateCartDrawer(cart);
+            overlay.classList.add('is-open');
+            drawer.classList.add('is-open');
+            document.body.style.overflow = 'hidden';
+          }
+        });
+      })
+      .catch(function() {
+        btn.disabled = false;
+        btn.textContent = origText;
+      });
+    });
+  })();
+</script>
 {% schema %}
 {
   "name": "Product page",
