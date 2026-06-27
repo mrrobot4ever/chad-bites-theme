@@ -1,0 +1,121 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {
+        "heading": "AMERICA'S #1 TESTOSTERONE BOOSTER GUMMY",
+        "subtext": "8 science-backed ingredients in one daily gummy. Try it for 90 days. Higher T or your money back.",
+        "cta_text": "GET 1 BOTTLE FREE",
+        "badges_url": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/badges-removebg.png?v=1771042099"
+      }
+    },
+    "ingredients": {
+      "type": "ingredients",
+      "settings": {}
+    },
+    "decline": {
+      "type": "decline",
+      "settings": {}
+    },
+    "solution": {
+      "type": "solution",
+      "settings": {}
+    },
+    "howitworks": {
+      "type": "howitworks",
+      "settings": {}
+    },
+    "riskfree": {
+      "type": "riskfree",
+      "settings": {}
+    },
+    "faq": {
+      "type": "faq",
+      "settings": {}
+    },
+    "stats-gauges": {
+      "type": "stats-gauges",
+      "settings": {
+        "heading": "GET YOUR EDGE BACK",
+        "subtext": "Your body. Your data. Your edge."
+      },
+      "blocks": {
+        "gauge-1": {
+          "type": "gauge",
+          "settings": {
+            "title": "Energy",
+            "value": 92,
+            "status": "OPTIMAL"
+          }
+        },
+        "gauge-2": {
+          "type": "gauge",
+          "settings": {
+            "title": "Drive",
+            "value": 94,
+            "status": "OPTIMAL"
+          }
+        },
+        "gauge-3": {
+          "type": "gauge",
+          "settings": {
+            "title": "Recovery",
+            "value": 91,
+            "status": "OPTIMAL"
+          }
+        },
+        "gauge-4": {
+          "type": "gauge",
+          "settings": {
+            "title": "Focus",
+            "value": 90,
+            "status": "OPTIMAL"
+          }
+        },
+        "gauge-5": {
+          "type": "gauge",
+          "settings": {
+            "title": "Strength",
+            "value": 93,
+            "status": "OPTIMAL"
+          }
+        },
+        "gauge-6": {
+          "type": "gauge",
+          "settings": {
+            "title": "Confidence",
+            "value": 92,
+            "status": "OPTIMAL"
+          }
+        }
+      },
+      "block_order": [
+        "gauge-1",
+        "gauge-2",
+        "gauge-3",
+        "gauge-4",
+        "gauge-5",
+        "gauge-6"
+      ]
+    }
+  },
+  "order": [
+    "hero",
+    "stats-gauges",
+    "ingredients",
+    "decline",
+    "solution",
+    "howitworks",
+    "riskfree",
+    "faq"
+  ]
+}
