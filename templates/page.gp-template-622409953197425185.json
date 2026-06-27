@@ -1,0 +1,51 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gp_section_622410246043730465": {
+      "settings": {
+        "checksum": "274412c4ae9a4082ea0149c8bb408d3fd7d4cc7c74d8486e0acb67d676c200a2_1_1_1_0__1",
+        "ggC2PbWod4n_text": "Get Your Edge Back Naturally",
+        "gg_Yg8e31jI_label": "<p><span style=\"font-size:24px;\">UNLOCK YOUR TRUE POWER</span></p>",
+        "ggfEJHVftvs_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/futuristic-chadly.webp?v=1780515216",
+        "ggxILWXtEW__text": "<p>✅ 8 Ingredients at Full Clinical Doses</p><p>✅ Zero Fillers or \"Proprietary\" Blends</p><p>✅ Made in USA &amp; Third-Party Tested</p><p>✅ 90-Day 100% Money-Back Guarantee</p><p>✅ Fast &amp; Free Shipping on First Order</p>",
+        "section_preload": "true"
+      },
+      "type": "gp-section-622410246043730465"
+    },
+    "gp_section_622410804641137432": {
+      "settings": {
+        "checksum": "ed4df295cf8a95ed0a0628ddf0276e48bf462b87c0db5f427fee2eb9e1cbc53e_1_1_1_0__1"
+      },
+      "type": "gp-section-622410804641137432"
+    },
+    "gp_section_622412015452816376": {
+      "settings": {
+        "checksum": "fed14cbf02b1ca6c1c133644ac1167fa0a03bfa2216bb345ae755c9bb0b6769a_1_1_1_0__1",
+        "gg6NPFb9N0M_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-TyroneBBq_1.webp",
+        "ggFUSchAatJ_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-JohnyBoat_1.webp",
+        "ggR46pzWaqa_text": "<span style=\"color:#000000;font-size:30px;\">OVER </span><span style=\"color:#FF2001;font-size:30px;\">36,491+ MEN</span><span style=\"color:#000000;font-size:30px;\"> HAVE RECLAIMED THEIR TRUE POWER</span>",
+        "ggYxrd7WyfZ_text": "<p><span style=\"color:#000000;\">Be the Alpha you that you have always dreamed of.</span></p>",
+        "ggeiFQ5-Nib_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-BL-M50.webp",
+        "gghwWwdSGqV_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-ugc-m36-holding_bottle__2.webp",
+        "ggjtxJaqFu5_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-CarlosGymGarage_1.webp",
+        "ggq6GR2vd57_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-RoganTruck_1.webp",
+        "ggxlisUIiOd_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-LuisAfter.webp"
+      },
+      "type": "gp-section-622412015452816376"
+    }
+  },
+  "order": [
+    "gp_section_622410246043730465",
+    "gp_section_622412015452816376",
+    "gp_section_622410804641137432"
+  ],
+  "layout": "theme.gempages.footer"
+}

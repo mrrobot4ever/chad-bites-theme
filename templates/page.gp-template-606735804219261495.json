@@ -1,0 +1,281 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gp_section_606735804336702007": {
+      "settings": {
+        "checksum": "6c6841052824a3049fe417ef83353d6b52d3549b862659f1c6a62addf60bceef_1_1_1_0__1",
+        "ggBxYrac_MH_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/badges-removebg.png",
+        "ggBxYrac_MH_srcSet_mobile_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/badges-removebg.png",
+        "gguLe7T-Zmg_text": "9 Reasons Men Are Ditching TRT For Chad Bites in 2026 (Natural &gt; Needles. Every Time.)",
+        "ggxt5ZIM3d__text": "<p>TLDR: Want to get JACKED without destroying your hormones? Chad Bites targets the real problem 👇</p>"
+      },
+      "type": "gp-section-606735804336702007"
+    },
+    "gp_section_606735804336767543": {
+      "settings": {
+        "checksum": "2578df8eef8e4cfbc747a42ecc719c7a2d185ea1c89e554eaf246510ae392f8f_1_1_1_0__1",
+        "gg49EVESgEL_text": "<p><strong>DELIVERY</strong></p>",
+        "ggAIG-mQc3C_text": "<p><strong>RESULTS</strong></p>",
+        "ggEgz4I0a25_text": "<p>Shuts Down Production</p>",
+        "ggF5S5lzPf1_text": "<p>Instant Test Replacement</p>",
+        "ggGJNwUuK8d_text": "<p>Who Knows?</p>",
+        "ggIYR_Nkxjs_text": "<p>Sketchy Ingredients</p>",
+        "ggMPgcVdcqd_text": "<p>Works With Your Body</p>",
+        "ggNreSXbxBN_text": "<p>Maybe Never</p>",
+        "ggOj165rhO8_text": "<p>T Boosters</p>",
+        "ggOoOVb9jLM_text": "<p>IM injection</p>",
+        "ggQzVhZuzbh_text": "<p>Within 2 Weeks</p>",
+        "ggaRZi-IR9l_text": "<p>97% Bio-Available</p>",
+        "ggfY-U3Z_Wb_text": "<p>Synthetic Testosterone</p>",
+        "gglbLQI-y8k_text": "<p><strong>SAFETY</strong></p>",
+        "ggmarD6HLR5_text": "<p>+80% LOST in Gut</p>",
+        "ggmp24TP7Oz_text": "<p>CHAD BITES</p>",
+        "ggtqKH1uyOt_text": "<p>TRT</p>",
+        "ggw-pq5FNNb_text": "<p>Natural Testosterone</p>",
+        "ggxBxl0FFFV_text": "<p><strong>BENEFITS</strong></p>"
+      },
+      "type": "gp-section-606735804336767543"
+    },
+    "gp_section_606735804336833079": {
+      "settings": {
+        "checksum": "0b5129002f752d2bbaea6e26616c2ad98f6c14f381e65312ff82c079138d53e8_1_1_1_0__1",
+        "gg5TYmkZXf__text": "<p><span style=\"font-size:24px;\">Stop buying Fadogia here, Zinc there, Tongkat from some other brand.&nbsp;</span></p><p>&nbsp;</p><p><span style=\"font-size:24px;\">Chad Bites combines the 6 most-studied T supporting ingredients in ONE daily gummy, assembled in a CGMP certified facility.</span></p>",
+        "ggAzczapnnT_label": "<p>GET 1 BOTTLE FREE</p>",
+        "ggB_CbTyB-J_text": "REPLACES 5+ BOTTLES CLUTTERING YOUR COUNTER",
+        "ggmmDJ3ILjU_background_desktop_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggmmDJ3ILjU_background_desktop_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/e586d740c94f4972b9fb1a9ca3692fe1.mp4",
+        "ggmmDJ3ILjU_background_mobile_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggmmDJ3ILjU_background_mobile_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/e586d740c94f4972b9fb1a9ca3692fe1.mp4",
+        "ggpth6mbRWl_text": "<p><span style=\"font-size:24px;\">THE EASY WAY</span></p>"
+      },
+      "type": "gp-section-606735804336833079"
+    },
+    "gp_section_606735804336898615": {
+      "settings": {
+        "checksum": "5b5d603f3178a65520052b62ad36e1e22255e22af469ed78c8b41e161ff9bad1_1_1_1_0__1",
+        "ggDFG4QfF69_text": "<p><span style=\"font-size:24px;\">The ingredients are designed to work together — helping drive the physical changes that actually matter. &nbsp;</span></p><p>&nbsp;</p><p><span style=\"font-size:24px;\">Starting now instead of “someday” puts you far ahead of the guys still waiting for motivation.*</span></p>",
+        "ggGdEm0ACWf_label": "<p>GET 1 BOTTLE FREE</p>",
+        "ggMnnkv1QFO_background_desktop_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggMnnkv1QFO_background_desktop_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/4f1b220bcf2b45aa850c013a786cc922.mp4",
+        "ggMnnkv1QFO_background_mobile_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggMnnkv1QFO_background_mobile_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/4f1b220bcf2b45aa850c013a786cc922.mp4",
+        "ggMnnkv1QFO_background_tablet_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggMnnkv1QFO_background_tablet_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/4f1b220bcf2b45aa850c013a786cc922.mp4",
+        "ggaTnhz6U92_text": "<p><span style=\"font-size:24px;\">THE RESULTS</span></p>",
+        "gglXbKpLlnm_text": "PACK ON LEAN MUSCLE BEFORE BEACH SEASON"
+      },
+      "type": "gp-section-606735804336898615"
+    },
+    "gp_section_606735804336964151": {
+      "settings": {
+        "checksum": "d4aa51c72f5b63dfba3f867f0cba2c0a791d809848d71cdbad0ed96ae7c83b32_1_1_1_0__1",
+        "ggA5fQsP_5k_label": "<p>GET 1 BOTTLE FREE</p>",
+        "ggBi-xgPveL_text": "<p><span style=\"font-size:24px;\">How many more afternoons can you really make it through feeling <i><u>this</u></i> drained? &nbsp;</span></p><p>&nbsp;</p><p><span style=\"font-size:24px;\">Chad Bites uses a blend of natural ingredients designed to help keep your energy steady all day so you won’t even remember that 2PM crash.*</span></p>",
+        "ggDFZm_elN1_text": "<p><span style=\"font-size:24px;\">THE REALITY</span></p>",
+        "ggbnRCqVmlT_text": "KILL THE 2PM CRASH BEFORE YOU WASTE ANOTHER MONTH",
+        "ggfwuvHJf4W_background_desktop_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggfwuvHJf4W_background_desktop_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/231e7110218a412b9cac2471c333b748.mp4",
+        "ggfwuvHJf4W_background_mobile_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggfwuvHJf4W_background_mobile_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/231e7110218a412b9cac2471c333b748.mp4"
+      },
+      "type": "gp-section-606735804336964151"
+    },
+    "gp_section_606735804337029687": {
+      "settings": {
+        "checksum": "48c2025b2b9acf7648589c3ca18cf00150bbfbb77fa2ff82a39977ed36aa0a14_1_1_1_0__1",
+        "ggJH-td1HlB_label": "<p>GET 1 BOTTLE FREE</p>",
+        "ggWCN0NbDdK_background_desktop_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggWCN0NbDdK_background_desktop_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/f6c24b33e4344fb1bd719bf9017b6324.mp4",
+        "ggWCN0NbDdK_background_mobile_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggWCN0NbDdK_background_mobile_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/f6c24b33e4344fb1bd719bf9017b6324.mp4",
+        "ggWNmVsGYpi_text": "<p><span style=\"font-size:24px;\">Remember when people actually paid attention when you spoke? &nbsp;</span></p><p>&nbsp;</p><p><span style=\"font-size:24px;\">That wasn’t luck — it was testosterone. &nbsp;Start today with Chad Bites and bring back the focus and confidence that makes people notice you. Don’t spend another week being overlooked.*</span></p>",
+        "ggmn2yLbHuk_text": "GET BACK YOUR EDGE BEFORE IT'S TOO LATE",
+        "ggxGesHkDux_text": "<p><span style=\"font-size:24px;\">THE REASON</span></p>"
+      },
+      "type": "gp-section-606735804337029687"
+    },
+    "gp_section_606735804337095223": {
+      "settings": {
+        "checksum": "732d5c54a7287c7b85da2fcf8c05d57b17472b5c92314f39f1e17c31434921b5_1_1_1_0__1",
+        "gg6zWLY1QI8_label": "<p>GET 1 BOTTLE FREE</p>",
+        "gg7Q9dh5vWz_text": "<p><span style=\"font-size:24px;\">THE ELEPHANT IN THE ROOM</span></p>",
+        "ggAoR2ry-v9_background_desktop_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggAoR2ry-v9_background_desktop_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/8f835ae786be4d7db9568984e70bebaa.mp4",
+        "ggAoR2ry-v9_background_mobile_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggAoR2ry-v9_background_mobile_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/8f835ae786be4d7db9568984e70bebaa.mp4",
+        "ggPpSQUNtdY_text": "<p><span style=\"font-size:24px;\">Stop avoiding intimacy and start initiating. &nbsp;</span></p><p>&nbsp;</p><p><span style=\"font-size:24px;\">How many more months are you going to tell yourself you’ll “get back to normal”? &nbsp;Start today — and in just a few weeks you’ll feel ready instead of making excuses.*</span></p>",
+        "ggjDU5mJYbV_text": "NO MORE MAKING EXCUSES IN THE BEDROOM"
+      },
+      "type": "gp-section-606735804337095223"
+    },
+    "gp_section_606735804337160759": {
+      "settings": {
+        "checksum": "61ccf215beb7b4c0cbe97441bd873728101c22145290a5e3e4177e957a914e42_1_1_1_0__1",
+        "gg1HtECsNc4_text": "<p><span style=\"font-size:24px;\">While other guys are still booking appointments, sitting in waiting rooms, and waiting in line for prescriptions… you’ll already be weeks into optimizing your testosterone naturally. &nbsp;</span></p><p>&nbsp;</p><p><span style=\"font-size:24px;\">No needles. No prescriptions. No waiting rooms — just results. &nbsp;Start now to lock in a lifetime of savings with a free bottle delivered every month.*</span></p>",
+        "ggLbDwxtWDf_background_desktop_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggLbDwxtWDf_background_desktop_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/51c427cf652247798c5d9aa3f4fca42d.mp4",
+        "ggLbDwxtWDf_background_mobile_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggLbDwxtWDf_background_mobile_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/51c427cf652247798c5d9aa3f4fca42d.mp4",
+        "ggZHwtSmK6D_text": "WORKS NATURALLY, NO DOCTORS, NO WAITING",
+        "ggp0vCtEfnj_text": "<p><span style=\"font-size:24px;\">THE PERKS</span></p>",
+        "ggybY9c8HGl_label": "<p>GET 1 BOTTLE FREE</p>"
+      },
+      "type": "gp-section-606735804337160759"
+    },
+    "gp_section_606735804337226295": {
+      "settings": {
+        "checksum": "43f6683c705a5c8dc382ac0b9494117b09e63539f88012ad0d118266bee0d642_1_1_1_0__1",
+        "gg9tYpPOSfM_text": "INGREDIENTS DESIGNED TO BOOST YOUR T - FAST &amp; EASY",
+        "ggCANSTv58v_text": "<p><span style=\"font-size:24px;\">Chad Bites brings together studied ingredients designed to support the root causes behind declining testosterone — not just mask the symptoms. &nbsp;</span></p><p>&nbsp;</p><p><span style=\"font-size:24px;\">Start today with a formula built to work with your body, not against it.*</span></p>",
+        "ggVLDu8tWmj_label": "<p>GET 1 BOTTLE FREE</p>",
+        "ggqp2b7kCwd_background_desktop_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggqp2b7kCwd_background_desktop_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/6f82db5f8c06467d9005e8e1df4c9c16.mp4",
+        "ggqp2b7kCwd_background_mobile_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggqp2b7kCwd_background_mobile_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/6f82db5f8c06467d9005e8e1df4c9c16.mp4",
+        "ggxtE-TcrCJ_text": "<p><span style=\"font-size:24px;\">THE FORMULA</span></p>"
+      },
+      "type": "gp-section-606735804337226295"
+    },
+    "gp_section_606735804337291831": {
+      "settings": {
+        "checksum": "c232cd907e194ee1fdd46e59720c1ef9fcd87971a34c1106e394f643d296f358_1_1_1_0__1"
+      },
+      "type": "gp-section-606735804337291831"
+    },
+    "gp_section_606735804337357367": {
+      "settings": {
+        "checksum": "ed6d40e5e7bc78bf4e13535f95aad7791602ddef3299cacb1d38d2c76ffad53d_1_1_1_0__1",
+        "gg3B25Tcfsl_text": "<p><strong>FREE USA Shipping </strong><s><strong>$18</strong></s><strong> $0</strong></p>",
+        "gg5GY45W28f_text": "<p><strong>FREE USA Shipping </strong><s><strong>$9</strong></s><strong> $0</strong></p>",
+        "gg69-o4cUVk_background_desktop_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "gg69-o4cUVk_background_desktop_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/48f226168ba3407b89c9d9daa30e9e2d.mp4",
+        "gg69-o4cUVk_background_mobile_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "gg69-o4cUVk_background_mobile_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/48f226168ba3407b89c9d9daa30e9e2d.mp4",
+        "gg7ssxwNuJY_background_desktop_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "gg7ssxwNuJY_background_desktop_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/0a822c22a3594a7090ff1651e791c23f.mp4",
+        "gg7ssxwNuJY_background_mobile_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "gg7ssxwNuJY_background_mobile_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/0a822c22a3594a7090ff1651e791c23f.mp4",
+        "ggG-TIdeffy_text": "<p><strong>FREE Mystery Gift </strong><s><strong>$24</strong></s><strong> $0</strong></p>",
+        "ggHTXe4Tm1l_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/bg1.svg",
+        "ggV4_dfmwh7_text": "<p><strong>1 Bottle Delivered Monthly </strong><s><strong>$88</strong></s><strong> $44</strong></p>",
+        "ggV6qLsLi9w_text": "<p>LIMITED TIME OFFER</p>",
+        "ggYX3FOy0dT_text": "<p><strong>3 Bottles Delivered Monthly </strong><s><strong>$132</strong></s><strong> $88</strong></p>",
+        "ggdd6FqIaIh_text": "<p>Delivered Monthly • 365 Day Guarantee</p><p>• Online portal for easy cancel or pause.</p>",
+        "gggLjvJI6e9_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/bg2.svg",
+        "ggjso5lPhO1_text": "<p>Delivered Monthly • 365 Day Guarantee</p><p>• Online portal for easy cancel or pause.</p>",
+        "gglyd36QVkI_text": "<p>BUY 2 GET 1 FREE <s>$174</s> $88&nbsp;</p>",
+        "ggmh9AsOYbN_label": "<p>ADD TO CART</p>",
+        "ggovOBAzqnb_label": "<p>ADD TO CART</p>",
+        "ggq7RzX0r1z_text": "<p>MOST POPULAR</p>",
+        "ggsKUeaAYhJ_text": "<p><strong>FREE Mystery Gift </strong><s><strong>$24</strong></s><strong> $0</strong></p>",
+        "ggtEsyIPmYM_text": "<p>BUY 1 BOTTLE <s>$121</s> $44 :</p>"
+      },
+      "type": "gp-section-606735804337357367"
+    },
+    "gp_section_606735804337422903": {
+      "settings": {
+        "checksum": "80c4cadcc696b70eaec8f8531622bfd442e4fb5204ddc4d88ca5299aefa6e91b_1_1_1_0__1",
+        "ggIc1nAdSd7_label": "<p>GET 1 BOTTLE FREE</p>",
+        "ggT-rHmjhdq_text": "<p><span style=\"font-size:24px;\">BECOME A CHAD</span></p>",
+        "ggb4p5JqqW__background_desktop_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggb4p5JqqW__background_desktop_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/411f13277fca4007b242edcb8736fa9f.mp4",
+        "ggb4p5JqqW__background_mobile_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggb4p5JqqW__background_mobile_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/411f13277fca4007b242edcb8736fa9f.mp4",
+        "gghWEvtJ_mB_text": "START TODAY, BE OPTIMIZED IN 2 WEEKS",
+        "ggs49jdb4qZ_text": "<p><span style=\"font-size:24px;\">Most guys keep pushing it off — “after the holidays”… “next month”… “when life calms down.”</span><br>&nbsp;</p><p><span style=\"font-size:24px;\">Men who actually change don’t wait. They start today.&nbsp;</span></p>"
+      },
+      "type": "gp-section-606735804337422903"
+    },
+    "gp_section_606735804337488439": {
+      "settings": {
+        "checksum": "dcc30617615c231eaf69428a21510721ba3ac2185cccf2f9f605cc4bfc037516_1_1_1_0__1",
+        "gg0G1T9aBHv_label": "<p>GET 1 BOTTLE FREE</p>",
+        "gg8vlum5h_A_text": "<p><span style=\"font-size:24px;\">Lock in your free bottle for life right now. &nbsp;If you don't absolutely LOVE Chad Bites - We don't want your money. &nbsp;</span></p><p>&nbsp;</p><p><span style=\"font-size:24px;\">Instantly get a full refund on your last order, NO QUESTIONS asked, 365-Days per year.</span></p>",
+        "ggB8y8QFo1S_text": "<strong>365-DAY MONEY-BACK GUARANTEE</strong>",
+        "ggMk9awc2ca_text": "<p><span style=\"font-size:24px;\">THE PROMISE</span></p>",
+        "ggSzd8nLTrg_background_desktop_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggSzd8nLTrg_background_desktop_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/d36977d84dfe4e7ab26a4ced79ef84fd.mp4",
+        "ggSzd8nLTrg_background_mobile_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggSzd8nLTrg_background_mobile_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/d36977d84dfe4e7ab26a4ced79ef84fd.mp4"
+      },
+      "type": "gp-section-606735804337488439"
+    },
+    "gp_section_606735804337553975": {
+      "settings": {
+        "checksum": "f6724db332f66cd2d13b039d93aac450daf9659a5e4efc046b7608cbe0fcb070_1_1_1_0__1",
+        "gg6rkmjmxLY_text": "JOIN THE 28,376+ MEN WHO TOOK BACK THEIR POWER",
+        "ggFqzrdacbX_text": "<p><span style=\"font-size:24px;\">THE TRIBE</span></p>",
+        "ggTazl_A24E_label": "<p>GET 1 BOTTLE FREE</p>",
+        "ggli_ch06wl_background_desktop_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggli_ch06wl_background_desktop_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/6f82db5f8c06467d9005e8e1df4c9c16.mp4",
+        "ggli_ch06wl_background_mobile_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggli_ch06wl_background_mobile_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/6f82db5f8c06467d9005e8e1df4c9c16.mp4",
+        "ggvggsvV2Tg_text": "<p><span style=\"font-size:24px;\">You’re not the only one dealing with this. Thousands of men, just like you, have brought their edge back naturally with Chad Bites.&nbsp;</span></p><p>&nbsp;</p><p><span style=\"font-size:24px;\">Join the growing community of guys who refuse to accept low energy, floppy performance, and a dad-bod as “just getting older.”</span></p>"
+      },
+      "type": "gp-section-606735804337553975"
+    },
+    "gp_section_606735804337619511": {
+      "settings": {
+        "checksum": "dbbf1440655d9c4bd3cda76de994bbfb32e1e6892ea91d20b1c216162fdfa4eb_1_1_1_0__1",
+        "gg1lS2JxbKV_text": "<p>Gummies offer superior absorption compared to capsules because the active ingredients are already broken down and ready for your body to absorb. Plus, they taste great, so you'll actually want to take them consistently.</p>",
+        "gg5YQOsYz9f_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/ingredients.jpg?v=1738002433",
+        "gg83y19LvVP_text": "<p>Chad Bites is designed to work synergistically with other supplements. However, if you're taking prescription medications or have health conditions, consult your doctor first.</p>",
+        "ggMy7YjzDtD_text": "<p>No. Chad Bites contains only natural ingredients and does not contain any banned substances.</p>",
+        "ggQ4J7FBBil_text": "<p>Absolutely. In fact, men over 40-50 often see the most dramatic results as this is when testosterone naturally declines the most.</p>",
+        "ggSJIpH8Wku_text": "<p>Yes. All ingredients are natural, extensively researched, and used at clinically effective dosages. Chad Bites is manufactured in a GMP-certified facility in the USA with rigorous quality testing.</p>",
+        "ggTzkg_JGfU_text": "<p>No. Chad Bites is designed for daily, long-term use. The ingredients support your body's natural testosterone production rather than replacing it.</p>",
+        "ggfYm-o1n4i_text": "<p>Each bottle contains 60 gummies (30-day supply at 2 gummies per day). &nbsp;However, many Chad Bites users to take 4-6 gummies per day for faster results.</p>",
+        "ggi7X8V8s4S_text": "<p>Most men notice increased energy and focus within the first week. Significant testosterone-related benefits typically become apparent within 2-4 weeks of consistent use.</p>",
+        "ggsyjB8EbYO_childItem_0": "<p><strong>How Long Until I See Results?</strong></p>",
+        "ggsyjB8EbYO_childItem_1": "<p><strong>Is This Safe?</strong></p>",
+        "ggsyjB8EbYO_childItem_10": "<p><strong>What Are The Supplement Facts?</strong></p>",
+        "ggsyjB8EbYO_childItem_2": "<p><strong>Will This Show Up On Drug Tests?</strong></p>",
+        "ggsyjB8EbYO_childItem_3": "<p><strong>Can I Take This with Other Supplements?</strong></p>",
+        "ggsyjB8EbYO_childItem_4": "<p><strong>Why Gummies Instead of Pills?</strong></p>",
+        "ggsyjB8EbYO_childItem_5": "<p><strong>How Many Gummies in a Bottle?</strong></p>",
+        "ggsyjB8EbYO_childItem_6": "<p><strong>What if it Doesn't Work for Me?</strong></p>",
+        "ggsyjB8EbYO_childItem_7": "<p><strong>Do I Need to Cycle This?</strong></p>",
+        "ggsyjB8EbYO_childItem_8": "<p><strong>Can I Eat More Than 2 Gummies Per Day?</strong></p>",
+        "ggsyjB8EbYO_childItem_9": "<p><strong>Is This Suitable For Men Over 50?</strong></p>",
+        "ggxTMb5W6FI_text": "<p>We offer a 365-day money-back guarantee. If you're not satisfied, contact us and we'll refund your most recent order, no questions asked.</p>",
+        "ggz0GLYUBC-_text": "<p>We recommend sticking to 2 gummies daily as that's the recommended effective dose. Due to the potency of our formula, you should not exceed more than 6 gummies per day.</p>"
+      },
+      "type": "gp-section-606735804337619511"
+    },
+    "gp_section_606735804337685047": {
+      "settings": {
+        "checksum": "56a39beb482e4d15e78c8792e2227d649d2cc145daaff630d97cea682aa68560_1_1_1_0__1",
+        "ggBJoLLnyDd_text": "<p>⚡LIMITED OFFER: GET 1 BOTTLE FREE &nbsp;⚡</p>",
+        "section_preload": "true"
+      },
+      "type": "gp-section-606735804337685047"
+    }
+  },
+  "order": [
+    "gp_section_606735804337685047",
+    "gp_section_606735804336702007",
+    "gp_section_606735804336767543",
+    "gp_section_606735804337422903",
+    "gp_section_606735804336833079",
+    "gp_section_606735804336898615",
+    "gp_section_606735804336964151",
+    "gp_section_606735804337095223",
+    "gp_section_606735804337029687",
+    "gp_section_606735804337160759",
+    "gp_section_606735804337226295",
+    "gp_section_606735804337488439",
+    "gp_section_606735804337553975",
+    "gp_section_606735804337357367",
+    "gp_section_606735804337619511",
+    "gp_section_606735804337291831"
+  ],
+  "layout": "theme.gempages.footer"
+}

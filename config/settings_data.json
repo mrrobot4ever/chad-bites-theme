@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "color_background": "#0a0b14",
@@ -9,11 +18,19 @@
     "color_success": "#22c55e",
     "color_danger": "#ef4444",
     "logo_width": 160,
-    "cart_type": "drawer",
     "social_twitter": "https://x.com/chadbites",
     "social_instagram": "https://instagram.com/chadbites",
     "social_facebook": "",
     "social_tiktok": "https://tiktok.com/@chadbites",
-    "social_youtube": ""
-  }
+    "social_youtube": "",
+    "cart_type": "drawer",
+    "blocks": {
+      "6478312753674380289": {
+        "type": "shopify://apps/gempages-builder/blocks/embed-gp-script-head/20b379d4-1b20-474c-a6ca-665c331919f3",
+        "disabled": false,
+        "settings": {}
+      }
+    }
+  },
+  "presets": null
 }

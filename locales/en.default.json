@@ -1,32 +1,13 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-  "general": {
-    "accessibility": {
-      "skip_to_content": "Skip to content"
-    },
-    "meta": {
-      "tags": "Tagged \"{{ tags }}\"",
-      "page": "Page {{ page }}"
-    }
-  },
-  "products": {
-    "product": {
-      "add_to_cart": "ADD TO CART",
-      "sold_out": "SOLD OUT",
-      "unavailable": "Unavailable",
-      "quantity": "Quantity",
-      "price": {
-        "from": "From {{ price }}",
-        "sale_price": "Sale price",
-        "regular_price": "Regular price"
-      }
-    }
-  },
-  "collections": {
-    "general": {
-      "no_matches": "No products found in this collection.",
-      "browse": "Browse Collections"
-    }
-  },
   "cart": {
     "general": {
       "title": "YOUR CART",
@@ -36,6 +17,12 @@
       "continue_shopping": "Continue Shopping",
       "shipping_note": "Shipping and taxes calculated at checkout.",
       "remove": "Remove"
+    }
+  },
+  "collections": {
+    "general": {
+      "no_matches": "No products found in this collection.",
+      "browse": "Browse Collections"
     }
   },
   "customer": {
@@ -68,6 +55,74 @@
     "order": {
       "title": "Order {{ name }}",
       "date_html": "Placed on {{ date }}"
+    }
+  },
+  "general": {
+    "accessibility": {
+      "skip_to_content": "Skip to content"
+    },
+    "meta": {
+      "tags": "Tagged \"{{ tags }}\"",
+      "page": "Page {{ page }}"
+    }
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "ADD TO CART",
+      "sold_out": "SOLD OUT",
+      "unavailable": "Unavailable",
+      "quantity": "Quantity",
+      "price": {
+        "from": "From {{ price }}",
+        "sale_price": "Sale price",
+        "regular_price": "Regular price"
+      }
+    }
+  },
+  "gempages": {
+    "Carousel": {
+      "no_slider": "No Slider"
+    },
+    "CarouselV3": {
+      "no_slider": "No Slider"
+    },
+    "Newsletter": {
+      "err_msg_default": "Can’t send email. Please try again later.",
+      "success_msg_default": "Thanks for subscribing"
+    },
+    "IconListV2": {
+      "icons_not_found": "Icons not found"
+    },
+    "IconList": {
+      "icons_not_found": "Icons not found"
+    },
+    "IconListHoz": {
+      "icons_not_found": "Icons not found"
+    },
+    "Product": {
+      "product_not_found": "Product not found"
+    },
+    "ProductList": {
+      "product_not_found": "Product Not Found!",
+      "no_products_found": "No products found!",
+      "no_related_products": "No related products!"
+    },
+    "ProductListV3": {
+      "product_not_found": "Product Not Found!",
+      "no_products_found": "No products found!",
+      "no_related_products": "No related products!"
+    },
+    "ProductTitle": {
+      "product_not_found": "Product Not Found"
+    },
+    "ProductVariants": {
+      "please_select": "Please select an option"
+    },
+    "StockCounter": {
+      "let_buy_now": "<mark>HURRY!</mark> LET BUY NOW"
+    },
+    "Breadcrumb": {
+      "home": "Home"
     }
   }
 }
