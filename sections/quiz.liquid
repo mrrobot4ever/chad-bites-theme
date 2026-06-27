@@ -8,186 +8,178 @@
 
     <!-- STEP 1: Intro/Warning -->
     <div class="quiz-step quiz-step--active" data-step="1">
-      <h2 class="quiz-heading">{{ section.settings.heading_step1 | default: "WARNING: THIS IS NOT ANOTHER SCAM TEST BOOSTER" }}</h2>
+      <h2 class="quiz-heading">{{ section.settings.step1_heading | default: "WARNING: THIS IS NOT ANOTHER SCAM TEST BOOSTER" }}</h2>
       <div class="quiz-circle-image">
         {% if section.settings.step1_image != blank %}
           <img src="{{ section.settings.step1_image | image_url: width: 400 }}" alt="">
         {% endif %}
       </div>
-      <p class="quiz-body">{{ section.settings.body_step1 | default: "Before we give you access to the most potent testosterone stack on earth - used by A list actors and professional athletes. We need to ask you some questions. You must be over 18 to continue." }}</p>
-      <button class="quiz-btn quiz-btn--cta" onclick="quizNext(2)">Agree and Continue</button>
+      <p class="quiz-body">{{ section.settings.step1_body | default: "Before we give you access to the most potent testosterone stack on earth - used by A list actors and professional athletes. We need to ask you some questions. You must be over 18 to continue." }}</p>
+      <button class="quiz-btn quiz-btn--cta" onclick="quizNext(2)">{{ section.settings.step1_button | default: "Agree and Continue" }}</button>
     </div>
 
     <!-- STEP 2: Age -->
     <div class="quiz-step" data-step="2">
-      <h2 class="quiz-heading">How old are you?</h2>
-      <p class="quiz-subtext">This 2-minute assessment analyzes your exact symptoms, lifestyle, and risk factor in order to see if Chad Bites will work for you.</p>
+      <h2 class="quiz-heading">{{ section.settings.step2_question | default: "How old are you?" }}</h2>
+      <p class="quiz-subtext">{{ section.settings.step2_subtext | default: "This 2-minute assessment analyzes your exact symptoms, lifestyle, and risk factor in order to see if Chad Bites will work for you." }}</p>
       <div class="quiz-options">
-        <button class="quiz-option" onclick="quizAnswer(2,'age','50+',4)">50+ Years Old</button>
-        <button class="quiz-option" onclick="quizAnswer(2,'age','40-49',3)">40-49 Years Old</button>
-        <button class="quiz-option" onclick="quizAnswer(2,'age','30-39',2)">30-39 Years Old</button>
-        <button class="quiz-option" onclick="quizAnswer(2,'age','20-29',1)">20-29 Years Old</button>
+        {% assign step2_answers = section.settings.step2_answers | default: "50+ Years Old|40-49 Years Old|30-39 Years Old|20-29 Years Old" | split: "|" %}
+        {% for answer in step2_answers %}
+          <button class="quiz-option" onclick="quizSelectAnswer(2, {{ forloop.index0 }}, this)">{{ answer }}</button>
+        {% endfor %}
       </div>
     </div>
 
     <!-- STEP 3: Biggest concern -->
     <div class="quiz-step" data-step="3">
-      <h2 class="quiz-heading">What's your biggest concern about your masculine health right now?</h2>
+      <h2 class="quiz-heading">{{ section.settings.step3_question | default: "What's your biggest concern about your masculine health right now?" }}</h2>
       <div class="quiz-options">
-        <button class="quiz-option" onclick="quizAnswer(3,'concern','energy',0)">Energy levels</button>
-        <button class="quiz-option" onclick="quizAnswer(3,'concern','muscle',0)">Muscle mass and strength</button>
-        <button class="quiz-option" onclick="quizAnswer(3,'concern','sex',0)">Sex drive and performance</button>
-        <button class="quiz-option" onclick="quizAnswer(3,'concern','focus',0)">Mental focus and clarity</button>
-        <button class="quiz-option" onclick="quizAnswer(3,'concern','weight',0)">Weight loss</button>
+        {% assign step3_answers = section.settings.step3_answers | default: "Energy levels|Muscle mass and strength|Sex drive and performance|Mental focus and clarity|Weight loss" | split: "|" %}
+        {% for answer in step3_answers %}
+          <button class="quiz-option" onclick="quizSelectAnswer(3, {{ forloop.index0 }}, this)">{{ answer }}</button>
+        {% endfor %}
       </div>
     </div>
 
     <!-- STEP 4: Stress -->
     <div class="quiz-step" data-step="4">
-      <h2 class="quiz-heading">Do you have stress symptoms during the day? Like feeling tired, cranky, foggy, or moody.</h2>
+      <h2 class="quiz-heading">{{ section.settings.step4_question | default: "Do you have stress symptoms during the day? Like feeling tired, cranky, foggy, or moody." }}</h2>
       <div class="quiz-options">
-        <button class="quiz-option" onclick="quizAnswer(4,'stress','yes',2)">Yes</button>
-        <button class="quiz-option" onclick="quizAnswer(4,'stress','no',0)">No</button>
+        {% assign step4_answers = section.settings.step4_answers | default: "Yes|No" | split: "|" %}
+        {% for answer in step4_answers %}
+          <button class="quiz-option" onclick="quizSelectAnswer(4, {{ forloop.index0 }}, this)">{{ answer }}</button>
+        {% endfor %}
       </div>
     </div>
 
     <!-- STEP 5: Energy at 3PM -->
     <div class="quiz-step" data-step="5">
-      <h2 class="quiz-heading">HOW'S YOUR ENERGY AT 3PM COMPARED TO WHEN YOU WAKE UP?</h2>
+      <h2 class="quiz-heading">{{ section.settings.step5_question | default: "HOW'S YOUR ENERGY AT 3PM COMPARED TO WHEN YOU WAKE UP?" }}</h2>
       <div class="quiz-options">
-        <button class="quiz-option" onclick="quizAnswer(5,'energy','drained',3)">Completely drained. I need caffeine or a nap</button>
-        <button class="quiz-option" onclick="quizAnswer(5,'energy','lower',2)">Noticeably lower - afternoon slump hits hard</button>
-        <button class="quiz-option" onclick="quizAnswer(5,'energy','slightly',1)">Slightly tired - still functional but slower</button>
-        <button class="quiz-option" onclick="quizAnswer(5,'energy','same',0)">Same energy - no afternoon crash</button>
+        {% assign step5_answers = section.settings.step5_answers | default: "Completely drained. I need caffeine or a nap|Noticeably lower - afternoon slump hits hard|Slightly tired - still functional but slower|Same energy - no afternoon crash" | split: "|" %}
+        {% for answer in step5_answers %}
+          <button class="quiz-option" onclick="quizSelectAnswer(5, {{ forloop.index0 }}, this)">{{ answer }}</button>
+        {% endfor %}
       </div>
     </div>
 
     <!-- STEP 6: When changes noticed -->
     <div class="quiz-step" data-step="6">
-      <h2 class="quiz-heading">WHEN DID YOU START NOTICING CHANGES TO YOUR ENERGY AND DRIVE?</h2>
+      <h2 class="quiz-heading">{{ section.settings.step6_question | default: "WHEN DID YOU START NOTICING CHANGES TO YOUR ENERGY AND DRIVE?" }}</h2>
       <div class="quiz-options">
-        <button class="quiz-option" onclick="quizAnswer(6,'when','over_year',3)">Over a year ago</button>
-        <button class="quiz-option" onclick="quizAnswer(6,'when','past_year',2)">In the past year</button>
-        <button class="quiz-option" onclick="quizAnswer(6,'when','few_months',1)">In the past few months</button>
-        <button class="quiz-option" onclick="quizAnswer(6,'when','not_sure',1)">Not sure</button>
+        {% assign step6_answers = section.settings.step6_answers | default: "Over a year ago|In the past year|In the past few months|Not sure" | split: "|" %}
+        {% for answer in step6_answers %}
+          <button class="quiz-option" onclick="quizSelectAnswer(6, {{ forloop.index0 }}, this)">{{ answer }}</button>
+        {% endfor %}
       </div>
     </div>
 
     <!-- STEP 7: Expected results -->
     <div class="quiz-step" data-step="7">
-      <h2 class="quiz-heading">WHAT RESULTS ARE YOU EXPECTING FROM INCREASED TESTOSTERONE?</h2>
+      <h2 class="quiz-heading">{{ section.settings.step7_question | default: "WHAT RESULTS ARE YOU EXPECTING FROM INCREASED TESTOSTERONE?" }}</h2>
       <div class="quiz-options">
-        <button class="quiz-option" onclick="quizAnswer(7,'expected','energy',0)">Higher energy that lasts all day</button>
-        <button class="quiz-option" onclick="quizAnswer(7,'expected','muscle',0)">Increased muscle mass and strength</button>
-        <button class="quiz-option" onclick="quizAnswer(7,'expected','sex',0)">Better sex drive and performance</button>
-        <button class="quiz-option" onclick="quizAnswer(7,'expected','focus',0)">Improved mental clarity and focus</button>
-        <button class="quiz-option" onclick="quizAnswer(7,'expected','all',0)">All of the above</button>
+        {% assign step7_answers = section.settings.step7_answers | default: "Higher energy that lasts all day|Increased muscle mass and strength|Better sex drive and performance|Improved mental clarity and focus|All of the above" | split: "|" %}
+        {% for answer in step7_answers %}
+          <button class="quiz-option" onclick="quizSelectAnswer(7, {{ forloop.index0 }}, this)">{{ answer }}</button>
+        {% endfor %}
       </div>
     </div>
 
     <!-- STEP 8: Congratulations -->
     <div class="quiz-step" data-step="8">
-      <h2 class="quiz-heading">{{ section.settings.heading_step8 | default: "CONGRATULATIONS. YOU ARE IN THE RIGHT PLACE." }}</h2>
-      <p class="quiz-body">{{ section.settings.body_step8 | default: "Over 29,576 men have reclaimed their T, drive, and physique thanks to our new scientific, natural T-revival system used by pro athletes and now made available to you." }}</p>
+      <h2 class="quiz-heading">{{ section.settings.step8_heading | default: "CONGRATULATIONS. YOU ARE IN THE RIGHT PLACE." }}</h2>
+      <p class="quiz-body">{{ section.settings.step8_body | default: "Over 29,576 men have reclaimed their T, drive, and physique thanks to our new scientific, natural T-revival system used by pro athletes and now made available to you." }}</p>
       <div class="quiz-square-image">
         {% if section.settings.step8_image != blank %}
           <img src="{{ section.settings.step8_image | image_url: width: 600 }}" alt="">
         {% endif %}
       </div>
-      <button class="quiz-btn quiz-btn--cta" onclick="quizNext(9)">Continue</button>
+      <button class="quiz-btn quiz-btn--cta" onclick="quizNext(9)">{{ section.settings.step8_button | default: "Continue" }}</button>
     </div>
 
     <!-- STEP 9: Body composition -->
     <div class="quiz-step" data-step="9">
-      <h2 class="quiz-heading">HOW WOULD YOU DESCRIBE YOUR CURRENT BODY COMPOSITION?</h2>
+      <h2 class="quiz-heading">{{ section.settings.step9_question | default: "HOW WOULD YOU DESCRIBE YOUR CURRENT BODY COMPOSITION?" }}</h2>
       <div class="quiz-options">
-        <button class="quiz-option" onclick="quizAnswer(9,'body','lean',0)">Lean and muscular</button>
-        <button class="quiz-option" onclick="quizAnswer(9,'body','average',1)">Average build</button>
-        <button class="quiz-option" onclick="quizAnswer(9,'body','soft',2)">Soft with some muscle</button>
-        <button class="quiz-option" onclick="quizAnswer(9,'body','overweight',3)">Overweight / out of shape</button>
+        {% assign step9_answers = section.settings.step9_answers | default: "Lean and muscular|Average build|Soft with some muscle|Overweight / out of shape" | split: "|" %}
+        {% for answer in step9_answers %}
+          <button class="quiz-option" onclick="quizSelectAnswer(9, {{ forloop.index0 }}, this)">{{ answer }}</button>
+        {% endfor %}
       </div>
     </div>
 
     <!-- STEP 10: Sleep -->
     <div class="quiz-step" data-step="10">
-      <h2 class="quiz-heading">HOW MANY HOURS OF QUALITY SLEEP DO YOU GET PER NIGHT?</h2>
+      <h2 class="quiz-heading">{{ section.settings.step10_question | default: "HOW MANY HOURS OF QUALITY SLEEP DO YOU GET PER NIGHT?" }}</h2>
       <div class="quiz-options">
-        <button class="quiz-option" onclick="quizAnswer(10,'sleep','less5',3)">Less than 5 hours</button>
-        <button class="quiz-option" onclick="quizAnswer(10,'sleep','5to6',2)">5–6 hours</button>
-        <button class="quiz-option" onclick="quizAnswer(10,'sleep','7to8',1)">7–8 hours</button>
-        <button class="quiz-option" onclick="quizAnswer(10,'sleep','more8',0)">More than 8 hours</button>
+        {% assign step10_answers = section.settings.step10_answers | default: "Less than 5 hours|5–6 hours|7–8 hours|More than 8 hours" | split: "|" %}
+        {% for answer in step10_answers %}
+          <button class="quiz-option" onclick="quizSelectAnswer(10, {{ forloop.index0 }}, this)">{{ answer }}</button>
+        {% endfor %}
       </div>
     </div>
 
     <!-- STEP 11: Analyzing animation -->
     <div class="quiz-step" data-step="11">
-      <h2 class="quiz-heading">ANALYZING YOUR HEALTH PROFILE&hellip;</h2>
-      <p class="quiz-subtext">Based on your responses, we're building a comprehensive assessment of your hormonal health and identifying the key factors affecting your energy and vitality.</p>
+      <h2 class="quiz-heading">{{ section.settings.step11_heading | default: "ANALYZING YOUR HEALTH PROFILE…" }}</h2>
+      <p class="quiz-subtext">{{ section.settings.step11_subtext | default: "Based on your responses, we're building a comprehensive assessment of your hormonal health and identifying the key factors affecting your energy and vitality." }}</p>
       <div class="quiz-analysis-bar-wrap">
         <div class="quiz-analysis-bar">
           <div class="quiz-analysis-bar-fill" id="analysisBarFill"></div>
         </div>
-        <span class="quiz-analysis-label">ANALYZING</span>
+        <span class="quiz-analysis-label">{{ section.settings.step11_label | default: "ANALYZING" }}</span>
       </div>
     </div>
 
     <!-- STEP 12: Family history -->
     <div class="quiz-step" data-step="12">
-      <h2 class="quiz-heading">DO YOU HAVE A FAMILY HISTORY OF DIABETES, HEART DISEASE, OR METABOLIC ISSUES?</h2>
+      <h2 class="quiz-heading">{{ section.settings.step12_question | default: "DO YOU HAVE A FAMILY HISTORY OF DIABETES, HEART DISEASE, OR METABOLIC ISSUES?" }}</h2>
       <div class="quiz-info-box">
-        <h4 class="quiz-info-heading">WHY WE ASK</h4>
-        <p class="quiz-info-text">These conditions share similar root causes with low testosterone — insulin resistance, inflammation, and metabolic dysfunction. Family patterns help us identify your risk factors.</p>
+        <h4 class="quiz-info-heading">{{ section.settings.step12_info_heading | default: "WHY WE ASK" }}</h4>
+        <p class="quiz-info-text">{{ section.settings.step12_info_text | default: "These conditions share similar root causes with low testosterone — insulin resistance, inflammation, and metabolic dysfunction. Family patterns help us identify your risk factors." }}</p>
       </div>
       <div class="quiz-options">
-        <button class="quiz-option" onclick="quizAnswer(12,'family','yes',2)">Yes</button>
-        <button class="quiz-option" onclick="quizAnswer(12,'family','no',0)">No</button>
-        <button class="quiz-option" onclick="quizAnswer(12,'family','not_sure',1)">Not sure</button>
+        {% assign step12_answers = section.settings.step12_answers | default: "Yes|No|Not sure" | split: "|" %}
+        {% for answer in step12_answers %}
+          <button class="quiz-option" onclick="quizSelectAnswer(12, {{ forloop.index0 }}, this)">{{ answer }}</button>
+        {% endfor %}
       </div>
     </div>
 
     <!-- STEP 13: Processed foods -->
     <div class="quiz-step" data-step="13">
-      <h2 class="quiz-heading">HOW OFTEN DO YOU EAT PROCESSED FOODS?</h2>
+      <h2 class="quiz-heading">{{ section.settings.step13_question | default: "HOW OFTEN DO YOU EAT PROCESSED FOODS?" }}</h2>
       <div class="quiz-info-box">
-        <h4 class="quiz-info-heading">WHY WE ASK</h4>
-        <p class="quiz-info-text">Processed foods contain chemicals and additives that disrupt hormone production. Ultra-processed foods are linked to lower testosterone levels in multiple studies.</p>
+        <h4 class="quiz-info-heading">{{ section.settings.step13_info_heading | default: "WHY WE ASK" }}</h4>
+        <p class="quiz-info-text">{{ section.settings.step13_info_text | default: "Processed foods contain chemicals and additives that disrupt hormone production. Ultra-processed foods are linked to lower testosterone levels in multiple studies." }}</p>
       </div>
       <div class="quiz-options">
-        <button class="quiz-option" onclick="quizAnswer(13,'diet','daily',3)">Daily - most meals include processed foods</button>
-        <button class="quiz-option" onclick="quizAnswer(13,'diet','several',2)">Several times a week</button>
-        <button class="quiz-option" onclick="quizAnswer(13,'diet','occasionally',1)">Occasionally - mostly whole foods</button>
-        <button class="quiz-option" onclick="quizAnswer(13,'diet','rarely',0)">Rarely - I avoid processed foods</button>
+        {% assign step13_answers = section.settings.step13_answers | default: "Daily - most meals include processed foods|Several times a week|Occasionally - mostly whole foods|Rarely - I avoid processed foods" | split: "|" %}
+        {% for answer in step13_answers %}
+          <button class="quiz-option" onclick="quizSelectAnswer(13, {{ forloop.index0 }}, this)">{{ answer }}</button>
+        {% endfor %}
       </div>
     </div>
 
     <!-- STEP 14: Building profile animation -->
     <div class="quiz-step" data-step="14">
-      <h2 class="quiz-heading">BUILDING YOUR PROFILE&hellip;</h2>
-      <p class="quiz-subtext">Hold tight while we map your answers against the Chad Bites Alpha-Male-revival framework.</p>
+      <h2 class="quiz-heading">{{ section.settings.step14_heading | default: "BUILDING YOUR PROFILE…" }}</h2>
+      <p class="quiz-subtext">{{ section.settings.step14_subtext | default: "Hold tight while we map your answers against the Chad Bites Alpha-Male-revival framework." }}</p>
       <div class="quiz-checklist" id="quizChecklist">
-        <div class="quiz-check-item" id="checkItem1">
-          <span class="quiz-check-icon">&#10003;</span>
-          <span>Analyzing your symptoms</span>
-        </div>
-        <div class="quiz-check-item" id="checkItem2">
-          <span class="quiz-check-icon">&#10003;</span>
-          <span>Cross-referencing your lifestyle</span>
-        </div>
-        <div class="quiz-check-item" id="checkItem3">
-          <span class="quiz-check-icon">&#10003;</span>
-          <span>Calibrating your protocol</span>
-        </div>
-        <div class="quiz-check-item" id="checkItem4">
-          <span class="quiz-check-icon">&#10003;</span>
-          <span>Personalizing your result</span>
-        </div>
+        {% assign checklist_items = section.settings.step14_checklist | default: "Analyzing your symptoms|Cross-referencing your lifestyle|Calibrating your protocol|Personalizing your result" | split: "|" %}
+        {% for item in checklist_items %}
+          <div class="quiz-check-item" id="checkItem{{ forloop.index }}">
+            <span class="quiz-check-icon">&#10003;</span>
+            <span>{{ item }}</span>
+          </div>
+        {% endfor %}
       </div>
-      <p class="quiz-ready-text" id="quizReadyText">YOUR PROTOCOL SUMMARY IS ALMOST READY</p>
+      <p class="quiz-ready-text" id="quizReadyText">{{ section.settings.step14_final | default: "YOUR PROTOCOL SUMMARY IS ALMOST READY" }}</p>
     </div>
 
     <!-- STEP 15: Results -->
     <div class="quiz-step" data-step="15">
-      <h2 class="quiz-heading">{{ section.settings.heading_step15 | default: "Your Testosterone Assessment:" }}</h2>
+      <h2 class="quiz-heading">{{ section.settings.step15_heading | default: "Your Testosterone Assessment:" }}</h2>
       <div class="quiz-result-label" id="resultDeclineLabel"></div>
       <p class="quiz-result-desc" id="resultDescription"></p>
       <div class="quiz-suppression-wrap">
@@ -214,31 +206,34 @@
           <span class="quiz-stat-value" id="statQuality"></span>
         </div>
       </div>
-      <button class="quiz-btn quiz-btn--cta" onclick="quizNext(16)">SHOW ME WHAT'S POSSIBLE &rarr;</button>
+      <button class="quiz-btn quiz-btn--cta" onclick="quizNext(16)">{{ section.settings.step15_button | default: "SHOW ME WHAT'S POSSIBLE" }} &rarr;</button>
     </div>
 
     <!-- STEP 16: Final projection -->
-    <div class="quiz-step" data-step="16">
-      <h2 class="quiz-heading">{{ section.settings.heading_step16 | default: "THE LAST SOLUTION YOU'LL EVER NEED TO FEEL LIKE A MAN AGAIN." }}</h2>
-      <p class="quiz-subtext" id="step16Subtext"><span id="step16SubtextContent">Based on your answers, we expect you to visibly increase energy, strength and masculine drive by <span id="step16Date"></span></span></p>
+    <div class="quiz-step" data-step="16"
+      data-chart-status-label="{{ section.settings.chart_status_label | default: 'STATUS' }}"
+      data-chart-projected-label="{{ section.settings.chart_projected_label | default: 'PROJECTED LIFT' }}"
+      data-chart-eta-label="{{ section.settings.chart_eta_label | default: 'ETA' }}">
+      <h2 class="quiz-heading">{{ section.settings.step16_heading | default: "THE LAST SOLUTION YOU'LL EVER NEED TO FEEL LIKE A MAN AGAIN." }}</h2>
+      <p class="quiz-subtext" id="step16Subtext">{{ section.settings.step16_subtext_prefix | default: "Based on your answers, we expect you to visibly increase energy, strength and masculine drive by" }} <span id="step16Date"></span></p>
       <div class="quiz-chart-card">
         <div class="quiz-chart-stats">
           <div class="quiz-chart-stat">
-            <span class="quiz-chart-stat-label">STATUS</span>
+            <span class="quiz-chart-stat-label">{{ section.settings.chart_status_label | default: "STATUS" }}</span>
             <span class="quiz-chart-stat-value" id="chartStatus"></span>
           </div>
           <div class="quiz-chart-stat">
-            <span class="quiz-chart-stat-label">PROJECTED LIFT</span>
+            <span class="quiz-chart-stat-label">{{ section.settings.chart_projected_label | default: "PROJECTED LIFT" }}</span>
             <span class="quiz-chart-stat-value" id="chartLift"></span>
           </div>
           <div class="quiz-chart-stat">
-            <span class="quiz-chart-stat-label">ETA</span>
+            <span class="quiz-chart-stat-label">{{ section.settings.chart_eta_label | default: "ETA" }}</span>
             <span class="quiz-chart-stat-value" id="chartEta"></span>
           </div>
         </div>
         <div class="quiz-chart-svg-wrap" id="quizChartWrap"></div>
       </div>
-      <a class="quiz-btn quiz-btn--cta" id="quizCtaLink" href="{{ section.settings.cta_url | default: '#' }}">GET MY PROTOCOL &rarr;</a>
+      <a class="quiz-btn quiz-btn--cta" id="quizCtaLink" href="{{ section.settings.cta_url | default: '#' }}">{{ section.settings.step16_button | default: "GET MY PROTOCOL" }} &rarr;</a>
     </div>
 
   </div>
@@ -650,14 +645,35 @@
 
 <script>
   (function() {
-    var quizAnswers = {};
     var quizScores = {};
     var currentStep = 1;
     var totalSteps = 16;
 
-    window.quizAnswer = function(step, key, value, score) {
-      quizAnswers[key] = value;
-      quizScores[key] = score;
+    /* Scoring map: step -> key name, and step -> [score per answer index]
+       Answer index 0 = first option in pipe-separated list.
+       Steps with no scoring (3, 7) use null. */
+    var scoreMap = {
+      2:  { key: 'age',    scores: [4, 3, 2, 1] },
+      3:  { key: 'concern', scores: null },
+      4:  { key: 'stress', scores: [2, 0] },
+      5:  { key: 'energy', scores: [3, 2, 1, 0] },
+      6:  { key: 'when',   scores: [3, 2, 1, 1] },
+      7:  { key: 'expected', scores: null },
+      9:  { key: 'body',   scores: [0, 1, 2, 3] },
+      10: { key: 'sleep',  scores: [3, 2, 1, 0] },
+      12: { key: 'family', scores: [2, 0, 1] },
+      13: { key: 'diet',   scores: [3, 2, 1, 0] }
+    };
+
+    window.quizSelectAnswer = function(step, answerIndex, btnEl) {
+      var mapping = scoreMap[step];
+      if (mapping && mapping.key) {
+        var score = 0;
+        if (mapping.scores && answerIndex < mapping.scores.length) {
+          score = mapping.scores[answerIndex];
+        }
+        quizScores[mapping.key] = score;
+      }
       quizNext(step + 1);
     };
 
@@ -717,23 +733,26 @@
     }
 
     function runChecklistAnimation() {
-      var items = ['checkItem1','checkItem2','checkItem3','checkItem4'];
-      items.forEach(function(id, i) {
-        document.getElementById(id).classList.remove('quiz-check-item--visible');
-      });
+      var checklist = document.getElementById('quizChecklist');
+      var items = checklist.querySelectorAll('.quiz-check-item');
+      for (var i = 0; i < items.length; i++) {
+        items[i].classList.remove('quiz-check-item--visible');
+      }
       document.getElementById('quizReadyText').classList.remove('quiz-ready-text--visible');
 
-      items.forEach(function(id, i) {
-        setTimeout(function() {
-          document.getElementById(id).classList.add('quiz-check-item--visible');
-        }, (i + 1) * 1000);
-      });
+      for (var j = 0; j < items.length; j++) {
+        (function(idx) {
+          setTimeout(function() {
+            items[idx].classList.add('quiz-check-item--visible');
+          }, (idx + 1) * 1000);
+        })(j);
+      }
       setTimeout(function() {
         document.getElementById('quizReadyText').classList.add('quiz-ready-text--visible');
-      }, 5000);
+      }, (items.length + 1) * 1000);
       setTimeout(function() {
         quizNext(15);
-      }, 6000);
+      }, (items.length + 2) * 1000);
     }
 
     function getResultData() {
@@ -820,9 +839,8 @@
       var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
       var etaStr = months[etaDate.getMonth()] + ' ' + etaDate.getDate() + ', ' + etaDate.getFullYear();
 
-      // Update step 16 subtext with date
-      var subtextEl = document.getElementById('step16Subtext');
-      subtextEl.textContent = subtextEl.textContent.replace('{date}', etaStr);
+      // Update step 16 date span
+      document.getElementById('step16Date').textContent = etaStr;
 
       document.getElementById('chartStatus').textContent = d.level;
       document.getElementById('chartLift').textContent = '+' + d.projected + '%';
@@ -950,14 +968,149 @@
   "tag": "section",
   "settings": [
     {
-      "type": "url",
-      "id": "cta_url",
-      "label": "Results CTA link"
+      "type": "header",
+      "content": "Step 1 — Intro"
+    },
+    {
+      "type": "text",
+      "id": "step1_heading",
+      "label": "Step 1 heading",
+      "default": "WARNING: THIS IS NOT ANOTHER SCAM TEST BOOSTER"
+    },
+    {
+      "type": "textarea",
+      "id": "step1_body",
+      "label": "Step 1 body text",
+      "default": "Before we give you access to the most potent testosterone stack on earth - used by A list actors and professional athletes. We need to ask you some questions. You must be over 18 to continue."
     },
     {
       "type": "image_picker",
       "id": "step1_image",
       "label": "Step 1 circle image"
+    },
+    {
+      "type": "text",
+      "id": "step1_button",
+      "label": "Step 1 button text",
+      "default": "Agree and Continue"
+    },
+    {
+      "type": "header",
+      "content": "Step 2 — Age"
+    },
+    {
+      "type": "text",
+      "id": "step2_question",
+      "label": "Step 2 question",
+      "default": "How old are you?"
+    },
+    {
+      "type": "textarea",
+      "id": "step2_subtext",
+      "label": "Step 2 subtext",
+      "default": "This 2-minute assessment analyzes your exact symptoms, lifestyle, and risk factor in order to see if Chad Bites will work for you."
+    },
+    {
+      "type": "text",
+      "id": "step2_answers",
+      "label": "Step 2 answers (pipe-separated)",
+      "default": "50+ Years Old|40-49 Years Old|30-39 Years Old|20-29 Years Old"
+    },
+    {
+      "type": "header",
+      "content": "Step 3 — Concern"
+    },
+    {
+      "type": "text",
+      "id": "step3_question",
+      "label": "Step 3 question",
+      "default": "What's your biggest concern about your masculine health right now?"
+    },
+    {
+      "type": "text",
+      "id": "step3_answers",
+      "label": "Step 3 answers (pipe-separated)",
+      "default": "Energy levels|Muscle mass and strength|Sex drive and performance|Mental focus and clarity|Weight loss"
+    },
+    {
+      "type": "header",
+      "content": "Step 4 — Stress"
+    },
+    {
+      "type": "text",
+      "id": "step4_question",
+      "label": "Step 4 question",
+      "default": "Do you have stress symptoms during the day? Like feeling tired, cranky, foggy, or moody."
+    },
+    {
+      "type": "text",
+      "id": "step4_answers",
+      "label": "Step 4 answers (pipe-separated)",
+      "default": "Yes|No"
+    },
+    {
+      "type": "header",
+      "content": "Step 5 — Energy"
+    },
+    {
+      "type": "text",
+      "id": "step5_question",
+      "label": "Step 5 question",
+      "default": "HOW'S YOUR ENERGY AT 3PM COMPARED TO WHEN YOU WAKE UP?"
+    },
+    {
+      "type": "text",
+      "id": "step5_answers",
+      "label": "Step 5 answers (pipe-separated)",
+      "default": "Completely drained. I need caffeine or a nap|Noticeably lower - afternoon slump hits hard|Slightly tired - still functional but slower|Same energy - no afternoon crash"
+    },
+    {
+      "type": "header",
+      "content": "Step 6 — Timeline"
+    },
+    {
+      "type": "text",
+      "id": "step6_question",
+      "label": "Step 6 question",
+      "default": "WHEN DID YOU START NOTICING CHANGES TO YOUR ENERGY AND DRIVE?"
+    },
+    {
+      "type": "text",
+      "id": "step6_answers",
+      "label": "Step 6 answers (pipe-separated)",
+      "default": "Over a year ago|In the past year|In the past few months|Not sure"
+    },
+    {
+      "type": "header",
+      "content": "Step 7 — Expected results"
+    },
+    {
+      "type": "text",
+      "id": "step7_question",
+      "label": "Step 7 question",
+      "default": "WHAT RESULTS ARE YOU EXPECTING FROM INCREASED TESTOSTERONE?"
+    },
+    {
+      "type": "text",
+      "id": "step7_answers",
+      "label": "Step 7 answers (pipe-separated)",
+      "default": "Higher energy that lasts all day|Increased muscle mass and strength|Better sex drive and performance|Improved mental clarity and focus|All of the above"
+    },
+    {
+      "type": "header",
+      "content": "Step 8 — Congrats"
+    },
+    {
+      "type": "text",
+      "id": "step8_heading",
+      "label": "Step 8 heading",
+      "default": "CONGRATULATIONS. YOU ARE IN THE RIGHT PLACE."
+    },
+    {
+      "type": "textarea",
+      "id": "step8_body",
+      "label": "Step 8 body text",
+      "default": "Over 29,576 men have reclaimed their T, drive, and physique thanks to our new scientific, natural T-revival system used by pro athletes and now made available to you."
     },
     {
       "type": "image_picker",
@@ -966,39 +1119,212 @@
     },
     {
       "type": "text",
-      "id": "heading_step1",
-      "label": "Step 1 heading",
-      "default": "WARNING: THIS IS NOT ANOTHER SCAM TEST BOOSTER"
+      "id": "step8_button",
+      "label": "Step 8 button text",
+      "default": "Continue"
     },
     {
-      "type": "textarea",
-      "id": "body_step1",
-      "label": "Step 1 body text",
-      "default": "Before we give you access to the most potent testosterone stack on earth - used by A list actors and professional athletes. We need to ask you some questions. You must be over 18 to continue."
-    },
-    {
-      "type": "text",
-      "id": "heading_step8",
-      "label": "Step 8 heading",
-      "default": "CONGRATULATIONS. YOU ARE IN THE RIGHT PLACE."
-    },
-    {
-      "type": "textarea",
-      "id": "body_step8",
-      "label": "Step 8 body text",
-      "default": "Over 29,576 men have reclaimed their T, drive, and physique thanks to our new scientific, natural T-revival system used by pro athletes and now made available to you."
+      "type": "header",
+      "content": "Step 9 — Body"
     },
     {
       "type": "text",
-      "id": "heading_step15",
+      "id": "step9_question",
+      "label": "Step 9 question",
+      "default": "HOW WOULD YOU DESCRIBE YOUR CURRENT BODY COMPOSITION?"
+    },
+    {
+      "type": "text",
+      "id": "step9_answers",
+      "label": "Step 9 answers (pipe-separated)",
+      "default": "Lean and muscular|Average build|Soft with some muscle|Overweight / out of shape"
+    },
+    {
+      "type": "header",
+      "content": "Step 10 — Sleep"
+    },
+    {
+      "type": "text",
+      "id": "step10_question",
+      "label": "Step 10 question",
+      "default": "HOW MANY HOURS OF QUALITY SLEEP DO YOU GET PER NIGHT?"
+    },
+    {
+      "type": "text",
+      "id": "step10_answers",
+      "label": "Step 10 answers (pipe-separated)",
+      "default": "Less than 5 hours|5–6 hours|7–8 hours|More than 8 hours"
+    },
+    {
+      "type": "header",
+      "content": "Step 11 — Analysis"
+    },
+    {
+      "type": "text",
+      "id": "step11_heading",
+      "label": "Step 11 heading",
+      "default": "ANALYZING YOUR HEALTH PROFILE…"
+    },
+    {
+      "type": "textarea",
+      "id": "step11_subtext",
+      "label": "Step 11 subtext",
+      "default": "Based on your responses, we're building a comprehensive assessment of your hormonal health and identifying the key factors affecting your energy and vitality."
+    },
+    {
+      "type": "text",
+      "id": "step11_label",
+      "label": "Step 11 analysis label",
+      "default": "ANALYZING"
+    },
+    {
+      "type": "header",
+      "content": "Step 12 — Family history"
+    },
+    {
+      "type": "text",
+      "id": "step12_question",
+      "label": "Step 12 question",
+      "default": "DO YOU HAVE A FAMILY HISTORY OF DIABETES, HEART DISEASE, OR METABOLIC ISSUES?"
+    },
+    {
+      "type": "text",
+      "id": "step12_info_heading",
+      "label": "Step 12 info heading",
+      "default": "WHY WE ASK"
+    },
+    {
+      "type": "textarea",
+      "id": "step12_info_text",
+      "label": "Step 12 info text",
+      "default": "These conditions share similar root causes with low testosterone — insulin resistance, inflammation, and metabolic dysfunction. Family patterns help us identify your risk factors."
+    },
+    {
+      "type": "text",
+      "id": "step12_answers",
+      "label": "Step 12 answers (pipe-separated)",
+      "default": "Yes|No|Not sure"
+    },
+    {
+      "type": "header",
+      "content": "Step 13 — Diet"
+    },
+    {
+      "type": "text",
+      "id": "step13_question",
+      "label": "Step 13 question",
+      "default": "HOW OFTEN DO YOU EAT PROCESSED FOODS?"
+    },
+    {
+      "type": "text",
+      "id": "step13_info_heading",
+      "label": "Step 13 info heading",
+      "default": "WHY WE ASK"
+    },
+    {
+      "type": "textarea",
+      "id": "step13_info_text",
+      "label": "Step 13 info text",
+      "default": "Processed foods contain chemicals and additives that disrupt hormone production. Ultra-processed foods are linked to lower testosterone levels in multiple studies."
+    },
+    {
+      "type": "text",
+      "id": "step13_answers",
+      "label": "Step 13 answers (pipe-separated)",
+      "default": "Daily - most meals include processed foods|Several times a week|Occasionally - mostly whole foods|Rarely - I avoid processed foods"
+    },
+    {
+      "type": "header",
+      "content": "Step 14 — Building profile"
+    },
+    {
+      "type": "text",
+      "id": "step14_heading",
+      "label": "Step 14 heading",
+      "default": "BUILDING YOUR PROFILE…"
+    },
+    {
+      "type": "textarea",
+      "id": "step14_subtext",
+      "label": "Step 14 subtext",
+      "default": "Hold tight while we map your answers against the Chad Bites Alpha-Male-revival framework."
+    },
+    {
+      "type": "text",
+      "id": "step14_checklist",
+      "label": "Step 14 checklist (pipe-separated)",
+      "default": "Analyzing your symptoms|Cross-referencing your lifestyle|Calibrating your protocol|Personalizing your result"
+    },
+    {
+      "type": "text",
+      "id": "step14_final",
+      "label": "Step 14 final text",
+      "default": "YOUR PROTOCOL SUMMARY IS ALMOST READY"
+    },
+    {
+      "type": "header",
+      "content": "Step 15 — Results"
+    },
+    {
+      "type": "text",
+      "id": "step15_heading",
       "label": "Step 15 heading",
       "default": "Your Testosterone Assessment:"
     },
     {
       "type": "text",
-      "id": "heading_step16",
+      "id": "step15_button",
+      "label": "Step 15 button text",
+      "default": "SHOW ME WHAT'S POSSIBLE"
+    },
+    {
+      "type": "header",
+      "content": "Step 16 — Final"
+    },
+    {
+      "type": "text",
+      "id": "step16_heading",
       "label": "Step 16 heading",
       "default": "THE LAST SOLUTION YOU'LL EVER NEED TO FEEL LIKE A MAN AGAIN."
+    },
+    {
+      "type": "text",
+      "id": "step16_subtext_prefix",
+      "label": "Step 16 subtext prefix (date appended automatically)",
+      "default": "Based on your answers, we expect you to visibly increase energy, strength and masculine drive by"
+    },
+    {
+      "type": "text",
+      "id": "step16_button",
+      "label": "Step 16 CTA button text",
+      "default": "GET MY PROTOCOL"
+    },
+    {
+      "type": "header",
+      "content": "Global settings"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "Results CTA link"
+    },
+    {
+      "type": "text",
+      "id": "chart_status_label",
+      "label": "Chart status label",
+      "default": "STATUS"
+    },
+    {
+      "type": "text",
+      "id": "chart_projected_label",
+      "label": "Chart projected lift label",
+      "default": "PROJECTED LIFT"
+    },
+    {
+      "type": "text",
+      "id": "chart_eta_label",
+      "label": "Chart ETA label",
+      "default": "ETA"
     }
   ]
 }
