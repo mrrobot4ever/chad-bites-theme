@@ -1,0 +1,382 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gp_section_622261263442903832": {
+      "settings": {
+        "checksum": "7852bd94eb7db5864cc74463bb41ea59d7dcff2375692ff06b60dc9e0e7bd786_1_1_0_0__1",
+        "gg09heu7MZN_text": "<span style=\"color:#FF2001;font-size:30px;\"><strong>What's in the Gummy?</strong></span>",
+        "gg2zHwhQgHs_text": "<p><span style=\"color:#FFFFFF;font-size:14px;\">As an endocrinologist, consistency is a major issue—most patients don’t stick to complex routines. The gummy format makes <strong>Chad Bites easy to take and stay consistent</strong>. Before TRT, I always recommend trying to support your body’s own production first.</span></p><p>&nbsp;</p><p><span style=\"color:#FFFFFF;font-size:13px;\">&nbsp;- Dr. Ryan Holbrook, M.D., Endocrinologist</span></p>",
+        "ggJw2fJnhl6_background_mobile_image_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/Gemini_Generated_Image_el47i9el47i9el47.webp",
+        "ggYEh2-JvBf_background_mobile_image_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/Gemini_Generated_Image_el47i9el47i9el47.webp",
+        "ggYEh2-JvBf_text": "<span style=\"color:#FFFFFF;\">What the Doc says...</span>",
+        "ggrgbzIk7v0_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/Dr._Ryan_Holbrook_1.png",
+        "ggrgbzIk7v0_srcSet_mobile_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/Dr._Ryan_Holbrook_1.png",
+        "ggySoWdMbVi_text": "<p><span style=\"color:#000000;font-size:16px;\">A targeted blend of key vitamins, minerals, and botanical compounds designed to support natural testosterone, energy, and performance. With ingredients like zinc, vitamin D, magnesium, <i>Tongkat ali</i>, and <i>Fadogia agrestis</i>, this formula works together to help support hormone balance, libido, and overall vitality.</span></p>"
+      },
+      "type": "gp-section-622261263442903832"
+    },
+    "gp_section_622261263442969368": {
+      "settings": {
+        "checksum": "cd9b3180b0cada7fc02cc2af40f8999283cd7515cc9b08c47048ff9de3f2293d_1_1_0_0__1",
+        "gg_hso3C6J7_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/sup-facts-purple_2.webp",
+        "gg_hso3C6J7_srcSet_mobile_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/sup-facts-purple_2.webp",
+        "gg_hso3C6J7_srcSet_tablet_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/sup-facts-purple_2.webp",
+        "ggfCsGh3Daf_text": "<p><span style=\"color:#000000;\">&nbsp;- Take 2 Chad Bites daily at any time that fits your routine. <strong>Taking more (4–6) may increase progress, but consistency matters most</strong>. Do not exceed 10 gummies per day.</span></p>",
+        "ggnN4me31GW_text": "<span style=\"color:#FF2001;font-size:30px;\"><strong>SUGGESTED USE:</strong></span>"
+      },
+      "type": "gp-section-622261263442969368"
+    },
+    "gp_section_622261263443034904": {
+      "settings": {
+        "checksum": "36030e0bdc23a9894e08f4056b2745d394f17d3e7da62a7ef9460ed94abca35b_1_1_0_0__1",
+        "gg3aJ5KCBWd_text": "<p><span style=\"background-color:rgba(5,5,5,0);color:rgb(243,244,246);font-size:19px;\">Try Chad Bites for 365 days. If you don't feel your edge return—if you don't see real, measurable changes in your energy, drive, physique, and confidence—we refund your last order. No questions asked. No hoops to jump through.</span></p>",
+        "gg48YSQmFPI_text": "<strong>365-DAY MONEY-BACK GUARANTEE</strong>",
+        "ggGvm9odOlR_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-UGC-M38-ChadBites_Bottle.webp",
+        "ggNmO7gW7Wl_label": "<p><span style=\"color:#FFFFFF;font-size:16px;\"><strong>ZERO RISK. ALL REWARD.</strong></span></p>",
+        "ggU7wnfxGto_label": "<p><span style=\"color:#FFFFFF;font-size:24px;\"><strong>TRY IT NOW 👉&nbsp;</strong></span></p>",
+        "ggah9ZZq_dQ_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-JungleRockBackground.webp"
+      },
+      "type": "gp-section-622261263443034904"
+    },
+    "gp_section_622261263443100440": {
+      "settings": {
+        "checksum": "5b795739baef939a0102ae389a6683584c8a32fd9f340852dadd5bb3a01eaed8_1_1_0_0__1"
+      },
+      "type": "gp-section-622261263443100440"
+    },
+    "gp_section_622261263443165976": {
+      "settings": {
+        "checksum": "0a48c80861d6b25cd8d3fca7057fe6c5ffe72d647d5486dfbe28190397dcada6_1_1_0_0__1",
+        "ggDbqcTlTp3_background_desktop_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggDbqcTlTp3_background_desktop_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/9e82da4af4914c1185bf65f26099eed5.mp4",
+        "ggDbqcTlTp3_background_mobile_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggDbqcTlTp3_background_mobile_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/9e82da4af4914c1185bf65f26099eed5.mp4",
+        "ggKJUvqYRun_text": "<p><span style=\"color:#FF2001;font-size:20px;\">STEP 1</span></p><p>Open The Jar &amp; Enjoy The Smell. It's Blackberry.</p>",
+        "ggSByu4BPPF_label": "<p><span style=\"color:#FFFFFF;font-size:24px;\"><strong>TRY IT NOW 👉&nbsp;</strong></span></p>",
+        "gghbhfkyUIN_text": "<span style=\"color:#FF2001;\">How To Use</span>",
+        "ggj61FGvYwr_background_desktop_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggj61FGvYwr_background_desktop_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/a61ca21d22bb4867b0c9e2fa7e2fab58.mp4",
+        "ggj61FGvYwr_background_mobile_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggj61FGvYwr_background_mobile_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/a61ca21d22bb4867b0c9e2fa7e2fab58.mp4",
+        "ggrFr0j3249_text": "<p>LIMITED TIME OFFER</p>",
+        "ggwmP74WFiq_text": "<p><span style=\"color:#FF2001;font-size:20px;\">STEP 2</span></p><p>Take 2 Gummies Daily.&nbsp;</p>"
+      },
+      "type": "gp-section-622261263443165976"
+    },
+    "gp_section_622261263443231512": {
+      "settings": {
+        "checksum": "5c27c2fc05488e4ae479314eea40373be34b26cccf90ab226f99e1b85f4ac583_1_1_0_0__1",
+        "ggSNN7cscID_text": "<p><span style=\"font-size:13px;\">🚨 </span><span style=\"color:#F20909;font-size:13px;\"><strong>LIMITED TIME OFFER:</strong></span><span style=\"font-size:13px;\"> GET 50% OFF 🚨</span></p>",
+        "ggpP2_kY-v0_text": "<p><span style=\"font-size:13px;\">🚨 </span><span style=\"color:#F20909;font-size:13px;\"><strong>LIMITED TIME OFFER:</strong></span><span style=\"font-size:13px;\"> GET 50% OFF 🚨</span></p>",
+        "ggqmamEZAWI_text": "<p><span style=\"font-size:13px;\">🚨 </span><span style=\"color:#F20909;font-size:13px;\"><strong>LIMITED TIME OFFER:</strong></span><span style=\"font-size:13px;\"> GET 50% OFF 🚨</span></p>",
+        "ggxscT8tTLy_text": "<p><span style=\"font-size:13px;\">🚨 </span><span style=\"color:#F20909;font-size:13px;\"><strong>LIMITED TIME OFFER:</strong></span><span style=\"font-size:13px;\"> GET 50% OFF 🚨</span></p>"
+      },
+      "type": "gp-section-622261263443231512"
+    },
+    "gp_section_622261263443297048": {
+      "settings": {
+        "checksum": "63e6076a9b3c136f9e4c00217e43b101c3a1e7f1febd72ccbacc4eb9170ec2ae_1_1_0_0__1",
+        "gg6imPPe1j4_label": "<p><span style=\"color:#FFFFFF;font-size:24px;\"><strong>TRY IT NOW 👉&nbsp;</strong></span></p>",
+        "ggDw0jra48h_text": "<p><span style=\"color:#FFFFFF;font-size:24px;\">WHAT's the benefits of</span><span style=\"font-size:24px;\"> optimized Testosterone?</span></p>",
+        "ggQ6TjohJlt_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/lava_rock_1920x1080_1.png",
+        "ggSjy_3p2YX_childItem_0": "<p><span style=\"font-size:24px;\"><strong>Skyrocket Energy &amp; Stamina</strong></span></p><p><span style=\"color:#9DA3AF;font-size:18px;\"><strong>Increase energy &amp; athletic performance</strong></span></p><p>&nbsp;</p>",
+        "ggSjy_3p2YX_childItem_1": "<p><span style=\"font-size:24px;\"><strong>Support Male Vitality</strong></span></p><p><span style=\"color:#9DA3AF;font-size:18px;\"><strong>Amplify passionate energy</strong></span></p>",
+        "ggSjy_3p2YX_childItem_2": "<p><span style=\"font-size:24px;\"><strong>Enhance Productivity &amp; Focus</strong></span></p><p><span style=\"color:#9DA3AF;font-size:18px;\"><strong>Stay sharp &amp; focused all day</strong></span></p><p><br data-cke-filler=\"true\"></p>",
+        "ggSjy_3p2YX_childItem_3": "<p><span style=\"font-size:24px;\"><strong>Supercharge Strength</strong></span></p><p><span style=\"color:#9DA3AF;font-size:20px;\"><strong>Build &amp; maintain lean muscle mass</strong></span></p>",
+        "ggSjy_3p2YX_childItem_4": "<p><span style=\"color:#FFFFFF;font-size:24px;\"><strong>Improve Recovery</strong></span></p><p><span style=\"color:#9DA3AF;font-size:18px;\"><strong>Optimize sleep &amp; muscle recovery</strong></span></p>",
+        "gggGzow7Fx8_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-Chadbite_-_gummy_close_up.webp",
+        "gggGzow7Fx8_background_desktop_video": "https://www.youtube.com/watch?v=cyzh48XRS4M",
+        "gggGzow7Fx8_background_desktop_videoHtml5": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+        "ggh8zX4uRuB_text": "<span style=\"color:#FF2001;\">7-in-1</span> Gummy Stack To Rule Them All",
+        "ggkKFVGhG53_text": "<p>Limited Time Offer - While Supplies Last</p>"
+      },
+      "type": "gp-section-622261263443297048"
+    },
+    "gp_section_622261263443362584": {
+      "settings": {
+        "checksum": "75d91aab580ec79e63759e527782a1143ca3b4a73a0d43b8b8e6a4a31427cec3_1_1_0_0__1",
+        "gg2LqmWaGLl_text": "<p><span style=\"font-size:13px;\"><strong>❌ Doctor Visits Required</strong></span></p>",
+        "gg2ot3bkSGr_text": "<p><span style=\"background-color:#FF2001;color:#FFFFFF;font-size:13px;\"><strong>✅ Flexible Use</strong></span></p>",
+        "gg3wfz1JtPQ_text": "<p><span style=\"font-size:13px;\"><strong>❌ Synthetic Replacement</strong></span></p>",
+        "gg5B1yOW27V_text": "<p>COST</p>",
+        "ggB6uF7t7xs_text": "<span style=\"color:#FF2001;font-size:33px;\">CHAD BITES</span><span style=\"color:#070707;font-size:33px;\"> VS TRT</span>",
+        "ggFTGO4TLao_text": "<p>CONVENIENCE</p>",
+        "ggGEcUZaVaa_text": "<p><span style=\"background-color:#FF2001;color:#F9F7F7;font-size:13px;\"><strong>✅ Supports Natural Production</strong></span></p>",
+        "ggGaFiztoYs_text": "<p>BODY'S PRODUCTION</p>",
+        "ggIZ1FW_6Vc_text": "<p><span style=\"background-color:#FF2001;color:#F4F2F2;font-size:13px;\"><strong>✅ Take at Home</strong></span></p>",
+        "ggLZ27ciT4O_text": "<p><span style=\"font-size:13px;\"><strong>❌ Significant Risks</strong></span></p>",
+        "ggLkC4IvAmJ_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-syringe.webp",
+        "ggLkC4IvAmJ_srcSet_mobile_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-syringe.webp",
+        "ggPoavTVNEX_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-1Bottle-Trans.webp",
+        "ggPoavTVNEX_srcSet_mobile_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-1Bottle-Trans.webp",
+        "ggTQcPR5a_3_text": "<p><span style=\"color:#0A0909;font-size:14px;\"><strong>Natural formula designed to support hormone optimization without the risks &amp; commitment of TRT.</strong></span></p>",
+        "ggThFZ8TIKC_text": "<p><span style=\"background-color:#FF2001;color:#F7F4F4;font-size:13px;\"><strong>✅ ~$40 per Month</strong></span></p>",
+        "ggTxxK3ZahN_text": "<p>APPROACH</p>",
+        "ggUqSmXmA-N_text": "<p><span style=\"font-size:13px;\"><strong>&nbsp;❌ ~$250 per Month&nbsp;</strong></span></p>",
+        "gge0YkEIEN__text": "<p><span style=\"font-size:13px;\"><strong>❌ Shuts Down Natural Production</strong></span></p>",
+        "ggk_q4nMdyK_text": "<p>COMMITMENT</p>",
+        "ggldwaIPrVo_text": "<span style=\"color:#FF2001;font-size:32px;\"><strong>The Chad Bites Difference</strong></span>",
+        "ggo4oDR1joH_text": "<p>SIDE EFFECTS</p>",
+        "ggt1VtXbjmG_text": "<p><span style=\"background-color:#FF2001;color:#F9F9F9;font-size:13px;\"><strong>✅ Optional Testing</strong></span></p>",
+        "ggt2_Ua4E0A_text": "<p><span style=\"background-color:#FF2001;color:#F9F9F9;font-size:13px;\"><strong>✅ Minimal Risk</strong></span></p>",
+        "ggvNSCWqRhB_text": "<p><span style=\"font-size:13px;\"><strong>❌ Lifelong Dependency</strong></span></p>",
+        "ggwPDa7JFtp_text": "<p><span style=\"font-size:13px;\"><strong>❌ Required Bloodwork</strong></span></p>",
+        "ggwpjOxwn1V_text": "<p>MONITORING</p>",
+        "ggy21AOuGN0_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-WallenTireflip.webp",
+        "ggz6bu4HJ1q_text": "<p><span style=\"background-color:#FF2001;color:#FFFFFF;font-size:13px;\"><strong>✅ Natural Support</strong></span></p>"
+      },
+      "type": "gp-section-622261263443362584"
+    },
+    "gp_section_622261263443428120": {
+      "settings": {
+        "checksum": "743c29325e4f6a13aabea142ca6e27a23c470d9b06f6f50ad9c712aefbb493a4_1_1_0_0__1",
+        "gg3nTgh_h8u_label": "<p><span style=\"font-size:14px;\"><strong>10 mg</strong></span></p>",
+        "gg8Ec5ZQUKF_text": "<p><span style=\"background-color:rgba(74,81,77,0);color:#FFFFFF;font-size:12px;\"><strong>Supports muscle function, energy production, and healthy T levels. Essential for recovery and performance.</strong></span></p>",
+        "ggAU7XbFCHj_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-Zinc_copy.webp",
+        "ggAU7XbFCHj_background_mobile_image_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-Tongkat_Ali_45f13ee3-7e73-4680-8370-7a340b14ed26.webp",
+        "ggBTG-mlBXI_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-Zinc_copy.webp",
+        "ggBTG-mlBXI_background_mobile_image_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-Niacin_78f2a200-6efa-46fe-a48d-7f69c9f606fa.webp",
+        "ggJXGaAn8hA_label": "<p><span style=\"font-size:14px;\"><strong>50 mcg</strong></span></p>",
+        "ggM0Y5A2tyl_label": "<p><span style=\"font-size:14px;\"><strong>25 mg</strong></span></p>",
+        "ggPhArIeBAO_text": "<p><span style=\"background-color:rgba(74,81,77,0);color:#FFFFFF;font-size:12px;\"><strong>Essential mineral for testosterone synthesis at the cellular level. Your body can't produce T without it. Most men are deficient.</strong></span></p>",
+        "ggSEgH8tHdU_text": "<p><span style=\"background-color:rgba(74,81,77,0);color:#FFFFFF;font-size:12px;\"><strong>Boosts energy, supports circulation, and enhances overall performance. Critical B-vitamin for testosterone and metabolism.&nbsp;</strong></span></p>",
+        "ggVl1jsVBMk_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-Zinc_copy.webp",
+        "ggVl1jsVBMk_background_mobile_image_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-Fadogia_Agrestis_dd607b57-06ae-49a0-85d4-141e25eae5ba.webp",
+        "ggVu5kuMfBA_text": "Tongkat Ali",
+        "ggWvXJlZUlF_text": "<p><span style=\"font-size:12px;\">The Master Key that restores LH signalng from your pituitary to your testes. Turns testosterone production back ON at the source</span></p>",
+        "ggWyOrzaxQt_label": "<p><span style=\"font-size:14px;\"><strong>20 mg</strong></span></p>",
+        "ggaW0hvLrIC_label": "<p><span style=\"font-size:14px;\"><strong>15 mg</strong></span></p>",
+        "gggrxZTIiFX_text": "<p><span style=\"background-color:rgba(74,81,77,0);color:#FFFFFF;font-size:12px;\"><strong>Critical for hormonal balance and T optimization. Support immune function and overall male vitality.&nbsp;</strong></span></p>",
+        "ggi3A4GcNfe_text": "<p><span style=\"background-color:rgba(74,81,77,0);color:#FFFFFF;font-size:12px;\"><strong>Reduces cortisol (stress hormone) and fress bound testosterone. Makes your existing T acutally usable by your body&nbsp;</strong></span></p>",
+        "ggjpRMrk_OJ_text": "Magnesium",
+        "gglvu1Jq2Zr_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-Zinc_copy.webp",
+        "ggly4GHCnOK_text": "Vitamin D",
+        "ggmKhcAmG96_text": "Zinc",
+        "ggq4AyoKbpt_text": "Niacin",
+        "ggqoGqU8MrX_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-Zinc_copy.webp",
+        "ggqoGqU8MrX_background_mobile_image_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-Magneisum.webp",
+        "ggtHTwy02Z5_text": "Fadogia&nbsp;",
+        "ggtirtiUzdL_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-Zinc_copy.webp",
+        "ggtirtiUzdL_background_mobile_image_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-Vitamin_D_copy.webp",
+        "ggx5x2U5Yik_label": "<p><span style=\"font-size:14px;\"><strong>20 mg</strong></span></p>"
+      },
+      "type": "gp-section-622261263443428120"
+    },
+    "gp_section_622261263443493656": {
+      "settings": {
+        "checksum": "15e32d00633cbfd2481cf00b4e99e8b400cb6f417a29dca3d7b0e8bc9e957212_1_1_0_0__1",
+        "gg6V8FyD2KC_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/Jungle_Banner_1792_x_768_px_1.png",
+        "gg9iPfoyf3B_background_desktop_video": "https://cdn.shopify.com/videos/c/o/v/0a822c22a3594a7090ff1651e791c23f.mp4",
+        "gg9iPfoyf3B_background_desktop_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/0a822c22a3594a7090ff1651e791c23f.mp4",
+        "ggBAOCe190X_text": "<p><span style=\"color:#FF2001;font-size:16px;\"><strong>FREE</strong></span><span style=\"color:#DB0404;font-size:16px;\"><strong> </strong></span><span style=\"font-size:16px;\"><strong>Mystery Gift </strong><s><strong>$24</strong></s><strong> $0</strong></span></p>",
+        "ggCuGwPk1Ws_text": "<p><span style=\"color:#331313;font-size:16px;\">Delivered Monthly • Cancel or Pause in 3 Clicks • 100% Money Back Guarantee</span></p>",
+        "ggPCpAcz-j8_text": "<p><span style=\"font-size:16px;\"><strong>1 Bottle Delivered Monthly </strong><s><strong>$44</strong></s><strong> $28</strong></span></p>",
+        "gghAByzP1E__text": "<span style=\"color:#FF2001;font-size:20px;\"><strong>LIMITED TIME : GET 50% OFF&nbsp;</strong></span>",
+        "ggiMCey0qGE_customText": "Estimate delivery between",
+        "ggjT0Oo6ZYM_text": "<p><span style=\"color:#FF2001;font-size:16px;\"><strong>FREE</strong></span><span style=\"font-size:16px;\"><strong> USA Shipping </strong><s><strong>$18</strong></s><strong> $0</strong></span></p>",
+        "ggrwI7tjcsL_text": "<p><span style=\"color:#000000;font-size:28px;\"><strong>LIMITED TIME OFFER</strong></span></p>",
+        "ggytjdgG4T__label": "<p><span style=\"font-size:40px;\">ORDER NOW</span></p>"
+      },
+      "type": "gp-section-622261263443493656"
+    },
+    "gp_section_622261263443559192": {
+      "settings": {
+        "checksum": "666906f813b68e4035295dfee461f2eaa52ea3e49912fec6bdeb05f1f83d1bae_1_1_0_0__1",
+        "ggFuWGqPaeY_text": "<p><span style=\"font-size:11px;\">🚨 <strong>April</strong> has a high risk of selling out <strong>838</strong> purchases made today.</span></p>"
+      },
+      "type": "gp-section-622261263443559192"
+    },
+    "gp_section_622261263443624728": {
+      "settings": {
+        "checksum": "f714106ea4c3a15089b6166781bdc7b37e2d53197bb69b2754a7c1899ef69304_1_1_0_0__1",
+        "ggVBsGmqYau_dayLabel": "Day",
+        "ggVBsGmqYau_hourLabel": "Hour",
+        "ggVBsGmqYau_minuteLabel": "Minute",
+        "ggVBsGmqYau_secondLabel": "Second",
+        "ggVBsGmqYau_weekLabel": "Week"
+      },
+      "type": "gp-section-622261263443624728"
+    },
+    "gp_section_622261263443690264": {
+      "settings": {
+        "checksum": "278167ecc372145d833db5177f534a3310eb94d95007741d6d608a14e6a9a4c7_1_1_0_0__1",
+        "ggHojQ_uOl3_label": "<p><span style=\"color:#FF2001;font-size:20px;\">SECURE CHECKOUT</span></p>",
+        "ggLX4Dg5M-t_label": "<p><span style=\"color:#FF2001;font-size:20px;\"><strong>U.S.A MADE</strong></span></p>",
+        "ggpVOgDlt6Q_label": "<p><span style=\"color:#FF2001;font-size:20px;\">FREE SHIPPING</span></p>"
+      },
+      "type": "gp-section-622261263443690264"
+    },
+    "gp_section_622261263443755800": {
+      "settings": {
+        "checksum": "52b4089d925e58fae1c23ed0a63b319556d299da739b320a2847562df50df526_1_1_0_0__1",
+        "ggFBFesxfK2_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-JohnyBoat_1.webp",
+        "ggG0HMCIQbM_text": "<span style=\"color:#000000;font-size:30px;\">OVER </span><span style=\"color:#FF2001;font-size:30px;\">36,491+ MEN</span><span style=\"color:#000000;font-size:30px;\"> HAVE RECLAIMED THEIR TESTOSTERONE</span>",
+        "ggIS1rkwZfe_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-TyroneBBq_1.webp",
+        "ggLEf6EnBp0_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-BL-M50.webp",
+        "ggLiHvmrbWL_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-LuisAfter.webp",
+        "ggOVkaoWRzr_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-RoganTruck_1.webp",
+        "gg_0vJRYm9__text": "<p><span style=\"color:#000000;\">Be the Alpha you that you have always dreamed of.</span></p>",
+        "gggMczeJ7QA_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-CarlosGymGarage_1.webp",
+        "ggyGUf_k6JR_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-ugc-m36-holding_bottle__2.webp"
+      },
+      "type": "gp-section-622261263443755800"
+    },
+    "gp_section_622261263443821336": {
+      "settings": {
+        "checksum": "01143bea9ebe813be3cc60e54e833bd72dc0fd1254da65d544a6bdde7033531d_1_1_0_0__1",
+        "ggAAgSqaB4m_text": "<p><span style=\"color:#000000;\">10-20 lbs of muscle gained. Visible definition - shoulder, arms, chest. All-day energy that feels effortless. Bedroom performance that maker her very happy. You're not just 'bak' - you're better than before.</span></p>",
+        "ggD9gzqCSS7_text": "<p><span style=\"color:#FF2001;font-size:24px;\"><strong>Days 8-30</strong></span></p><p><span style=\"color:#413C3C;font-size:24px;\"><strong>The Shift</strong></span></p>",
+        "ggEpWZcMHdU_text": "<p><span style=\"color:#FF2001;font-size:24px;\"><strong>Days 1-7</strong></span></p><p><span style=\"color:#423C3C;font-size:24px;\"><strong>The Awakening</strong></span></p>",
+        "ggeG_3rX_kA_text": "<p><span style=\"color:#000000;\">Morning wood returns. Mental fog clears. Subtle energy increase—less afternoon crash. Better sleep. Your body is receiving the signal to restart production. You're not imagining it.</span></p>",
+        "gggRp_TgtPY_text": "<p><span style=\"color:#000000;\">Noticeable energy increase—no 3 PM crash. Libido returning with force. Strength gains accelerating. Muscle definition starting to show. Confidence rising. Your woman notices before you do.</span></p>",
+        "ggpxNQgYhOu_text": "<p><span style=\"color:#000000;font-size:16px;\"><strong>Natural restoration takes time. Your body didn't shut down overnight - it won't restart overnight either. But the changes are real, measurable, and permanent.&nbsp;</strong></span></p>",
+        "ggtehcRE9cV_text": "<span style=\"color:#000000;font-size:28px;\"><strong>WHAT TO EXPECT:</strong></span><span style=\"color:#FF2001;font-size:28px;\"><strong> YOUR 90-DAY TRANSFORMATION</strong></span>",
+        "gguwKA7d2Q9_background_desktop_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/92a407d4e0c94a288eb54cac18c387dc.mp4",
+        "gguwKA7d2Q9_background_mobile_videoHtml5": "https://cdn.shopify.com/videos/c/o/v/92a407d4e0c94a288eb54cac18c387dc.mp4",
+        "ggxstFS_BXG_text": "<p><span style=\"color:#FF2001;font-size:24px;\"><strong>Days 31-90</strong></span></p><p><span style=\"color:#413C3C;font-size:24px;\"><strong>The New Normal</strong></span></p>"
+      },
+      "type": "gp-section-622261263443821336"
+    },
+    "gp_section_622261263443886872": {
+      "settings": {
+        "checksum": "8c07ed6ce3646207e2daf4f5dc27bc889b6cd7634a1301fdd17f4a9aa25a84cb_1_1_0_0__1",
+        "gg22hWSkI-Z_text": "<p>Yes, absolutely. In fact, men over 50 often experience the most dramatic benefits because testosterone naturally declines with age. Chad Bites is specifically formulated to help mature men restore youthful hormone levels naturally. Many of our most enthusiastic customers are in their 50s, 60s, and beyond, reporting renewed energy, vitality, and performance.</p>",
+        "gg7KNETkKSn_text": "<p>Everything you need to know about Chad Bites</p>",
+        "gg8DLA-xFnC_text": "<p>Each bottle contains 60 gummies, which is a full 30-day supply at the recommended dose of 2 gummies per day. This ensures you get consistent daily support for optimal testosterone production throughout the month.</p>",
+        "gg9pjhN_IUv_text": "<p><span style=\"color:#D0D4DB;\"><strong>Absolutely. Chad Bites is formulated with clinically-studied, natural ingredients that support your body's own testosterone production. It's manufactured in FDA-registered, GMP-certified facilities with third-party testing for purity and potency. Unlike synthetic hormones or injections, our formula works with your body's natural processes. Always consult your healthcare provider if you have specific health concerns.</strong></span></p>",
+        "ggDUTIpuOsh_text": "<p><span style=\"background-color:rgba(15,18,17,0.5);color:rgb(209,213,219);font-size:18px;\">No cycling necessary. Unlike hormones or synthetic compounds, Chad Bites contains natural ingredients that support your body's own testosterone production without shutting down natural function. You can take it daily, year-round, without the need for breaks or post-cycle therapy.</span></p>",
+        "ggHYGo4oUux_text": "<span style=\"color:#FFFFFF;\"><strong>Frequently Asked</strong></span><strong> </strong><span style=\"color:#FF2001;\"><strong>Questions</strong></span>",
+        "ggLk_EenDjZ_text": "<p>The recommended dose is 2 gummies per day for optimal results. This dosage has been carefully formulated to provide effective testosterone support while staying within safe ranges. Taking more than the recommended amount won't necessarily accelerate results and isn't advised. Consistency at the proper dose is key.</p>",
+        "ggTsnvUkoeG_childItem_0": "<p><span style=\"color:#F9F9F9;\"><strong>How long until I see results?</strong></span></p>",
+        "ggTsnvUkoeG_childItem_1": "<p><span style=\"color:#F3F4F6;\"><strong>Is this safe?</strong></span></p>",
+        "ggTsnvUkoeG_childItem_2": "<p>Will this show up on drug tests?</p>",
+        "ggTsnvUkoeG_childItem_3": "<p>Can I take this with other supplements?</p>",
+        "ggTsnvUkoeG_childItem_4": "<p>Why gummies instead of pills?</p>",
+        "ggTsnvUkoeG_childItem_5": "<p>How many gummies are in each bottle?</p>",
+        "ggTsnvUkoeG_childItem_6": "<p>What if it doesn't work for me?</p>",
+        "ggTsnvUkoeG_childItem_7": "<p>Do I need to cycle this?</p>",
+        "ggTsnvUkoeG_childItem_8": "<p>Can I take more than 2 gummies per day</p>",
+        "ggTsnvUkoeG_childItem_9": "<p>Is this suitable for men over 50?&nbsp;</p>",
+        "ggV2bgC4PMj_text": "<p><span style=\"color:#FFFFFF;\">Most men notice improvements in energy and focus within the first 7-14 days. For physical changes like increased strength, better recovery, and body composition improvements, expect to see noticeable results within 4-6 weeks of consistent use. Optimal hormonal support builds over time, with peak benefits typically experienced at the 90-day mark.</span></p>",
+        "ggm0DJbUuLC_text": "<p><span style=\"background-color:rgba(15,18,17,0.5);color:rgb(209,213,219);font-size:18px;\">Gummies offer superior bioavailability because they begin absorption in the mouth through the mucous membranes. They're also more enjoyable to take, which means better compliance and consistency. Plus, you actually look forward to taking them instead of choking down horse pills. Taste matters when you're building a daily habit.</span></p>",
+        "ggmS2GRz3Y1_text": "<p><span style=\"background-color:rgba(15,18,17,0.5);color:rgb(209,213,219);font-size:18px;\">We stand behind our product with a 90-day money-back guarantee. If you don't feel a noticeable difference in your energy, focus, or performance, simply contact our team for a full refund. No questions asked, no hassle. We're confident you'll experience the benefits, but if not, you risk nothing.</span></p>",
+        "ggopcQzgOGg_text": "<p>No. Chad Bites contains zero banned substances and will not trigger positive results on standard drug tests. All ingredients are natural, legal, and approved for use in professional and amateur athletics. Our formula supports natural testosterone production rather than introducing synthetic hormones.</p>",
+        "ggtudH7oLFJ_text": "<p>Chad Bites is designed to work synergistically with other supplements. However, if you're taking prescription medications or have health conditions, consult your doctor first.</p>"
+      },
+      "type": "gp-section-622261263443886872"
+    },
+    "gp_section_622261263443952408": {
+      "settings": {
+        "checksum": "e3c433d4c1ce6f3a4487719b16f9c5b2f999028c0aacee66dfd0464e2f5f40c2_1_1_0_0__1",
+        "gg-WN-UuJB0_text": "<p>“My wife noticed before I did.”</p>",
+        "gg0n75b_rer_text": "<p>“Didn’t expect much… but wow.”</p>",
+        "gg1Q_r-Dj2t_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/2005/9307/files/gempages_432750572815254551-c9f13168-bf8f-4318-a82e-bac41c11e37e.png?v=1715673277",
+        "gg1Q_r-Dj2t_srcSet_mobile_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-blackguyTEST.webp",
+        "gg3jSHaeT22_text": "<p><span style=\"color:#242424;\"><strong>ANTHONY R</strong></span></p>",
+        "gg4j9XLzfnS_childItem_0": "<p>Verified Buyer</p>",
+        "ggFK9Asl98p_text": "<p>2900+ Customers Who Love Us</p>",
+        "ggIQJITtQ6r_text": "Hear from Our Customers",
+        "ggQTV-aeDs6_text": "<p><span style=\"color:#242424;\"><strong>Marcus T</strong></span></p>",
+        "ggS6YOamf6u_text": "<p>I’ve tried capsules before but always forget to take them. The gummies made it easy. After about a month I noticed strength coming back in the gym, but what really sold me was overall drive and confidence. Even my wife asked what I was doing differently. That alone made it worth it.</p>",
+        "ggUXXyQ27nh_text": "<p>“I didn’t want to go the TRT route, so I looked for natural options. Been using Chad Bites daily and the difference is real — recovery is faster, sleep feels deeper, and I wake up ready to go instead of dragging. Taste is solid too which helps me stay consistent.”</p>",
+        "ggVGCX1rdNw_text": "<p><strong>DEREK M</strong></p>",
+        "ggZ7MlQhDKe_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-anthonyTEST.webp",
+        "ggZ7MlQhDKe_srcSet_mobile_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-anthonyTEST.webp",
+        "ggbB0bgNxVu_childItem_0": "<p>Verified Buyer</p>",
+        "ggbTd1q61qx_text": "<p>I’m 54 and was feeling completely drained by mid-day. Workouts were flat, motivation was gone. I started Chad Bites mostly out of curiosity — within about 2–3 weeks my energy picked up big time. Better pumps, better mood, and I’m not crashing after work anymore. Honestly feels like I turned the clock back a few years.”</p>",
+        "ggd4eWr4qB8_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/2005/9307/files/gempages_432750572815254551-f132cfa5-ab01-4656-bf4a-f0e5a90a2fb3.png?v=1715673234",
+        "ggd4eWr4qB8_srcSet_mobile_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-DerekTEST.webp",
+        "gggmMYSzuBG_background_mobile_image_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/Gemini_Generated_Image_el47i9el47i9el47.webp",
+        "ggiuwFEWwx1_text": "<p>“Finally something natural that works.”</p>",
+        "ggpQoy96iBc_childItem_0": "<p>Verified Buyer</p>"
+      },
+      "type": "gp-section-622261263443952408"
+    },
+    "gp_section_622261263444017944": {
+      "settings": {
+        "checksum": "21817c7b0cd4d1f7de125d2d3dc4b39afaecb4cafe8f471ba28fa3bd33e328fc_1_1_0_0__1",
+        "ggUY_TrMDjt_text": "<p>⚡ LIMITED OFFER: GET 50% OFF &nbsp;⚡</p>",
+        "section_preload": "true"
+      },
+      "type": "gp-section-622261263444017944"
+    },
+    "gp_section_622261263444083480": {
+      "settings": {
+        "checksum": "95809f5321ba6b09ccb88b1bda006e6a25769ec2e56c5d7219d98d16e4d73de2_1_1_0_0__1",
+        "ggF-ajURRay_text": "<p><span style=\"font-size:13px;\">🚨 </span><span style=\"color:#F20909;font-size:13px;\"><strong>LIMITED TIME OFFER:</strong></span><span style=\"font-size:13px;\"> GET 50% OFF 🚨</span></p>",
+        "ggV01_wtm3-_text": "<p><span style=\"font-size:13px;\">🚨 </span><span style=\"color:#F20909;font-size:13px;\"><strong>LIMITED TIME OFFER:</strong></span><span style=\"font-size:13px;\"> GET 50% OFF 🚨</span></p>",
+        "ggcM_TX3qik_text": "<p><span style=\"font-size:13px;\">🚨 </span><span style=\"color:#F20909;font-size:13px;\"><strong>LIMITED TIME OFFER:</strong></span><span style=\"font-size:13px;\"> GET &nbsp;50% OFF 🚨</span></p>",
+        "gghYC0HJ_v__text": "<p><span style=\"font-size:13px;\">🚨 </span><span style=\"color:#F20909;font-size:13px;\"><strong>LIMITED TIME OFFER:</strong></span><span style=\"font-size:13px;\"> GET 50% OFF 🚨</span></p>"
+      },
+      "type": "gp-section-622261263444083480"
+    },
+    "gp_section_622261263444149016": {
+      "settings": {
+        "checksum": "213ed15a46fdf85ac822c879cca9f994a4ab4ae612c8023cb68846e6a98f2423_1_1_0_0__1",
+        "gglsPBCKD-a_text": "What the researchers are saying...",
+        "ggsnak4_u3s_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/Gemini_Generated_Image_p5inzhp5inzhp5in.png",
+        "ggsnak4_u3s_srcSet_mobile_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/Gemini_Generated_Image_p5inzhp5inzhp5in.png"
+      },
+      "type": "gp-section-622261263444149016"
+    },
+    "gp_section_622261263444214552": {
+      "settings": {
+        "checksum": "1bf6ce5f4ad070601c655db74014340414d08a5713d9cc668fcb224234eb9c86_1_1_0_0__1",
+        "ggGeSyy2_I9_text": "<p><span style=\"font-size:13px;\">Woof. Big dog got his bite back. fr I'm throwing weights around in the gym, head is clear.. my woman ain't complaining</span></p><p><span style=\"font-size:13px;\"><strong>Omar B.</strong> ✔ ⭐⭐⭐⭐⭐</span></p>",
+        "ggGsWUP9V-H_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-RoganTruck_1.webp",
+        "ggGsWUP9V-H_srcSet_mobile_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-RoganTruck_1.webp",
+        "ggGsWUP9V-H_srcSet_tablet_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-RoganTruck_1.webp",
+        "ggP4X3RVVYg_text": "<p><span style=\"color:#E01A08;font-size:12px;\">Warning: </span><span style=\"color:#000000;font-size:12px;\"><strong>Ladies Beware. Real Man Loading...</strong></span></p>",
+        "ggaso3u6ECr_background_desktop_image_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/OG2.webp?v=1777410380",
+        "ggaso3u6ECr_background_desktop_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggaso3u6ECr_background_mobile_image_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/OG2.webp?v=1777410380",
+        "ggaso3u6ECr_background_mobile_video": "https://www.youtube.com/watch?v=NfASaHFN1zg",
+        "ggcpHtBtbLn_label": "<p><span style=\"font-size:13px;\">&nbsp; Free Shipping</span></p>",
+        "ggel-xfWJPN_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-blackguyTEST.webp",
+        "ggel-xfWJPN_srcSet_mobile_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-blackguyTEST.webp",
+        "ggfZplWuH0q_label": "<p><span style=\"font-size:13px;\">365-Day Money Back Guarantee</span></p>",
+        "ggiO29MIXSy_text": "<p><span style=\"font-size:13px;\">I feel more energized. I feel dangerous again. Most importantly, I'm laying it down in the bedroom again.&nbsp;</span></p><p><span style=\"font-size:13px;\"><strong>Jerry F.</strong> ✔ ⭐⭐⭐⭐⭐</span></p>",
+        "ggsTLeyiQKG_text": "<p><span style=\"font-size:14px;\"><strong>100K+ Happy Customers</strong></span></p>",
+        "ggtAdNFo1xt_text": "<span style=\"color:#000000;font-size:20px;\">Pro Athletes Have Been Using This Stack for Years Because <u>They Can't Touch TRT.</u></span><span style=\"font-size:20px;\"> </span><span style=\"color:#FF2100;font-size:20px;\">Now It's in a Blackberry Gummy</span>",
+        "ggujoa2qxyF_text": "<p><span style=\"font-size:13px;\">Def felt the energy lift in 2 weeks, but now I'm starting to lose some that beer belly.&nbsp;</span></p><p><span style=\"font-size:13px;\"><strong>Brandon H.</strong> ✔ ⭐⭐⭐⭐⭐</span></p>",
+        "gguknNAlTb5_srcSet_desktop_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-anthonyTEST.webp",
+        "gguknNAlTb5_srcSet_mobile_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-anthonyTEST.webp",
+        "gguknNAlTb5_srcSet_tablet_src": "https://cdn.shopify.com/s/files/1/0896/0851/9991/files/wo-anthonyTEST.webp",
+        "ggzDcJ1FSbP_label": "<p><span style=\"color:#FFFFFF;font-size:24px;\"><strong>TRY IT NOW 👉&nbsp;</strong></span></p>"
+      },
+      "type": "gp-section-622261263444214552"
+    }
+  },
+  "order": [
+    "gp_section_622261263444017944",
+    "gp_section_622261263444214552",
+    "gp_section_622261263444083480",
+    "gp_section_622261263443362584",
+    "gp_section_622261263444149016",
+    "gp_section_622261263442903832",
+    "gp_section_622261263443428120",
+    "gp_section_622261263442969368",
+    "gp_section_622261263443165976",
+    "gp_section_622261263443297048",
+    "gp_section_622261263443755800",
+    "gp_section_622261263443952408",
+    "gp_section_622261263443231512",
+    "gp_section_622261263443624728",
+    "gp_section_622261263443559192",
+    "gp_section_622261263443493656",
+    "gp_section_622261263443821336",
+    "gp_section_622261263443034904",
+    "gp_section_622261263443690264",
+    "gp_section_622261263443100440",
+    "gp_section_622261263443886872"
+  ],
+  "layout": "theme.gempages.footer"
+}
