@@ -3022,6 +3022,12 @@ ul, ol { list-style: none; }
   border-top: 1px solid rgba(255, 255, 255, 0.04);
 }
 
+/* Policy pages (terms, privacy, refund) */
+.template-policy .shopify-policy__container,
+.template-policy .shopify-policy__title {
+  padding-top: 96px;
+}
+
 /* ============================================
    RESPONSIVE HELPERS
    ============================================ */
