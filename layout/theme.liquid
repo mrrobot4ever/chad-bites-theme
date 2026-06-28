@@ -116,7 +116,7 @@
         var html = '';
         cart.items.forEach(function(item) {
           html += '<div style="display:flex;gap:14px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.04);">';
-          if (item.image) html += '<img src="' + item.image.replace(/(\.\w+)$/, '_80x80$1') + '" alt="' + (item.variant_title || item.product_title) + '"' style="width:60px;height:60px;object-fit:cover;border-radius:8px;">';
+          if (item.image) html += '<img src="' + item.image.replace(/(\.\w+)$/, '_80x80$1') + '" alt="' + (item.variant_title || item.product_title) + '" style="width:60px;height:60px;object-fit:cover;border-radius:8px;">';
           html += '<div style="flex:1;">';
           html += '<div style="display:flex;justify-content:space-between;align-items:flex-start;">';
           html += '<div style="font-weight:600;font-size:0.9rem;">' + (item.variant_title || item.product_title) + '</div>';
