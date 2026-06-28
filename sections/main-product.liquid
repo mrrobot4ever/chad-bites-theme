@@ -4,14 +4,38 @@
 
     <div class="product-layout">
       <div class="product-gallery">
-        {% if product.featured_image != blank %}
-          <img id="ProductImage-{{ section.id }}"
-               src="{{ product.featured_image | image_url: width: 1000 }}"
-               alt="{{ product.featured_image.alt | escape }}"
-               loading="eager">
-        {% else %}
-          {{ 'product-1' | placeholder_svg_tag }}
-        {% endif %}
+        <div class="product-carousel">
+          <div class="product-carousel-main">
+            {% if product.images.size > 0 %}
+              {% for image in product.images %}
+                <div class="product-carousel-slide{% if forloop.first %} active{% endif %}" data-index="{{ forloop.index0 }}">
+                  <img src="{{ image | image_url: width: 1000 }}"
+                       alt="{{ image.alt | escape | default: product.title }}"
+                       loading="{% if forloop.first %}eager{% else %}lazy{% endif %}">
+                </div>
+              {% endfor %}
+            {% else %}
+              <div class="product-carousel-slide active">
+                {{ 'product-1' | placeholder_svg_tag }}
+              </div>
+            {% endif %}
+          </div>
+          {% if product.images.size > 1 %}
+            {% if section.settings.show_arrows %}<button class="product-carousel-arrow product-carousel-prev" onclick="carouselNav(-1)" aria-label="Previous image">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button class="product-carousel-arrow product-carousel-next" onclick="carouselNav(1)" aria-label="Next image">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </button>{% endif %}
+            {% if section.settings.show_thumbnails %}<div class="product-carousel-thumbs">
+              {% for image in product.images %}
+                <button class="product-carousel-thumb{% if forloop.first %} active{% endif %}" onclick="carouselGo({{ forloop.index0 }})" aria-label="View image {{ forloop.index }}">
+                  <img src="{{ image | image_url: width: 100 }}" alt="{{ image.alt | escape | default: product.title }}">
+                </button>
+              {% endfor %}
+            </div>{% endif %}
+          {% endif %}
+        </div>
       </div>
 
       <div class="product-info">
@@ -194,6 +218,72 @@
     });
   })();
 </script>
+
+<style>
+  .product-carousel { position: relative; }
+  .product-carousel-main { position: relative; overflow: hidden; border-radius: 12px; }
+  .product-carousel-slide { display: none; }
+  .product-carousel-slide.active { display: block; }
+  .product-carousel-slide img { width: 100%; height: auto; display: block; }
+  .product-carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    transition: background 0.2s;
+  }
+  .product-carousel-arrow:hover { background: rgba(0,0,0,0.7); }
+  .product-carousel-prev { left: 10px; }
+  .product-carousel-next { right: 10px; }
+  .product-carousel-thumbs {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+  .product-carousel-thumb {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    cursor: pointer;
+    padding: 0;
+    background: none;
+    transition: border-color 0.2s;
+  }
+  .product-carousel-thumb.active { border-color: var(--color-accent); }
+  .product-carousel-thumb img { width: 100%; height: 100%; object-fit: cover; }
+</style>
+
+<script>
+  var carouselIndex = 0;
+  function carouselGo(idx) {
+    var slides = document.querySelectorAll('.product-carousel-slide');
+    var thumbs = document.querySelectorAll('.product-carousel-thumb');
+    if (idx < 0) idx = slides.length - 1;
+    if (idx >= slides.length) idx = 0;
+    slides.forEach(function(s) { s.classList.remove('active'); });
+    thumbs.forEach(function(t) { t.classList.remove('active'); });
+    slides[idx].classList.add('active');
+    if (thumbs[idx]) thumbs[idx].classList.add('active');
+    carouselIndex = idx;
+  }
+  function carouselNav(dir) { carouselGo(carouselIndex + dir); }
+</script>
+
 {% schema %}
 {
   "name": "Product page",
@@ -215,6 +305,18 @@
       "id": "meta_tested",
       "label": "Testing meta text",
       "default": "Third-party tested"
+    }
+    {
+      "type": "checkbox",
+      "id": "show_thumbnails",
+      "label": "Show thumbnail navigation",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_arrows",
+      "label": "Show navigation arrows",
+      "default": true
     }
   ],
   "blocks": [
