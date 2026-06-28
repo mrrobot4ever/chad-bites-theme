@@ -101,8 +101,6 @@
               {{ 'products.product.sold_out' | t }}
             {% endif %}
           </button>
-        {% endform %}
-
         <div class="product-app-blocks">
           {% for block in section.blocks %}
             {% case block.type %}
@@ -111,6 +109,8 @@
             {% endcase %}
           {% endfor %}
         </div>
+
+        {% endform %}
 
         <div class="product-meta">
           <div class="product-meta-item">
