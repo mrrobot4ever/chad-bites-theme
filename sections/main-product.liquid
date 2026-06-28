@@ -46,9 +46,7 @@
 
         
 
-        {% if product.description != blank %}
-          <div class="product-description">{{ product.description }}</div>
-        {% endif %}
+        
 
         {% form 'product', product, id: 'product-form' %}
           {% if product.has_only_default_variant == false %}
@@ -103,6 +101,10 @@
           </button>
 
         {% endform %}
+
+        {% if product.description != blank %}
+          <div class="product-description">{{ product.description }}</div>
+        {% endif %}
 
         <div class="product-meta">
           <div class="product-meta-item">
