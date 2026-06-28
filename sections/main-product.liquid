@@ -33,7 +33,7 @@
               {% for media_item in product_images %}
               {% assign image = media_item %}
                 <div class="product-carousel-thumb{% if forloop.first %} active{% endif %}" onclick="carouselGo({{ forloop.index0 }})" aria-label="View image {{ forloop.index }}">
-                  <img src="{{ image.preview_image | image_url: width: 200 }}" alt="{{ image.alt | escape | default: product.title }}">
+                  <img src="{{ image.preview_image | image_url: width: 200 }}" alt="{{ image.alt | escape | default: product.title }}" style="width:70px !important;height:70px !important;object-fit:cover !important;display:block !important;position:absolute;top:0;left:0;">
                 </div>
               {% endfor %}
             </div>{% endif %}
