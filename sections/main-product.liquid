@@ -265,6 +265,7 @@
     carouselIndex = idx;
   }
   function carouselNav(dir) { carouselGo(carouselIndex + dir); }
+  setInterval(function() { carouselGo(carouselIndex + 1); }, 2500);
 </script>
 
 {% schema %}
