@@ -3023,8 +3023,7 @@ ul, ol { list-style: none; }
 }
 
 /* Policy pages (terms, privacy, refund) */
-.template-policy .shopify-policy__container,
-.template-policy .shopify-policy__title {
+.shopify-policy__container {
   padding-top: 96px;
 }
 
