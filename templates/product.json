@@ -45,10 +45,103 @@
         "loop_subscriptions_loop_widget_XbKB8P"
       ],
       "settings": {}
+    },
+    "ingredients_6wc636": {
+      "type": "ingredients",
+      "blocks": {
+        "ingredient_TM8JWQ": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Magnesium",
+            "dose": "100 mg",
+            "description": "Muscle, sleep & T support",
+            "fallback_asset": "ingredient-magnesium.jpg"
+          }
+        },
+        "ingredient_MWgQdt": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Fulvic Acid",
+            "dose": "20 mg",
+            "description": "Boosts nutrient absorption",
+            "fallback_asset": "ingredient-fulvic-acid.jpg"
+          }
+        },
+        "ingredient_QfLtFz": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Fadogia",
+            "dose": "500 mg",
+            "description": "Signals natural T output",
+            "fallback_asset": "ingredient-fadogia.jpg"
+          }
+        },
+        "ingredient_9Yq4ww": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Tongkat Ali",
+            "dose": "500 mg",
+            "description": "Raises T, lowers cortisol",
+            "fallback_asset": "ingredient-tongkat-ali.jpg"
+          }
+        },
+        "ingredient_PcpqGr": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Zinc",
+            "dose": "10 mg",
+            "description": "Key mineral for T synthesis",
+            "fallback_asset": "ingredient-zinc.jpg"
+          }
+        },
+        "ingredient_XfWE3d": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Boron",
+            "dose": "10 mg",
+            "description": "Frees bound testosterone",
+            "fallback_asset": "ingredient-boron.jpg"
+          }
+        },
+        "ingredient_J7r9jY": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Vitamin B6",
+            "dose": "6 mg",
+            "description": "Optimizes hormone balance",
+            "fallback_asset": "ingredient-vitamin-b6.jpg"
+          }
+        },
+        "ingredient_iJTARQ": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Vitamin D3",
+            "dose": "100 mcg",
+            "description": "Drives T production",
+            "fallback_asset": "ingredient-vitamin-d3.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "ingredient_TM8JWQ",
+        "ingredient_MWgQdt",
+        "ingredient_QfLtFz",
+        "ingredient_9Yq4ww",
+        "ingredient_PcpqGr",
+        "ingredient_XfWE3d",
+        "ingredient_J7r9jY",
+        "ingredient_iJTARQ"
+      ],
+      "name": "Ingredients",
+      "settings": {
+        "heading": "8 INGREDIENTS IN 1 POWERFUL FORMULA",
+        "subtitle": "GET YOUR EDGE BACK, NATURALLY."
+      }
     }
   },
   "order": [
     "main-product",
-    "1782603039f6ed3d28"
+    "1782603039f6ed3d28",
+    "ingredients_6wc636"
   ]
 }
