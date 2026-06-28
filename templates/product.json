@@ -15,26 +15,16 @@
         "meta_shipping": "Free shipping on orders $50+",
         "meta_guarantee": "60-day money back guarantee",
         "meta_tested": "Third-party tested",
+        "option1_title": "Buy 2 Get 1 Free - Just $0.97 Per Day!",
+        "option1_subtitle": "100% Money Back Guarantee",
+        "option1_variant_id": "50559936594231",
+        "option1_selling_plan": "12120949047",
+        "option2_title": "Buy 1 Bottle - $1.46 Per Day!",
+        "option2_subtitle": "",
+        "option2_variant_id": "50559936561463",
+        "option2_selling_plan": "12124750135",
         "show_arrows": true
       }
-    },
-    "1782603039f6ed3d28": {
-      "type": "apps",
-      "blocks": {
-        "loop_subscriptions_loop_widget_bVPifC": {
-          "type": "shopify://apps/loop-subscriptions/blocks/loop_widget/267a7c64-5cb3-4552-b817-5485165f0a0b",
-          "settings": {}
-        },
-        "loop_subscriptions_loop_widget_XbKB8P": {
-          "type": "shopify://apps/loop-subscriptions/blocks/loop_widget/267a7c64-5cb3-4552-b817-5485165f0a0b",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "loop_subscriptions_loop_widget_bVPifC",
-        "loop_subscriptions_loop_widget_XbKB8P"
-      ],
-      "settings": {}
     },
     "ingredients_6wc636": {
       "type": "ingredients",
@@ -131,7 +121,6 @@
   },
   "order": [
     "main-product",
-    "1782603039f6ed3d28",
     "ingredients_6wc636"
   ]
 }
