@@ -88,6 +88,15 @@
             {% endfor %}
           </select>
 
+        <div class="product-app-blocks">
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when '@app' %}
+                {% render block %}
+            {% endcase %}
+          {% endfor %}
+        </div>
+
           <button type="submit" name="add"
                   class="btn btn-primary btn-lg add-to-cart-btn"
                   {% unless current_variant.available %}disabled{% endunless %}>
@@ -97,14 +106,6 @@
               {{ 'products.product.sold_out' | t }}
             {% endif %}
           </button>
-        <div class="product-app-blocks">
-          {% for block in section.blocks %}
-            {% case block.type %}
-              {% when '@app' %}
-                {% render block %}
-            {% endcase %}
-          {% endfor %}
-        </div>
 
         {% endform %}
 
