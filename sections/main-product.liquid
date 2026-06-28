@@ -6,10 +6,12 @@
       <div class="product-gallery">
         <div class="product-carousel">
           <div class="product-carousel-main">
-            {% if product.images.size > 0 %}
-              {% for image in product.images %}
+            {% assign product_images = product.media | where: "media_type", "image" %}
+            {% if product_images.size > 0 %}
+              {% for media_item in product_images %}
+              {% assign image = media_item %}
                 <div class="product-carousel-slide{% if forloop.first %} active{% endif %}" data-index="{{ forloop.index0 }}">
-                  <img src="{{ image | image_url: width: 1000 }}"
+                  <img src="{{ image.preview_image | image_url: width: 1000 }}"
                        alt="{{ image.alt | escape | default: product.title }}"
                        loading="{% if forloop.first %}eager{% else %}lazy{% endif %}">
                 </div>
@@ -20,7 +22,7 @@
               </div>
             {% endif %}
           </div>
-          {% if product.images.size > 1 %}
+          {% if product_images.size > 1 %}
             {% if section.settings.show_arrows %}<button class="product-carousel-arrow product-carousel-prev" onclick="carouselNav(-1)" aria-label="Previous image">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
             </button>
@@ -28,9 +30,10 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
             </button>{% endif %}
             {% if section.settings.show_thumbnails %}<div class="product-carousel-thumbs">
-              {% for image in product.images %}
+              {% for media_item in product_images %}
+              {% assign image = media_item %}
                 <div class="product-carousel-thumb{% if forloop.first %} active{% endif %}" onclick="carouselGo({{ forloop.index0 }})" aria-label="View image {{ forloop.index }}">
-                  <img src="{{ image | image_url: width: 200 }}" alt="{{ image.alt | escape | default: product.title }}">
+                  <img src="{{ image.preview_image | image_url: width: 200 }}" alt="{{ image.alt | escape | default: product.title }}">
                 </div>
               {% endfor %}
             </div>{% endif %}
