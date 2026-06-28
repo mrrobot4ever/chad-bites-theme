@@ -9,7 +9,7 @@
             {% if product.images.size > 0 %}
               {% for image in product.images %}
                 <div class="product-carousel-slide{% if forloop.first %} active{% endif %}" data-index="{{ forloop.index0 }}">
-                  <img src="{{ image | img_url: '1000x' }}"
+                  <img src="{{ image.src | img_url: '1000x' }}"
                        alt="{{ image.alt | escape | default: product.title }}"
                        loading="{% if forloop.first %}eager{% else %}lazy{% endif %}">
                 </div>
@@ -30,7 +30,7 @@
             {% if section.settings.show_thumbnails %}<div class="product-carousel-thumbs">
               {% for image in product.images %}
                 <button class="product-carousel-thumb{% if forloop.first %} active{% endif %}" onclick="carouselGo({{ forloop.index0 }})" aria-label="View image {{ forloop.index }}">
-                  <img src="{{ image | img_url: '200x' }}" alt="{{ image.alt | escape | default: product.title }}">
+                  <img src="{{ image.src | img_url: '200x' }}" alt="{{ image.alt | escape | default: product.title }}">
                 </button>
               {% endfor %}
             </div>{% endif %}
