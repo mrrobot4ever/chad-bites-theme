@@ -74,14 +74,7 @@
             {% endfor %}
           {% endif %}
 
-          <div class="product-form-group">
-            <label>{{ 'products.product.quantity' | t }}</label>
-            <div class="quantity-selector">
-              <button type="button" class="quantity-btn" onclick="var i=this.parentNode.querySelector('input');i.value=Math.max(1,parseInt(i.value)-1);">−</button>
-              <input type="number" name="quantity" value="1" min="1" class="quantity-input" aria-label="Quantity">
-              <button type="button" class="quantity-btn" onclick="var i=this.parentNode.querySelector('input');i.value=parseInt(i.value)+1;">+</button>
-            </div>
-          </div>
+          <input type="hidden" name="quantity" value="1">
 
           <select name="id" id="ProductSelect-{{ section.id }}" style="display: none;">
             {% for variant in product.variants %}
