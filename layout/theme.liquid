@@ -78,7 +78,7 @@
           {% endif %}
           <div style="flex:1;">
             <div style="display:flex;justify-content:space-between;align-items:flex-start;">
-              <div style="font-weight:600; font-size:0.9rem;">{{ item.product.title }}</div>
+              <div style="font-weight:600; font-size:0.9rem;">{{ item.variant.title | default: item.product.title }}</div>
               <button onclick="removeCartItem('{{ item.key }}');" style="background:none;border:none;color:var(--color-text-muted);cursor:pointer;padding:0 0 0 8px;font-size:1.1rem;line-height:1;" aria-label="Remove">&times;</button>
             </div>
             <div style="color:var(--color-text-muted); font-size:0.8rem;">Qty: {{ item.quantity }}</div>
@@ -116,10 +116,10 @@
         var html = '';
         cart.items.forEach(function(item) {
           html += '<div style="display:flex;gap:14px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.04);">';
-          if (item.image) html += '<img src="' + item.image.replace(/(\.\w+)$/, '_80x80$1') + '" alt="' + item.product_title + '" style="width:60px;height:60px;object-fit:cover;border-radius:8px;">';
+          if (item.image) html += '<img src="' + item.image.replace(/(\.\w+)$/, '_80x80$1') + '" alt="' + (item.variant_title || item.product_title) + '"' style="width:60px;height:60px;object-fit:cover;border-radius:8px;">';
           html += '<div style="flex:1;">';
           html += '<div style="display:flex;justify-content:space-between;align-items:flex-start;">';
-          html += '<div style="font-weight:600;font-size:0.9rem;">' + item.product_title + '</div>';
+          html += '<div style="font-weight:600;font-size:0.9rem;">' + (item.variant_title || item.product_title) + '</div>';
           html += '<button onclick="removeCartItem(\''+item.key+'\');" style="background:none;border:none;color:var(--color-text-muted);cursor:pointer;padding:0 0 0 8px;font-size:1.1rem;line-height:1;" aria-label="Remove">&times;</button>';
           html += '</div>';
           html += '<div style="color:var(--color-text-muted);font-size:0.8rem;">Qty: ' + item.quantity + '</div>';
