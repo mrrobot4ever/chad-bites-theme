@@ -1,0 +1,65 @@
+<section class="article-section section-padding" style="padding-top:96px;">
+  <div class="container">
+    <div class="article-wrapper">
+      <h1 class="article-title">{{ article.title }}</h1>
+      <p class="article-meta">{{ article.published_at | date: "%B %d, %Y" }} {% if article.author %} &mdash; {{ article.author }}{% endif %}</p>
+
+      {% if article.image %}
+        <div class="article-hero-img">
+          <img src="{{ article.image | image_url: width: 1200 }}" alt="{{ article.title | escape }}" loading="eager">
+        </div>
+      {% endif %}
+
+      <div class="article-content">
+        {{ article.content }}
+      </div>
+
+      <div class="article-back" style="margin-top:40px;">
+        <a href="{{ blog.url }}" class="btn btn-outline">&larr; Back to {{ blog.title }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .article-wrapper { max-width: 780px; margin: 0 auto; }
+  .article-title {
+    font-family: var(--font-heading);
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    line-height: 1.15;
+    margin-bottom: 12px;
+  }
+  .article-meta {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    margin-bottom: 28px;
+  }
+  .article-hero-img { margin-bottom: 32px; border-radius: 12px; overflow: hidden; }
+  .article-hero-img img { width: 100%; height: auto; display: block; }
+  .article-content { font-size: 1rem; line-height: 1.8; color: var(--color-text-muted); }
+  .article-content h2, .article-content h3 { color: var(--color-text); margin-top: 32px; margin-bottom: 12px; }
+  .article-content p { margin-bottom: 18px; }
+  .article-content img { border-radius: 8px; margin: 20px 0; }
+  .article-content ul, .article-content ol { padding-left: 24px; margin-bottom: 18px; }
+  .article-content li { margin-bottom: 8px; }
+  .article-content a { color: var(--color-accent); }
+  .article-content blockquote {
+    border-left: 3px solid var(--color-accent);
+    padding: 16px 20px;
+    margin: 24px 0;
+    background: rgba(77,124,254,0.04);
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Article",
+  "class": "article-section-wrapper",
+  "settings": []
+}
+{% endschema %}
