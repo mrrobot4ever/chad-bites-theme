@@ -49,37 +49,28 @@
         
 
         {% form 'product', product, id: 'product-form' %}
-          {% if product.has_only_default_variant == false %}
-            {% for option in product.options_with_values %}
-              <div class="product-form-group">
-                <label>{{ option.name }}</label>
-                <div class="variant-selector">
-                  {% for value in option.values %}
-                    <button type="button"
-                            class="variant-option{% if option.selected_value == value %} selected{% endif %}"
-                            data-option-index="{{ forloop.parentloop.index0 }}"
-                            data-value="{{ value | escape }}">
-                      {{ value }}
-                    </button>
-                  {% endfor %}
-                </div>
-              </div>
-            {% endfor %}
-          {% endif %}
-
+          <input type="hidden" name="id" id="selectedVariantId" value="{{ section.settings.option1_variant_id | default: product.selected_or_first_available_variant.id }}">
+          <input type="hidden" name="selling_plan" id="selectedSellingPlan" value="{{ section.settings.option1_selling_plan }}">
           <input type="hidden" name="quantity" value="1">
 
-          <select name="id" id="ProductSelect-{{ section.id }}" style="display: none;">
-            {% for variant in product.variants %}
-              <option value="{{ variant.id }}"
-                      {% if variant == current_variant %}selected{% endif %}
-                      {% unless variant.available %}disabled{% endunless %}
-                      data-price="{{ variant.price | money }}"
-                      data-compare-price="{{ variant.compare_at_price | money }}">
-                {{ variant.title }} — {{ variant.price | money }}
-              </option>
-            {% endfor %}
-          </select>
+          <div class="product-radio-cards">
+            <label class="product-radio-card selected" onclick="selectOffer(this, '{{ section.settings.option1_variant_id }}', '{{ section.settings.option1_selling_plan }}')">
+              <input type="radio" name="offer_select" value="1" checked style="display:none;">
+              <div class="radio-dot"></div>
+              <div class="radio-card-text">
+                <span class="radio-card-title">{{ section.settings.option1_title | default: "Buy 2 Get 1 Free - Just $0.97 Per Day!" }}</span>
+                <span class="radio-card-sub">{{ section.settings.option1_subtitle | default: "100% Money Back Guarantee" }}</span>
+              </div>
+            </label>
+            <label class="product-radio-card" onclick="selectOffer(this, '{{ section.settings.option2_variant_id }}', '{{ section.settings.option2_selling_plan }}')">
+              <input type="radio" name="offer_select" value="2" style="display:none;">
+              <div class="radio-dot"></div>
+              <div class="radio-card-text">
+                <span class="radio-card-title">{{ section.settings.option2_title | default: "Buy 1 Bottle - $1.46 Per Day!" }}</span>
+                <span class="radio-card-sub">{{ section.settings.option2_subtitle }}</span>
+              </div>
+            </label>
+          </div>
 
         <div class="product-app-blocks">
           {% for block in section.blocks %}
@@ -240,6 +231,68 @@
   .product-carousel-prev { left: 10px; }
   .product-carousel-next { right: 10px; }
   
+
+  /* Radio offer cards */
+  .product-radio-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .product-radio-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 18px;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.03);
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .product-radio-card:hover {
+    border-color: rgba(77,124,254,0.3);
+  }
+  .product-radio-card.selected {
+    border-color: var(--color-accent);
+    background: rgba(77,124,254,0.06);
+  }
+  .radio-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.3);
+    flex-shrink: 0;
+    position: relative;
+    transition: border-color 0.2s;
+  }
+  .product-radio-card.selected .radio-dot {
+    border-color: var(--color-accent);
+  }
+  .product-radio-card.selected .radio-dot::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--color-accent);
+  }
+  .radio-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .radio-card-title {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--color-text);
+  }
+  .radio-card-sub {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+  }
 </style>
 
 <script>
@@ -257,6 +310,13 @@
   }
   function carouselNav(dir) { carouselGo(carouselIndex + dir); }
   setInterval(function() { carouselGo(carouselIndex + 1); }, 2500);
+
+  function selectOffer(el, variantId, sellingPlan) {
+    document.querySelectorAll('.product-radio-card').forEach(function(c) { c.classList.remove('selected'); });
+    el.classList.add('selected');
+    document.getElementById('selectedVariantId').value = variantId;
+    document.getElementById('selectedSellingPlan').value = sellingPlan || '';
+  }
 </script>
 
 {% schema %}
@@ -282,6 +342,61 @@
       "default": "Third-party tested"
     },
     
+    {
+      "type": "header",
+      "content": "Offer Option 1"
+    },
+    {
+      "type": "text",
+      "id": "option1_title",
+      "label": "Option 1 title",
+      "default": "Buy 2 Get 1 Free - Just $0.97 Per Day!"
+    },
+    {
+      "type": "text",
+      "id": "option1_subtitle",
+      "label": "Option 1 subtitle",
+      "default": "100% Money Back Guarantee"
+    },
+    {
+      "type": "text",
+      "id": "option1_variant_id",
+      "label": "Option 1 variant ID",
+      "default": "50559936594231"
+    },
+    {
+      "type": "text",
+      "id": "option1_selling_plan",
+      "label": "Option 1 selling plan ID",
+      "default": "12120949047"
+    },
+    {
+      "type": "header",
+      "content": "Offer Option 2"
+    },
+    {
+      "type": "text",
+      "id": "option2_title",
+      "label": "Option 2 title",
+      "default": "Buy 1 Bottle - $1.46 Per Day!"
+    },
+    {
+      "type": "text",
+      "id": "option2_subtitle",
+      "label": "Option 2 subtitle"
+    },
+    {
+      "type": "text",
+      "id": "option2_variant_id",
+      "label": "Option 2 variant ID",
+      "default": "50559936561463"
+    },
+    {
+      "type": "text",
+      "id": "option2_selling_plan",
+      "label": "Option 2 selling plan ID",
+      "default": "12124750135"
+    },
     {
       "type": "checkbox",
       "id": "show_arrows",
