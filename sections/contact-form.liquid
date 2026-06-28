@@ -1,0 +1,139 @@
+<section class="contact-section section-padding">
+  <div class="container">
+    <div class="contact-wrapper">
+      <h1 class="section-heading text-center">{{ section.settings.heading | default: "CONTACT US" }}</h1>
+      <p class="contact-subtext">{{ section.settings.subtext | default: "Have a question? We'd love to hear from you. Send us a message and we'll respond as soon as possible." }}</p>
+
+      {% form 'contact' %}
+        {% if form.posted_successfully? %}
+          <div class="contact-success">
+            <p>{{ section.settings.success_message | default: "Thanks for contacting us. We'll get back to you as soon as possible." }}</p>
+          </div>
+        {% endif %}
+
+        {% if form.errors %}
+          <div class="contact-errors">
+            {{ form.errors | default_errors }}
+          </div>
+        {% endif %}
+
+        <div class="contact-form-grid">
+          <div class="contact-field">
+            <label for="ContactName">{{ section.settings.name_label | default: "Name" }}</label>
+            <input type="text" id="ContactName" name="contact[name]" value="{{ form.name }}" required class="contact-input">
+          </div>
+          <div class="contact-field">
+            <label for="ContactEmail">{{ section.settings.email_label | default: "Email" }}</label>
+            <input type="email" id="ContactEmail" name="contact[email]" value="{{ form.email }}" required class="contact-input">
+          </div>
+        </div>
+
+        <div class="contact-field">
+          <label for="ContactSubject">{{ section.settings.subject_label | default: "Subject" }}</label>
+          <input type="text" id="ContactSubject" name="contact[subject]" value="" class="contact-input">
+        </div>
+
+        <div class="contact-field">
+          <label for="ContactMessage">{{ section.settings.message_label | default: "Message" }}</label>
+          <textarea id="ContactMessage" name="contact[body]" rows="6" required class="contact-input contact-textarea">{{ form.body }}</textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg contact-submit">{{ section.settings.button_text | default: "Send Message" }}</button>
+      {% endform %}
+    </div>
+  </div>
+</section>
+
+<style>
+  .contact-wrapper {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  .contact-subtext {
+    text-align: center;
+    color: var(--color-text-muted);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 36px;
+  }
+  .contact-form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  @media (min-width: 640px) {
+    .contact-form-grid { grid-template-columns: 1fr 1fr; }
+  }
+  .contact-field {
+    margin-bottom: 16px;
+  }
+  .contact-field label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-muted);
+    margin-bottom: 6px;
+  }
+  .contact-input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.03);
+    color: var(--color-text);
+    font-size: 0.95rem;
+    font-family: var(--font-body);
+    transition: border-color 0.2s;
+  }
+  .contact-input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(77,124,254,0.12);
+  }
+  .contact-textarea {
+    resize: vertical;
+    min-height: 140px;
+  }
+  .contact-submit {
+    width: 100%;
+    margin-top: 8px;
+  }
+  .contact-success {
+    background: rgba(34,197,94,0.1);
+    border: 1px solid rgba(34,197,94,0.3);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 24px;
+    color: #22c55e;
+    text-align: center;
+  }
+  .contact-errors {
+    background: rgba(239,68,68,0.1);
+    border: 1px solid rgba(239,68,68,0.3);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 24px;
+    color: #ef4444;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Contact Form",
+  "class": "contact-section-wrapper",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "CONTACT US" },
+    { "type": "textarea", "id": "subtext", "label": "Subtext", "default": "Have a question? We'd love to hear from you. Send us a message and we'll respond as soon as possible." },
+    { "type": "text", "id": "name_label", "label": "Name field label", "default": "Name" },
+    { "type": "text", "id": "email_label", "label": "Email field label", "default": "Email" },
+    { "type": "text", "id": "subject_label", "label": "Subject field label", "default": "Subject" },
+    { "type": "text", "id": "message_label", "label": "Message field label", "default": "Message" },
+    { "type": "text", "id": "button_text", "label": "Submit button text", "default": "Send Message" },
+    { "type": "text", "id": "success_message", "label": "Success message", "default": "Thanks for contacting us. We'll get back to you as soon as possible." }
+  ],
+  "presets": [{ "name": "Contact Form" }]
+}
+{% endschema %}
