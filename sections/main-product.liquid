@@ -44,12 +44,7 @@
       <div class="product-info">
         <h1 class="product-title">{{ product.title }}</h1>
 
-        <div class="product-price" id="ProductPrice-{{ section.id }}">
-          <span id="ProductPriceValue-{{ section.id }}">{{ current_variant.price | money }}</span>
-          {% if current_variant.compare_at_price > current_variant.price %}
-            <span class="compare-price" id="ProductComparePrice-{{ section.id }}">{{ current_variant.compare_at_price | money }}</span>
-          {% endif %}
-        </div>
+        
 
         {% if product.description != blank %}
           <div class="product-description">{{ product.description }}</div>
