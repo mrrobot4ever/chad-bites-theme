@@ -82,7 +82,6 @@ ul, ol { list-style: none; }
 }
 
 .section-padding { padding: 32px 0; }
-#MainContent > .shopify-section:first-child .section-padding { padding-top: 96px; }
 @media (min-width: 768px) {
   .section-padding { padding: 48px 0; }
 }
