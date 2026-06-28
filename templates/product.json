@@ -11,20 +11,10 @@
   "sections": {
     "main-product": {
       "type": "main-product",
-      "blocks": {
-        "loop_subscriptions_loop_widget_FYtdQM": {
-          "type": "shopify://apps/loop-subscriptions/blocks/loop_widget/267a7c64-5cb3-4552-b817-5485165f0a0b",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "loop_subscriptions_loop_widget_FYtdQM"
-      ],
       "settings": {
         "meta_shipping": "Free shipping on orders $50+",
         "meta_guarantee": "60-day money back guarantee",
         "meta_tested": "Third-party tested",
-        "show_thumbnails": true,
         "show_arrows": true
       }
     },
