@@ -114,19 +114,33 @@
           html += '<div style="display:flex;gap:14px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.04);">';
           if (item.image) html += '<img src="' + item.image.replace(/(\.\w+)$/, '_80x80$1') + '" alt="' + item.product_title + '" style="width:60px;height:60px;object-fit:cover;border-radius:8px;">';
           html += '<div style="flex:1;">';
+          html += '<div style="display:flex;justify-content:space-between;align-items:flex-start;">';
           html += '<div style="font-weight:600;font-size:0.9rem;">' + item.product_title + '</div>';
+          html += '<button onclick="removeCartItem(\''+item.key+'\');" style="background:none;border:none;color:var(--color-text-muted);cursor:pointer;padding:0 0 0 8px;font-size:1.1rem;line-height:1;" aria-label="Remove">&times;</button>';
+          html += '</div>';
           html += '<div style="color:var(--color-text-muted);font-size:0.8rem;">Qty: ' + item.quantity + '</div>';
           html += '<div style="font-weight:700;font-size:0.9rem;margin-top:4px;">$' + (item.final_line_price / 100).toFixed(2) + '</div>';
           html += '</div></div>';
         });
         itemsEl.innerHTML = html;
       }
+      var countEl = document.getElementById('cart-count');
+      if (countEl) countEl.textContent = cart.item_count;
       var footerHtml = '';
       if (cart.item_count > 0) {
         footerHtml += '<div style="display:flex;justify-content:space-between;margin-bottom:14px;font-size:0.95rem;"><span>Subtotal</span><span style="font-weight:700;">$' + (cart.total_price / 100).toFixed(2) + '</span></div>';
       }
       footerHtml += '<a href="/checkout" class="btn btn-primary" style="width:100%;text-align:center;">' + (cart.item_count > 0 ? 'Checkout' : 'Continue Shopping') + '</a>';
       footerEl.innerHTML = footerHtml;
+    }
+    function removeCartItem(key) {
+      fetch('/cart/change.js', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id: key, quantity: 0 })
+      })
+      .then(function(r) { return r.json(); })
+      .then(function(cart) { updateCartDrawer(cart); });
     }
   </script>
 </body>
