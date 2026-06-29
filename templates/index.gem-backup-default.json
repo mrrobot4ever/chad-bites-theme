@@ -1,0 +1,153 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {
+        "heading": "AMERICA'S #1 TESTOSTERONE BOOSTER GUMMY",
+        "subtext": "8 science-backed ingredients in one daily gummy. Try it for 90 days. Higher T or your money back.",
+        "cta_text": "GET 1 BOTTLE FREE",
+        "cta_url": "https:\/\/chadbites.com\/products\/chad-bites-fadogia-gummies",
+        "hero_image": "shopify:\/\/shop_images\/old-white-transformation.webp",
+        "badges_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0896\/0851\/9991\/files\/badges-removebg.png?v=1771042099"
+      }
+    },
+    "stats-gauges": {
+      "type": "stats-gauges",
+      "blocks": {
+        "gauge-1": {
+          "type": "gauge",
+          "settings": {
+            "title": "Energy",
+            "value": 92,
+            "status": "OPTIMAL"
+          }
+        },
+        "gauge-2": {
+          "type": "gauge",
+          "settings": {
+            "title": "Drive",
+            "value": 94,
+            "status": "OPTIMAL"
+          }
+        },
+        "gauge-3": {
+          "type": "gauge",
+          "settings": {
+            "title": "Recovery",
+            "value": 91,
+            "status": "OPTIMAL"
+          }
+        },
+        "gauge-4": {
+          "type": "gauge",
+          "settings": {
+            "title": "Focus",
+            "value": 90,
+            "status": "OPTIMAL"
+          }
+        },
+        "gauge-5": {
+          "type": "gauge",
+          "settings": {
+            "title": "Strength",
+            "value": 93,
+            "status": "OPTIMAL"
+          }
+        },
+        "gauge-6": {
+          "type": "gauge",
+          "settings": {
+            "title": "Confidence",
+            "value": 92,
+            "status": "OPTIMAL"
+          }
+        }
+      },
+      "block_order": [
+        "gauge-1",
+        "gauge-2",
+        "gauge-3",
+        "gauge-4",
+        "gauge-5",
+        "gauge-6"
+      ],
+      "settings": {
+        "heading": "GET YOUR EDGE BACK",
+        "subtext": "Your body. Your data. Your edge."
+      }
+    },
+    "ingredients": {
+      "type": "ingredients",
+      "settings": {
+        "heading": "8 INGREDIENTS IN 1 POWERFUL FORMULA",
+        "subtitle": "GET YOUR EDGE BACK, NATURALLY."
+      }
+    },
+    "decline": {
+      "type": "decline",
+      "settings": {
+        "heading_line1": "THE DECLINE OF T:",
+        "heading_line2": "A MODERN EPIDEMIC",
+        "chart_alt": "Testosterone levels with Chad Bites",
+        "paragraph_1": "<p><strong>Testosterone levels<\/strong> have been dropping by 1% every year since 1980. Stress, poor sleep, processed diets, and toxins are destroying natural hormone production.<\/p>",
+        "paragraph_2": "<p>The impact? Low testosterone drains energy, strength, and focus—making it harder to perform at your best in life and the gym.<\/p>",
+        "paragraph_3": "<p><strong>The good news:<\/strong> Chad Bites helps you reclaim your edge with natural testosterone support for energy, focus, and strength.<\/p>"
+      }
+    },
+    "solution": {
+      "type": "solution",
+      "settings": {
+        "heading": "HIGH T MADE EASY",
+        "subtext": "Pro Athletes Have Been Using This Stack for Years Because They Can't Touch TRT. Now It's in a Blackberry Gummy",
+        "cta_text": "GET 1 BOTTLE FREE",
+        "cta_url": "https:\/\/chadbites.com\/products\/chad-bites-fadogia-gummies"
+      }
+    },
+    "howitworks": {
+      "type": "howitworks",
+      "settings": {
+        "heading": "HOW DOES CHAD BITES WORK?",
+        "subtext": "Maximize your testosterone level naturally, quickly, and easily.",
+        "cta_text": "GET 1 BOTTLE FREE",
+        "cta_url": "https:\/\/chadbites.com\/products\/chad-bites-fadogia-gummies"
+      }
+    },
+    "riskfree": {
+      "type": "riskfree",
+      "settings": {
+        "heading_line1": "ZERO RISK.",
+        "heading_line2": "ALL REWARD.",
+        "body_text": "Try Chad Bites for 365 days. If you don't feel your edge return—if you don't see real, measurable changes in your energy, drive, physique, and confidence—we refund your last order. No questions asked. No hoops to jump through.",
+        "cta_text": "GET 1 BOTTLE FREE",
+        "cta_url": "https:\/\/chadbites.com\/products\/chad-bites-fadogia-gummies",
+        "badge_top_text": "90 DAY",
+        "badge_bottom_text": "HIGHER T GUARANTEE"
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "settings": {
+        "heading": "FREQUENTLY ASKED QUESTIONS"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "stats-gauges",
+    "ingredients",
+    "decline",
+    "solution",
+    "howitworks",
+    "riskfree",
+    "faq"
+  ]
+}

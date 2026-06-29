@@ -57,28 +57,6 @@
       "date_html": "Placed on {{ date }}"
     }
   },
-  "general": {
-    "accessibility": {
-      "skip_to_content": "Skip to content"
-    },
-    "meta": {
-      "tags": "Tagged \"{{ tags }}\"",
-      "page": "Page {{ page }}"
-    }
-  },
-  "products": {
-    "product": {
-      "add_to_cart": "ADD TO CART",
-      "sold_out": "SOLD OUT",
-      "unavailable": "Unavailable",
-      "quantity": "Quantity",
-      "price": {
-        "from": "From {{ price }}",
-        "sale_price": "Sale price",
-        "regular_price": "Regular price"
-      }
-    }
-  },
   "gempages": {
     "Carousel": {
       "no_slider": "No Slider"
@@ -123,6 +101,28 @@
     },
     "Breadcrumb": {
       "home": "Home"
+    }
+  },
+  "general": {
+    "accessibility": {
+      "skip_to_content": "Skip to content"
+    },
+    "meta": {
+      "tags": "Tagged \"{{ tags }}\"",
+      "page": "Page {{ page }}"
+    }
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "ADD TO CART",
+      "sold_out": "SOLD OUT",
+      "unavailable": "Unavailable",
+      "quantity": "Quantity",
+      "price": {
+        "from": "From {{ price }}",
+        "sale_price": "Sale price",
+        "regular_price": "Regular price"
+      }
     }
   }
 }
