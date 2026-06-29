@@ -25,7 +25,7 @@
           "type": "link_column",
           "settings": {
             "heading": "Company",
-            "menu": ""
+            "menu": "company"
           }
         },
         "col-3": {
