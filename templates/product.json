@@ -117,10 +117,169 @@
         "heading": "8 INGREDIENTS IN 1 POWERFUL FORMULA",
         "subtitle": "GET YOUR EDGE BACK, NATURALLY."
       }
+    },
+    "howitworks_YqaKGM": {
+      "type": "howitworks",
+      "blocks": {
+        "stage_jMCFqW": {
+          "type": "stage",
+          "settings": {
+            "day_label": "DAY 7",
+            "stage_name": "ACTIVATE",
+            "bullet_1": "Tongkat Ali blocks stress hormones",
+            "bullet_2": "Fulvic Acid feeds starving testosterone cells",
+            "bullet_3": "Workouts feel intense again",
+            "bullet_4": "Start to feel that all-day energy"
+          }
+        },
+        "stage_LJrUfE": {
+          "type": "stage",
+          "settings": {
+            "day_label": "DAY 30",
+            "stage_name": "DOMINATE",
+            "bullet_1": "Boron helps free stuck T",
+            "bullet_2": "Zinc provides T-making materials",
+            "bullet_3": "Body looks leaner, stronger, more masculine",
+            "bullet_4": "People ask what you're doing differently"
+          }
+        },
+        "stage_txUiWc": {
+          "type": "stage",
+          "settings": {
+            "day_label": "DAY 90",
+            "stage_name": "UNSTOPPABLE",
+            "bullet_1": "All 8 ingredients working like a tuned engine",
+            "bullet_2": "T-production optimized fully",
+            "bullet_3": "Not temporary, this is your new normal",
+            "bullet_4": "Welcome to the man you're supposed to be"
+          }
+        }
+      },
+      "block_order": [
+        "stage_jMCFqW",
+        "stage_LJrUfE",
+        "stage_txUiWc"
+      ],
+      "name": "How It Works",
+      "settings": {
+        "heading": "HOW DOES CHAD BITES WORK?",
+        "subtext": "Maximize your testosterone level naturally, quickly, and easily.",
+        "cta_text": "GET 1 BOTTLE FREE",
+        "cta_url": ""
+      }
+    },
+    "solution_hTgnNB": {
+      "type": "solution",
+      "blocks": {
+        "benefit_YRtb3x": {
+          "type": "benefit",
+          "settings": {
+            "title": "Skyrocket Energy & Stamina",
+            "description": "Increase energy & athletic performance"
+          }
+        },
+        "benefit_ACKcX8": {
+          "type": "benefit",
+          "settings": {
+            "title": "Support Male Vitality",
+            "description": "Amplify passionate energy"
+          }
+        },
+        "benefit_3yagAY": {
+          "type": "benefit",
+          "settings": {
+            "title": "Enhance Productivity & Focus",
+            "description": "Stay sharp & focused all day"
+          }
+        },
+        "benefit_NXY6ML": {
+          "type": "benefit",
+          "settings": {
+            "title": "Supercharge Strength",
+            "description": "Build & maintain lean muscle mass"
+          }
+        },
+        "benefit_Q7VUNL": {
+          "type": "benefit",
+          "settings": {
+            "title": "Improve Recovery",
+            "description": "Optimize sleep & muscle recovery"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_YRtb3x",
+        "benefit_ACKcX8",
+        "benefit_3yagAY",
+        "benefit_NXY6ML",
+        "benefit_Q7VUNL"
+      ],
+      "name": "The Solution",
+      "settings": {
+        "heading": "HIGH T MADE EASY",
+        "subtext": "Pro Athletes Have Been Using This Stack for Years Because They Can't Touch TRT. Now It's in a Blackberry Gummy",
+        "cta_text": "GET 1 BOTTLE FREE",
+        "cta_url": ""
+      }
+    },
+    "decline_fkrd6V": {
+      "type": "decline",
+      "name": "Decline of T",
+      "settings": {
+        "heading_line1": "THE DECLINE OF T:",
+        "heading_line2": "A MODERN EPIDEMIC",
+        "chart_alt": "Testosterone levels with Chad Bites",
+        "paragraph_1": "<p><strong>Testosterone levels</strong> have been dropping by 1% every year since 1980. Stress, poor sleep, processed diets, and toxins are destroying natural hormone production.</p>",
+        "paragraph_2": "<p>The impact? Low testosterone drains energy, strength, and focus—making it harder to perform at your best in life and the gym.</p>",
+        "paragraph_3": "<p><strong>The good news:</strong> Chad Bites helps you reclaim your edge with natural testosterone support for energy, focus, and strength.</p>"
+      }
+    },
+    "faq_XBMnmz": {
+      "type": "faq",
+      "name": "FAQ",
+      "settings": {
+        "heading": "FREQUENTLY ASKED QUESTIONS"
+      }
+    },
+    "1782773658940ff477": {
+      "type": "apps",
+      "blocks": {
+        "stamped_reviews_carousel_UQmmzw": {
+          "type": "shopify://apps/stamped-reviews/blocks/carousel/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "title": "Real Reviews from Real Customers",
+            "auto_play": true,
+            "auto_play_speed": 3,
+            "take": 30,
+            "color_title": "#F3F2F2",
+            "color_star": "#EFDF06",
+            "color_text": "#FFFFFF",
+            "color_link": "#486EE1",
+            "review_ids": "",
+            "product_ids": "",
+            "category": "",
+            "product_brand": "",
+            "tags": "",
+            "min_rating": "none",
+            "fill_empty": false,
+            "random": false,
+            "with_photos": false
+          }
+        }
+      },
+      "block_order": [
+        "stamped_reviews_carousel_UQmmzw"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "main-product",
-    "ingredients_6wc636"
+    "ingredients_6wc636",
+    "howitworks_YqaKGM",
+    "solution_hTgnNB",
+    "decline_fkrd6V",
+    "faq_XBMnmz",
+    "1782773658940ff477"
   ]
 }
