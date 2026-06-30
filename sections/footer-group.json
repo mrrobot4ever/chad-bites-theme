@@ -32,7 +32,7 @@
           "type": "link_column",
           "settings": {
             "heading": "Support",
-            "menu": ""
+            "menu": "support"
           }
         }
       },
