@@ -20,7 +20,8 @@
         "tagline_rest": "Naturally",
         "prod1_name": "Test Max Gummies",
         "prod1_sub": "Testosterone Support",
-        "prod1_url": "",
+        "prod1_url": "shopify://products/chad-bites-fadogia-gummies",
+        "prod1_image": "shopify://shop_images/futuristic-chadly.webp",
         "prod2_name": "Pump Max Gummies",
         "prod2_sub": "Blood Flow & Performance",
         "prod2_url": "",
@@ -41,7 +42,7 @@
         "link5_text": "Manage Subscription",
         "link5_url": "https://chadbites.com/a/loop_subscriptions/get-subscription-link",
         "link6_text": "Affiliates",
-        "link6_url": ""
+        "link6_url": "https://eliteaffiliates.com"
       }
     }
   },

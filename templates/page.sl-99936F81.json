@@ -1,0 +1,74 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "quiz": {
+      "type": "quiz",
+      "settings": {
+        "step1_heading": "WARNING: THIS IS NOT A TEST BOOSTER",
+        "step1_body": "Before we give you access to the most potent testosterone stack on earth - used by A list actors and professional athletes. We need to ask you some questions. You must be over 18 to continue.",
+        "step1_image": "shopify://shop_images/wo-RoganTruck_1.webp",
+        "step1_button": "Agree and Continue",
+        "step2_question": "How old are you?",
+        "step2_subtext": "This 2-minute assessment analyzes your exact symptoms, lifestyle, and risk factor in order to see if Chad Bites will work for you.",
+        "step2_answers": "50+ Years Old|40-49 Years Old|30-39 Years Old|20-29 Years Old",
+        "step3_question": "What's your biggest concern about your masculine health right now?",
+        "step3_answers": "Energy levels|Muscle mass and strength|Sex drive and performance|Mental focus and clarity|Weight loss",
+        "step4_question": "Do you have stress symptoms during the day? Like feeling tired, cranky, foggy, or moody.",
+        "step4_answers": "Yes|No",
+        "step5_question": "HOW'S YOUR ENERGY AT 3PM COMPARED TO WHEN YOU WAKE UP?",
+        "step5_answers": "Completely drained. I need caffeine or a nap|Noticeably lower - afternoon slump hits hard|Slightly tired - still functional but slower|Same energy - no afternoon crash",
+        "step6_question": "WHEN DID YOU START NOTICING CHANGES TO YOUR ENERGY AND DRIVE?",
+        "step6_answers": "Over a year ago|In the past year|In the past few months|Not sure",
+        "step7_question": "WHAT RESULTS ARE YOU EXPECTING FROM INCREASED TESTOSTERONE?",
+        "step7_answers": "Higher energy that lasts all day|Increased muscle mass and strength|Better sex drive and performance|Improved mental clarity and focus|All of the above",
+        "step8_heading": "CONGRATULATIONS. YOU ARE IN THE RIGHT PLACE.",
+        "step8_body": "Over 29,576 men have reclaimed their T, drive, and physique thanks to our new scientific, natural T-revival system used by pro athletes and now made available to you.",
+        "step8_image": "shopify://shop_images/futuristic-chadly.webp",
+        "step8_button": "Continue",
+        "step9_question": "HOW WOULD YOU DESCRIBE YOUR CURRENT BODY COMPOSITION?",
+        "step9_answers": "Lean and muscular|Average build|Soft with some muscle|Overweight / out of shape",
+        "step10_question": "HOW MANY HOURS OF QUALITY SLEEP DO YOU GET PER NIGHT?",
+        "step10_answers": "Less than 5 hours|5–6 hours|7–8 hours|More than 8 hours",
+        "step11_heading": "ANALYZING YOUR HEALTH PROFILE…",
+        "step11_subtext": "Based on your responses, we're building a comprehensive assessment of your hormonal health and identifying the key factors affecting your energy and vitality.",
+        "step11_label": "ANALYZING",
+        "step12_question": "DO YOU HAVE A FAMILY HISTORY OF DIABETES, HEART DISEASE, OR METABOLIC ISSUES?",
+        "step12_info_heading": "WHY WE ASK",
+        "step12_info_text": "These conditions share similar root causes with low testosterone — insulin resistance, inflammation, and metabolic dysfunction. Family patterns help us identify your risk factors.",
+        "step12_answers": "Yes|No|Not sure",
+        "step13_question": "HOW OFTEN DO YOU EAT PROCESSED FOODS?",
+        "step13_info_heading": "WHY WE ASK",
+        "step13_info_text": "Processed foods contain chemicals and additives that disrupt hormone production. Ultra-processed foods are linked to lower testosterone levels in multiple studies.",
+        "step13_answers": "Daily - most meals include processed foods|Several times a week|Occasionally - mostly whole foods|Rarely - I avoid processed foods",
+        "step14_heading": "BUILDING YOUR PROFILE…",
+        "step14_subtext": "Hold tight while we map your answers against the Chad Bites Alpha-Male-revival framework.",
+        "step14_checklist": "Analyzing your symptoms|Cross-referencing your lifestyle|Calibrating your protocol|Personalizing your result",
+        "step14_final": "YOUR PROTOCOL SUMMARY IS ALMOST READY",
+        "step15_heading": "Your Testosterone Assessment:",
+        "step15_button": "SHOW ME WHAT'S POSSIBLE",
+        "step16_heading": "THE LAST SOLUTION YOU'LL EVER NEED TO FEEL LIKE A MAN AGAIN.",
+        "step16_subtext_prefix": "Based on your answers, we expect you to visibly increase energy, strength and masculine drive by",
+        "step16_button": "GET MY PROTOCOL",
+        "step17_heading": "YOU'LL RECLAIM YOUR ENERGY & DRIVE WITH JUST A 90-DAY SUPPLY FROM CHAD BITES",
+        "step17_body": "Because you qualify, we guarantee you'll achieve all your goals with a 90-day supply of our Natural T-Optimization System. If not, you'll receive a full refund — no questions asked.",
+        "step17_image": "shopify://shop_images/old-white-transformation.webp",
+        "step17_button": "GET 50% OFF NOW",
+        "chart_status_label": "STATUS",
+        "chart_projected_label": "PROJECTED LIFT",
+        "chart_eta_label": "ETA",
+        "final_redirect_url": "https://1aa8d3-a1.myshopify.com/a/loop_subscriptions/checkout/01KNTGJ5DGH3JF4JFDR8B57TKN"
+      }
+    }
+  },
+  "order": [
+    "quiz"
+  ]
+}

@@ -18,21 +18,21 @@
           "type": "link_column",
           "settings": {
             "heading": "Shop",
-            "menu": ""
+            "menu": "shop"
           }
         },
         "col-2": {
           "type": "link_column",
           "settings": {
             "heading": "Company",
-            "menu": ""
+            "menu": "company"
           }
         },
         "col-3": {
           "type": "link_column",
           "settings": {
             "heading": "Support",
-            "menu": ""
+            "menu": "support"
           }
         }
       },
@@ -44,11 +44,11 @@
       "settings": {
         "logo_text_1": "CHAD",
         "logo_text_2": "BITES",
-        "brand_description": "Clinically studied ingredients designed to support healthy testosterone levels, energy, and peak male performance.",
+        "brand_description": "Get Your Edge Back, Naturally.",
         "copyright_text": "All rights reserved.",
-        "privacy_url": "",
-        "terms_url": "",
-        "refund_url": ""
+        "privacy_url": "shopify://policies/privacy-policy",
+        "terms_url": "shopify://policies/terms-of-service",
+        "refund_url": "shopify://policies/refund-policy"
       }
     }
   },
