@@ -2549,11 +2549,11 @@ ul, ol { list-style: none; }
 .product-layout {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 40px;
+  gap: 16px;
   align-items: start;
 }
 @media (min-width: 768px) {
-  .product-layout { grid-template-columns: 1fr 1fr; }
+  .product-layout { grid-template-columns: 1fr 1fr; gap: 40px; }
 }
 
 .product-gallery {
