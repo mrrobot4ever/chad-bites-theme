@@ -2718,7 +2718,8 @@ ul, ol { list-style: none; }
 @keyframes btnShimmer {
   0% { left: -100%; }
   25% { left: 150%; }
-  25.1%, 100% { left: -100%; }
+  50% { left: -100%; }
+  100% { left: -100%; }
 }
 
 .product-meta {
