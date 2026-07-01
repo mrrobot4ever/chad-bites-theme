@@ -28,6 +28,60 @@
         "show_arrows": true
       }
     },
+    "solution_hTgnNB": {
+      "type": "solution",
+      "blocks": {
+        "benefit_YRtb3x": {
+          "type": "benefit",
+          "settings": {
+            "title": "Skyrocket Energy & Stamina",
+            "description": "Increase energy & athletic performance"
+          }
+        },
+        "benefit_ACKcX8": {
+          "type": "benefit",
+          "settings": {
+            "title": "Support Male Vitality",
+            "description": "Amplify passionate energy"
+          }
+        },
+        "benefit_3yagAY": {
+          "type": "benefit",
+          "settings": {
+            "title": "Enhance Productivity & Focus",
+            "description": "Stay sharp & focused all day"
+          }
+        },
+        "benefit_NXY6ML": {
+          "type": "benefit",
+          "settings": {
+            "title": "Supercharge Strength",
+            "description": "Build & maintain lean muscle mass"
+          }
+        },
+        "benefit_Q7VUNL": {
+          "type": "benefit",
+          "settings": {
+            "title": "Improve Recovery",
+            "description": "Optimize sleep & muscle recovery"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_YRtb3x",
+        "benefit_ACKcX8",
+        "benefit_3yagAY",
+        "benefit_NXY6ML",
+        "benefit_Q7VUNL"
+      ],
+      "name": "The Solution",
+      "settings": {
+        "heading": "HIGH T MADE EASY",
+        "subtext": "Pro Athletes Have Been Using This Stack for Years Because They Can't Touch TRT. Now It's in a Blackberry Gummy",
+        "cta_text": "GET 1 BOTTLE FREE",
+        "cta_url": ""
+      }
+    },
     "ingredients_6wc636": {
       "type": "ingredients",
       "blocks": {
@@ -170,60 +224,6 @@
         "cta_url": ""
       }
     },
-    "solution_hTgnNB": {
-      "type": "solution",
-      "blocks": {
-        "benefit_YRtb3x": {
-          "type": "benefit",
-          "settings": {
-            "title": "Skyrocket Energy & Stamina",
-            "description": "Increase energy & athletic performance"
-          }
-        },
-        "benefit_ACKcX8": {
-          "type": "benefit",
-          "settings": {
-            "title": "Support Male Vitality",
-            "description": "Amplify passionate energy"
-          }
-        },
-        "benefit_3yagAY": {
-          "type": "benefit",
-          "settings": {
-            "title": "Enhance Productivity & Focus",
-            "description": "Stay sharp & focused all day"
-          }
-        },
-        "benefit_NXY6ML": {
-          "type": "benefit",
-          "settings": {
-            "title": "Supercharge Strength",
-            "description": "Build & maintain lean muscle mass"
-          }
-        },
-        "benefit_Q7VUNL": {
-          "type": "benefit",
-          "settings": {
-            "title": "Improve Recovery",
-            "description": "Optimize sleep & muscle recovery"
-          }
-        }
-      },
-      "block_order": [
-        "benefit_YRtb3x",
-        "benefit_ACKcX8",
-        "benefit_3yagAY",
-        "benefit_NXY6ML",
-        "benefit_Q7VUNL"
-      ],
-      "name": "The Solution",
-      "settings": {
-        "heading": "HIGH T MADE EASY",
-        "subtext": "Pro Athletes Have Been Using This Stack for Years Because They Can't Touch TRT. Now It's in a Blackberry Gummy",
-        "cta_text": "GET 1 BOTTLE FREE",
-        "cta_url": ""
-      }
-    },
     "decline_fkrd6V": {
       "type": "decline",
       "name": "Decline of T",
@@ -267,9 +267,9 @@
   },
   "order": [
     "main-product",
+    "solution_hTgnNB",
     "ingredients_6wc636",
     "howitworks_YqaKGM",
-    "solution_hTgnNB",
     "decline_fkrd6V",
     "faq_XBMnmz",
     "1782773658940ff477"
