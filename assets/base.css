@@ -2698,7 +2698,27 @@ ul, ol { list-style: none; }
 .quantity-input::-webkit-inner-spin-button,
 .quantity-input::-webkit-outer-spin-button { -webkit-appearance: none; }
 
-.add-to-cart-btn { width: 100%; margin-top: 10px; font-size: 1.7rem; }
+.add-to-cart-btn {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 1.7rem;
+  position: relative;
+  overflow: hidden;
+}
+.add-to-cart-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+  animation: btnShimmer 2.8s ease-in-out infinite;
+}
+@keyframes btnShimmer {
+  0%, 100% { left: -100%; }
+  50% { left: 150%; }
+}
 
 .product-meta {
   display: flex;
