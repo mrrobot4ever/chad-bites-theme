@@ -2603,23 +2603,6 @@ ul, ol { list-style: none; }
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   padding: 20px;
-  display: flex;
-  gap: 16px;
-  align-items: center;
-}
-.product-desc-text {
-  flex: 1;
-  min-width: 0;
-}
-.product-desc-img {
-  flex-shrink: 0;
-  width: 40%;
-}
-.product-desc-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  display: block;
 }
 
 .product-form-group { margin-bottom: 18px; }
