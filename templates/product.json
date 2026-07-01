@@ -12,9 +12,8 @@
     "main-product": {
       "type": "main-product",
       "settings": {
-        "meta_shipping": "Free shipping on orders $50+",
-        "meta_guarantee": "60-day money back guarantee",
-        "meta_tested": "Third-party tested",
+        "meta_shipping": "Fast + Free Shipping",
+        "meta_guarantee": "Higher T or Your Money Back",
         "option1_title": "BUY 2 GET 1 FREE",
         "option1_subtitle": "90 Day Supply - Delivered Every 3 Months",
         "option1_variant_id": "50559936594231",
