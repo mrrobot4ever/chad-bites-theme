@@ -70,7 +70,7 @@
                 <span class="radio-card-title">{{ section.settings.option2_title | default: "Buy 1 Bottle - $1.46 Per Day!" }}</span>
                 <span class="radio-card-sub">{{ section.settings.option2_subtitle }}</span>
               </div>
-              <div class="radio-price-tag">{{ section.settings.option2_price_tag | default: "$1.46 / Day" }}</div>
+              <div class="radio-price-tag radio-price-tag--silver">{{ section.settings.option2_price_tag | default: "$1.46 / Day" }}</div>
             </label>
           </div>
 
@@ -321,6 +321,9 @@
     white-space: nowrap;
     clip-path: polygon(12px 0%, 100% 0%, 100% 100%, 12px 100%, 0% 50%);
     margin-right: -2px;
+  }
+  .radio-price-tag--silver {
+    background: #C0C0C0;
   }
 </style>
 
