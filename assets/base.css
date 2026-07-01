@@ -2655,7 +2655,7 @@ ul, ol { list-style: none; }
 .quantity-input::-webkit-inner-spin-button,
 .quantity-input::-webkit-outer-spin-button { -webkit-appearance: none; }
 
-.add-to-cart-btn { width: 100%; margin-top: 10px; }
+.add-to-cart-btn { width: 100%; margin-top: 10px; font-size: 1.7rem; }
 
 .product-meta {
   display: flex;
