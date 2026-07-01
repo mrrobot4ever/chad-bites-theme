@@ -2597,12 +2597,12 @@ ul, ol { list-style: none; }
 
 .product-description-box {
   display: flex;
-  gap: 16px;
-  align-items: center;
+  align-items: stretch;
   margin-bottom: 24px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  padding: 20px;
+  padding: 0;
+  overflow: hidden;
 }
 .product-description {
   flex: 1;
@@ -2610,6 +2610,7 @@ ul, ol { list-style: none; }
   font-size: 0.92rem;
   color: var(--color-text-muted);
   line-height: 1.7;
+  padding: 20px;
 }
 .product-desc-img {
   flex-shrink: 0;
@@ -2617,16 +2618,14 @@ ul, ol { list-style: none; }
 }
 .product-desc-img img {
   width: 100%;
-  aspect-ratio: 1;
+  height: 100%;
   object-fit: cover;
-  border-radius: 8px;
   display: block;
 }
 .product-desc-img-placeholder {
   width: 100%;
-  aspect-ratio: 1;
+  height: 100%;
   background: linear-gradient(135deg, rgba(77,124,254,0.1), rgba(124,58,237,0.1));
-  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
