@@ -2600,6 +2600,9 @@ ul, ol { list-style: none; }
   color: var(--color-text-muted);
   line-height: 1.7;
   margin-bottom: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
 }
 
 .product-form-group { margin-bottom: 18px; }
