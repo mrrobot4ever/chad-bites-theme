@@ -2661,9 +2661,9 @@ ul, ol { list-style: none; }
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
-  margin-top: 24px;
-  padding-top: 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: 8px;
+  padding-top: 0;
+  border-top: none;
 }
 .product-meta-item {
   display: flex;
