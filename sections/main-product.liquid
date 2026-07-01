@@ -60,7 +60,7 @@
                 <span class="radio-card-title">{{ section.settings.option1_title | default: "BUY 2 GET 1 FREE" }}</span>
                 <span class="radio-card-sub">{{ section.settings.option1_subtitle | default: "Delivered Every 3 Months • Cancel or Pause in 2 Clicks" }}</span>
               </div>
-              <div class="radio-price-tag">{{ section.settings.option1_price_tag | default: "$0.97 / Day" }}</div>
+              <div class="radio-price-tag"><span class="price-tag-main">{{ section.settings.option1_price_tag | default: "$0.97 / Day" }}</span><span class="price-tag-supply">{{ section.settings.option1_supply | default: "90 DAY SUPPLY" }}</span></div>
             </label>
             <label class="product-radio-card" onclick="selectOffer(this, '{{ section.settings.option2_variant_id }}', '{{ section.settings.option2_selling_plan }}')">
               <input type="radio" name="offer_select" value="2" style="display:none;">
@@ -69,7 +69,7 @@
                 <span class="radio-card-title">{{ section.settings.option2_title | default: "BUY 1 BOTTLE" }}</span>
                 <span class="radio-card-sub">{{ section.settings.option2_subtitle | default: "Delivered Monthly • Cancel or Pause in 2 Clicks" }}</span>
               </div>
-              <div class="radio-price-tag radio-price-tag--silver">{{ section.settings.option2_price_tag | default: "$1.46 / Day" }}</div>
+              <div class="radio-price-tag radio-price-tag--silver"><span class="price-tag-main">{{ section.settings.option2_price_tag | default: "$1.46 / Day" }}</span><span class="price-tag-supply">{{ section.settings.option2_supply | default: "30 DAY SUPPLY" }}</span></div>
             </label>
           </div>
 
@@ -332,10 +332,22 @@
     padding: 0 14px 0 40px;
     border-radius: 0 8px 8px 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     white-space: nowrap;
     clip-path: polygon(28px 0%, 100% 0%, 100% 100%, 28px 100%, 0% 50%);
     margin-right: -2px;
+  }
+  .price-tag-main {
+    font-size: 0.94rem;
+    font-weight: 700;
+  }
+  .price-tag-supply {
+    font-size: 0.5rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    opacity: 0.7;
   }
   .radio-price-tag--silver {
     background: #C0C0C0;
@@ -430,6 +442,12 @@ sId: '362781' }); }</script>
     },
     {
       "type": "text",
+      "id": "option1_supply",
+      "label": "Option 1 supply text",
+      "default": "90 DAY SUPPLY"
+    },
+    {
+      "type": "text",
       "id": "option1_selling_plan",
       "label": "Option 1 selling plan ID",
       "default": "12120949047"
@@ -461,6 +479,12 @@ sId: '362781' }); }</script>
       "id": "option2_price_tag",
       "label": "Option 2 price tag",
       "default": "$1.46 / Day"
+    },
+    {
+      "type": "text",
+      "id": "option2_supply",
+      "label": "Option 2 supply text",
+      "default": "30 DAY SUPPLY"
     },
     {
       "type": "text",
