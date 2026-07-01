@@ -108,7 +108,12 @@
         <h1 class="product-title" style="margin-top:24px;">{{ product.title }}</h1>
 
         {% if product.description != blank %}
-          <div class="product-description">{{ product.description }}</div>
+          <div class="product-description">
+            <div class="product-desc-text">{{ product.description }}</div>
+            <div class="product-desc-img">
+              <img src="{{ section.settings.desc_image_url | default: 'https://chadbites.com/cdn/shop/files/Chadbite_-_gummy_close_up_4.png?v=1771171413&width=1000' }}" alt="Product" loading="lazy">
+            </div>
+          </div>
         {% endif %}
 
       </div>
@@ -450,6 +455,12 @@ sId: '362781' }); }</script>
     },
     {
       "type": "checkbox",
+      "id": "desc_image_url",
+      "label": "Description image URL",
+      "default": "https://chadbites.com/cdn/shop/files/Chadbite_-_gummy_close_up_4.png?v=1771171413&width=1000"
+    },
+    {
+      "type": "text",
       "id": "show_arrows",
       "label": "Show navigation arrows",
       "default": true
