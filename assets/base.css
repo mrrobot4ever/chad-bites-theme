@@ -2556,8 +2556,8 @@ ul, ol { list-style: none; }
 .product-gallery img {
   width: 100%;
   aspect-ratio: 1;
-  object-fit: contain;
-  padding: 28px;
+  object-fit: cover;
+  padding: 0;
 }
 
 .product-info { padding: 16px 0; }
