@@ -2713,11 +2713,12 @@ ul, ol { list-style: none; }
   width: 60%;
   height: 100%;
   background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
-  animation: btnShimmer 2.8s ease-in-out infinite;
+  animation: btnShimmer 5.6s ease-in-out infinite;
 }
 @keyframes btnShimmer {
   0%, 100% { left: -100%; }
-  50% { left: 150%; }
+  25% { left: 150%; }
+  26% { left: -100%; }
 }
 
 .product-meta {
