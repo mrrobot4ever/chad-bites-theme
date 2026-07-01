@@ -341,7 +341,6 @@
     carouselIndex = idx;
   }
   function carouselNav(dir) { carouselGo(carouselIndex + dir); }
-  setInterval(function() { carouselGo(carouselIndex + 1); }, 2500);
 
   function selectOffer(el, variantId, sellingPlan) {
     document.querySelectorAll('.product-radio-card').forEach(function(c) { c.classList.remove('selected'); });
