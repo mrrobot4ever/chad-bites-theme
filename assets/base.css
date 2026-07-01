@@ -229,24 +229,18 @@ ul, ol { list-style: none; }
   -webkit-appearance: none;
   appearance: none;
 }
-.hamburger span {
+.hamburger-icon,
+.hamburger-close {
   display: block;
-  height: 2px;
-  margin-bottom: 5px;
-  background: #e8eaf0;
-  background: var(--color-text);
-  border-radius: 2px;
-  transition: all 0.3s ease;
-  transform-origin: center;
 }
-.hamburger.is-open span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+.hamburger-close {
+  display: none;
 }
-.hamburger.is-open span:nth-child(2) {
-  opacity: 0;
+.hamburger.is-open .hamburger-icon {
+  display: none;
 }
-.hamburger.is-open span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+.hamburger.is-open .hamburger-close {
+  display: block;
 }
 
 /* --- Logo (center cell) --- */
