@@ -372,7 +372,7 @@ ul, ol { list-style: none; }
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
   padding: 16px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   text-decoration: none;
@@ -550,7 +550,7 @@ ul, ol { list-style: none; }
 @media (min-width: 768px) {
   .ingredients-grid {
     grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
+    gap: 16px;
   }
 }
 
@@ -1326,7 +1326,7 @@ ul, ol { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: 16px;
   padding: 18px 22px;
   background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(16px);
@@ -1527,7 +1527,7 @@ ul, ol { list-style: none; }
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 16px;
   align-items: center;
   justify-content: center;
   margin-bottom: 19px;
@@ -2039,7 +2039,7 @@ ul, ol { list-style: none; }
 .problems-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  gap: 16px;
 }
 
 .problem-card {
@@ -2243,7 +2243,7 @@ ul, ol { list-style: none; }
 .benefits-icons-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  gap: 16px;
 }
 @media (min-width: 768px) {
   .benefits-icons-row {
@@ -2347,7 +2347,7 @@ ul, ol { list-style: none; }
 .social-proof-stats {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+  gap: 16px;
   margin-top: 40px;
 }
 @media (min-width: 768px) {
@@ -2397,7 +2397,7 @@ ul, ol { list-style: none; }
 .features-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  gap: 16px;
 }
 @media (min-width: 768px) {
   .features-grid { grid-template-columns: repeat(4, 1fr); }
@@ -2549,7 +2549,7 @@ ul, ol { list-style: none; }
 .product-layout {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 12px;
+  gap: 16px;
   align-items: start;
 }
 @media (min-width: 768px) {
@@ -2698,7 +2698,7 @@ ul, ol { list-style: none; }
 .collection-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+  gap: 16px;
 }
 @media (min-width: 768px) {
   .collection-grid { grid-template-columns: repeat(3, 1fr); }
