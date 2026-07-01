@@ -2612,6 +2612,9 @@ ul, ol { list-style: none; }
   line-height: 1.7;
   padding: 20px;
 }
+@media (min-width: 768px) {
+  .product-description { font-size: 1.1rem; }
+}
 .product-desc-img {
   flex-shrink: 0;
   width: 35%;
