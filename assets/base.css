@@ -2541,7 +2541,7 @@ ul, ol { list-style: none; }
 /* ============================================
    PRODUCT PAGE
    ============================================ */
-.product-section { padding-top: 48px; }
+.product-section { padding-top: 84px; }
 @media (min-width: 768px) {
   .product-section { padding-top: 96px; }
 }
