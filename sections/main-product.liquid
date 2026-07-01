@@ -42,7 +42,6 @@
       </div>
 
       <div class="product-info">
-        <h1 class="product-title">{{ product.title }}</h1>
 
         
 
@@ -94,6 +93,8 @@
           </button>
 
         {% endform %}
+
+        <h1 class="product-title" style="margin-top:24px;">{{ product.title }}</h1>
 
         {% if product.description != blank %}
           <div class="product-description">{{ product.description }}</div>
