@@ -276,10 +276,10 @@ ul, ol { list-style: none; }
   position: relative;
   width: 40px;
   height: 40px;
-  color: var(--color-text-muted);
+  color: #ffffff;
   transition: color 0.2s;
 }
-.header-cart-btn:hover { color: var(--color-text); }
+.header-cart-btn:hover { color: #ffffff; }
 
 .header-cart-count {
   position: absolute;
