@@ -2664,6 +2664,7 @@ ul, ol { list-style: none; }
   margin-top: 8px;
   padding-top: 0;
   border-top: none;
+  justify-content: center;
 }
 .product-meta-item {
   display: flex;
