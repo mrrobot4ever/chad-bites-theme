@@ -215,19 +215,25 @@ ul, ol { list-style: none; }
 /* --- Hamburger (left cell) --- */
 .hamburger {
   order: 1;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
   flex-direction: column;
   gap: 5px;
   width: 24px;
+  min-height: 20px;
   padding: 4px 0;
   background: none;
   border: none;
   cursor: pointer;
   z-index: 1001;
+  -webkit-appearance: none;
+  appearance: none;
 }
 .hamburger span {
   display: block;
   height: 2px;
+  background: #e8eaf0;
   background: var(--color-text);
   border-radius: 2px;
   transition: all 0.3s ease;
