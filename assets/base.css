@@ -2668,13 +2668,13 @@ ul, ol { list-style: none; }
 .product-meta-item {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 0.8rem;
+  gap: 10px;
+  font-size: 1.6rem;
   color: var(--color-text-muted);
 }
 .product-meta-item svg {
-  width: 16px;
-  height: 16px;
+  width: 32px;
+  height: 32px;
   color: var(--color-accent);
 }
 
