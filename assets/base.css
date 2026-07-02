@@ -2531,6 +2531,11 @@ ul, ol { list-style: none; }
   margin: 0;
 }
 
+.footer-disclaimer--no-border {
+  border: none;
+  padding: 0 20px;
+}
+
 .footer-bottom {
   display: flex;
   flex-direction: column;
@@ -2552,6 +2557,11 @@ ul, ol { list-style: none; }
   color: var(--color-text-muted);
   line-height: 1.6;
   margin: 0;
+}
+
+.footer-disclaimer--no-border {
+  border: none;
+  padding: 0 20px;
 }
 
 .footer-bottom { flex-direction: row; justify-content: space-between; }
