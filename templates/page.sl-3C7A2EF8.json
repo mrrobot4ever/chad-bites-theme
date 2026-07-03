@@ -12,9 +12,9 @@
     "quiz": {
       "type": "quiz",
       "settings": {
-        "step1_heading": "WARNING: THIS IS NOT A TEST BOOSTER",
+        "step1_heading": "WARNING: YOU MUST BE OVER 18",
         "step1_body": "Before we give you access to the most potent testosterone stack on earth, we need to ask you a few questions.",
-        "step1_image": "shopify:\/\/shop_images\/wo-blackguyTEST.webp",
+        "step1_image": "shopify://shop_images/wo-blackguyTEST.webp",
         "step1_button": "Continue",
         "step2_question": "How old are you?",
         "step2_subtext": "This 2-minute assessment analyzes your exact symptoms, lifestyle, and risk factor in order to see if Chad Bites will work for you.",
@@ -31,10 +31,10 @@
         "step7_answers": "Higher energy that lasts all day|Increased muscle mass and strength|Better sex drive and performance|Improved mental clarity and focus|All of the above",
         "step8_heading": "CONGRATULATIONS. YOU ARE IN THE RIGHT PLACE.",
         "step8_body": "Over 29,576 men have reclaimed their T, drive, and physique thanks to our new scientific, natural T-revival system used by pro athletes and now made available to you.",
-        "step8_image": "shopify:\/\/shop_images\/futuristic-chadly.webp",
+        "step8_image": "shopify://shop_images/futuristic-chadly.webp",
         "step8_button": "Continue",
         "step9_question": "HOW WOULD YOU DESCRIBE YOUR CURRENT BODY COMPOSITION?",
-        "step9_answers": "Lean and muscular|Average build|Soft with some muscle|Overweight \/ out of shape",
+        "step9_answers": "Lean and muscular|Average build|Soft with some muscle|Overweight / out of shape",
         "step10_question": "HOW MANY HOURS OF QUALITY SLEEP DO YOU GET PER NIGHT?",
         "step10_answers": "Less than 5 hours|5–6 hours|7–8 hours|More than 8 hours",
         "step11_heading": "ANALYZING YOUR HEALTH PROFILE…",
@@ -59,12 +59,12 @@
         "step16_button": "GET MY PROTOCOL",
         "step17_heading": "YOU'LL RECLAIM YOUR ENERGY & DRIVE WITH JUST A 90-DAY SUPPLY FROM CHAD BITES",
         "step17_body": "Because you qualify, we guarantee you'll achieve all your goals with a 90-day supply of our Natural T-Optimization System. If not, you'll receive a full refund — no questions asked.",
-        "step17_image": "shopify:\/\/shop_images\/old-white-transformation.webp",
+        "step17_image": "shopify://shop_images/old-white-transformation.webp",
         "step17_button": "GET 1 BOTTLE FREE",
         "chart_status_label": "STATUS",
         "chart_projected_label": "PROJECTED LIFT",
         "chart_eta_label": "ETA",
-        "final_redirect_url": "https:\/\/chadbites.com\/products\/chad-bites-fadogia-gummies"
+        "final_redirect_url": "https://chadbites.com/products/chad-bites-fadogia-gummies"
       }
     }
   },
