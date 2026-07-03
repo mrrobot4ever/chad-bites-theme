@@ -15,10 +15,10 @@
         "step1_heading": "WARNING: THIS IS NOT A TEST BOOSTER",
         "step1_body": "Before we give you access to the most potent testosterone stack on earth, we need to ask you some questions.",
         "step1_image": "shopify://shop_images/wo-blackguyTEST.webp",
-        "step1_button": "Agree and Continue",
+        "step1_button": "Continue",
         "step2_question": "How old are you?",
         "step2_subtext": "This 2-minute assessment analyzes your exact symptoms, lifestyle, and risk factor in order to see if Chad Bites will work for you.",
-        "step2_answers": "50+ Years Old|40-49 Years Old|30-39 Years Old|20-29 Years Old",
+        "step2_answers": "50+ Years Old|40-49 Years Old|30-39 Years Old|18-29 Years Old",
         "step3_question": "What's your biggest concern about your masculine health right now?",
         "step3_answers": "Energy levels|Muscle mass and strength|Sex drive and performance|Mental focus and clarity|Weight loss",
         "step4_question": "Do you have stress symptoms during the day? Like feeling tired, cranky, foggy, or moody.",
@@ -60,11 +60,11 @@
         "step17_heading": "YOU'LL RECLAIM YOUR ENERGY & DRIVE WITH JUST A 90-DAY SUPPLY FROM CHAD BITES",
         "step17_body": "Because you qualify, we guarantee you'll achieve all your goals with a 90-day supply of our Natural T-Optimization System. If not, you'll receive a full refund — no questions asked.",
         "step17_image": "shopify://shop_images/old-white-transformation.webp",
-        "step17_button": "GET 50% OFF NOW",
+        "step17_button": "GET 1 BOTTLE FREE",
         "chart_status_label": "STATUS",
         "chart_projected_label": "PROJECTED LIFT",
         "chart_eta_label": "ETA",
-        "final_redirect_url": "https://1aa8d3-a1.myshopify.com/a/loop_subscriptions/checkout/01KNTGJ5DGH3JF4JFDR8B57TKN"
+        "final_redirect_url": "https://chadbites.com/products/chad-bites-fadogia-gummies"
       }
     }
   },
