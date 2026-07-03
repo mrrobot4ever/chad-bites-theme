@@ -19,11 +19,13 @@
         "option1_subtitle": "Delivered Every 90 Days",
         "option1_variant_id": "50559936594231",
         "option1_price_tag": "$0.97 / Day",
+        "option1_supply": "90 DAY SUPPLY",
         "option1_selling_plan": "12120949047",
         "option2_title": "BUY 1 BOTTLE",
         "option2_subtitle": "Delivered Every 30 Days",
         "option2_variant_id": "50559936561463",
         "option2_price_tag": "$1.46 / Day",
+        "option2_supply": "30 DAY SUPPLY",
         "option2_selling_plan": "12124750135",
         "show_arrows": true
       }
@@ -263,6 +265,19 @@
         "stamped_reviews_main_widget_HRhTBN"
       ],
       "settings": {}
+    },
+    "riskfree_Nk3fkU": {
+      "type": "riskfree",
+      "name": "Risk Free",
+      "settings": {
+        "heading_line1": "ZERO RISK.",
+        "heading_line2": "ALL REWARD.",
+        "body_text": "Try Chad Bites for 365 days. If you don't feel your edge return—if you don't see real, measurable changes in your energy, drive, physique, and confidence—we refund your last order. No questions asked. No hoops to jump through.",
+        "cta_text": "GET 1 BOTTLE FREE",
+        "cta_url": "",
+        "badge_top_text": "90 DAY",
+        "badge_bottom_text": "HIGHER T GUARANTEE"
+      }
     }
   },
   "order": [
@@ -272,6 +287,7 @@
     "solution_hTgnNB",
     "decline_fkrd6V",
     "faq_XBMnmz",
-    "1782773658940ff477"
+    "1782773658940ff477",
+    "riskfree_Nk3fkU"
   ]
 }
