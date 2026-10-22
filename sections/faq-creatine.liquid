@@ -1,0 +1,170 @@
+{% assign has_blocks = false %}
+{% if section.blocks.size > 0 %}
+  {% assign has_blocks = true %}
+{% endif %}
+
+<section class="faq-section" data-section-id="{{ section.id }}">
+  <div class="faq-bg">
+    {% if section.settings.background_image != blank %}
+      <img src="{{ section.settings.background_image | image_url: width: 1920 }}" alt="" loading="lazy">
+    {% else %}
+      <img src="{{ 'faq-bg-creatine.jpg' | asset_url }}" alt="" loading="lazy">
+    {% endif %}
+  </div>
+
+  <div class="faq-inner">
+    <h2 class="faq-heading">{{ section.settings.heading | default: "FREQUENTLY ASKED QUESTIONS" }}</h2>
+
+    <div class="faq-list">
+      {% if has_blocks %}
+        {% for block in section.blocks %}
+          <div class="faq-item" {{ block.shopify_attributes }}>
+            <button class="faq-question" aria-expanded="false" onclick="var item=this.parentElement;var wasOpen=item.classList.contains('is-open');document.querySelectorAll('.faq-item.is-open').forEach(function(el){el.classList.remove('is-open')});if(!wasOpen){item.classList.add('is-open')}">
+              <span>{{ block.settings.question }}</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">{{ block.settings.answer }}</div>
+            </div>
+          </div>
+        {% endfor %}
+      {% else %}
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" onclick="var item=this.parentElement;var wasOpen=item.classList.contains('is-open');document.querySelectorAll('.faq-item.is-open').forEach(function(el){el.classList.remove('is-open')});if(!wasOpen){item.classList.add('is-open')}">
+            <span>How long until I see results?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Most users notice sharper focus and improved workout performance within the first 7-14 days as creatine saturates your muscles and Alpha GPC activates acetylcholine production. For full strength, endurance, and cognitive gains, expect peak results at the 90-day mark as the full stack compounds.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" onclick="var item=this.parentElement;var wasOpen=item.classList.contains('is-open');document.querySelectorAll('.faq-item.is-open').forEach(function(el){el.classList.remove('is-open')});if(!wasOpen){item.classList.add('is-open')}">
+            <span>Is this safe?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Absolutely. Creatine Max is formulated with clinically-studied ingredients that support both muscular and cognitive performance. It's manufactured in FDA-registered, GMP-certified facilities with third-party testing for purity and potency. Creatine HCL is one of the most researched supplements in history with an excellent safety profile. Always consult your healthcare provider if you have specific health concerns.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" onclick="var item=this.parentElement;var wasOpen=item.classList.contains('is-open');document.querySelectorAll('.faq-item.is-open').forEach(function(el){el.classList.remove('is-open')});if(!wasOpen){item.classList.add('is-open')}">
+            <span>Will this show up on drug tests?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">No. Creatine Max contains zero banned substances and will not trigger positive results on standard drug tests. Creatine is legal, widely used by professional athletes, and approved by every major sports organization. All ingredients are natural and safe for competitive use.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" onclick="var item=this.parentElement;var wasOpen=item.classList.contains('is-open');document.querySelectorAll('.faq-item.is-open').forEach(function(el){el.classList.remove('is-open')});if(!wasOpen){item.classList.add('is-open')}">
+            <span>Can I take this with other supplements?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Creatine Max is designed to work synergistically with other supplements — it pairs especially well with Chad Bites for a complete strength and testosterone stack. However, if you're taking prescription medications or have kidney concerns, consult your doctor first.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" onclick="var item=this.parentElement;var wasOpen=item.classList.contains('is-open');document.querySelectorAll('.faq-item.is-open').forEach(function(el){el.classList.remove('is-open')});if(!wasOpen){item.classList.add('is-open')}">
+            <span>Why gummies instead of pills?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Gummies offer superior bioavailability because they begin absorption in the mouth through the mucous membranes. They're also more enjoyable to take, which means better compliance and consistency. Plus, you actually look forward to taking them instead of choking down horse pills. Taste matters when you're building a daily habit.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" onclick="var item=this.parentElement;var wasOpen=item.classList.contains('is-open');document.querySelectorAll('.faq-item.is-open').forEach(function(el){el.classList.remove('is-open')});if(!wasOpen){item.classList.add('is-open')}">
+            <span>How many gummies are in each bottle?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Each bottle contains 60 gummies, which is a full 30-day supply at the recommended dose of 2 gummies per day. This ensures you get consistent daily creatine loading plus cognitive support from Alpha GPC and Citicoline throughout the month.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" onclick="var item=this.parentElement;var wasOpen=item.classList.contains('is-open');document.querySelectorAll('.faq-item.is-open').forEach(function(el){el.classList.remove('is-open')});if(!wasOpen){item.classList.add('is-open')}">
+            <span>What if it doesn't work for me?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">We stand behind our product with a 90-day money-back guarantee. If you don't feel stronger, sharper, and more energized, simply contact our team for a full refund. No questions asked, no hassle. We're confident you'll experience the benefits, but if not, you risk nothing.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" onclick="var item=this.parentElement;var wasOpen=item.classList.contains('is-open');document.querySelectorAll('.faq-item.is-open').forEach(function(el){el.classList.remove('is-open')});if(!wasOpen){item.classList.add('is-open')}">
+            <span>Do I need to cycle this?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">No cycling necessary. Creatine is safe for continuous daily use — in fact, consistent supplementation is how you maintain full muscle saturation and cognitive benefits. Alpha GPC and Citicoline are also safe for long-term daily use without breaks.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" onclick="var item=this.parentElement;var wasOpen=item.classList.contains('is-open');document.querySelectorAll('.faq-item.is-open').forEach(function(el){el.classList.remove('is-open')});if(!wasOpen){item.classList.add('is-open')}">
+            <span>Can I take more than 2 gummies per day?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">The recommended dose is 2 gummies per day for optimal results. This dosage delivers effective creatine loading plus cognitive support while staying within safe ranges. Taking more than the recommended amount won't accelerate muscle saturation and isn't advised. Consistency at the proper dose is key.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" onclick="var item=this.parentElement;var wasOpen=item.classList.contains('is-open');document.querySelectorAll('.faq-item.is-open').forEach(function(el){el.classList.remove('is-open')});if(!wasOpen){item.classList.add('is-open')}">
+            <span>Is this suitable for men over 50?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Yes, absolutely. In fact, adults over 50 experience some of the most dramatic benefits because natural creatine production and cognitive function both decline with age. Creatine Max is specifically formulated to combat this dual decline — restoring muscular power while protecting against age-related cognitive deterioration.</div>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "FAQ - Creatine Max",
+  "class": "faq-section-wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "FREQUENTLY ASKED QUESTIONS"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq_item",
+      "name": "FAQ Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "Question?"
+        },
+        {
+          "type": "textarea",
+          "id": "answer",
+          "label": "Answer",
+          "default": "Answer text here."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ"
+    }
+  ]
+}
+{% endschema %}
