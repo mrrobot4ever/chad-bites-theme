@@ -3200,3 +3200,48 @@ ul, ol { list-style: none; }
   background: linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(153, 27, 27, 0.1));
   color: rgba(220, 38, 38, 0.3);
 }
+
+/* ========== Prosti Max Green Theme Overrides ========== */
+.template-product-prosti-max-product-page {
+  --color-accent: #16a34a;
+  --color-accent-secondary: #15803d;
+}
+.template-product-prosti-max-product-page .btn-primary {
+  box-shadow: 0 4px 24px rgba(22, 163, 74, 0.3);
+}
+.template-product-prosti-max-product-page .btn-primary:hover {
+  box-shadow: 0 8px 32px rgba(22, 163, 74, 0.45);
+}
+.template-product-prosti-max-product-page .btn-outline {
+  border-color: #16a34a;
+  color: #16a34a;
+}
+.template-product-prosti-max-product-page .btn-outline:hover {
+  border-color: #16a34a;
+  color: #16a34a;
+}
+.template-product-prosti-max-product-page .product-radio-card:hover {
+  border-color: rgba(22, 163, 74, 0.3);
+}
+.template-product-prosti-max-product-page .product-radio-card.selected {
+  border-color: #16a34a;
+  background: rgba(22, 163, 74, 0.06);
+}
+.template-product-prosti-max-product-page .product-radio-card.selected .radio-dot {
+  border-color: #16a34a;
+}
+.template-product-prosti-max-product-page .product-radio-card.selected .radio-dot::after {
+  background: #16a34a;
+}
+.template-product-prosti-max-product-page .stat-card-icon--energy {
+  background: rgba(22, 163, 74, 0.15);
+  color: #16a34a;
+}
+.template-product-prosti-max-product-page .stat-card-icon--focus {
+  background: rgba(22, 163, 74, 0.15);
+  color: #16a34a;
+}
+.template-product-prosti-max-product-page .product-desc-img-placeholder {
+  background: linear-gradient(135deg, rgba(22, 163, 74, 0.1), rgba(21, 128, 61, 0.1));
+  color: rgba(22, 163, 74, 0.3);
+}
