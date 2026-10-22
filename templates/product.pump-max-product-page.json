@@ -129,22 +129,22 @@
           "type": "stage",
           "settings": {
             "day_label": "DAY 7",
-            "stage_name": "ACTIVATE",
-            "bullet_1": "Tongkat Ali blocks stress hormones",
-            "bullet_2": "Fulvic Acid feeds starving testosterone cells",
-            "bullet_3": "Workouts feel intense again",
-            "bullet_4": "Start to feel that all-day energy"
+            "stage_name": "IGNITE",
+            "bullet_1": "L-Citrulline & L-Arginine flood your system with nitric oxide",
+            "bullet_2": "Blood vessels relax and widen for better circulation",
+            "bullet_3": "Workouts feel fuller \u2014 skin-splitting pumps in the gym",
+            "bullet_4": "First signs of increased stamina where it counts"
           }
         },
         "stage_LJrUfE": {
           "type": "stage",
           "settings": {
             "day_label": "DAY 30",
-            "stage_name": "DOMINATE",
-            "bullet_1": "Boron helps free stuck T",
-            "bullet_2": "Zinc provides T-making materials",
-            "bullet_3": "Body looks leaner, stronger, more masculine",
-            "bullet_4": "People ask what you're doing differently"
+            "stage_name": "SURGE",
+            "bullet_1": "French Maritime Bark supercharges nitric oxide production",
+            "bullet_2": "Grape Seed Extract strengthens blood vessel walls",
+            "bullet_3": "Bedroom performance noticeably stronger and longer",
+            "bullet_4": "Circulation peaks \u2014 energy and endurance through the roof"
           }
         },
         "stage_txUiWc": {
@@ -152,10 +152,10 @@
           "settings": {
             "day_label": "DAY 90",
             "stage_name": "UNSTOPPABLE",
-            "bullet_1": "All 8 ingredients working like a tuned engine",
-            "bullet_2": "T-production optimized fully",
-            "bullet_3": "Not temporary, this is your new normal",
-            "bullet_4": "Welcome to the man you're supposed to be"
+            "bullet_1": "All 8 ingredients working in sync for maximum blood flow",
+            "bullet_2": "Zinc and B12 keep your engine running at full capacity",
+            "bullet_3": "Panax Ginseng delivers relentless stamina and drive",
+            "bullet_4": "Peak performance is your new baseline \u2014 gym and bedroom"
           }
         }
       },
@@ -166,9 +166,9 @@
       ],
       "name": "How It Works",
       "settings": {
-        "heading": "HOW DOES CHAD BITES WORK?",
-        "subtext": "Maximize your testosterone level naturally, quickly, and easily.",
-        "cta_text": "GET 1 BOTTLE FREE",
+        "heading": "HOW DOES PUMP MAX WORK?",
+        "subtext": "Maximize blood flow, circulation, and performance \u2014 naturally.",
+        "cta_text": "GET PUMP MAX NOW",
         "cta_url": ""
       }
     },
