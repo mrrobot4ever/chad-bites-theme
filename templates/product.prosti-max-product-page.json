@@ -78,8 +78,8 @@
       ],
       "name": "Ingredients",
       "settings": {
-        "heading": "4 KEY INGREDIENTS",
-        "subtitle": "PROTECT YOUR PROSTATE. NATURALLY."
+        "heading": "4 INGREDIENTS IN 1 Gummy",
+        "subtitle": "PROTECT YOUR PROSTATE The Natural Way."
       }
     },
     "howitworks_YqaKGM": {
@@ -91,9 +91,9 @@
             "day_label": "DAY 7",
             "stage_name": "DEFEND",
             "bullet_1": "Astaxanthin delivers 6000x more antioxidant power than Vitamin C",
-            "bullet_2": "Saw Palmetto begins balancing DHT levels naturally",
+            "bullet_2": "Saw Palmetto begins balancing DHT levels naturally *",
             "bullet_3": "Lycopene targets prostate cells with protective compounds",
-            "bullet_4": "First signs of reduced nighttime bathroom trips"
+            "bullet_4": "First signs of reduced nighttime bathroom trips *"
           }
         },
         "stage_LJrUfE": {
@@ -101,10 +101,10 @@
           "settings": {
             "day_label": "DAY 30",
             "stage_name": "RESTORE",
-            "bullet_1": "Theaflavins reduce inflammation throughout the prostate",
-            "bullet_2": "Saw Palmetto supports healthy urinary flow and frequency",
+            "bullet_1": "Theaflavins reduce inflammation throughout the prostate *",
+            "bullet_2": "Saw Palmetto supports healthy urinary flow and frequency *",
             "bullet_3": "Oxidative stress drops as the antioxidant stack compounds",
-            "bullet_4": "Sleep improves as nighttime urgency fades"
+            "bullet_4": "Sleep improves as nighttime urgency fades *"
           }
         },
         "stage_txUiWc": {
@@ -112,10 +112,10 @@
           "settings": {
             "day_label": "DAY 90",
             "stage_name": "PROTECTED",
-            "bullet_1": "All 4 ingredients working together for full prostate defense",
-            "bullet_2": "Healthy PSA levels supported long-term",
-            "bullet_3": "Urinary comfort and flow at their best in years",
-            "bullet_4": "Proactive protection becomes your new normal"
+            "bullet_1": "All 4 ingredients working together for full prostate defense *",
+            "bullet_2": "Healthy PSA levels supported long-term *",
+            "bullet_3": "Urinary comfort and flow at their best in years *",
+            "bullet_4": "Proactive protection becomes your new normal *"
           }
         }
       },
@@ -127,7 +127,7 @@
       "name": "How It Works",
       "settings": {
         "heading": "HOW DOES PROSTI MAX WORK?",
-        "subtext": "Defend, restore, and protect your prostate — naturally.",
+        "subtext": "Improve your prostate health quickly, easily, and naturally *",
         "cta_text": "GET 1 BOTTLE FREE",
         "cta_url": ""
       }
@@ -138,35 +138,35 @@
         "benefit_YRtb3x": {
           "type": "benefit",
           "settings": {
-            "title": "Shrink & Protect the Prostate",
+            "title": "Shrink & Protect the Prostate *",
             "description": "Saw Palmetto balances DHT to support healthy prostate size"
           }
         },
         "benefit_ACKcX8": {
           "type": "benefit",
           "settings": {
-            "title": "Powerful Antioxidant Shield",
+            "title": "Powerful Antioxidant Shield *",
             "description": "Astaxanthin neutralizes oxidative damage at the cellular level"
           }
         },
         "benefit_3yagAY": {
           "type": "benefit",
           "settings": {
-            "title": "Reduce Inflammation",
+            "title": "Reduce Inflammation *",
             "description": "Theaflavins calm chronic inflammation in prostate tissue"
           }
         },
         "benefit_NXY6ML": {
           "type": "benefit",
           "settings": {
-            "title": "Restore Urinary Comfort",
+            "title": "Restore Urinary Comfort *",
             "description": "Sleep through the night without constant bathroom trips"
           }
         },
         "benefit_Q7VUNL": {
           "type": "benefit",
           "settings": {
-            "title": "Long-Term Cellular Protection",
+            "title": "Long-Term Cellular Protection *",
             "description": "Lycopene supports healthy PSA levels and prostate cell integrity"
           }
         }
@@ -180,8 +180,8 @@
       ],
       "name": "The Solution",
       "settings": {
-        "heading": "PROSTATE DEFENSE. MADE SIMPLE.",
-        "subtext": "4 Clinically Backed Ingredients That Shield Your Prostate and Restore Comfort",
+        "heading": "PROSTATE HEALTH MADE SIMPLE.",
+        "subtext": "4 Clinically Backed Ingredients That Shield Your Prostate and Restore Normal Flow *",
         "product_image": "shopify://shop_images/exec-c55a1e64-1cbb-448c-91a3-c22f8a946d27.png",
         "cta_text": "GET 1 BOTTLE FREE",
         "cta_url": ""
@@ -234,7 +234,7 @@
       "settings": {
         "heading_line1": "ZERO RISK.",
         "heading_line2": "ALL REWARD.",
-        "body_text": "Try Prosti Max for 365 days. If you don't notice fewer nighttime trips, stronger flow, and real prostate comfort—we refund your last order. No questions asked. No hoops to jump through.",
+        "body_text": "Try Prosti Max for 90 days. If you don't notice fewer nighttime trips, stronger flow, and real prostate comfort—we refund your last order. No questions asked. No hoops to jump through.",
         "cta_text": "GET 1 BOTTLE FREE",
         "cta_url": "",
         "badge_top_text": "90 DAY",
