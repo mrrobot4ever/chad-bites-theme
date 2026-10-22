@@ -130,10 +130,10 @@
           "settings": {
             "day_label": "DAY 7",
             "stage_name": "IGNITE",
-            "bullet_1": "L-Citrulline & L-Arginine flood your system with nitric oxide",
-            "bullet_2": "Blood vessels relax and widen for better circulation",
-            "bullet_3": "Workouts feel fuller — skin-splitting pumps in the gym",
-            "bullet_4": "First signs of increased stamina where it counts"
+            "bullet_1": "L-Citrulline & L-Arginine flood your system with nitric oxide *",
+            "bullet_2": "Blood vessels relax and widen for better circulation *",
+            "bullet_3": "Workouts feel fuller — skin-splitting pumps in the gym *",
+            "bullet_4": "First signs of increased stamina where it counts *"
           }
         },
         "stage_LJrUfE": {
@@ -141,10 +141,10 @@
           "settings": {
             "day_label": "DAY 30",
             "stage_name": "SURGE",
-            "bullet_1": "French Maritime Bark supercharges nitric oxide production",
-            "bullet_2": "Grape Seed Extract strengthens blood vessel walls",
-            "bullet_3": "Bedroom performance noticeably stronger and longer",
-            "bullet_4": "Circulation peaks — energy and endurance through the roof"
+            "bullet_1": "French Maritime Bark supercharges nitric oxide production *",
+            "bullet_2": "Grape Seed Extract strengthens blood vessel walls *",
+            "bullet_3": "Bedroom performance noticeably stronger and longer *",
+            "bullet_4": "Circulation peaks — energy and endurance through the roof *"
           }
         },
         "stage_txUiWc": {
@@ -152,10 +152,10 @@
           "settings": {
             "day_label": "DAY 90",
             "stage_name": "UNSTOPPABLE",
-            "bullet_1": "All 8 ingredients working in sync for maximum blood flow",
-            "bullet_2": "Zinc and B12 keep your engine running at full capacity",
-            "bullet_3": "Panax Ginseng delivers relentless stamina and drive",
-            "bullet_4": "Peak performance is your new baseline — gym and bedroom"
+            "bullet_1": "All 8 ingredients working in sync for maximum blood flow *",
+            "bullet_2": "Zinc and B12 keep your engine running at full capacity *",
+            "bullet_3": "Panax Ginseng delivers relentless stamina and drive *",
+            "bullet_4": "Peak performance is your new baseline — gym and bedroom *"
           }
         }
       },
@@ -167,7 +167,7 @@
       "name": "How It Works",
       "settings": {
         "heading": "HOW DOES PUMP MAX WORK?",
-        "subtext": "Maximize blood flow, circulation, and performance — naturally.",
+        "subtext": "Maximize your blood flow and circulation quickly, easily, and naturally *",
         "cta_text": "GET 1 BOTTLE FREE",
         "cta_url": ""
       }
@@ -178,35 +178,35 @@
         "benefit_YRtb3x": {
           "type": "benefit",
           "settings": {
-            "title": "Explosive Pumps & Vascularity",
+            "title": "Explosive Pumps & Vascularity *",
             "description": "L-Citrulline & L-Arginine flood muscles with nitric oxide"
           }
         },
         "benefit_ACKcX8": {
           "type": "benefit",
           "settings": {
-            "title": "Peak Bedroom Performance",
+            "title": "Peak Bedroom Performance *",
             "description": "Enhanced blood flow where it matters most"
           }
         },
         "benefit_3yagAY": {
           "type": "benefit",
           "settings": {
-            "title": "Stronger Circulation",
+            "title": "Stronger Circulation *",
             "description": "French Maritime Bark & Grape Seed fortify blood vessels"
           }
         },
         "benefit_NXY6ML": {
           "type": "benefit",
           "settings": {
-            "title": "All-Day Stamina & Drive",
+            "title": "All-Day Stamina & Drive *",
             "description": "Panax Ginseng fuels relentless energy and endurance"
           }
         },
         "benefit_Q7VUNL": {
           "type": "benefit",
           "settings": {
-            "title": "Optimized Recovery",
+            "title": "Optimized Recovery *",
             "description": "Zinc, B12 & Vitamin C keep your body primed and ready"
           }
         }
@@ -274,7 +274,7 @@
       "settings": {
         "heading_line1": "ZERO RISK.",
         "heading_line2": "ALL REWARD.",
-        "body_text": "Try Pump Max for 365 days. If you don't feel the difference—if you don't see real, measurable improvements in your blood flow, pumps, stamina, and bedroom performance—we refund your last order. No questions asked. No hoops to jump through.",
+        "body_text": "Try Pump Max for 90 days. If you don't feel the difference—if you don't see real, measurable improvements in your blood flow, pumps, stamina, and bedroom performance—we refund your last order. No questions asked. No hoops to jump through.",
         "cta_text": "GET 1 BOTTLE FREE",
         "cta_url": "",
         "badge_top_text": "90 DAY",
