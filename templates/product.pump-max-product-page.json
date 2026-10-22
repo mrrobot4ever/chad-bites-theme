@@ -41,14 +41,84 @@
             "description": "Boosts nitric oxide & blood flow",
             "fallback_asset": "ingredient-l-citrulline.jpg"
           }
+        },
+        "ingredient_LA001": {
+          "type": "ingredient",
+          "settings": {
+            "name": "L-Arginine",
+            "dose": "500 mg",
+            "description": "Enhances blood flow & circulation",
+            "fallback_asset": "ingredient-l-arginine.jpg"
+          }
+        },
+        "ingredient_FM001": {
+          "type": "ingredient",
+          "settings": {
+            "name": "French Maritime Bark Extract",
+            "dose": "50 mg",
+            "description": "Powerful antioxidant for vascular health",
+            "fallback_asset": "ingredient-french-maritime-bark.jpg"
+          }
+        },
+        "ingredient_GS001": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Grape Seed Extract",
+            "dose": "50 mg",
+            "description": "Supports healthy blood vessels",
+            "fallback_asset": "ingredient-grape-seed.jpg"
+          }
+        },
+        "ingredient_ZN001": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Zinc",
+            "dose": "6 mg",
+            "description": "Key mineral for T synthesis",
+            "fallback_asset": "ingredient-zinc-pump.jpg"
+          }
+        },
+        "ingredient_B12001": {
+          "type": "ingredient",
+          "settings": {
+            "name": "B12",
+            "dose": "20 mcg",
+            "description": "Supports energy & red blood cells",
+            "fallback_asset": "ingredient-b12.jpg"
+          }
+        },
+        "ingredient_VC001": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Vitamin C",
+            "dose": "100 mg",
+            "description": "Antioxidant & collagen support",
+            "fallback_asset": "ingredient-vitamin-c.jpg"
+          }
+        },
+        "ingredient_PG001": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Panax Ginseng Extract",
+            "dose": "10 mg",
+            "description": "Boosts stamina & endurance",
+            "fallback_asset": "ingredient-panax-ginseng.jpg"
+          }
         }
       },
       "block_order": [
-        "ingredient_LC001"
+        "ingredient_LC001",
+        "ingredient_LA001",
+        "ingredient_FM001",
+        "ingredient_GS001",
+        "ingredient_ZN001",
+        "ingredient_B12001",
+        "ingredient_VC001",
+        "ingredient_PG001"
       ],
       "name": "Ingredients",
       "settings": {
-        "heading": "1 KEY INGREDIENT",
+        "heading": "8 INGREDIENTS in 1 Gummy",
         "subtitle": "MAXIMUM PUMP. MAXIMUM PERFORMANCE."
       }
     },
