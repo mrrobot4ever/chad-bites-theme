@@ -3150,3 +3150,53 @@ ul, ol { list-style: none; }
 @media (min-width: 768px) {
   .hide-desktop { display: none !important; }
 }
+
+/* ========== Pump Max Red Theme Overrides ========== */
+.template-product-pump-max-product-page {
+  --color-accent: #dc2626;
+  --color-accent-secondary: #991b1b;
+}
+.template-product-pump-max-product-page .btn-primary {
+  box-shadow: 0 4px 24px rgba(220, 38, 38, 0.3);
+}
+.template-product-pump-max-product-page .btn-primary:hover {
+  box-shadow: 0 8px 32px rgba(220, 38, 38, 0.45);
+}
+.template-product-pump-max-product-page .btn-outline {
+  border-color: #dc2626;
+  color: #dc2626;
+}
+.template-product-pump-max-product-page .btn-outline:hover {
+  border-color: #dc2626;
+  color: #dc2626;
+}
+.template-product-pump-max-product-page .product-radio-card:hover {
+  border-color: rgba(220, 38, 38, 0.3);
+}
+.template-product-pump-max-product-page .product-radio-card.selected {
+  border-color: #dc2626;
+  background: rgba(220, 38, 38, 0.06);
+}
+.template-product-pump-max-product-page .product-radio-card.selected .radio-dot {
+  border-color: #dc2626;
+}
+.template-product-pump-max-product-page .product-radio-card.selected .radio-dot::after {
+  background: #dc2626;
+}
+.template-product-pump-max-product-page .btnShimmer,
+.template-product-pump-max-product-page .add-to-cart-btn::after {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+}
+
+.template-product-pump-max-product-page .stat-card-icon--energy {
+  background: rgba(220, 38, 38, 0.15);
+  color: #dc2626;
+}
+.template-product-pump-max-product-page .stat-card-icon--focus {
+  background: rgba(220, 38, 38, 0.15);
+  color: #dc2626;
+}
+.template-product-pump-max-product-page .product-desc-img-placeholder {
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(153, 27, 27, 0.1));
+  color: rgba(220, 38, 38, 0.3);
+}
