@@ -126,7 +126,7 @@
       "name": "How It Works",
       "settings": {
         "heading": "HOW DOES PROSTI MAX WORK?",
-        "subtext": "Defend, restore, and protect your prostate \u2014 naturally.",
+        "subtext": "Defend, restore, and protect your prostate — naturally.",
         "cta_text": "GET 1 BOTTLE FREE",
         "cta_url": ""
       }
@@ -181,6 +181,7 @@
       "settings": {
         "heading": "PROSTATE DEFENSE. MADE SIMPLE.",
         "subtext": "4 Clinically Backed Ingredients That Shield Your Prostate and Restore Comfort",
+        "product_image": "shopify://shop_images/exec-c55a1e64-1cbb-448c-91a3-c22f8a946d27.png",
         "cta_text": "GET 1 BOTTLE FREE",
         "cta_url": ""
       }
@@ -191,8 +192,9 @@
       "settings": {
         "heading_line1": "THE DECLINE OF URINE FLOW:",
         "heading_line2": "A GROWING PROBLEM",
+        "chart_image": "shopify://shop_images/exec-40587f0b-374e-4f54-be69-ec9d0c412a6f.png",
         "chart_alt": "Urine flow improvement with Prosti Max",
-        "paragraph_1": "<p><strong>By age 50, over half of all men</strong> experience symptoms of an enlarged prostate \u2014 weak stream, frequent urgency, and nighttime bathroom trips that destroy sleep quality.</p>",
+        "paragraph_1": "<p><strong>By age 50, over half of all men</strong> experience symptoms of an enlarged prostate — weak stream, frequent urgency, and nighttime bathroom trips that destroy sleep quality.</p>",
         "paragraph_2": "<p>The impact? Poor urine flow isn't just an inconvenience. It disrupts sleep, drains energy, causes anxiety, and signals underlying prostate inflammation that worsens with age if left unchecked.</p>",
         "paragraph_3": "<p><strong>The good news:</strong> Prosti Max combines Saw Palmetto, Astaxanthin, Theaflavins, and Lycopene to support healthy prostate size, reduce inflammation, and restore the strong, comfortable urine flow you had in your younger years.</p>"
       }
@@ -231,11 +233,11 @@
       "settings": {
         "heading_line1": "ZERO RISK.",
         "heading_line2": "ALL REWARD.",
-        "body_text": "Try Prosti Max for 365 days. If you don't notice fewer nighttime trips, stronger flow, and real prostate comfort\u2014we refund your last order. No questions asked. No hoops to jump through.",
+        "body_text": "Try Prosti Max for 365 days. If you don't notice fewer nighttime trips, stronger flow, and real prostate comfort—we refund your last order. No questions asked. No hoops to jump through.",
         "cta_text": "GET 1 BOTTLE FREE",
         "cta_url": "",
         "badge_top_text": "90 DAY",
-        "badge_bottom_text": "PROSTATE COMFORT GUARANTEE"
+        "badge_bottom_text": "BETTER FLOW GUARANTEE"
       }
     }
   },
