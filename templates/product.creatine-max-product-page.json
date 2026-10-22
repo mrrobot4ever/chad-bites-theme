@@ -90,10 +90,10 @@
           "settings": {
             "day_label": "DAY 7",
             "stage_name": "ACTIVATE",
-            "bullet_1": "Creatine HCL saturates muscles for explosive strength",
+            "bullet_1": "Creatine HCL saturates muscles for explosive strength *",
             "bullet_2": "Alpha GPC fires up acetylcholine — your brain's power switch",
-            "bullet_3": "Workouts feel stronger, sets feel easier",
-            "bullet_4": "Mental fog starts to lift as Citicoline sharpens focus"
+            "bullet_3": "Workouts feel stronger, sets feel easier *",
+            "bullet_4": "Mental fog starts to lift as Citicoline sharpens focus *"
           }
         },
         "stage_LJrUfE": {
@@ -101,10 +101,10 @@
           "settings": {
             "day_label": "DAY 30",
             "stage_name": "ELEVATE",
-            "bullet_1": "Muscle endurance and power output noticeably increased",
-            "bullet_2": "Memory recall and mental clarity running at a higher gear",
-            "bullet_3": "Panax Ginseng sustains energy and elevates mood all day",
-            "bullet_4": "Friends and coworkers notice you're sharper and more driven"
+            "bullet_1": "Muscle endurance and power output noticeably increased *",
+            "bullet_2": "Memory recall and mental clarity running at a higher gear *",
+            "bullet_3": "Panax Ginseng sustains energy and elevates mood all day *",
+            "bullet_4": "Friends and coworkers notice you're sharper and more driven *"
           }
         },
         "stage_txUiWc": {
@@ -112,10 +112,10 @@
           "settings": {
             "day_label": "DAY 90",
             "stage_name": "OPTIMIZED",
-            "bullet_1": "Full creatine saturation — peak strength and recovery",
-            "bullet_2": "Alpha GPC and Citicoline combat age-related cognitive decline",
-            "bullet_3": "Brain and body performing in sync at their absolute peak",
-            "bullet_4": "This isn't a boost — it's your new operating system"
+            "bullet_1": "Full creatine saturation — peak strength and recovery *",
+            "bullet_2": "Alpha GPC and Citicoline combat age-related cognitive decline *",
+            "bullet_3": "Brain and body performing in sync at their absolute peak *",
+            "bullet_4": "This isn't a boost — it's your new operating system *"
           }
         }
       },
@@ -127,7 +127,7 @@
       "name": "How It Works",
       "settings": {
         "heading": "HOW DOES CREATINE MAX WORK?",
-        "subtext": "Build strength, sharpen your mind, and fuel relentless energy — naturally.",
+        "subtext": "Build strength, sharpen your mind, and fuel relentless energy — naturally. *",
         "cta_text": "GET 1 BOTTLE FREE",
         "cta_url": ""
       }
@@ -138,35 +138,35 @@
         "benefit_YRtb3x": {
           "type": "benefit",
           "settings": {
-            "title": "Explosive Strength & Power",
+            "title": "Explosive Strength & Power *",
             "description": "Creatine HCL fuels ATP for peak muscle performance"
           }
         },
         "benefit_ACKcX8": {
           "type": "benefit",
           "settings": {
-            "title": "Razor-Sharp Focus & Memory",
+            "title": "Razor-Sharp Focus & Memory *",
             "description": "Alpha GPC drives acetylcholine for faster, clearer thinking"
           }
         },
         "benefit_3yagAY": {
           "type": "benefit",
           "settings": {
-            "title": "Combat Cognitive Decline",
+            "title": "Combat Cognitive Decline *",
             "description": "Citicoline protects and rebuilds brain cell membranes"
           }
         },
         "benefit_NXY6ML": {
           "type": "benefit",
           "settings": {
-            "title": "All-Day Energy & Mood",
+            "title": "All-Day Energy & Mood *",
             "description": "Panax Ginseng delivers sustained energy without the crash"
           }
         },
         "benefit_Q7VUNL": {
           "type": "benefit",
           "settings": {
-            "title": "Faster Recovery & Endurance",
+            "title": "Faster Recovery & Endurance *",
             "description": "Creatine accelerates muscle repair between sessions"
           }
         }
@@ -181,7 +181,7 @@
       "name": "The Solution",
       "settings": {
         "heading": "BODY AND BRAIN. FULLY LOADED.",
-        "subtext": "4 Ingredients That Build Strength, Sharpen Memory, and Crush Cognitive Decline",
+        "subtext": "4 Ingredients That Build Strength, Sharpen Memory, and Crush Cognitive Decline *",
         "product_image": "shopify://shop_images/exec-856e24a6-a1f0-4226-8a18-c32925f5d4bd.png",
         "cta_text": "GET 1 BOTTLE FREE",
         "cta_url": ""
