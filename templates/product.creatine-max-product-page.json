@@ -13,7 +13,7 @@
       "type": "main-product",
       "settings": {
         "meta_shipping": "Fast + Free Shipping",
-        "meta_guarantee": "Higher T or Your Money Back",
+        "meta_guarantee": "Better Brain or Your Money Back",
         "desc_image": "shopify://shop_images/wo-Chadbite_-_gummy_close_up.webp",
         "option1_title": "BUY 2 GET 1 FREE",
         "option1_subtitle": "Delivered Every 90 Days",
@@ -91,7 +91,7 @@
             "day_label": "DAY 7",
             "stage_name": "ACTIVATE",
             "bullet_1": "Creatine HCL saturates muscles for explosive strength",
-            "bullet_2": "Alpha GPC fires up acetylcholine \u2014 your brain's power switch",
+            "bullet_2": "Alpha GPC fires up acetylcholine — your brain's power switch",
             "bullet_3": "Workouts feel stronger, sets feel easier",
             "bullet_4": "Mental fog starts to lift as Citicoline sharpens focus"
           }
@@ -112,10 +112,10 @@
           "settings": {
             "day_label": "DAY 90",
             "stage_name": "OPTIMIZED",
-            "bullet_1": "Full creatine saturation \u2014 peak strength and recovery",
+            "bullet_1": "Full creatine saturation — peak strength and recovery",
             "bullet_2": "Alpha GPC and Citicoline combat age-related cognitive decline",
             "bullet_3": "Brain and body performing in sync at their absolute peak",
-            "bullet_4": "This isn't a boost \u2014 it's your new operating system"
+            "bullet_4": "This isn't a boost — it's your new operating system"
           }
         }
       },
@@ -127,7 +127,7 @@
       "name": "How It Works",
       "settings": {
         "heading": "HOW DOES CREATINE MAX WORK?",
-        "subtext": "Build strength, sharpen your mind, and fuel relentless energy \u2014 naturally.",
+        "subtext": "Build strength, sharpen your mind, and fuel relentless energy — naturally.",
         "cta_text": "GET 1 BOTTLE FREE",
         "cta_url": ""
       }
@@ -182,6 +182,7 @@
       "settings": {
         "heading": "BODY AND BRAIN. FULLY LOADED.",
         "subtext": "4 Ingredients That Build Strength, Sharpen Memory, and Crush Cognitive Decline",
+        "product_image": "shopify://shop_images/exec-856e24a6-a1f0-4226-8a18-c32925f5d4bd.png",
         "cta_text": "GET 1 BOTTLE FREE",
         "cta_url": ""
       }
@@ -192,10 +193,11 @@
       "settings": {
         "heading_line1": "THE DECLINE OF CREATINE:",
         "heading_line2": "YOUR BRAIN AND BODY ARE STARVING",
+        "chart_image": "shopify://shop_images/exec-045aefac-bbba-46b2-9444-2c87971950ad.png",
         "chart_alt": "Creatine levels with Creatine Max",
-        "paragraph_1": "<p><strong>Natural creatine production declines with age</strong>, and most diets fall drastically short. By your 40s, your muscles and brain are running on fumes \u2014 less ATP, slower recovery, and diminishing cognitive performance.</p>",
-        "paragraph_2": "<p>The impact? Low creatine means less explosive power, weaker endurance, slower thinking, and accelerated mental decline. Your brain uses 20% of your body's energy \u2014 and creatine is the fuel it runs on.</p>",
-        "paragraph_3": "<p><strong>The good news:</strong> Creatine Max pairs Creatine HCL with Alpha GPC and Citicoline to restore both muscular and cognitive performance \u2014 rebuilding the foundation your body and brain need to operate at full capacity.</p>"
+        "paragraph_1": "<p><strong>Natural creatine production declines with age</strong>, and most diets fall drastically short. By your 40s, your muscles and brain are running on fumes — less ATP, slower recovery, and diminishing cognitive performance.</p>",
+        "paragraph_2": "<p>The impact? Low creatine means less explosive power, weaker endurance, slower thinking, and accelerated mental decline. Your brain uses 20% of your body's energy — and creatine is the fuel it runs on.</p>",
+        "paragraph_3": "<p><strong>The good news:</strong> Creatine Max pairs Creatine HCL with Alpha GPC and Citicoline to restore both muscular and cognitive performance — rebuilding the foundation your body and brain need to operate at full capacity.</p>"
       }
     },
     "faq_XBMnmz": {
@@ -232,7 +234,7 @@
       "settings": {
         "heading_line1": "ZERO RISK.",
         "heading_line2": "ALL REWARD.",
-        "body_text": "Try Creatine Max for 365 days. If you don't feel stronger, sharper, and more mentally dialed in\u2014if you don't see real gains in strength, focus, and cognitive performance\u2014we refund your last order. No questions asked. No hoops to jump through.",
+        "body_text": "Try Creatine Max for 90 days. If you don't feel stronger, sharper, and more mentally dialed in, if you don't see real gains in strength, focus, and cognitive performance, we refund your last order. No questions asked. No hoops to jump through.",
         "cta_text": "GET 1 BOTTLE FREE",
         "cta_url": "",
         "badge_top_text": "90 DAY",
