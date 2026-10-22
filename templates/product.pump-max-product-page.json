@@ -33,93 +33,23 @@
     "ingredients_6wc636": {
       "type": "ingredients",
       "blocks": {
-        "ingredient_TM8JWQ": {
+        "ingredient_LC001": {
           "type": "ingredient",
           "settings": {
-            "name": "Magnesium",
-            "dose": "100 mg",
-            "description": "Muscle, sleep & T support",
-            "fallback_asset": "ingredient-magnesium.jpg"
-          }
-        },
-        "ingredient_MWgQdt": {
-          "type": "ingredient",
-          "settings": {
-            "name": "Fulvic Acid",
-            "dose": "20 mg",
-            "description": "Boosts nutrient absorption",
-            "fallback_asset": "ingredient-fulvic-acid.jpg"
-          }
-        },
-        "ingredient_QfLtFz": {
-          "type": "ingredient",
-          "settings": {
-            "name": "Fadogia",
+            "name": "L-Citrulline",
             "dose": "500 mg",
-            "description": "Signals natural T output",
-            "fallback_asset": "ingredient-fadogia.jpg"
-          }
-        },
-        "ingredient_9Yq4ww": {
-          "type": "ingredient",
-          "settings": {
-            "name": "Tongkat Ali",
-            "dose": "500 mg",
-            "description": "Raises T, lowers cortisol",
-            "fallback_asset": "ingredient-tongkat-ali.jpg"
-          }
-        },
-        "ingredient_PcpqGr": {
-          "type": "ingredient",
-          "settings": {
-            "name": "Zinc",
-            "dose": "10 mg",
-            "description": "Key mineral for T synthesis",
-            "fallback_asset": "ingredient-zinc.jpg"
-          }
-        },
-        "ingredient_XfWE3d": {
-          "type": "ingredient",
-          "settings": {
-            "name": "Boron",
-            "dose": "10 mg",
-            "description": "Frees bound testosterone",
-            "fallback_asset": "ingredient-boron.jpg"
-          }
-        },
-        "ingredient_J7r9jY": {
-          "type": "ingredient",
-          "settings": {
-            "name": "Vitamin B6",
-            "dose": "6 mg",
-            "description": "Optimizes hormone balance",
-            "fallback_asset": "ingredient-vitamin-b6.jpg"
-          }
-        },
-        "ingredient_iJTARQ": {
-          "type": "ingredient",
-          "settings": {
-            "name": "Vitamin D3",
-            "dose": "100 mcg",
-            "description": "Drives T production",
-            "fallback_asset": "ingredient-vitamin-d3.jpg"
+            "description": "Boosts nitric oxide & blood flow",
+            "fallback_asset": "ingredient-l-citrulline.jpg"
           }
         }
       },
       "block_order": [
-        "ingredient_TM8JWQ",
-        "ingredient_MWgQdt",
-        "ingredient_QfLtFz",
-        "ingredient_9Yq4ww",
-        "ingredient_PcpqGr",
-        "ingredient_XfWE3d",
-        "ingredient_J7r9jY",
-        "ingredient_iJTARQ"
+        "ingredient_LC001"
       ],
       "name": "Ingredients",
       "settings": {
-        "heading": "8 INGREDIENTS in 1 Gummy",
-        "subtitle": "GET YOUR EDGE BACK, NATURALLY."
+        "heading": "1 KEY INGREDIENT",
+        "subtitle": "MAXIMUM PUMP. MAXIMUM PERFORMANCE."
       }
     },
     "howitworks_YqaKGM": {
@@ -234,7 +164,7 @@
         "heading_line2": "A MODERN EPIDEMIC",
         "chart_alt": "Testosterone levels with Chad Bites",
         "paragraph_1": "<p><strong>Testosterone levels</strong> have been dropping by 1% every year since 1980. Stress, poor sleep, processed diets, and toxins are destroying natural hormone production.</p>",
-        "paragraph_2": "<p>The impact? Low testosterone drains energy, strength, and focus—making it harder to perform at your best in life and the gym.</p>",
+        "paragraph_2": "<p>The impact? Low testosterone drains energy, strength, and focus\u2014making it harder to perform at your best in life and the gym.</p>",
         "paragraph_3": "<p><strong>The good news:</strong> Chad Bites helps you reclaim your edge with natural testosterone support for energy, focus, and strength.</p>"
       }
     },
@@ -272,7 +202,7 @@
       "settings": {
         "heading_line1": "ZERO RISK.",
         "heading_line2": "ALL REWARD.",
-        "body_text": "Try Chad Bites for 365 days. If you don't feel your edge return—if you don't see real, measurable changes in your energy, drive, physique, and confidence—we refund your last order. No questions asked. No hoops to jump through.",
+        "body_text": "Try Chad Bites for 365 days. If you don't feel your edge return\u2014if you don't see real, measurable changes in your energy, drive, physique, and confidence\u2014we refund your last order. No questions asked. No hoops to jump through.",
         "cta_text": "GET 1 BOTTLE FREE",
         "cta_url": "",
         "badge_top_text": "90 DAY",
