@@ -90,32 +90,32 @@
           "settings": {
             "day_label": "DAY 7",
             "stage_name": "ACTIVATE",
-            "bullet_1": "Tongkat Ali blocks stress hormones",
-            "bullet_2": "Fulvic Acid feeds starving testosterone cells",
-            "bullet_3": "Workouts feel intense again",
-            "bullet_4": "Start to feel that all-day energy"
+            "bullet_1": "Creatine HCL saturates muscles for explosive strength",
+            "bullet_2": "Alpha GPC fires up acetylcholine \u2014 your brain's power switch",
+            "bullet_3": "Workouts feel stronger, sets feel easier",
+            "bullet_4": "Mental fog starts to lift as Citicoline sharpens focus"
           }
         },
         "stage_LJrUfE": {
           "type": "stage",
           "settings": {
             "day_label": "DAY 30",
-            "stage_name": "DOMINATE",
-            "bullet_1": "Boron helps free stuck T",
-            "bullet_2": "Zinc provides T-making materials",
-            "bullet_3": "Body looks leaner, stronger, more masculine",
-            "bullet_4": "People ask what you're doing differently"
+            "stage_name": "ELEVATE",
+            "bullet_1": "Muscle endurance and power output noticeably increased",
+            "bullet_2": "Memory recall and mental clarity running at a higher gear",
+            "bullet_3": "Panax Ginseng sustains energy and elevates mood all day",
+            "bullet_4": "Friends and coworkers notice you're sharper and more driven"
           }
         },
         "stage_txUiWc": {
           "type": "stage",
           "settings": {
             "day_label": "DAY 90",
-            "stage_name": "UNSTOPPABLE",
-            "bullet_1": "All 8 ingredients working like a tuned engine",
-            "bullet_2": "T-production optimized fully",
-            "bullet_3": "Not temporary, this is your new normal",
-            "bullet_4": "Welcome to the man you're supposed to be"
+            "stage_name": "OPTIMIZED",
+            "bullet_1": "Full creatine saturation \u2014 peak strength and recovery",
+            "bullet_2": "Alpha GPC and Citicoline combat age-related cognitive decline",
+            "bullet_3": "Brain and body performing in sync at their absolute peak",
+            "bullet_4": "This isn't a boost \u2014 it's your new operating system"
           }
         }
       },
@@ -126,8 +126,8 @@
       ],
       "name": "How It Works",
       "settings": {
-        "heading": "HOW DOES CHAD BITES WORK?",
-        "subtext": "Maximize your testosterone level naturally, quickly, and easily.",
+        "heading": "HOW DOES CREATINE MAX WORK?",
+        "subtext": "Build strength, sharpen your mind, and fuel relentless energy \u2014 naturally.",
         "cta_text": "GET 1 BOTTLE FREE",
         "cta_url": ""
       }
