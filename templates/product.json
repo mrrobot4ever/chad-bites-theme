@@ -167,7 +167,7 @@
       "name": "How It Works",
       "settings": {
         "heading": "HOW DOES CHAD BITES WORK?",
-        "subtext": "Maximize your testosterone level naturally, quickly, and easily.",
+        "subtext": "Maximize your testosterone level naturally, quickly, and easily *",
         "cta_text": "GET 1 BOTTLE FREE",
         "cta_url": ""
       }
@@ -178,35 +178,35 @@
         "benefit_YRtb3x": {
           "type": "benefit",
           "settings": {
-            "title": "Skyrocket Energy & Stamina",
+            "title": "Skyrocket Energy & Stamina *",
             "description": "Increase energy & athletic performance"
           }
         },
         "benefit_ACKcX8": {
           "type": "benefit",
           "settings": {
-            "title": "Support Male Vitality",
+            "title": "Support Male Vitality *",
             "description": "Amplify passionate energy"
           }
         },
         "benefit_3yagAY": {
           "type": "benefit",
           "settings": {
-            "title": "Enhance Productivity & Focus",
+            "title": "Enhance Productivity & Focus *",
             "description": "Stay sharp & focused all day"
           }
         },
         "benefit_NXY6ML": {
           "type": "benefit",
           "settings": {
-            "title": "Supercharge Strength",
+            "title": "Supercharge Strength *",
             "description": "Build & maintain lean muscle mass"
           }
         },
         "benefit_Q7VUNL": {
           "type": "benefit",
           "settings": {
-            "title": "Improve Recovery",
+            "title": "Improve Recovery *",
             "description": "Optimize sleep & muscle recovery"
           }
         }
