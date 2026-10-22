@@ -89,33 +89,33 @@
           "type": "stage",
           "settings": {
             "day_label": "DAY 7",
-            "stage_name": "ACTIVATE",
-            "bullet_1": "Tongkat Ali blocks stress hormones",
-            "bullet_2": "Fulvic Acid feeds starving testosterone cells",
-            "bullet_3": "Workouts feel intense again",
-            "bullet_4": "Start to feel that all-day energy"
+            "stage_name": "DEFEND",
+            "bullet_1": "Astaxanthin delivers 6000x more antioxidant power than Vitamin C",
+            "bullet_2": "Saw Palmetto begins balancing DHT levels naturally",
+            "bullet_3": "Lycopene targets prostate cells with protective compounds",
+            "bullet_4": "First signs of reduced nighttime bathroom trips"
           }
         },
         "stage_LJrUfE": {
           "type": "stage",
           "settings": {
             "day_label": "DAY 30",
-            "stage_name": "DOMINATE",
-            "bullet_1": "Boron helps free stuck T",
-            "bullet_2": "Zinc provides T-making materials",
-            "bullet_3": "Body looks leaner, stronger, more masculine",
-            "bullet_4": "People ask what you're doing differently"
+            "stage_name": "RESTORE",
+            "bullet_1": "Theaflavins reduce inflammation throughout the prostate",
+            "bullet_2": "Saw Palmetto supports healthy urinary flow and frequency",
+            "bullet_3": "Oxidative stress drops as the antioxidant stack compounds",
+            "bullet_4": "Sleep improves as nighttime urgency fades"
           }
         },
         "stage_txUiWc": {
           "type": "stage",
           "settings": {
             "day_label": "DAY 90",
-            "stage_name": "UNSTOPPABLE",
-            "bullet_1": "All 8 ingredients working like a tuned engine",
-            "bullet_2": "T-production optimized fully",
-            "bullet_3": "Not temporary, this is your new normal",
-            "bullet_4": "Welcome to the man you're supposed to be"
+            "stage_name": "PROTECTED",
+            "bullet_1": "All 4 ingredients working together for full prostate defense",
+            "bullet_2": "Healthy PSA levels supported long-term",
+            "bullet_3": "Urinary comfort and flow at their best in years",
+            "bullet_4": "Proactive protection becomes your new normal"
           }
         }
       },
@@ -126,8 +126,8 @@
       ],
       "name": "How It Works",
       "settings": {
-        "heading": "HOW DOES CHAD BITES WORK?",
-        "subtext": "Maximize your testosterone level naturally, quickly, and easily.",
+        "heading": "HOW DOES PROSTI MAX WORK?",
+        "subtext": "Defend, restore, and protect your prostate \u2014 naturally.",
         "cta_text": "GET 1 BOTTLE FREE",
         "cta_url": ""
       }
