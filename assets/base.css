@@ -3245,3 +3245,48 @@ ul, ol { list-style: none; }
   background: linear-gradient(135deg, rgba(22, 163, 74, 0.1), rgba(21, 128, 61, 0.1));
   color: rgba(22, 163, 74, 0.3);
 }
+
+/* ========== Creatine Max Teal Theme Overrides ========== */
+.template-product-creatine-max-product-page {
+  --color-accent: #36758B;
+  --color-accent-secondary: #2a5c6e;
+}
+.template-product-creatine-max-product-page .btn-primary {
+  box-shadow: 0 4px 24px rgba(54, 117, 139, 0.3);
+}
+.template-product-creatine-max-product-page .btn-primary:hover {
+  box-shadow: 0 8px 32px rgba(54, 117, 139, 0.45);
+}
+.template-product-creatine-max-product-page .btn-outline {
+  border-color: #36758B;
+  color: #36758B;
+}
+.template-product-creatine-max-product-page .btn-outline:hover {
+  border-color: #36758B;
+  color: #36758B;
+}
+.template-product-creatine-max-product-page .product-radio-card:hover {
+  border-color: rgba(54, 117, 139, 0.3);
+}
+.template-product-creatine-max-product-page .product-radio-card.selected {
+  border-color: #36758B;
+  background: rgba(54, 117, 139, 0.06);
+}
+.template-product-creatine-max-product-page .product-radio-card.selected .radio-dot {
+  border-color: #36758B;
+}
+.template-product-creatine-max-product-page .product-radio-card.selected .radio-dot::after {
+  background: #36758B;
+}
+.template-product-creatine-max-product-page .stat-card-icon--energy {
+  background: rgba(54, 117, 139, 0.15);
+  color: #36758B;
+}
+.template-product-creatine-max-product-page .stat-card-icon--focus {
+  background: rgba(54, 117, 139, 0.15);
+  color: #36758B;
+}
+.template-product-creatine-max-product-page .product-desc-img-placeholder {
+  background: linear-gradient(135deg, rgba(54, 117, 139, 0.1), rgba(42, 92, 110, 0.1));
+  color: rgba(54, 117, 139, 0.3);
+}
