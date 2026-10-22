@@ -227,16 +227,16 @@
       "settings": {}
     },
     "riskfree_Nk3fkU": {
-      "type": "riskfree",
+      "type": "riskfree-prosti",
       "name": "Risk Free",
       "settings": {
         "heading_line1": "ZERO RISK.",
         "heading_line2": "ALL REWARD.",
-        "body_text": "Try Chad Bites for 365 days. If you don't feel your edge return\u2014if you don't see real, measurable changes in your energy, drive, physique, and confidence\u2014we refund your last order. No questions asked. No hoops to jump through.",
+        "body_text": "Try Prosti Max for 365 days. If you don't notice fewer nighttime trips, stronger flow, and real prostate comfort\u2014we refund your last order. No questions asked. No hoops to jump through.",
         "cta_text": "GET 1 BOTTLE FREE",
         "cta_url": "",
         "badge_top_text": "90 DAY",
-        "badge_bottom_text": "HIGHER T GUARANTEE"
+        "badge_bottom_text": "PROSTATE COMFORT GUARANTEE"
       }
     }
   },
