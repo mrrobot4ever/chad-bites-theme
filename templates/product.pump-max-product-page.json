@@ -239,7 +239,7 @@
       }
     },
     "faq_XBMnmz": {
-      "type": "faq",
+      "type": "faq-pump",
       "name": "FAQ",
       "settings": {
         "heading": "FREQUENTLY ASKED QUESTIONS"
