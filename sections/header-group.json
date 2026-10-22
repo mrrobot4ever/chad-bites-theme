@@ -34,17 +34,13 @@
         "prod4_sub": "Hyper-Absorbable Creatine",
         "prod4_url": "shopify://products/creatine-max-gummies-by-chad-bites",
         "prod4_image": "shopify://shop_images/exec-720258cd-ed3c-40bc-bc06-ff737ae172b3.png",
-        "link1_text": "Our Story",
+        "link1_text": "💛 Our Story",
         "link1_url": "shopify://pages/our-story-chad-bites",
-        "link2_text": "Reviews",
-        "link2_url": "",
-        "link3_text": "FAQ",
-        "link3_url": "",
-        "link4_text": "Contact",
-        "link4_url": "https://chadbites.com/pages/contact",
-        "link5_text": "Manage Subscription",
-        "link5_url": "https://chadbites.com/a/loop_subscriptions/get-subscription-link",
-        "link6_text": "Affiliates",
+        "link4_text": "⚙️ Manage Subscription",
+        "link4_url": "https://chadbites.com/a/loop_subscriptions/get-subscription-link",
+        "link5_text": "🇺🇸 24/7 USA Help",
+        "link5_url": "shopify://pages/contact",
+        "link6_text": "💸 Affiliates",
         "link6_url": "https://eliteaffiliates.com"
       }
     }
