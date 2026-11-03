@@ -83,7 +83,7 @@
           "settings": {
             "name": "Boron",
             "dose": "10 mg",
-            "description": "Frees bound testosterone",
+            "description": "Frees bound T",
             "fallback_asset": "ingredient-boron.jpg"
           }
         },
@@ -92,7 +92,7 @@
           "settings": {
             "name": "Vitamin B6",
             "dose": "6 mg",
-            "description": "Optimizes hormone balance",
+            "description": "Optimizes male balance",
             "fallback_asset": "ingredient-vitamin-b6.jpg"
           }
         },
@@ -131,7 +131,7 @@
             "day_label": "DAY 7",
             "stage_name": "ACTIVATE",
             "bullet_1": "Tongkat Ali blocks stress hormones",
-            "bullet_2": "Fulvic Acid feeds starving testosterone cells",
+            "bullet_2": "Fulvic Acid shuttles key nutrients",
             "bullet_3": "Workouts feel intense again",
             "bullet_4": "Start to feel that all-day energy"
           }
@@ -143,7 +143,7 @@
             "stage_name": "DOMINATE",
             "bullet_1": "Boron helps free stuck T",
             "bullet_2": "Zinc provides T-making materials",
-            "bullet_3": "Body looks leaner, stronger, more masculine",
+            "bullet_3": "Body looks leaner and more masculine",
             "bullet_4": "People ask what you're doing differently"
           }
         },
@@ -152,10 +152,10 @@
           "settings": {
             "day_label": "DAY 90",
             "stage_name": "UNSTOPPABLE",
-            "bullet_1": "All 8 ingredients working like a tuned engine",
+            "bullet_1": "8 ingredients working like a tuned engine",
             "bullet_2": "T-production optimized fully",
             "bullet_3": "Not temporary, this is your new normal",
-            "bullet_4": "Welcome to the man you're supposed to be"
+            "bullet_4": "You're the man you're supposed to be"
           }
         }
       },
@@ -167,7 +167,7 @@
       "name": "How It Works",
       "settings": {
         "heading": "HOW DOES CHAD BITES WORK?",
-        "subtext": "Maximize your testosterone level naturally, quickly, and easily *",
+        "subtext": "Maximize your potential naturally, quickly, and easily *",
         "cta_text": "GET 1 BOTTLE FREE",
         "cta_url": ""
       }
