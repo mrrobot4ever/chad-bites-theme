@@ -38,7 +38,7 @@
           "settings": {
             "name": "Magnesium",
             "dose": "100 mg",
-            "description": "Muscle, sleep & T support",
+            "description": "As Magnesium Glycinate",
             "fallback_asset": "ingredient-magnesium.jpg"
           }
         },
@@ -47,7 +47,7 @@
           "settings": {
             "name": "Fulvic Acid",
             "dose": "20 mg",
-            "description": "Boosts nutrient absorption",
+            "description": "Premium Shilajit Extract",
             "fallback_asset": "ingredient-fulvic-acid.jpg"
           }
         },
@@ -56,7 +56,7 @@
           "settings": {
             "name": "Fadogia",
             "dose": "500 mg",
-            "description": "Signals natural T output",
+            "description": "Premium 10:1 Botanical Extract",
             "fallback_asset": "ingredient-fadogia.jpg"
           }
         },
@@ -65,7 +65,7 @@
           "settings": {
             "name": "Tongkat Ali",
             "dose": "500 mg",
-            "description": "Raises T, lowers cortisol",
+            "description": "Premium 10:1 Botanical Extract",
             "fallback_asset": "ingredient-tongkat-ali.jpg"
           }
         },
@@ -74,7 +74,7 @@
           "settings": {
             "name": "Zinc",
             "dose": "10 mg",
-            "description": "Key mineral for T synthesis",
+            "description": "As Zinc Gluconate",
             "fallback_asset": "ingredient-zinc.jpg"
           }
         },
@@ -83,7 +83,7 @@
           "settings": {
             "name": "Boron",
             "dose": "10 mg",
-            "description": "Frees bound T",
+            "description": "As Boron Citrate",
             "fallback_asset": "ingredient-boron.jpg"
           }
         },
@@ -92,7 +92,7 @@
           "settings": {
             "name": "Vitamin B6",
             "dose": "6 mg",
-            "description": "Optimizes male balance",
+            "description": "As Pyridoxal-5-Phosphate",
             "fallback_asset": "ingredient-vitamin-b6.jpg"
           }
         },
@@ -101,7 +101,7 @@
           "settings": {
             "name": "Vitamin D3",
             "dose": "100 mcg",
-            "description": "Drives T production",
+            "description": "As Cholecalciferol",
             "fallback_asset": "ingredient-vitamin-d3.jpg"
           }
         }
