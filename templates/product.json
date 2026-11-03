@@ -234,22 +234,18 @@
         "heading_line2": "A MODERN EPIDEMIC",
         "chart_alt": "T levels with Chad Bites",
         "paragraph_1": "<p><strong>Test levels</strong> have been dropping by 1% every year since 1980. Stress, poor sleep, processed diets, and toxins are destroying natural hormone production.</p>",
-        "paragraph_2": "<p>The impact? Low test drains energy, strength, and focus\u2014making it harder to perform at your best in life and the gym.</p>",
+        "paragraph_2": "<p>The impact? Low test drains energy, strength, and focus—making it harder to perform at your best in life and the gym.</p>",
         "paragraph_3": "<p><strong>The good news:</strong> Chad Bites helps you reclaim your edge with natural test support for energy, focus, and strength.</p>"
       }
     },
     "faq_XBMnmz": {
       "type": "faq",
-      "name": "FAQ",
-      "settings": {
-        "heading": "FREQUENTLY ASKED QUESTIONS"
-      },
       "blocks": {
         "faq_q1": {
           "type": "faq_item",
           "settings": {
             "question": "How long until I see results?",
-            "answer": "Most men notice improvements in energy and focus within the first 7-14 days. For physical changes like increased strength, better recovery, and body composition improvements, expect to see noticeable results within 4-6 weeks of consistent use. Optimal hormonal support builds over time, with peak benefits typically experienced at the 90-day mark."
+            "answer": "Most men notice improvements in energy and focus within the first 7-14 days. For physical changes like increased strength, better recovery, and body composition improvements, expect to see noticeable results within 4-6 weeks of consistent use. Noticeable changes build over time, with peak benefits typically experienced at the 90-day mark."
           }
         },
         "faq_q2": {
@@ -327,7 +323,11 @@
         "faq_q8",
         "faq_q9",
         "faq_q10"
-      ]
+      ],
+      "name": "FAQ",
+      "settings": {
+        "heading": "FREQUENTLY ASKED QUESTIONS"
+      }
     },
     "1782773658940ff477": {
       "type": "apps",
@@ -356,7 +356,7 @@
       "settings": {
         "heading_line1": "ZERO RISK.",
         "heading_line2": "ALL REWARD.",
-        "body_text": "Try Chad Bites for 90 days. If you don't feel your edge return\u2014if you don't see real, measurable changes in your energy, drive, physique, and confidence\u2014we refund your last order. No questions asked. No hoops to jump through.",
+        "body_text": "Try Chad Bites for 90 days. If you don't feel your edge return—if you don't see real, measurable changes in your energy, drive, physique, and confidence—we refund your last order. No questions asked. No hoops to jump through.",
         "cta_text": "GET 1 BOTTLE FREE",
         "cta_url": "",
         "badge_top_text": "90 DAY",
