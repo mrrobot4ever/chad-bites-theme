@@ -91,7 +91,7 @@
             "day_label": "DAY 7",
             "stage_name": "ACTIVATE",
             "bullet_1": "Creatine HCL saturates muscles for explosive strength *",
-            "bullet_2": "Alpha GPC fires up acetylcholine — your brain's power switch",
+            "bullet_2": "Alpha GPC fires up acetylcholine \u2014 your brain's power switch",
             "bullet_3": "Workouts feel stronger, sets feel easier *",
             "bullet_4": "Mental fog starts to lift as Citicoline sharpens focus *"
           }
@@ -112,10 +112,10 @@
           "settings": {
             "day_label": "DAY 90",
             "stage_name": "OPTIMIZED",
-            "bullet_1": "Full creatine saturation — peak strength and recovery *",
+            "bullet_1": "Full creatine saturation \u2014 peak strength and recovery *",
             "bullet_2": "Alpha GPC and Citicoline combat age-related cognitive decline *",
             "bullet_3": "Brain and body performing in sync at their absolute peak *",
-            "bullet_4": "This isn't a boost — it's your new operating system *"
+            "bullet_4": "This isn't a boost \u2014 it's your new operating system *"
           }
         }
       },
@@ -127,7 +127,7 @@
       "name": "How It Works",
       "settings": {
         "heading": "HOW DOES CREATINE MAX WORK?",
-        "subtext": "Build strength, sharpen your mind, and fuel relentless energy — naturally. *",
+        "subtext": "Build strength, sharpen your mind, and fuel relentless energy \u2014 naturally. *",
         "cta_text": "GET 1 BOTTLE FREE",
         "cta_url": ""
       }
@@ -195,9 +195,9 @@
         "heading_line2": "YOUR BRAIN AND BODY ARE STARVING",
         "chart_image": "shopify://shop_images/exec-045aefac-bbba-46b2-9444-2c87971950ad.png",
         "chart_alt": "Creatine levels with Creatine Max",
-        "paragraph_1": "<p><strong>Natural creatine production declines with age</strong>, and most diets fall drastically short. By your 40s, your muscles and brain are running on fumes — less ATP, slower recovery, and diminishing cognitive performance.</p>",
-        "paragraph_2": "<p>The impact? Low creatine means less explosive power, weaker endurance, slower thinking, and accelerated mental decline. Your brain uses 20% of your body's energy — and creatine is the fuel it runs on.</p>",
-        "paragraph_3": "<p><strong>The good news:</strong> Creatine Max pairs Creatine HCL with Alpha GPC and Citicoline to restore both muscular and cognitive performance — rebuilding the foundation your body and brain need to operate at full capacity.</p>"
+        "paragraph_1": "<p><strong>Natural creatine production declines with age</strong>, and most diets fall drastically short. By your 40s, your muscles and brain are running on fumes \u2014 less ATP, slower recovery, and diminishing cognitive performance.</p>",
+        "paragraph_2": "<p>The impact? Low creatine means less explosive power, weaker endurance, slower thinking, and accelerated mental decline. Your brain uses 20% of your body's energy \u2014 and creatine is the fuel it runs on.</p>",
+        "paragraph_3": "<p><strong>The good news:</strong> Creatine Max pairs Creatine HCL with Alpha GPC and Citicoline to restore both muscular and cognitive performance \u2014 rebuilding the foundation your body and brain need to operate at full capacity.</p>"
       }
     },
     "faq_XBMnmz": {
@@ -205,7 +205,91 @@
       "name": "FAQ",
       "settings": {
         "heading": "FREQUENTLY ASKED QUESTIONS"
-      }
+      },
+      "blocks": {
+        "faq_q1": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How long until I see results?",
+            "answer": "Most users notice sharper focus and improved workout performance within the first 7-14 days as creatine saturates your muscles and Alpha GPC activates acetylcholine production. For full strength, endurance, and cognitive gains, expect peak results at the 90-day mark as the full stack compounds."
+          }
+        },
+        "faq_q2": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is this safe?",
+            "answer": "Absolutely. Creatine Max is formulated with clinically-studied ingredients that support both muscular and cognitive performance. It's manufactured in FDA-registered, GMP-certified facilities with third-party testing for purity and potency. Creatine HCL is one of the most researched supplements in history with an excellent safety profile. Always consult your healthcare provider if you have specific health concerns."
+          }
+        },
+        "faq_q3": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Will this show up on drug tests?",
+            "answer": "No. Creatine Max contains zero banned substances and will not trigger positive results on standard drug tests. Creatine is legal, widely used by professional athletes, and approved by every major sports organization. All ingredients are natural and safe for competitive use."
+          }
+        },
+        "faq_q4": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can I take this with other supplements?",
+            "answer": "Creatine Max is designed to work synergistically with other supplements \u2014 it pairs especially well with Chad Bites for a complete strength and testosterone stack. However, if you're taking prescription medications or have kidney concerns, consult your doctor first."
+          }
+        },
+        "faq_q5": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Why gummies instead of pills?",
+            "answer": "Gummies offer superior bioavailability because they begin absorption in the mouth through the mucous membranes. They're also more enjoyable to take, which means better compliance and consistency. Plus, you actually look forward to taking them instead of choking down horse pills. Taste matters when you're building a daily habit."
+          }
+        },
+        "faq_q6": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How many gummies are in each bottle?",
+            "answer": "Each bottle contains 60 gummies, which is a full 30-day supply at the recommended dose of 2 gummies per day. This ensures you get consistent daily creatine loading plus cognitive support from Alpha GPC and Citicoline throughout the month."
+          }
+        },
+        "faq_q7": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What if it doesn't work for me?",
+            "answer": "We stand behind our product with a 90-day money-back guarantee. If you don't feel stronger, sharper, and more energized, simply contact our team for a full refund. No questions asked, no hassle. We're confident you'll experience the benefits, but if not, you risk nothing."
+          }
+        },
+        "faq_q8": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Do I need to cycle this?",
+            "answer": "No cycling necessary. Creatine is safe for continuous daily use \u2014 in fact, consistent supplementation is how you maintain full muscle saturation and cognitive benefits. Alpha GPC and Citicoline are also safe for long-term daily use without breaks."
+          }
+        },
+        "faq_q9": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can I take more than 2 gummies per day?",
+            "answer": "The recommended dose is 2 gummies per day for optimal results. This dosage delivers effective creatine loading plus cognitive support while staying within safe ranges. Taking more than the recommended amount won't accelerate muscle saturation and isn't advised. Consistency at the proper dose is key."
+          }
+        },
+        "faq_q10": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is this suitable for men over 50?",
+            "answer": "Yes, absolutely. In fact, adults over 50 experience some of the most dramatic benefits because natural creatine production and cognitive function both decline with age. Creatine Max is specifically formulated to combat this dual decline \u2014 restoring muscular power while protecting against age-related cognitive deterioration."
+          }
+        }
+      },
+      "block_order": [
+        "faq_q1",
+        "faq_q2",
+        "faq_q3",
+        "faq_q4",
+        "faq_q5",
+        "faq_q6",
+        "faq_q7",
+        "faq_q8",
+        "faq_q9",
+        "faq_q10"
+      ]
     },
     "1782773658940ff477": {
       "type": "apps",
