@@ -195,7 +195,7 @@
         "heading_line2": "A GROWING PROBLEM",
         "chart_image": "shopify://shop_images/exec-40587f0b-374e-4f54-be69-ec9d0c412a6f.png",
         "chart_alt": "Urine flow improvement with Prosti Max",
-        "paragraph_1": "<p><strong>By age 50, over half of all men</strong> experience symptoms of an enlarged prostate — weak stream, frequent urgency, and nighttime bathroom trips that destroy sleep quality.</p>",
+        "paragraph_1": "<p><strong>By age 50, over half of all men</strong> experience symptoms of an enlarged prostate \u2014 weak stream, frequent urgency, and nighttime bathroom trips that destroy sleep quality.</p>",
         "paragraph_2": "<p>The impact? Poor flow isn't just an inconvenience. It disrupts sleep, drains energy, causes anxiety, and signals underlying prostate inflammation that worsens with age if left unchecked.</p>",
         "paragraph_3": "<p><strong>The good news:</strong> Prosti Max combines Saw Palmetto, Astaxanthin, Theaflavins, and Lycopene to support healthy prostate size, reduce inflammation, and restore the strong, comfortable flow you had in your younger years.</p>"
       }
@@ -205,7 +205,91 @@
       "name": "FAQ",
       "settings": {
         "heading": "FREQUENTLY ASKED QUESTIONS"
-      }
+      },
+      "blocks": {
+        "faq_q1": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How long until I see results?",
+            "answer": "Most men notice reduced nighttime bathroom trips and improved urinary comfort within the first 7-14 days. For sustained prostate support and consistently stronger urine flow, expect noticeable results within 4-6 weeks of consistent use. Full prostate protection builds over 90 days as the antioxidant stack compounds."
+          }
+        },
+        "faq_q2": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is this safe?",
+            "answer": "Absolutely. Prosti Max is formulated with clinically-studied, natural ingredients that support healthy prostate function. It's manufactured in FDA-registered, GMP-certified facilities with third-party testing for purity and potency. Unlike prescription prostate medications, our formula works with your body's natural processes without harsh side effects. Always consult your healthcare provider if you have specific health concerns."
+          }
+        },
+        "faq_q3": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Will this show up on drug tests?",
+            "answer": "No. Prosti Max contains zero banned substances and will not trigger positive results on standard drug tests. All ingredients are natural, legal, and widely used in prostate health supplements. Our formula supports healthy prostate function using plant-based extracts and antioxidants."
+          }
+        },
+        "faq_q4": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can I take this with other supplements?",
+            "answer": "Prosti Max is designed to work synergistically with other supplements \u2014 it pairs especially well with Chad Bites for a complete men's health stack. However, if you're taking prostate medications or blood thinners, consult your doctor first."
+          }
+        },
+        "faq_q5": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Why gummies instead of pills?",
+            "answer": "Gummies offer superior bioavailability because they begin absorption in the mouth through the mucous membranes. They're also more enjoyable to take, which means better compliance and consistency. Plus, you actually look forward to taking them instead of choking down horse pills. Taste matters when you're building a daily habit."
+          }
+        },
+        "faq_q6": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How many gummies are in each bottle?",
+            "answer": "Each bottle contains 60 gummies, which is a full 30-day supply at the recommended dose of 2 gummies per day. This ensures you get consistent daily support for optimal prostate health and urinary comfort throughout the month."
+          }
+        },
+        "faq_q7": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What if it doesn't work for me?",
+            "answer": "We stand behind our product with a 90-day money-back guarantee. If you don't notice improved urinary comfort, fewer nighttime trips, or better flow, simply contact our team for a full refund. No questions asked, no hassle. We're confident you'll experience the benefits, but if not, you risk nothing."
+          }
+        },
+        "faq_q8": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Do I need to cycle this?",
+            "answer": "No cycling necessary. Prosti Max contains natural plant extracts and antioxidants that support ongoing prostate health without dependency. You can take it daily, year-round, without the need for breaks. In fact, consistent long-term use provides the best protection."
+          }
+        },
+        "faq_q9": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can I take more than 2 gummies per day?",
+            "answer": "The recommended dose is 2 gummies per day for optimal results. This dosage has been carefully formulated to provide effective prostate support while staying within safe ranges. Taking more than the recommended amount won't necessarily accelerate results and isn't advised. Consistency at the proper dose is key."
+          }
+        },
+        "faq_q10": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is this suitable for men over 50?",
+            "answer": "Yes, absolutely. In fact, men over 50 are exactly who Prosti Max was designed for. Prostate enlargement affects over half of men by age 50 and nearly 90% by age 80. Our most enthusiastic customers are in their 50s, 60s, and beyond, reporting fewer nighttime trips, stronger flow, and peace of mind about their prostate health."
+          }
+        }
+      },
+      "block_order": [
+        "faq_q1",
+        "faq_q2",
+        "faq_q3",
+        "faq_q4",
+        "faq_q5",
+        "faq_q6",
+        "faq_q7",
+        "faq_q8",
+        "faq_q9",
+        "faq_q10"
+      ]
     },
     "1782773658940ff477": {
       "type": "apps",
@@ -234,7 +318,7 @@
       "settings": {
         "heading_line1": "ZERO RISK.",
         "heading_line2": "ALL REWARD.",
-        "body_text": "Try Prosti Max for 90 days. If you don't notice fewer nighttime trips, stronger flow, and real prostate comfort—we refund your last order. No questions asked. No hoops to jump through.",
+        "body_text": "Try Prosti Max for 90 days. If you don't notice fewer nighttime trips, stronger flow, and real prostate comfort\u2014we refund your last order. No questions asked. No hoops to jump through.",
         "cta_text": "GET 1 BOTTLE FREE",
         "cta_url": "",
         "badge_top_text": "90 DAY",
