@@ -132,7 +132,7 @@
             "stage_name": "IGNITE",
             "bullet_1": "L-Citrulline & L-Arginine flood your system with nitric oxide *",
             "bullet_2": "Blood vessels relax and widen for better circulation *",
-            "bullet_3": "Workouts feel fuller \u2014 skin-splitting pumps in the gym *",
+            "bullet_3": "Workouts feel fuller — skin-splitting pumps in the gym *",
             "bullet_4": "First signs of increased stamina where it counts *"
           }
         },
@@ -144,7 +144,7 @@
             "bullet_1": "French Maritime Bark supercharges nitric oxide production *",
             "bullet_2": "Grape Seed Extract strengthens blood vessel walls *",
             "bullet_3": "Performance noticeably stronger and longer *",
-            "bullet_4": "Circulation peaks \u2014 energy and endurance through the roof *"
+            "bullet_4": "Circulation peaks — energy and endurance through the roof *"
           }
         },
         "stage_txUiWc": {
@@ -155,7 +155,7 @@
             "bullet_1": "All 8 ingredients working in sync for maximum blood flow *",
             "bullet_2": "Zinc and B12 keep your engine running at full capacity *",
             "bullet_3": "Panax Ginseng delivers relentless stamina and drive *",
-            "bullet_4": "Peak performance is your new baseline \u2014 gym and bedroom *"
+            "bullet_4": "Peak performance is your new baseline — gym and bedroom *"
           }
         }
       },
@@ -236,22 +236,18 @@
         "chart_image": "shopify://shop_images/exec-0382c2f5-814f-433f-beb1-4e9f928405c1.png",
         "chart_alt": "Nitric oxide levels with Pump Max",
         "paragraph_1": "<p><strong>Nitric oxide production</strong> drops by nearly 75% between the ages of 20 and 70. Stress, poor diet, lack of exercise, and aging gut bacteria all accelerate the decline.</p>",
-        "paragraph_2": "<p>The impact? Low nitric oxide means restricted blood flow \u2014 weaker pumps, less endurance, poor circulation, and declining performance and stamina.</p>",
+        "paragraph_2": "<p>The impact? Low nitric oxide means restricted blood flow — weaker pumps, less endurance, poor circulation, and declining performance and stamina.</p>",
         "paragraph_3": "<p><strong>The good news:</strong> Pump Max delivers L-Citrulline, L-Arginine, and French Maritime Bark to restore nitric oxide production and open the floodgates to peak blood flow.</p>"
       }
     },
     "faq_XBMnmz": {
       "type": "faq-pump",
-      "name": "FAQ",
-      "settings": {
-        "heading": "FREQUENTLY ASKED QUESTIONS"
-      },
       "blocks": {
         "faq_q1": {
           "type": "faq_item",
           "settings": {
             "question": "How long until I see results?",
-            "answer": "Most men notice improved blood flow and fuller pumps within the first 7-14 days as L-Citrulline and L-Arginine boost nitric oxide levels. For sustained circulation, bedroom performance, and vascularity gains, expect noticeable results within 4-6 weeks of consistent use. Peak benefits build over 90 days as the full stack compounds."
+            "answer": "Most men notice improved blood flow and fuller pumps within the first 7-14 days as L-Citrulline and L-Arginine boost nitric oxide levels. For sustained circulation, performance, and vascularity gains, expect noticeable results within 4-6 weeks of consistent use. Peak benefits build over 90 days as the full stack compounds."
           }
         },
         "faq_q2": {
@@ -272,7 +268,7 @@
           "type": "faq_item",
           "settings": {
             "question": "Can I take this with other supplements?",
-            "answer": "Pump Max is designed to work synergistically with other supplements \u2014 it pairs especially well with Chad Bites for a complete performance stack. However, if you're taking blood pressure medications or vasodilators, consult your doctor first."
+            "answer": "Pump Max is designed to work synergistically with other supplements — it pairs especially well with Chad Bites for a complete performance stack. However, if you're taking blood pressure medications or vasodilators, consult your doctor first."
           }
         },
         "faq_q5": {
@@ -329,7 +325,11 @@
         "faq_q8",
         "faq_q9",
         "faq_q10"
-      ]
+      ],
+      "name": "FAQ",
+      "settings": {
+        "heading": "FREQUENTLY ASKED QUESTIONS"
+      }
     },
     "1782773658940ff477": {
       "type": "apps",
