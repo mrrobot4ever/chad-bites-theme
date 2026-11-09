@@ -1,0 +1,377 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-product": {
+      "type": "main-product",
+      "settings": {
+        "meta_shipping": "Fast + Free Shipping",
+        "meta_guarantee": "90-Day Money-Back Guarantee",
+        "desc_image": "shopify:\/\/shop_images\/wo-Chadbite_-_gummy_close_up.webp",
+        "option1_title": "BUY 2 GET 1 FREE",
+        "option1_subtitle": "Delivered Every 90 Days",
+        "option1_variant_id": "50559936594231",
+        "option1_price_tag": "$0.97 \/ Day",
+        "option1_supply": "90 DAY SUPPLY",
+        "option1_selling_plan": "12120949047",
+        "option2_title": "BUY 1 BOTTLE",
+        "option2_subtitle": "Delivered Every 30 Days",
+        "option2_variant_id": "50559936561463",
+        "option2_price_tag": "$1.46 \/ Day",
+        "option2_supply": "30 DAY SUPPLY",
+        "option2_selling_plan": "12124750135",
+        "show_arrows": true
+      }
+    },
+    "ingredients_6wc636": {
+      "type": "ingredients",
+      "blocks": {
+        "ingredient_TM8JWQ": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Magnesium",
+            "dose": "100 mg",
+            "description": "As Magnesium Glycinate",
+            "fallback_asset": "ingredient-magnesium.jpg"
+          }
+        },
+        "ingredient_MWgQdt": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Fulvic Acid",
+            "dose": "20 mg",
+            "description": "Premium Shilajit Extract",
+            "fallback_asset": "ingredient-fulvic-acid.jpg"
+          }
+        },
+        "ingredient_QfLtFz": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Fadogia",
+            "dose": "500 mg",
+            "description": "Premium 10:1 Botanical Extract",
+            "fallback_asset": "ingredient-fadogia.jpg"
+          }
+        },
+        "ingredient_9Yq4ww": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Tongkat Ali",
+            "dose": "500 mg",
+            "description": "Premium 10:1 Botanical Extract",
+            "fallback_asset": "ingredient-tongkat-ali.jpg"
+          }
+        },
+        "ingredient_PcpqGr": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Zinc",
+            "dose": "10 mg",
+            "description": "As Zinc Gluconate",
+            "fallback_asset": "ingredient-zinc.jpg"
+          }
+        },
+        "ingredient_XfWE3d": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Boron",
+            "dose": "10 mg",
+            "description": "As Boron Citrate",
+            "fallback_asset": "ingredient-boron.jpg"
+          }
+        },
+        "ingredient_J7r9jY": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Vitamin B6",
+            "dose": "6 mg",
+            "description": "As Pyridoxal-5-Phosphate",
+            "fallback_asset": "ingredient-vitamin-b6.jpg"
+          }
+        },
+        "ingredient_iJTARQ": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Vitamin D3",
+            "dose": "100 mcg",
+            "description": "As Cholecalciferol",
+            "fallback_asset": "ingredient-vitamin-d3.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "ingredient_TM8JWQ",
+        "ingredient_MWgQdt",
+        "ingredient_QfLtFz",
+        "ingredient_9Yq4ww",
+        "ingredient_PcpqGr",
+        "ingredient_XfWE3d",
+        "ingredient_J7r9jY",
+        "ingredient_iJTARQ"
+      ],
+      "name": "Ingredients",
+      "settings": {
+        "heading": "8 INGREDIENTS - 2 Gummies",
+        "subtitle": "GET YOUR EDGE BACK, NATURALLY."
+      }
+    },
+    "howitworks_YqaKGM": {
+      "type": "howitworks",
+      "blocks": {
+        "stage_jMCFqW": {
+          "type": "stage",
+          "settings": {
+            "day_label": "DAY 7",
+            "stage_name": "ACTIVATE",
+            "bullet_1": "Tongkat Ali blocks stress hormones",
+            "bullet_2": "Fulvic Acid shuttles key nutrients",
+            "bullet_3": "Workouts feel intense again",
+            "bullet_4": "Start to feel that all-day energy"
+          }
+        },
+        "stage_LJrUfE": {
+          "type": "stage",
+          "settings": {
+            "day_label": "DAY 30",
+            "stage_name": "DOMINATE",
+            "bullet_1": "Boron helps free stuck T",
+            "bullet_2": "Zinc provides T-making materials",
+            "bullet_3": "Body looks leaner and more masculine",
+            "bullet_4": "People ask what you're doing differently"
+          }
+        },
+        "stage_txUiWc": {
+          "type": "stage",
+          "settings": {
+            "day_label": "DAY 90",
+            "stage_name": "UNSTOPPABLE",
+            "bullet_1": "8 ingredients working like a tuned engine",
+            "bullet_2": "T-production optimized fully",
+            "bullet_3": "Not temporary, this is your new normal",
+            "bullet_4": "You're the man you're supposed to be"
+          }
+        }
+      },
+      "block_order": [
+        "stage_jMCFqW",
+        "stage_LJrUfE",
+        "stage_txUiWc"
+      ],
+      "name": "How It Works",
+      "settings": {
+        "heading": "HOW DOES CHAD BITES WORK?",
+        "subtext": "Maximize your potential naturally, quickly, and easily *",
+        "cta_text": "GET 1 BOTTLE FREE",
+        "cta_url": ""
+      }
+    },
+    "solution_hTgnNB": {
+      "type": "solution",
+      "blocks": {
+        "benefit_YRtb3x": {
+          "type": "benefit",
+          "settings": {
+            "title": "Skyrocket Energy & Stamina *",
+            "description": "Increase energy & athletic performance"
+          }
+        },
+        "benefit_ACKcX8": {
+          "type": "benefit",
+          "settings": {
+            "title": "Support Male Vitality *",
+            "description": "Amplify passionate energy"
+          }
+        },
+        "benefit_3yagAY": {
+          "type": "benefit",
+          "settings": {
+            "title": "Enhance Productivity & Focus *",
+            "description": "Stay sharp & focused all day"
+          }
+        },
+        "benefit_NXY6ML": {
+          "type": "benefit",
+          "settings": {
+            "title": "Supercharge Strength *",
+            "description": "Build & maintain lean muscle mass"
+          }
+        },
+        "benefit_Q7VUNL": {
+          "type": "benefit",
+          "settings": {
+            "title": "Improve Recovery *",
+            "description": "Optimize sleep & muscle recovery"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_YRtb3x",
+        "benefit_ACKcX8",
+        "benefit_3yagAY",
+        "benefit_NXY6ML",
+        "benefit_Q7VUNL"
+      ],
+      "name": "The Solution",
+      "settings": {
+        "heading": "HIGH T MADE EASY",
+        "subtext": "Pro Athletes Have Been Using This Stack for Years Because They Can't Touch TRT. Now It's in a Blackberry Gummy",
+        "cta_text": "GET 1 BOTTLE FREE",
+        "cta_url": ""
+      }
+    },
+    "decline_fkrd6V": {
+      "type": "decline",
+      "name": "Decline of T",
+      "settings": {
+        "heading_line1": "THE DECLINE OF T:",
+        "heading_line2": "A MODERN EPIDEMIC",
+        "chart_alt": "T levels with Chad Bites",
+        "paragraph_1": "<p><strong>Test levels<\/strong> have been dropping by 1% every year since 1980. Stress, poor sleep, processed diets, and toxins are destroying natural hormone production.<\/p>",
+        "paragraph_2": "<p>The impact? Low test drains energy, strength, and focus—making it harder to perform at your best in life and the gym.<\/p>",
+        "paragraph_3": "<p><strong>The good news:<\/strong> Chad Bites helps you reclaim your edge with natural test support for energy, focus, and strength.<\/p>"
+      }
+    },
+    "faq_XBMnmz": {
+      "type": "faq",
+      "blocks": {
+        "faq_q1": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How long until I see results?",
+            "answer": "Most men notice improvements in energy and focus within the first 7-14 days. For physical changes like increased strength, better recovery, and body composition improvements, expect to see noticeable results within 4-6 weeks of consistent use. Noticeable changes build over time, with peak benefits typically experienced at the 90-day mark."
+          }
+        },
+        "faq_q2": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is this safe?",
+            "answer": "Absolutely. Chad Bites is formulated with studied, natural ingredients that support your body's own test production. It's manufactured in FDA-registered, GMP-certified facilities. Unlike synthetic hormones or injections, our formula works with your body's natural processes. Always consult your healthcare provider if you have specific health concerns."
+          }
+        },
+        "faq_q3": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Will this show up on drug tests?",
+            "answer": "No. Chad Bites contains zero banned substances and will not trigger positive results on standard drug tests. All ingredients are natural, legal, and approved for use in professional and amateur athletics. Our formula supports natural test production rather than introducing synthetic hormones."
+          }
+        },
+        "faq_q4": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can I take this with other supplements?",
+            "answer": "Chad Bites is designed to work synergistically with other supplements. However, if you're taking prescription medications or have health conditions, consult your doctor first."
+          }
+        },
+        "faq_q5": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Why gummies instead of pills?",
+            "answer": "Gummies offer superior bioavailability because they begin absorption in the mouth through the mucous membranes. They're also more enjoyable to take, which means better compliance and consistency. Plus, you actually look forward to taking them instead of choking down horse pills. Taste matters when you're building a daily habit."
+          }
+        },
+        "faq_q6": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How many gummies are in each bottle?",
+            "answer": "Each bottle contains 60 gummies, which is a full 30-day supply at the recommended dose of 2 gummies per day. This ensures you get consistent daily support for optimal test production throughout the month."
+          }
+        },
+        "faq_q7": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What if it doesn't work for me?",
+            "answer": "We stand behind our product with a 90-day money-back guarantee. If you don't feel a noticeable difference in your energy, focus, or performance, simply contact our team for a full refund. No questions asked, no hassle. We're confident you'll experience the benefits, but if not, you risk nothing."
+          }
+        },
+        "faq_q8": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Do I need to cycle this?",
+            "answer": "No cycling necessary. Unlike hormones or synthetic compounds, Chad Bites contains natural ingredients that support your body's own test production without shutting down natural function. You can take it daily, year-round, without the need for breaks or post-cycle therapy."
+          }
+        },
+        "faq_q9": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can I take more than 2 gummies per day?",
+            "answer": "The recommended dose is 2 gummies per day for optimal results. This dosage has been carefully formulated to provide effective test support while staying within safe ranges."
+          }
+        },
+        "faq_q10": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is this suitable for men over 50?",
+            "answer": "Yes, absolutely. In fact, men over 50 often experience the most dramatic benefits because test levels naturally declines with age. Chad Bites is specifically formulated to help mature men restore youthful hormone levels naturally. Many of our most enthusiastic customers are in their 50s, 60s, and beyond, reporting renewed energy, vitality, and performance."
+          }
+        }
+      },
+      "block_order": [
+        "faq_q1",
+        "faq_q2",
+        "faq_q3",
+        "faq_q4",
+        "faq_q5",
+        "faq_q6",
+        "faq_q7",
+        "faq_q8",
+        "faq_q9",
+        "faq_q10"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "heading": "FREQUENTLY ASKED QUESTIONS"
+      }
+    },
+    "1782773658940ff477": {
+      "type": "apps",
+      "blocks": {
+        "stamped_reviews_main_widget_HRhTBN": {
+          "type": "shopify:\/\/apps\/stamped-reviews\/blocks\/main-widget\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "stamped_reviews_main_widget_HRhTBN"
+      ],
+      "settings": {}
+    },
+    "riskfree_Nk3fkU": {
+      "type": "riskfree",
+      "name": "Risk Free",
+      "settings": {
+        "heading_line1": "ZERO RISK.",
+        "heading_line2": "ALL REWARD.",
+        "body_text": "Try Chad Bites for 90 days. If you don't feel your edge return—if you don't see real, measurable changes in your energy, drive, physique, and confidence—we refund your last order. No questions asked. No hoops to jump through.",
+        "cta_text": "GET 1 BOTTLE FREE",
+        "cta_url": "",
+        "badge_top_text": "90 DAY",
+        "badge_bottom_text": "MONEY-BACK GUARANTEE"
+      }
+    }
+  },
+  "order": [
+    "main-product",
+    "ingredients_6wc636",
+    "howitworks_YqaKGM",
+    "solution_hTgnNB",
+    "decline_fkrd6V",
+    "faq_XBMnmz",
+    "1782773658940ff477",
+    "riskfree_Nk3fkU"
+  ]
+}
