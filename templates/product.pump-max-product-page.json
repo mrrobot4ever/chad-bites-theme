@@ -54,7 +54,7 @@
         "ingredient_FM001": {
           "type": "ingredient",
           "settings": {
-            "name": "French Maritime Bark Extract",
+            "name": "French Pine Bark",
             "dose": "50 mg",
             "description": "Powerful antioxidant for vascular health",
             "fallback_asset": "ingredient-french-maritime-bark.jpg"
@@ -63,7 +63,7 @@
         "ingredient_GS001": {
           "type": "ingredient",
           "settings": {
-            "name": "Grape Seed Extract",
+            "name": "Grape Seed",
             "dose": "50 mg",
             "description": "Supports healthy blood vessels",
             "fallback_asset": "ingredient-grape-seed.jpg"
@@ -99,7 +99,7 @@
         "ingredient_PG001": {
           "type": "ingredient",
           "settings": {
-            "name": "Panax Ginseng Extract",
+            "name": "Panax Ginseng",
             "dose": "10 mg",
             "description": "Boosts stamina & endurance",
             "fallback_asset": "ingredient-panax-ginseng.jpg"
