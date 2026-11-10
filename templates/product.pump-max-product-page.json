@@ -56,7 +56,7 @@
           "settings": {
             "name": "French Pine Bark",
             "dose": "50 mg",
-            "description": "Powerful antioxidant for vascular health",
+            "description": "Antioxidant for vascular health",
             "fallback_asset": "ingredient-french-maritime-bark.jpg"
           }
         },
