@@ -107,9 +107,10 @@
 
         <h1 class="product-title" style="margin-top:24px;">{{ product.title }}</h1>
 
-        {% if product.description != blank %}
+        {% assign desc_content = section.settings.desc_text | default: product.description %}
+        {% if desc_content != blank %}
           <div class="product-description-box">
-            <div class="product-description">{{ product.description }}</div>
+            <div class="product-description">{{ desc_content }}</div>
             <div class="product-desc-img">
               {% if section.settings.desc_image != blank %}
                 <img src="{{ section.settings.desc_image | image_url: width: 400 }}" alt="" loading="lazy">
@@ -403,6 +404,15 @@ sId: '362781' }); }</script>
     },
 
     
+    {
+      "type": "header",
+      "content": "Description Box"
+    },
+    {
+      "type": "richtext",
+      "id": "desc_text",
+      "label": "Description text (overrides product description)"
+    },
     {
       "type": "header",
       "content": "Description Image"
