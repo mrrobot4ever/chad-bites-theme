@@ -14,6 +14,7 @@
       "settings": {
         "meta_shipping": "Fast + Free Shipping",
         "meta_guarantee": "Better Flow or Your Money Back",
+        "desc_text": "<p>✅ 4 Premium Ingredients</p><p>❌ Zero Fillers + Zero BS</p><p>✌️ 2 Gummies Per Day</p><p>&nbsp;🇺🇸 Made in the USA</p>",
         "desc_image": "shopify://shop_images/wo-Chadbite_-_gummy_close_up.webp",
         "option1_title": "BUY 2 GET 1 FREE",
         "option1_subtitle": "Delivered Every 90 Days",
@@ -195,17 +196,13 @@
         "heading_line2": "A GROWING PROBLEM",
         "chart_image": "shopify://shop_images/exec-40587f0b-374e-4f54-be69-ec9d0c412a6f.png",
         "chart_alt": "Urine flow improvement with Prosti Max",
-        "paragraph_1": "<p><strong>By age 50, over half of all men</strong> experience symptoms of an enlarged prostate \u2014 weak stream, frequent urgency, and nighttime bathroom trips that destroy sleep quality.</p>",
+        "paragraph_1": "<p><strong>By age 50, over half of all men</strong> experience symptoms of an enlarged prostate — weak stream, frequent urgency, and nighttime bathroom trips that destroy sleep quality.</p>",
         "paragraph_2": "<p>The impact? Poor flow isn't just an inconvenience. It disrupts sleep, drains energy, causes anxiety, and signals underlying prostate inflammation that worsens with age if left unchecked.</p>",
         "paragraph_3": "<p><strong>The good news:</strong> Prosti Max combines Saw Palmetto, Astaxanthin, Theaflavins, and Lycopene to support healthy prostate size, reduce inflammation, and restore the strong, comfortable flow you had in your younger years.</p>"
       }
     },
     "faq_XBMnmz": {
       "type": "faq-prosti",
-      "name": "FAQ",
-      "settings": {
-        "heading": "FREQUENTLY ASKED QUESTIONS"
-      },
       "blocks": {
         "faq_q1": {
           "type": "faq_item",
@@ -232,7 +229,7 @@
           "type": "faq_item",
           "settings": {
             "question": "Can I take this with other supplements?",
-            "answer": "Prosti Max is designed to work synergistically with other supplements \u2014 it pairs especially well with Chad Bites for a complete men's health stack. However, if you're taking prostate medications or blood thinners, consult your doctor first."
+            "answer": "Prosti Max is designed to work synergistically with other supplements — it pairs especially well with Chad Bites for a complete men's health stack. However, if you're taking prostate medications or blood thinners, consult your doctor first."
           }
         },
         "faq_q5": {
@@ -289,7 +286,11 @@
         "faq_q8",
         "faq_q9",
         "faq_q10"
-      ]
+      ],
+      "name": "FAQ",
+      "settings": {
+        "heading": "FREQUENTLY ASKED QUESTIONS"
+      }
     },
     "1782773658940ff477": {
       "type": "apps",
@@ -318,7 +319,7 @@
       "settings": {
         "heading_line1": "ZERO RISK.",
         "heading_line2": "ALL REWARD.",
-        "body_text": "Try Prosti Max for 90 days. If you don't notice fewer nighttime trips, stronger flow, and real prostate comfort\u2014we refund your last order. No questions asked. No hoops to jump through.",
+        "body_text": "Try Prosti Max for 90 days. If you don't notice fewer nighttime trips, stronger flow, and real prostate comfort—we refund your last order. No questions asked. No hoops to jump through.",
         "cta_text": "GET 1 BOTTLE FREE",
         "cta_url": "",
         "badge_top_text": "90 DAY",
