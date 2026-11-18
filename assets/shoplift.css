@@ -1,0 +1,102 @@
+.sl-brandstyle-01a1f0cc-a5ae-76ac-a264-0ebcdef69c4b .sl-font-style--title {
+font-family: "Orbitron";
+font-weight: 900;
+font-style: normal;
+text-transform: uppercase;
+}
+.sl-brandstyle-01a1f0cc-a5ae-76ac-a264-0ebcdef69c4b .sl-font-style--body {
+font-family: "Inter";
+font-weight: 700;
+font-style: normal;
+}
+.sl-brandstyle-01a1f0cc-a5ae-76ac-a264-0ebcdef69c4b .sl-font-style--button {
+font-family: "Orbitron";
+font-weight: 700;
+font-style: normal;
+text-transform: uppercase;
+}
+.sl-brandstyle-01a1f0cc-a5ae-76ac-a264-0ebcdef69c4b .sl-font-style--label {
+font-family: "Orbitron";
+font-weight: 700;
+font-style: normal;
+text-transform: uppercase;
+}
+.sl-pattern-01a1f0cc-a624-789e-a15f-c2144d5c1bb4 {
+background-color: #0a0b14;
+border-style: none;
+--sl-gv-bg-color: #0a0b14;
+--sl-gv-btn-txt-color: #ffffff;
+--sl-gv-btn-bg-color: #0a0b14;
+--sl-gv-btn-radius: 8px;
+}
+.sl-pattern-01a1f0cc-a624-789e-a15f-c2144d5c1bb4 .sl-font-style--title { color: #ffffff; }
+.sl-pattern-01a1f0cc-a624-789e-a15f-c2144d5c1bb4 .sl-font-style--body { color: #ffffff; }
+.sl-pattern-01a1f0cc-a624-789e-a15f-c2144d5c1bb4 .sl-font-style--button { color: #ffffff; }
+.sl-pattern-01a1f0cc-a624-789e-a15f-c2144d5c1bb4 .sl-font-style--label { color: #ffffff; }
+.sl-pattern-01a1f0cc-a624-789e-a15f-c2144d5c1bb4 .sl-button--brand-style {
+color: #ffffff;
+background-color: #0a0b14;
+}
+.sl-pattern-01a1f0cc-a624-789e-a15f-c2144d5c1bb4 .sl-button--border-radius { border-radius: 8px; }
+.sl-pattern-01a1f0cc-a68c-7c51-a425-0f150690a700 {
+background-color: #0a0b14;
+border-style: none;
+--sl-gv-bg-color: #0a0b14;
+--sl-gv-btn-txt-color: #8a8fa8;
+--sl-gv-btn-bg-color: #0a0b14;
+}
+.sl-pattern-01a1f0cc-a68c-7c51-a425-0f150690a700 .sl-font-style--title { color: #ffffff; }
+.sl-pattern-01a1f0cc-a68c-7c51-a425-0f150690a700 .sl-font-style--body { color: #8a8fa8; }
+.sl-pattern-01a1f0cc-a68c-7c51-a425-0f150690a700 .sl-font-style--button { color: #8a8fa8; }
+.sl-pattern-01a1f0cc-a68c-7c51-a425-0f150690a700 .sl-font-style--label { color: #8a8fa8; }
+.sl-pattern-01a1f0cc-a68c-7c51-a425-0f150690a700 .sl-button--brand-style {
+color: #8a8fa8;
+background-color: #0a0b14;
+}
+.sl-pattern-01a1f0cc-a68b-7d77-b027-b99e7bf4c91d {
+background-color: #0a0b14;
+border-style: none;
+--sl-gv-bg-color: #0a0b14;
+--sl-gv-btn-txt-color: #4d7cfe;
+--sl-gv-btn-bg-color: #0a0b14;
+}
+.sl-pattern-01a1f0cc-a68b-7d77-b027-b99e7bf4c91d .sl-font-style--title { color: #ffffff; }
+.sl-pattern-01a1f0cc-a68b-7d77-b027-b99e7bf4c91d .sl-font-style--body { color: #ffffff; }
+.sl-pattern-01a1f0cc-a68b-7d77-b027-b99e7bf4c91d .sl-font-style--button { color: #4d7cfe; }
+.sl-pattern-01a1f0cc-a68b-7d77-b027-b99e7bf4c91d .sl-font-style--label { color: #4d7cfe; }
+.sl-pattern-01a1f0cc-a68b-7d77-b027-b99e7bf4c91d .sl-button--brand-style {
+color: #4d7cfe;
+background-color: #0a0b14;
+}
+.sl-pattern-01a1f0cc-a68c-7507-91f9-a7783397afed {
+background-color: #000005;
+border-style: none;
+--sl-gv-bg-color: #000005;
+--sl-gv-btn-txt-color: #ffffff;
+--sl-gv-btn-bg-color: #000005;
+--sl-gv-btn-radius: 8px;
+}
+.sl-pattern-01a1f0cc-a68c-7507-91f9-a7783397afed .sl-font-style--title { color: #ffffff; }
+.sl-pattern-01a1f0cc-a68c-7507-91f9-a7783397afed .sl-font-style--body { color: #ffffff; }
+.sl-pattern-01a1f0cc-a68c-7507-91f9-a7783397afed .sl-font-style--button { color: #ffffff; }
+.sl-pattern-01a1f0cc-a68c-7507-91f9-a7783397afed .sl-font-style--label { color: #ffffff; }
+.sl-pattern-01a1f0cc-a68c-7507-91f9-a7783397afed .sl-button--brand-style {
+color: #ffffff;
+background-color: #000005;
+}
+.sl-pattern-01a1f0cc-a68c-7507-91f9-a7783397afed .sl-button--border-radius { border-radius: 8px; }
+.sl-pattern-01a1f0cc-a68d-7dd0-a843-d22ac71995be {
+background-color: #0a0b14;
+border-style: none;
+--sl-gv-bg-color: #0a0b14;
+--sl-gv-btn-txt-color: #ffffff;
+--sl-gv-btn-bg-color: #ffffff;
+}
+.sl-pattern-01a1f0cc-a68d-7dd0-a843-d22ac71995be .sl-font-style--title { color: #ffffff; }
+.sl-pattern-01a1f0cc-a68d-7dd0-a843-d22ac71995be .sl-font-style--body { color: #ffffff; }
+.sl-pattern-01a1f0cc-a68d-7dd0-a843-d22ac71995be .sl-font-style--button { color: #ffffff; }
+.sl-pattern-01a1f0cc-a68d-7dd0-a843-d22ac71995be .sl-font-style--label { color: #ffffff; }
+.sl-pattern-01a1f0cc-a68d-7dd0-a843-d22ac71995be .sl-button--brand-style {
+color: #ffffff;
+background-color: #ffffff;
+}
