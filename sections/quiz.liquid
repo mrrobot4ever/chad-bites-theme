@@ -16,6 +16,9 @@
       </div>
       <p class="quiz-body">{{ section.settings.step1_body | default: "Before we give you access to the most potent testosterone stack on earth - used by A list actors and professional athletes. We need to ask you some questions. You must be over 18 to continue." }}</p>
       <button class="quiz-btn quiz-btn--cta" onclick="quizNext(2)">{{ section.settings.step1_button | default: "Agree and Continue" }}</button>
+      {% if section.settings.skip_quiz_text != blank %}
+        <a href="{{ section.settings.skip_quiz_url | default: '#' }}" class="quiz-skip-link">{{ section.settings.skip_quiz_text }}</a>
+      {% endif %}
     </div>
 
     <!-- STEP 2: Age -->
@@ -429,6 +432,21 @@
   .quiz-btn--cta:hover {
     opacity: 0.9;
     transform: translateY(-1px);
+  }
+
+  .quiz-skip-link {
+    display: block;
+    text-align: center;
+    margin-top: 16px;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: underline;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+  }
+  .quiz-skip-link:hover {
+    opacity: 1;
+    color: #ffffff;
   }
 
   /* Info box (steps 12, 13) */
@@ -1035,6 +1053,16 @@
       "id": "step1_button",
       "label": "Step 1 button text",
       "default": "Agree and Continue"
+    },
+    {
+      "type": "text",
+      "id": "skip_quiz_text",
+      "label": "Skip quiz link text (leave blank to hide)"
+    },
+    {
+      "type": "url",
+      "id": "skip_quiz_url",
+      "label": "Skip quiz link URL"
     },
     {
       "type": "header",
