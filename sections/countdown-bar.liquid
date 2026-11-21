@@ -1,0 +1,108 @@
+<div class="countdown-bar" id="countdown-bar-{{ section.id }}">
+  <div class="countdown-bar-inner">
+    <span class="countdown-bar-text">{{ section.settings.bar_text | default: "Hurry! Black Friday Sale Ends Soon:" }}</span>
+    <span class="countdown-bar-timer" id="countdown-timer-{{ section.id }}"></span>
+  </div>
+</div>
+
+<script>
+(function() {
+  var endDate = new Date('{{ section.settings.end_date | default: "2026-12-01T00:00:00" }}').getTime();
+  var timerEl = document.getElementById('countdown-timer-{{ section.id }}');
+  var barEl = document.getElementById('countdown-bar-{{ section.id }}');
+
+  function updateCountdown() {
+    var now = new Date().getTime();
+    var diff = endDate - now;
+
+    if (diff <= 0) {
+      barEl.style.display = 'none';
+      return;
+    }
+
+    var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    var secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+    timerEl.innerHTML =
+      '<span class="cd-num">' + days + '</span> <span class="cd-label">Days</span> ' +
+      '<span class="cd-num">' + hours + '</span> <span class="cd-label">Hours</span> ' +
+      '<span class="cd-num">' + mins + '</span> <span class="cd-label">Mins</span> ' +
+      '<span class="cd-num">' + secs + '</span> <span class="cd-label">Sec</span>';
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+})();
+</script>
+
+<style>
+  .countdown-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(90deg, #dc2626, #b91c1c);
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+  }
+  .countdown-bar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .countdown-bar-timer {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .cd-num {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .cd-label {
+    font-weight: 400;
+    font-size: 11px;
+    text-transform: uppercase;
+    opacity: 0.85;
+    margin-right: 4px;
+  }
+  @media (max-width: 480px) {
+    .countdown-bar { font-size: 11px; padding: 6px 10px; }
+    .cd-num { font-size: 12px; }
+    .cd-label { font-size: 9px; }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Countdown Bar",
+  "settings": [
+    {
+      "type": "text",
+      "id": "bar_text",
+      "label": "Bar text",
+      "default": "Hurry! Black Friday Sale Ends Soon:"
+    },
+    {
+      "type": "text",
+      "id": "end_date",
+      "label": "Countdown end date (YYYY-MM-DDTHH:MM:SS)",
+      "default": "2026-12-01T00:00:00"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Countdown Bar"
+    }
+  ]
+}
+{% endschema %}
