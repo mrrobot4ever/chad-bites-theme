@@ -17,6 +17,9 @@
 
     if (diff <= 0) {
       barEl.style.display = 'none';
+      var header = document.querySelector('.site-header');
+      if (header) header.style.top = '0px';
+      document.body.style.paddingTop = '0px';
       return;
     }
 
@@ -34,14 +37,27 @@
 
   updateCountdown();
   setInterval(updateCountdown, 1000);
+
+  // Push header and body down by bar height
+  function adjustOffsets() {
+    var barHeight = barEl.offsetHeight;
+    document.documentElement.style.setProperty('--countdown-bar-height', barHeight + 'px');
+    var header = document.querySelector('.site-header');
+    if (header) header.style.top = barHeight + 'px';
+    document.body.style.paddingTop = barHeight + 'px';
+  }
+  adjustOffsets();
+  window.addEventListener('resize', adjustOffsets);
 })();
 </script>
 
 <style>
   .countdown-bar {
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 1000;
+    left: 0;
+    right: 0;
+    z-index: 1100;
     background: linear-gradient(90deg, #dc2626, #b91c1c);
     color: #ffffff;
     text-align: center;
@@ -67,6 +83,10 @@
     font-family: 'Orbitron', sans-serif;
     font-weight: 700;
     font-size: 14px;
+    display: inline-block;
+    min-width: 1.6em;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
   }
   .cd-label {
     font-weight: 400;
@@ -77,7 +97,7 @@
   }
   @media (max-width: 480px) {
     .countdown-bar { font-size: 11px; padding: 6px 10px; }
-    .cd-num { font-size: 12px; }
+    .cd-num { font-size: 12px; min-width: 1.6em; }
     .cd-label { font-size: 9px; }
   }
 </style>
